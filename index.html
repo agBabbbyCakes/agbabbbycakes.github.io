@@ -1,0 +1,265 @@
+<html>
+    <head>
+        <title>Apework's Academy 2.0 - build 1.0.01</title> 
+
+<!-- Important Meta Stuff I guess-->
+
+<meta charset="utf-8">
+
+
+    <!-- PYTHON CODE TEST-->
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/addon/runmode/runmode-standalone.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/mode/python/python.min.js"></script>
+
+<!-- Pyscript Install-->
+
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+
+<!-- FONTS FONTS-->
+
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Satoshi">
+
+          <!-- AG CSS AIN't NOTHING BUT THE BESSS-->
+<style>
+
+    html {
+      height: 100%;
+    }
+    
+    body {
+        padding: 120px;
+        font-size: 16px;
+        font-family: 'Satoshi';
+    }
+    
+    .yoyo {
+            font-size:32px;
+        }
+    
+        .boldyo {
+            font-weight:700;
+            font-size:16px;
+        }
+    
+    </style>
+
+</head>
+
+
+<!-- END OF AG STYLE BABY-->
+
+
+
+
+    <body>
+
+
+
+
+Ape Academy 2.0 
+<br>
+
+
+
+
+
+
+
+
+
+
+
+<py-script> print('Python (Pyscript) has officially loaded!') </py-script>|
+
+<style>
+    #section { margin: 50px;
+
+    }
+</style>
+<!-- COPY HEADER 1 -->
+<section>
+<div>
+<p class="yoyo">Getting started with Ape-Template</p><br>
+<p>In this tutorial, an ApeWorX core developer walks through how to compile cookie cutter and Vyper files in preparation for testing and deploying. This how-to series also outlines all 6 standard interfaces of ERC-20 and functions.
+
+<br><br>
+We are going start with ape to create a smart contract project. This project comes with a smart contract, configuration file and testing scripts.
+<br><br>
+We make use of ape-template to custom create your own project to your liking. The goal of the tutorial is to help you create your first ERC-20 Token and explain each part of the smart contract.
+<br><br>
+Ape-template is made with cookiecutter so you can personalize the project to you and your preferences.
+
+<br><br>
+To get started we going to clone the template.
+</p>
+
+
+<pre><code id="python_code">$ git clone https://github.com/ApeAcademy/token-template
+</code></pre>
+
+</div>
+</section>
+
+
+<!-- Copy SECTION 1 -->
+
+<section>
+<div>
+<h2>Change Driectory</h2>
+<p>
+Change Directory into the cloned repo in a your favorite IDE (integrated development environment) to take a look at what we are working with.
+<br><br>
+Next we are going to activate a python virtual environment so we can play with the template.
+
+
+<br><br>
+NOTE: If you don't have ape installed in a virtual environment you can click here to get started.
+
+
+<br><br>
+Once you have your vm activated, ape installed, and ape-template plugin installed, you can simply personalize the project:
+
+</p>
+<br><br>
+
+<!-- Code Block-->
+<pre><code id="python_code">$ ape template .
+
+</code></pre>
+
+
+</div>
+</section>
+
+<!-- Copy SECTION 2 -->
+
+<section>
+    <div>
+    <h1>Change Driectory</h1>
+    <p>
+        <pre><code id="python_code">
+        The CLI will prompt you to change the variable names to make your own:
+
+        project_name
+        token_name
+        token_symbol
+        token_decimals
+        premint
+        premint_amount
+        owner
+        minter
+        burnable
+    </code></pre>
+    </p>
+    <br><br>
+    
+    <!-- Code Block-->
+    <pre><code id="python_code">$ ape template .
+    
+    </code></pre>
+    If you like default names for each one, just press enter and it will keep the default names.
+
+‍
+
+The project should be created under a directory with your project_name.
+    
+    </div>
+    </section>
+
+<!-- BIG MIDDLE SECTIon - PART 1 -->
+
+<div>
+<p class="yoyo">Understanding the Smart Contract</p>
+The rest of the video is to explain each part of the smart contract so you can understand each part we built.
+<br><br>
+
+Let me preface by talking about why we chose Vyper and how we chose to write our contract (EIP-20).
+
+<br><br>
+Here are some of the reasons why we chose to write the contract in Vyper:
+
+Bounds and overflow checking: On array accesses and arithmetic
+Support for signed integers and decimal fixed point numbers
+Decidability: It is possible to compute a precise upper bound for the gas consumption of any Vyper function call
+Strong typing
+Small and understandable compiler code
+Limited support for pure functions: Anything marked constant is not allowed to change the state
+‍</p>
+
+We chose to write our contract based of the standardization of EIP-20 written by Fabian Vogelsteller, Vitalik Buterin. The goal is to make your token meet the standards of all the other ERC-20 tokens so you can work in the same environment.
+
+<br>
+<p class="boldyo">
+Within the smart contract for ERC-20. We have 6 standard functions. 
+These standardizations are written in the EIP-20.
+</p>
+
+<style>
+ul.littleList {
+  list-style-type: circle;
+  padding-left:55px;
+}
+
+
+</style>
+<div>
+    <ul class="littleList">
+        <li>Total Supply</li>
+        <li>BalanceOf</li>
+        <li>Allowance</li>
+        <li>Transfer</li>
+        <li>TransferFrom</li>
+        <li>Approve</li>
+</ul>
+<pre><code id="python_code">
+The CLI will prompt you to change the variable names to make your own:
+
+        Total Supply
+        BalanceOf
+        Allowance
+        Transfer
+        TransferFrom
+        Approve
+</code></pre>
+</div>
+</div>
+<br>
+<br>
+<section>
+
+This is a place where PyScript will goal
+<py-script>
+    from datetime import datetime
+    now = datetime.now()
+    now.strftime("%m/%d/%Y, %H:%M:%S")
+        </py-script>
+
+
+
+
+</section>
+
+<!-- PYTHON CODE SCRIPT -->
+    <script type="text/javascript">
+        window.onload = function(){
+            var codeElement = document.getElementById('python_code');
+            // Add code mirror class for coloring (default is the theme)
+            codeElement.classList.add( 'cm-s-default' );
+            var code = codeElement.innerText;
+
+            codeElement.innerHTML = "";
+
+            CodeMirror.runMode(
+              code,
+              'python',
+              codeElement
+            );
+        };
+    </script>
+
+
+    </body>
+</html>
