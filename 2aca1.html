@@ -1,0 +1,598 @@
+<html>
+    <head>
+        <title>Apework's Academy 2.0 - build 1.0.01</title> 
+
+<!-- Important Meta Stuff I guess-->
+
+<meta charset="utf-8">
+
+
+<!-- PRISM JS (THE THING THAT ALLOWS US TO HIGHLIGHT + STYLE CODE )-->
+<link href="themes/prism.css" rel="stylesheet" />
+<script src="prism.js"></script>
+<link rel="stylesheet" href="{{python "prism.css" }}">
+
+
+
+
+    <!-- PYTHON CODE TEST-->
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/addon/runmode/runmode-standalone.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/mode/python/python.min.js"></script>
+
+<!-- Pyscript Install-->
+
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+
+<!-- FONTS FONTS-->
+
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Satoshi">
+
+          <!-- AG CSS AIN't NOTHING BUT THE BESSS-->
+<style>
+
+    html {
+      height: 100%;
+    }
+    
+    body {
+        padding: 120px;
+        font-size: 16px;
+        font-family: 'Satoshi';
+    }
+    
+    .yoyo {
+            font-size:32px;
+        }
+    
+        .boldyo {
+            font-weight:700;
+            font-size:16px;
+        }
+    
+        pre[data-lang]::before { content: attr(data-lang); display: block; }
+        
+ pre { tab-width: 4; }
+
+        pre {
+            background-color: black;
+            color:white;
+    display: block;
+    font-family: monospace;
+    margin: 1em 0px;
+    overflow-x: hidden ; 
+    white-space: pre-wrap; 
+ max-width:100%;
+ height:auto;
+ padding: 50px;
+ pre:hover, pre:focus { width: min-content; }
+
+
+
+
+}
+
+
+
+    </style>
+
+</head>
+
+
+<!-- END OF AG STYLE BABY-->
+
+
+
+
+    <body>
+
+
+
+
+Ape Academy 2.0 
+<br>
+
+
+<br><br><br>
+
+
+<pre><code class="language-python">$ git clone https://github.com/ApeAcademy/token-template
+</code></pre>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<section>
+    <style>
+    /*
+    * Based on Plugin: Syntax Highlighter CB 
+    * Plugin URI: https://wp.tutsplus.com/tutorials/plugins/adding-a-syntax-highlighter-shortcode-using-prism-js
+    * Description: Highlight your code snippets with an easy to use shortcode based on Lea Verou's Prism.js.  
+    * Version: 1.0.0 
+    * Author: c.bavota 
+    * Author URI: http://bavotasan.comhttps://wp.tutsplus.com/tutorials/plugins/adding-a-syntax-highlighter-shortcode-using-prism-js/ */
+   /* https://cbavota.bitbucket.org/syntax-highlighter/  */
+   
+   /* =====   ===== */ 
+   code[class*="language-"],
+   pre[class*="language-"] {
+       color: #fff;
+       text-shadow: 0 1px 1px #000;
+       font-family: Menlo, Monaco, "Courier New", monospace;
+       direction: ltr;
+       text-align: left;
+       word-spacing: normal;
+       white-space: pre;
+       word-wrap: normal;
+       line-height: 1.4;
+       background: none;
+       border: 0;
+   
+       -moz-tab-size: 4;
+       -o-tab-size: 4;
+       tab-size: 4;
+   
+       -webkit-hyphens: none;
+       -moz-hyphens: none;
+       -ms-hyphens: none;
+       hyphens: none;
+   }
+   
+   pre[class*="language-"] code {
+       float: left;
+       padding: 0 15px 0 0;
+   }
+   
+   pre[class*="language-"],
+   :not(pre) > code[class*="language-"] {
+       background: #222;
+   }
+   
+   /* Code blocks */
+   pre[class*="language-"] {
+       padding: 15px;
+       margin: 1em 0;
+       overflow: auto;
+       -moz-border-radius: 8px;
+       -webkit-border-radius: 8px;
+       border-radius: 8px;
+   }
+   
+   /* Inline code */
+   :not(pre) > code[class*="language-"] {
+       padding: 5px 10px;
+       line-height: 1;
+       -moz-border-radius: 3px;
+       -webkit-border-radius: 3px;
+       border-radius: 3px;
+   }
+   
+   .token.comment,
+   .token.prolog,
+   .token.doctype,
+   .token.cdata {
+       color: #797979;
+   }
+   
+   .token.selector,
+   .token.operator,
+   .token.punctuation {
+       color: #fff;
+   }
+   
+   .token.namespace {
+       opacity: .7;
+   }
+   
+   .token.tag,
+   .token.boolean {
+       color: #ffd893;
+   }
+   
+   .token.atrule,
+   .token.attr-value,
+   .token.hex,
+   .token.string {
+       color: #B0C975;
+   }
+   
+   .token.property,
+   .token.entity,
+   .token.url,
+   .token.attr-name,
+   .token.keyword {
+       color: #c27628;
+   }
+   
+   .token.regex {
+       color: #9B71C6;
+   }
+   
+   .token.entity {
+       cursor: help;
+   }
+   
+   .token.function,
+   .token.constant {
+       color: #e5a638;
+   }
+   
+   .token.variable {
+       color: #fdfba8;
+   }
+   
+   .token.number {
+       color: #8799B0;
+   }
+   
+   .token.important,
+   .token.deliminator {
+       color: #E45734;
+   }
+   
+   /* Line highlight plugin */
+   pre[data-line] {
+       position: relative;
+       padding: 1em 0 1em 3em;
+   }
+   
+   .line-highlight {
+       position: absolute;
+       left: 0;
+       right: 0;
+       margin-top: 1em; /* Same as .prism's padding-top */
+       background: rgba(27, 107, 255, 0.2);
+       pointer-events: none;
+       line-height: inherit;
+       white-space: pre;
+   }
+   
+   .line-highlight:before,
+   .line-highlight[data-end]:after {
+       content: attr(data-start);
+       position: absolute;
+       top: .3em;
+       left: .6em;
+       min-width: 1em;
+       padding: 0 .5em;
+       background-color: rgba(255,255,255,.3);
+       color: #fff;
+       font: bold 65%/1.5 sans-serif;
+       text-align: center;
+       -moz-border-radius: 8px;
+       -webkit-border-radius: 8px;
+       border-radius: 8px;
+       text-shadow: none;
+   }
+   
+   .line-highlight[data-end]:after {
+       content: attr(data-end);
+       top: auto;
+       bottom: .4em;
+   }
+   
+   /* for line numbers */
+   .line-numbers-rows {
+       margin: 0;
+   }
+   
+   .line-numbers-rows span {
+       padding-right: 10px;
+       border-right: 3px #d9d336 solid;
+   }
+
+</style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+  
+<pre>
+<code class="language-python">
+    #perk you can add args unlike main method
+    @click.command(cls=NetworkBoundCommand)
+    @click.option("--uri", help = "base uri for nft", default = "dummy value")
+    @ape_cli_context()
+    @network_option()
+    # cli_ctx must go first
+    def cli(cli_ctx, network, uri):
+        """
+        Deploy the nft
+        """
+        network = cli_ctx.provider.network.name
+        if network == LOCAL_NETWORK_NAME or network.endwith("-fork"):
+            account = cli_ctx.account_manager.test_accounts[0]
+        else:
+            account = get_user_selected_account()
+        
+        account.deploy(project.Token)
+
+</code>
+</pre>
+
+<br><br><br>
+<pre>
+    <code class="language-python"> git clone https://github.com/ApeAcademy/token-template</code></pre>
+    
+
+
+
+</section>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<pre>
+<py-script> print('Python (Pyscript) has officially loaded!') </py-script>
+</pre>
+<style>
+    #section { margin: 50px;
+
+    }
+</style>
+
+
+
+<section>
+    Top Image Goes here
+    <img src="c.svg" alt="Kiwi standing on oval">
+
+</section>
+
+<section>
+    <pre>This is HTML content displayed on the browser using pre tag in HTML
+        displayed in the second line using pretag
+        d.</pre>
+</section>
+
+
+
+<!-- COPY HEADER 1 -->
+<section>
+<div>
+<p class="yoyo">Getting started with Ape-Template</p><br>
+<p>In this tutorial, an ApeWorX core developer walks through how to compile cookie cutter and Vyper files in preparation for testing and deploying. This how-to series also outlines all 6 standard interfaces of ERC-20 and functions.
+
+<br><br>
+We are going start with ape to create a smart contract project. This project comes with a smart contract, configuration file and testing scripts.
+<br><br>
+We make use of ape-template to custom create your own project to your liking. The goal of the tutorial is to help you create your first ERC-20 Token and explain each part of the smart contract.
+<br><br>
+Ape-template is made with cookiecutter so you can personalize the project to you and your preferences.
+
+<br><br>
+To get started we going to clone the template.
+</p>
+
+
+<pre><code id="python_code">$ git clone https://github.com/ApeAcademy/token-template
+</code></pre>
+
+</div>
+</section>
+
+
+<!-- Copy SECTION 1 -->
+
+<section>
+<div>
+<h2>Change Driectory</h2>
+<p>
+Change Directory into the cloned repo in a your favorite IDE (integrated development environment) to take a look at what we are working with.
+<br><br>
+Next we are going to activate a python virtual environment so we can play with the template.
+
+
+<br><br>
+NOTE: If you don't have ape installed in a virtual environment you can click here to get started.
+
+
+<br><br>
+Once you have your vm activated, ape installed, and ape-template plugin installed, you can simply personalize the project:
+
+</p>
+<br><br>
+
+<!-- Code Block-->
+<pre><code id="python_code">$ ape template .
+
+</code></pre>
+
+
+</div>
+</section>
+
+<!-- Copy SECTION 2 -->
+
+<section>
+    <div>
+    <h1>Change Driectory</h1>
+    <p>
+        <pre><code id="python_code">
+        The CLI will prompt you to change the variable names to make your own:
+
+        project_name
+        token_name
+        token_symbol
+        token_decimals
+        premint
+        premint_amount
+        owner
+        minter
+        burnable
+    </code></pre>
+    </p>
+    <br><br>
+    
+    <!-- Code Block-->
+    <pre><code id="python_code">$ ape template .
+    
+    </code></pre>
+    If you like default names for each one, just press enter and it will keep the default names.
+
+‍
+
+The project should be created under a directory with your project_name.
+    
+    </div>
+    </section>
+
+
+<section>
+
+    <br><br><br>
+   
+    <iframe
+      src="https://jupyterlite.github.io/demo/repl/index.html?kernel=python&toolbar=1"
+      width="100%"
+      height="500px"
+    >
+    </iframe>
+
+
+</section>
+
+
+
+<!-- BIG MIDDLE SECTIon - PART 1 -->
+
+<div>
+<p class="yoyo">Understanding the Smart Contract</p>
+The rest of the video is to explain each part of the smart contract so you can understand each part we built.
+<br><br>
+
+Let me preface by talking about why we chose Vyper and how we chose to write our contract (EIP-20).
+
+<br><br>
+Here are some of the reasons why we chose to write the contract in Vyper:
+
+Bounds and overflow checking: On array accesses and arithmetic
+Support for signed integers and decimal fixed point numbers
+Decidability: It is possible to compute a precise upper bound for the gas consumption of any Vyper function call
+Strong typing
+Small and understandable compiler code
+Limited support for pure functions: Anything marked constant is not allowed to change the state
+‍</p>
+
+We chose to write our contract based of the standardization of EIP-20 written by Fabian Vogelsteller, Vitalik Buterin. The goal is to make your token meet the standards of all the other ERC-20 tokens so you can work in the same environment.
+
+<br>
+<p class="boldyo">
+Within the smart contract for ERC-20. We have 6 standard functions. 
+These standardizations are written in the EIP-20.
+</p>
+
+<style>
+ul.littleList {
+  list-style-type: circle;
+  padding-left:55px;
+}
+
+
+</style>
+<div>
+    <ul class="littleList">
+        <li>Total Supply</li>
+        <li>BalanceOf</li>
+        <li>Allowance</li>
+        <li>Transfer</li>
+        <li>TransferFrom</li>
+        <li>Approve</li>
+</ul>
+<pre><code id="python_code">
+The CLI will prompt you to change the variable names to make your own:
+
+        Total Supply
+        BalanceOf
+        Allowance
+        Transfer
+        TransferFrom
+        Approve
+</code></pre>
+</div>
+</div>
+<br>
+<br><br><br><br>
+<section>
+
+This is a place where PyScript will goal
+<py-script>
+    from datetime import datetime
+    now = datetime.now()
+    now.strftime("%m/%d/%Y, %H:%M:%S")
+        </py-script>
+
+
+
+
+</section>
+<br><br><br><br><br><br>
+<section>
+
+This is the same pyScript (trying to get the weather) - but with a little more pizaz
+<br><br>
+<p>This is the <code>Panel</code> constructor:</p>
+<pre><code>function Panel(element, canClose, closeHandler) {
+      this.element = element;
+      this.canClose = canClose;
+      this.closeHandler = function () { if (closeHandler) closeHandler() };
+    }</code></pre>
+
+
+
+
+</section>
+<br><br><br><br><br><br>
+<section>
+
+This is where Juptyer Notebook will try to goal
+<br><br><br>
+Taken From <a href="https://blog.jupyter.org/jupyter-everywhere-f8151c2cc6e8">This example</a>
+<br><br>
+<iframe
+  src="https://jupyterlite.github.io/demo/repl/index.html?kernel=python&toolbar=1"
+  width="100%"
+  height="500px"
+>
+</iframe>
+</section>
+
+<section>
+
+Test 2 of jupyter<iframe
+src="https://yourhandle.github.io/my-custom-deployment/repl/index.html?kernel=python&toolbar=1"
+width="100%"
+height="500px"
+>
+</iframe>
+
+
+</section>
+
+<section>
+Test 3
+<iframe src="https://replite.vercel.app/repl?kernel=python&toolbar=1" width="100%" height="100%">
+</iframe>
+
+</section>
+
+<!-- PYTHON CODE SCRIPT -->
+    <script type="text/javascript">
+        window.onload = function(){
+            var codeElement = document.getElementById('python_code');
+            // Add code mirror class for coloring (default is the theme)
+            codeElement.classList.add( 'cm-s-default' );
+            var code = codeElement.innerText;
+
+            codeElement.innerHTML = "";
+
+            CodeMirror.runMode(
+              code,
+              'python',
+              codeElement
+            );
+        };
+    </script>
+
+
+    </body>
+</html>
