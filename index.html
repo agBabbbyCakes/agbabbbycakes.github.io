@@ -1,23 +1,40 @@
 <html>
-    <head>
-<title>Academy - Main Menu - build 1002 </title>
+<head>
+<title>Academy - Main Menu - build 1005a </title>
+<!-- IMPORT BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<!-- Boostrap JAVASCRIPT IMPORT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+<!-- MORE BOOTSTRAP?-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- END OF BOOTSTRAP-->
+
 <meta name="viewport" 
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<!-- IMPORTS - JQUERY -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+
 <style>
+
+html {
+    height:100%;
+}
     @import url('https://fonts.googleapis.com/css?family=Rubik');
     body{
-        background-color: #80FFD3;
-        background-image: url('https://media3.giphy.com/media/Q34Q46x7bUUKJfbn0s/giphy.gif?cid=ecf05e47wn0v6s1rvrrofpabyaonvqjklr9s66ea0yzoblnc&rid=giphy.gif&ct=g');
+
+      /*  background-image: url('https://media3.giphy.com/media/Q34Q46x7bUUKJfbn0s/giphy.gif?cid=ecf05e47wn0v6s1rvrrofpabyaonvqjklr9s66ea0yzoblnc&rid=giphy.gif&ct=g'); */
     background-size: cover;
-    
-    
-    
-    height: 100vh;
     padding:0;
     margin:0;
     }
 
-    .superFont {
+.superFont {
     font-weight: 900;
     font-size: 16px;
     font-family: rubik;
@@ -48,8 +65,7 @@ a {
     text-decoration: none;
 }
 
-
-    .imgAhoyLogo {
+.imgAhoyLogo {
   border: 11px solid rgba(221, 221, 221, 0.016);
   border-radius: 4px;
   padding: 5px;
@@ -86,111 +102,354 @@ img:hover {
   box-shadow: 0 0 2px 5px rgb(15, 245, 230);
 }
 
-
-
-
-
-/*-- Inner Box CSS --*/
-.innerBox {
-    background: #05c4dd1b;;
-    box-shadow: 0px 0px 6px 0px #a5a5a500;
-    border-radius: 5px;
-    padding: 30px;
-    font-size: 20px;
-    text-align: center;
-    width: 50%;
-    height: 100%;
-
-}
-
-.innerBoxMenu {
-    background: #002d5514;
-    box-shadow: 0px 0px 6px 0px #a5a5a500;
-    border-radius: 5px;
-    padding: 30px;
-    font-size: 20px;
-    text-align: center;
-    width: 50%;
-
-}
-
-.outerBoxMenu {
-    height: 20vh;
-    background: #002d5514;
-    padding: 0 20px;
-    margin: 100px 50px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 6px 0px #a5a5a500;
-    border-radius: 5px;
-}
-
 * {
   box-sizing: border-box;
 }
 
-/* Create three equal columns that floats next to each other */
-.column {
 
-  float: left;
-  width: 100%;
-  padding: 10px;
+
+.showcaseMainWrapper
+ {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  gap: 5px 5px; 
+  padding: 25px;
 
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.showcaseItem {
+    height:112.5px;
+    width: 212.5px;
+    border-style: solid;
 }
+
+.menuBlock {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+
+}
+
+.mainHeader {
+    width:100%
+    background-color:white;
+}
+
+.navbar  {
+    background-color: #002d5514;
+}
+
+/* AG CUSTOM */
+.jumbotron {
+    background-color:rgb(242, 242, 242);
+    padding:50px;
+    text-align:center;
+}
+
+footer {
+    /* position:fixed; */
+    left: 0;
+  bottom: 0;
+  width:100%;
+
+}
+
+.mainContent {
+    min-height:1000px;
+    height:1000px;
+}
+
 
 </style>
 </head>
 <body>
-<div class="outerBox">
-    <div class="innerBoxMenu">
-        <div class="row">
-        <a target="_blank" href="#">
+<br>
+<!-- TOP NAV -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="https://i.ibb.co/L5tNtgj/dark-academy-logo-1-a-Artboard-1.png" alt="" width="300" height="auto">
+          </a>
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ape_lib_build_1001b.html">Tutorials</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- END OF TOP NAV -->
+<!-- <div class="mainHeader">
+        <a target="_blank" href="https://www.ahoy.ooo">
             <img class="imgAhoyLogo"src="https://assets.website-files.com/61777341073c361859b96860/6224aab0239833413c820c05_academy_logo_1_aArtboard-1-p-500.png">
                         </a>
-                        </div>
-                    
-                        <p class="superFont">academy.apeworx.io </p><p class="superFontLittle">build 1001</p>
-            <br>
-            <p class="superFont">Presently Works on </p><p class="superFontLittle">[Web Browsers, Mobile Browsers]</p>
-            </p>
-                    </div>
-                    
+                        </div> -->
 
-
-            <div class="innerBoxMenu">
-               
-
-<div class="row">
-   
-  <div class="column" style="background-color:rgba(252, 252, 252, 0.086);">
-
-
-  <a href="academy%20web%20app%20repo%20_%201/2aca1.html">
-  <div class="center">
-<p class="superFont">ERC20 </p>
-  </div></a>
-  <a href="academy%20web%20app%20repo%20_%201/2aca1.html">
-  <div class="center">
-    <p class="superFont">ERC721</p>
-  </div></a>
-  <a href="academy%20web%20app%20repo%20_%201/2aca1.html">
-  <div class="center">
-    <p class="superFont">ERC4626</p>
+<!-- Beginning of the Header-->
+<div class="jumbotron jumbotron-fluid">
+    <div>
+      <h1>YOUR GUIDE FOR BUILDING ON APE FRAMEWORK</h1> 
+      <p>Ape Academy is a project-based learning platform for building in Web3 using Ape Framework. The platform consists of high-quality videos and in-depth articles on using Ape Framework for smart contract development.</p> 
+    </div>
   </div>
-  </a>
-  
+
+<!-- END OF THE BEGINNER -->
+
+<!-- CONTENT CONTENT CONTENT -->
+<!-- CONTENT CONTENT CONTENT -->
+<!-- CONTENT CONTENT CONTENT -->
+<!-- CONTENT CONTENT CONTENT -->
+
+<div class="mainContent">
+
+
+<!-- BEGINING OF MAIN MENU CODE-->
+<div class="container">
+  <!-- Content here -->
+
+<div class="menuBlock">
+                    <div class="showcaseMainWrapper">
+                        <a href="showcase.html"><div class="showcaseItem">Showcase</div></a>
+                        <a href="#"><div class="showcaseItem">Two</div></a>
+                        <a href="#"><div class="showcaseItem">Three</div></a>
+                        <a href="#"><div class="showcaseItem">Four</div></a>
+                        <a href="#"><div class="showcaseItem">Five</div></a>
+                
+                      </div>
 </div>
 
+</div>     
 </div>
+
+<!-- CONTENT CONTENT CONTENT -->
+<!-- CONTENT CONTENT CONTENT -->
+<!-- CONTENT CONTENT CONTENT -->
+<!-- CONTENT CONTENT CONTENT -->
+<!-- CONTENT CONTENT CONTENT -->
+<!-- CONTENT CONTENT CONTENT -->
+<!-- CONTENT CONTENT CONTENT -->
+
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
             </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" />
+                <label class="form-label" for="form5Example21">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+            Ape Academy is a project-based learning platform for building in Web3 using Ape Framework. The platform consists of high-quality videos and in-depth articles on using Ape Framework for smart contract development.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright: ApeWorX, LTD
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+
+
+            
 
 </body>
     </html>
