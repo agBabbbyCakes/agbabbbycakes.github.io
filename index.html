@@ -1,492 +1,295 @@
 <html>
-<head>
-<title>Academy - Main Menu - build 1005C </title>
-<!-- IMPORT BOOTSTRAP -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-<!-- Boostrap JAVASCRIPT IMPORT -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-
-<!-- MORE BOOTSTRAP?-->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-<!-- END OF BOOTSTRAP-->
-
-<meta name="viewport" 
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-<!-- IMPORTS - JQUERY -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-
-
-<style>
-
-html {
-    height:100%;
-}
-    @import url('https://fonts.googleapis.com/css?family=Rubik');
-    body{
-
-      /*  background-image: url('https://media3.giphy.com/media/Q34Q46x7bUUKJfbn0s/giphy.gif?cid=ecf05e47wn0v6s1rvrrofpabyaonvqjklr9s66ea0yzoblnc&rid=giphy.gif&ct=g'); */
-    background-size: cover;
-    padding:0;
-    margin:0;
-    }
-
-.superFont {
-    font-weight: 900;
-    font-size: 16px;
-    font-family: rubik;
-    color:rgba(255, 255, 255, 0.707);
-    text-transform: uppercase;
-
-}
-
-.superFontLittle {
-    font-weight: 300;
-    font-size: 12px;
-    font-family: rubik;
-    color:rgba(255, 255, 255, 0.707);
-    text-transform: uppercase;
-
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
-  border: 3px solid rgb(255, 255, 255); 
-  margin: 10px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.imgAhoyLogo {
-  border: 11px solid rgba(221, 221, 221, 0.016);
-  border-radius: 4px;
-  padding: 5px;
-  width: auto;
-  height: 100px;
-}
-
-img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-
-    /*-- Outer Box CSS --*/
-    .outerBox {
-    height: 65vh;
-    background: #002d5514;
-    padding: 0 20px;
-    margin: 100px 50px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 6px 0px #a5a5a500;
-    border-radius: 5px;
-}
-
-.outerBox:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 139, 186, 0);
-}
-
-.innerBox:hover{
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-
-.center:hover{
-  box-shadow: 0 0 2px 5px rgb(15, 245, 230);
-}
-
-* {
-  box-sizing: border-box;
-}
+    <head>
+        <title>
+            Aca 1 - build 1001 b
+        </title>
+        <style>
+            .columns {
+            Width: 100%;
+            }
+            .column-1, .column-2 {
+              width:100%;
+            }
+            @media (min-width: 48em) {
+              .column-1 {
+                width: 70%;
+                float:left;
+              }
+              .column-2 {
+                width: 30%;
+                float:left;
+              }
+            
+              .columns {
+                content:"";
+                display: table;
+                clear: both;
+              }
+            }
+            
+            /*Content Code */
+            .content-left {
+                height:100%;
+                background-color: rgb(36, 36, 36);
+            }
+            
+            .content-right {
+                height:30vh;
+                background-color: dimgray;
+            }
+            
+            /*Right Menu Code */
+            .rightMenu {
+                background-color:oldlace
+            
+            }
+            
+            /*contentBoxA*/
+            .contentBoxA {
+                background-color: rgb(255, 255, 255);
+                color:rgb(0, 0, 0);
+                height:100%;
+                margin:20px;
+                text-align:center;
+            }
+                
 
 
+            /*Top Navy Style */
 
-.showcaseMainWrapper
- {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  position: relative;
-  gap: 5px 5px; 
-  padding: 25px;
+.topNavyWrap {
+    display:flex;
+
+    /*topNavyStyles*/
+    background-color: black;
 
 }
 
-.showcaseItem {
-    height:112.5px;
-    width: 212.5px;
-    border-style: solid;
+.topNavyItem {
+    flex:.75;
 }
 
-.menuBlock {
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  position:relative;
-
-}
-
-.mainHeader {
-    width:100%
+/*divUser*/
+.divUserWrapper {
     background-color:white;
-}
-
-.navbar  {
-    background-color: #002d5514;
-}
-
-/* AG CUSTOM */
-.jumbotron {
-    background-color:rgb(242, 242, 242);
-    padding:50px;
-    text-align:center;
-}
-
-footer {
-    /* position:fixed; */
-    left: 0;
-  bottom: 0;
-  width:100%;
-
-}
-
-.mainContent {
-    min-height:1000px;
-    height:1000px;
-}
-
-/*AG STYLE 1 = DARK NAUTICAL with a twang of teal */
-
-.agFooterStyle1 {
-    background-color:rgb(2, 2, 22);
-    color:rgb(0, 255, 162);
-    text-align:center;
-}
-
-.coreContent {
-
-    background-color:rgb(2, 2, 22);
-    color:rgb(0, 255, 191);
-    border: 3px solid rgb(0, 255, 191);
-
-}
-
-.agJumbo {
-    background-color:rgb(2, 2, 22);
-    color:rgb(0, 255, 162);
-    text-align:center;
-    border: 3px solid rgb(0, 255, 191);
-}
-
-.navbar navbar-expand-lg navbar-light bg-light {
-    background-color:rgb(2, 2, 22);
-    color:rgb(0, 255, 191);
-    border: 3px solid rgb(0, 255, 191);
-}
-
-
-/*End of AG STYLE 1 (DARK STYLE) */
-
-/* AG - CORE CONTENT STRUCTURE */
-.coreContent {
-    height:50vh;
-    width:100%;
-    display:block;
-    position: relative;
-   
-}
-
-.coreInnerContent {
-    margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.agJumbo {
-    height:20vh;
     text-align:center;
     padding:20px;
 }
 
-</style>
-</head>
-<body>
-<br>
-<!-- TOP NAV -->
+/*pre and code styles */
+pre {
+    background-color:rgb(236, 236, 236);
+    text-align:left;
+    overflow:hidden;
+    max-width:100%;
+}
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="https://i.ibb.co/L5tNtgj/dark-academy-logo-1-a-Artboard-1.png" alt="" width="300" height="auto">
-          </a>
-     
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/ape-library.html">Tutorials</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-  <!-- END OF TOP NAV -->
-    <!-- <div class="mainHeader">
-        <a target="_blank" href="https://www.ahoy.ooo">
-            <img class="imgAhoyLogo"src="https://assets.website-files.com/61777341073c361859b96860/6224aab0239833413c820c05_academy_logo_1_aArtboard-1-p-500.png">
-                        </a>
-                        </div> -->
+/*contentContent*/
+.contentContent {
+    padding:75px;
+}
 
-<!-- Beginning of the Header-->
-<div class="agJumbo">
-    <div>
-      <h1>YOUR GUIDE FOR BUILDING ON APE FRAMEWORK</h1> 
-      <i>build menuBuild1005c</i>
-      <p>Ape Academy is a project-based learning platform for building in Web3 using Ape Framework. 
-        <br>The platform consists of quality videos and articles on using Ape Framework for smart contract development.</p> 
-    </div>
-  </div>
+                </style>
+    </head>
 
-<!-- END OF THE BEGINNER -->
+    <body>
 
-<!-- CORE CONTENT homepage 1 -->
 
-<div id="coreContentA" class="coreContent">
+<!-- TOP NAVY -->
 
-Core Content A - Just a single div living out in the world 
-<div class="coreInnerContent">
-    <h2>Project Based Learning</h2>
-    <br><a href="https://agbabbbycakes.github.io/ape-library.html">Tutorials</a>
-    <br><a href="#">Curriculum Paths</a>
-    <br><a href="#">Online Console Playgrounds</a>
+<div class="topNavyWrap">
+<div class="topNavyItem">
+    <button>Home</button>
 </div>
+<div class="topNavyItem">
+    <button>Tutorials</button>
+</div>
+<div class="topNavyItem">
+    <button>Showcase</button>
+</div>
+<div class="topNavyItem">
+    <button>Login</button>
 </div>
 
 
 
-<!-- END OF CORE CONTENT -->
+</div>
 
 
-<!-- Footer -->
-<footer class="agFooterStyle1">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-  
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-twitter"></i
-        ></a>
-  
-        <!-- Google -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-google"></i
-        ></a>
-  
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
-  
-        <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-  
-        <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-github"></i
-        ></a>
-      </section>
-      <!-- Section: Social media -->
-  
-      <!-- Section: Form -->
-      <section class="">
-        <form action="">
-          <!--Grid row-->
-          <div class="row d-flex justify-content-center">
-            <!--Grid column-->
-            <div class="col-auto">
-              <p class="pt-2">
-                <strong>Sign up for our newsletter</strong>
-              </p>
-            </div>
-            <!--Grid column-->
-  
-            <!--Grid column-->
-            <div class="col-md-5 col-12">
-              <!-- Email input -->
-              <div class="form-outline form-white mb-4">
-                <input type="email" id="form5Example21" class="form-control" />
-                <label class="form-label" for="form5Example21">Email address</label>
-              </div>
-            </div>
-            <!--Grid column-->
-  
-            <!--Grid column-->
-            <div class="col-auto">
-              <!-- Submit button -->
-              <button type="submit" class="btn btn-outline-light mb-4">
-                Subscribe
-              </button>
-            </div>
-            <!--Grid column-->
-          </div>
-          <!--Grid row-->
-        </form>
-      </section>
-      <!-- Section: Form -->
-  
-      <!-- Section: Text -->
-      <section class="mb-4">
-        <p>
-            Ape Academy is a project-based learning platform for building in Web3 using Ape Framework. The platform consists of high-quality videos and in-depth articles on using Ape Framework for smart contract development.
-        </p>
-      </section>
-      <!-- Section: Text -->
-  
-      <!-- Section: Links -->
-      <section class="">
-        <!--Grid row-->
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-  
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white">Link 1</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 2</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 4</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-  
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white">Link 1</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 2</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 4</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-  
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white">Link 1</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 2</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 4</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-  
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white">Link 1</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 2</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 4</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
+<!-- END OF TOP NAVY -->
+        <div class="columns">
+            <div class="column column-1">
+              ///  Column 1: Put any relevant content here   ///
+              <div class="content-left">
+
+
+Content goes here 
+
+<div class="contentBoxA">
+
+Content Box 
+
+
+</div>
+<div class="contentBoxA">
+
+    Content Box </div>
+<div class="cbA contentBoxA">
+
+        Content Box 
+        
+        
         </div>
-        <!--Grid row-->
-      </section>
-      <!-- Section: Links -->
-    </div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2022 Copyright: <a href="https://apeworx.io">ApeWorX, LTD</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
+<div class="cbB contentBoxA">
 
-
-
-
+    Content Box </div>
+<div class="contentBoxA">
             
+    Content Box
+    <div>User Name | Follow | Entry Submitted  </div>
+    <div>Post Type : Github Project Repo</div>
+    <h1>ape-llamapay</h1>
+    <p><span id="CBdesc">Manage LlamaPay payment streams effortlessly from Ape Framework.
+    </span></p>
+    <div class="contentContent">
+    <p>
+       <h2>ape-llamapay</h2> 
+        Manage LlamaPay payment streams effortlessly from Ape Framework.
+        
+        <p>Quick Usage
+        You can use this SDK in ape console or in ape scripts. A short example:
+    </p>
+       <pre><code>from llamapay import Factory
 
-</body>
-    </html>
+        factory = Factory()
+        factory.create_stream('banteg.eth', '1000 DAI/month', sender=accounts.load('dev'))
+    </code></pre> 
+        If deployment exists on the connected network, it will be automatically picked up.
+        
+        A Factory is a registry and deployer of new pools. Each Pool manages all streams of a specific token. A Stream stores metadata like source, target, rate and allows operations on streams.
+        
+        You can find pools by token address or symbol, courtesy of ape-tokens:
+        <pre><code>
+        factory.pools
+        factory.create_pool('YFI')
+        factory.get_pool('DAI')
+    </code></pre>
+        <p>You can find streams from event logs and filter them by source or target, including their ENS names, courtesy of ape-ens:
+        </p>
+            <pre><code>
+        pool.all_streams
+        pool.find_streams(source='ychad.eth')
+        pool.find_streams(target='wentokyo.eth')
+    </code></pre>
+        <p>To fund your streams you will need to deposit funds into a pool:</p>
+        <pre><code>
+        pool.get_balance('ychad.eth')
+        # infinite approve (optional)
+        pool.approve(sender=dev)
+        # auto approves the requested amount
+        pool.deposit('1000 DAI', sender=dev)
+        # withdraw all
+        pool.withdraw(sender=dev)
+        # withdraw some
+        pool.withdraw(Decimal('500'), sender=dev)
+    </code></pre>
+        Token amounts can be specified as int for wei, Decimal for tokens, or str to be converted by ape-tokens based on their decimals.
+        
+        It is easiest to prepare a stream from the Pool instance:
+        <pre><code>
+        stream = pool.make_stream(source=dev, target=crush, rate='1000 DAI/month')
+    </code></pre>
+        <p>You can specify the rate as int for the internal 1e20 tokens per second representation or use a simple str format of amount symbol/duration like 1 YFI/week or 200,000 UNI/year.
+        
+        Now that you have a Stream prepared, you can create it:
+    </p>
+        <pre><code>
+        stream.create(sender=dev)
+        stream.pause(sender=dev)
+        stream.cancel(sender=dev)
+        stream.replace(new_stream, sender=dev)
+        stream.modify(target=new_crush, sender=dev)
+        stream.modify(rate=stream.rate * 2, sender=dev)
+        # check your withdrawable balance
+        stream.balance
+        # push tokens to recipient or withdraw them if you are one (these methods are the same)
+        stream.send(sender=dev)
+        stream.withdraw(sender=dev)
+    </code></pre>
+    <br>
+    <pre>
+        Dependencies
+        python3 version 3.7 or greater, python3-dev
+        Installation
+        via pip
+        You can install the latest release via pip:
+    </pre>
+    <pre><code>
+        pip install llamapay
+        via setuptools</code></pre>
+       <p>You can clone the repository and use setuptools for the most up-to-date version:
+    </p> 
+    <pre><code>
+        git clone https://github.com/banteg/ape-llamapay.git
+        cd ape-llamapay
+        python3 setup.py install
+        Development
+        
+        License
+        This project is licensed under the Apache 2.0.</code></pre>
+    </p>
+</div></div>
+<div class="cbC contentBoxA">
+            
+Content Box 
+
+<h1>Oracle Project</h1>
+<br>
+<p>Description of Project <span id="CBdesc">A simple one liner explaining why this website is the best website there ever was</span></p>
+<p>Author of Project <span id="CBauthor">Author Name</span></p>
+<br>
+<p>Description - Long form and everything in between
+Headline 1
+Headline 2
+Headline 3 
+</p>
+
+</div>
+</div>
+            </div>
+
+
+
+<div class="column column-2">
+              ///  Column 2: Put any relevant content here  ///
+              <div class="content-right">
+
+
+Content goes here 
+baby 
+<div class="rightMenu">
+    <button>Post</button>
+    <br>
+    <form>
+        This is a form - research what kind of form content can go down diggity 
+    </form>
+</div>
+
+<div class="divUserWrapper">
+<div class="divUserInnerWrapper">
+    <div class="divUserItem">divUserItem1</div>
+    <div class="divUserProfileDisplay">This is where the profile will go - and img no dobu</div>
+    <div class="divUserItem">divUserItem2</div>
+</div>
+
+
+</div>
+
+
+              </div>
+           </div>
+         </div>
+
+
+    </body>
+</html>
