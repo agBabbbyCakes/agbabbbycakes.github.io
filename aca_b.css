@@ -1,0 +1,43 @@
+body
+{
+    padding:12.5px;
+    background-color:black;
+}
+
+button {
+    background-color:#003bdd69;
+    color:#ffffff;
+    font-size:12px;
+}
+
+
+.rightMenu {
+    background-color:rgb(255, 191, 73)
+    position:fixed;
+
+}
+
+.contentBoxA {
+    border-style:solid;
+    padding-bottom:20px;
+    border-color:rgba(255, 0, 225, 0.344);
+    color:white !important;
+    background-color:black !important;
+}
+
+pre
+{
+   
+border-style:solid;
+padding:10px;
+border-color: #4073ff69;    
+background-color: black !important;
+}
+
+.column_column-2{
+    position:fixed;
+}
+
+.superFixedMenu {
+    position:fixed;
+}
