@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Satoshi');
+
+
+body {
+    background-color:rgb(3, 14, 15);
+    color:white;
+    font-family:'Satoshi';
+}
+
+/*ACA AG SUPER GRID - SHOWCASE - BUILD 1 */
+
+.showcaseMain_Grid {
+    display:grid;
+    grid:auto / repeat(4,1fr);
+    grid-gap:10px 10px;
+    padding:25px;
+}
+
+.showcaseMain_Item {
+    height:128px;
+    min-width:256px;
+    background-color:#000000!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-style:solid;
+    border-color:rgb(44, 223, 255);
+    border-size:1px;
+
+}
+
+@media only screen and (max-width:600px ){
+    .showcaseMain_Grid {
+        display:grid;
+        grid:auto / repeat(1,1fr);
+        grid-gap:10px 10px;
+    }
+}
+
+
+/*ACA AG SUPER GRID - IPYTHON EMULATOR - BUILD 1 */
+
+.iPython_Grid {
+    display:grid;
+    grid:auto / repeat(1,1fr);
+    grid-gap:10px 10px;
+    padding:25px;
+}
+
+.iPython_Grid_Item {
+    height:512px;
+    min-width:100%;
+    background-color:#000000!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-style:solid;
+    border-color:rgb(44, 223, 255);
+    border-size:1px;
+
+}
+
+@media only screen and (max-width:600px ){
+    .iPython_Grid {
+        display:grid;
+        grid:auto / repeat(1,1fr);
+        grid-gap:10px 10px;
+    }
+}
+
+
+
+/* SHOWCASE NAVY NAVY */
+
+.navyShowcaseTopSubMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* NAVY STYLES */
+    background-color: #000000;
+    position:relative;
+    width:100%;
+}
+
+.navyShowcaseTopSubMenuItem {
+    width:100%;
+    height: 100%;
+    text-align:center;
+    background-color: rgba(89, 0, 28, 0);
+    border-style:solid;
+    border-color:white;
+    border-width: 2px;
+}
+
+            /*Top Navy Style */
+
+            .topNavyWrap {
+                display:flex;
+                position:fixed;
+        
+                /*topNavyStyles*/
+                background-color: black;
+
+            height:50px;
+            width:100%;
+            z-index: 100;
+            
+            }
+            
+            .topNavyItem {
+                flex:.75;
+            }
+
+
+/*Trying to hack trinket*/
+
+.show-for-large-up {display:none;}
