@@ -1,7 +1,14 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+
 body
 {
+    font-family:'rubik'!important;
     padding:12.5px;
     background-color:black;
+    font-size:16px;
 }
 
 button {
@@ -12,7 +19,7 @@ button {
 
 
 .rightMenu {
-    background-color:rgb(255, 191, 73)
+    background-color:rgb(0, 0, 0)
     position:fixed;
 
 }
@@ -20,7 +27,7 @@ button {
 .contentBoxA {
     border-style:solid;
     padding-bottom:20px;
-    border-color:rgba(255, 0, 225, 0.344);
+    border-color:rgba(0, 102, 255, 0.344);
     color:white !important;
     background-color:black !important;
 }
@@ -36,15 +43,17 @@ background-color: black !important;
 
 .column_column-2{
     position:fixed;
+    background-color:black;
 }
 
 .superFixedMenu {
-    position:fixed;
     background-color:rgb(0, 0, 0);
     border-style:solid;
     border-width:1px;
     border-color:aquamarine;
     padding:30px;
+    position:relative;
+    margin:10px;
 }
 
 
@@ -52,7 +61,6 @@ background-color: black !important;
     height:300px;
     width:90%;
     background-color:rgb(0, 0, 0);
-    position:fixed;
     border-style: solid;
     border-width:1px;
     border-color:aqua;
@@ -60,10 +68,53 @@ background-color: black !important;
     color:rgba(255, 255, 255, 100);
     padding:30px;
     max-width:200px;
+    margin:10px;
+}
+
+.superFixedHotLinks {
+    height:100%;
+    min-width:200px!important;
+    background-color:rgb(0, 0, 0);
+    border-style: solid;
+    border-width:1px;
+    border-color:rgba(0, 255, 255, 0.33);
+    display:block;
+    color:rgba(255, 255, 255, 100);
+    padding:10px;
+    margin:10px;
+    overflow:scroll;
+    text-align:center;
+}
+
+/*TABLE HOTLINKS */
+.tableHotLinks {
+    color:white;
+    overflow: scroll;
+    height:100%;
+    width:100%;
+    background-color:rgba(0, 136, 255, 0.236);
+    border-style:solid;
+    border-color:white;
+    border-size:.5px;
+
+}
+
+td {
+    border-style:solid;
+    border-color:rgba(4, 255, 230, 0.7);
+    border-size:.25px;
+    text-align:center;
+}
+
+td:hover {
+    border-style:solid;
+    border-color:white;
+    border-size:1px;
+    background-color:black;
 }
 
 .superSpacer {
-    height:300px;
+    height:30px;
     width:100%;
     background-color:rgba(245, 245, 220, 0);
     display:block;
@@ -87,4 +138,34 @@ background-color: black !important;
 {
     background-color:black!important;
     color:white;
+}
+
+/*h1 classes */
+
+.h1HotLinks {
+    color:rgb(255, 255, 255);
+}
+
+.content-right {
+    position:fixed;
+    overflow:scroll;
+    height:100%!important;
+}
+
+
+/*Button Tags */
+.buttonTag_tutorial {
+    background-color:rgb(0, 94, 117);
+    color:white;
+    border-style:solid;
+    border-size:.5px;
+    border-color:rgb(0, 154, 192);
+}
+
+.buttonTag_tutorial:hover {
+    background-color:rgb(0, 162, 203);
+    color:white;
+    border-style:solid;
+    border-size:.5px;
+    border-color:rgb(0, 187, 234);
 }
