@@ -7,6 +7,24 @@ body {
     font-family:'Satoshi';
 }
 
+button {
+    background-color:rgba(0, 255, 255, 0.07);
+    color:rgb(255, 255, 255);
+    border-color:rgb(0, 251, 255);
+    border-style:solid;
+    border-width: 2px;
+}
+
+button:hover {
+background-color:rgba(0, 208, 255, 0.755);
+    color:rgb(255, 255, 255);
+    border-color:rgb(0, 251, 255);
+    border-style:solid;
+    border-width: 2px;
+}
+
+
+
 /*ACA AG SUPER GRID - SHOWCASE - BUILD 1 */
 
 .showcaseMain_Grid {
@@ -37,6 +55,37 @@ body {
         grid-gap:10px 10px;
     }
 }
+
+/*SHOWCASE ITEM WRAP */
+
+.showCaseItemWrap {
+    display:block;
+    text-align:center;
+    background-color:#00000014
+    align-items:center;
+    position:relative;
+    padding:50px;
+}
+
+.showCaseItemWrap:hover {
+    display:block;
+    text-align:center;
+    background-color:rgba(0, 255, 255, 0.068);
+
+    align-items:center;
+    position:relative;
+}
+
+/*SHOWCASE STYLES*/
+
+/*Showcase Project Header*/
+.showCaseProjectHeader {
+    font-size:24px!important;
+    color:red;
+}
+
+
+
 
 
 /* SHOWCASE NAVY NAVY */
