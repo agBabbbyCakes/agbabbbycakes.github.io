@@ -1,0 +1,383 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+
+body
+{
+    font-family:'rubik'!important;
+    background-color:black;
+    font-size:16px;
+}
+
+button {
+    background-color:#003bdd69;
+    color:#ffffff;
+    font-size:12px;
+}
+
+
+.rightMenu {
+    background-color:rgb(0, 0, 0)
+    position:fixed;
+
+}
+
+.contentBoxA {
+    border-style:solid;
+    padding-bottom:20px;
+    border-color:rgba(0, 102, 255, 0.344);
+    color:white !important;
+    background-color:black !important;
+}
+
+pre
+{
+   
+border-style:solid;
+padding:10px;
+border-color: #4073ff69;    
+background-color: black !important;
+}
+
+.column_column-2{
+    position:fixed;
+    background-color:black;
+}
+
+.superFixedMenu {
+    background-color:rgb(0, 0, 0);
+    border-style:solid;
+    border-width:1px;
+    border-color:aquamarine;
+    padding:30px;
+    position:relative;
+    margin:10px;
+}
+
+
+.superFixedBackpack {
+    height:300px;
+    width:90%;
+    background-color:rgb(0, 0, 0);
+    border-style: solid;
+    border-width:1px;
+    border-color:aqua;
+    display:block;
+    color:rgba(255, 255, 255, 100);
+    padding:30px;
+    max-width:200px;
+    margin:10px;
+}
+
+.superFixedHotLinks {
+    height:100%;
+    min-width:200px!important;
+    background-color:rgb(0, 0, 0);
+    border-style: solid;
+    border-width:1px;
+    border-color:rgba(0, 255, 255, 0.33);
+    display:block;
+    color:rgba(255, 255, 255, 100);
+    padding:10px;
+    margin:10px;
+    overflow:scroll;
+    text-align:center;
+}
+
+/*TABLE HOTLINKS */
+.tableHotLinks {
+    color:white;
+    overflow: scroll;
+    height:100%;
+    width:100%;
+    background-color:rgba(0, 136, 255, 0.236);
+    border-style:solid;
+    border-color:white;
+    border-size:.5px;
+
+}
+
+td {
+    border-style:solid;
+    border-color:rgba(4, 255, 230, 0.7);
+    border-size:.25px;
+    text-align:center;
+}
+
+td:hover {
+    border-style:solid;
+    border-color:white;
+    border-size:1px;
+    background-color:black;
+}
+
+.superSpacer {
+    height:30px;
+    width:100%;
+    background-color:rgba(245, 245, 220, 0);
+    display:block;
+    color:rgb(0, 0, 0);
+}
+
+.divUserWrapper {
+    background-color:rgba(216, 191, 216, 0);
+    
+}
+
+.divUserInnerWrapper {
+    background-color:rgba(0, 0, 0, 0)!important;
+    border-style: solid;
+    border-width:1px;
+    border-color:aqua;
+    color:white;
+}
+
+.divUserWrapper 
+{
+    background-color:black!important;
+    color:white;
+}
+
+/*h1 classes */
+
+.h1HotLinks {
+    color:rgb(255, 255, 255);
+}
+
+.content-right {
+    position:fixed;
+    overflow:scroll;
+    height:100%!important;
+}
+
+
+/*Button Tags */
+.buttonTag_tutorial {
+    background-color:rgb(0, 94, 117);
+    color:white;
+    border-style:solid;
+    border-size:.5px;
+    border-color:rgb(0, 154, 192);
+}
+
+.buttonTag_tutorial:hover {
+    background-color:rgb(0, 162, 203);
+    color:white;
+    border-style:solid;
+    border-size:.5px;
+    border-color:rgb(0, 187, 234);
+}
+
+
+/* SUPER TOP NAVY */
+
+.superTopNavy {
+    position:fixed;
+    width:100%;
+    height:15px;
+    padding:0px!important;
+    margin:0px!important;
+    z-index:999;
+}
+
+/*Top Navy Style */
+
+.topNavyWrap {
+display:flex;
+            
+ /*topNavyStyles*/
+padding:0px;
+border-style:solid;
+border-color:rgba(0, 217, 255, 0.219);
+background-color:black;
+             }
+            
+.topNavyWrap:hover {
+                display:flex;
+                            
+                 /*topNavyStyles*/
+                padding:0px;
+                border-style:solid;
+                border-color:aqua;
+                background-color:rgba(0, 255, 255, 0.4);
+                             }
+                            
+
+
+.topNavyItem 
+{
+   flex:.775;
+ }
+
+
+/*userIMAGEdiv*/
+.userIMAGEdiv {
+    height:64px;
+    width:64px;
+    background-color: rgba(0, 157, 255, 0.174);
+    padding:25px;
+    border-style: solid;
+    border-size:1px;
+    border-color:rgb(0, 247, 255);
+    text-align:center;
+}
+
+.userIMAGEwrap {
+    display:flex;
+    text-align:center;
+    width:100%;
+
+}
+
+.userIMAGEwrapChild {
+    flex-direction:row;
+}
+
+
+/*COLUMN 2 STYLES */
+
+/*POST MENU STYLE */
+
+
+
+   /*Right Menu Code */
+   .rightMenu {
+    margin-top:40px;
+    color:white;
+    text-align:center;
+    display:relative;
+    background-color:rgb(14, 14, 14);
+    border-style:solid;
+  
+    border-color:aqua;
+
+}
+
+.buttonPost {
+    background-color:rgba(0, 255, 255, 0);
+    border-color:aqua;
+}
+
+.buttonPost:hover {
+    background-color:rgb(0, 255, 255)
+    border-color:aqua;
+}
+
+
+
+
+/*Unorganized Import 1 */
+.columns {
+    Width: 100%;
+    }
+    .column-1, .col  umn-2 {
+      width:100%;
+    }
+    @media (min-width: 48em) {
+      .column-1 {
+        width: 70%;
+        float:left;
+      }
+      .column-2 {
+        width: 30%;
+        float:left;
+      }
+    
+      .columns {
+        content:"";
+        display: table;
+        clear: both;
+      }
+    }
+    
+    /*Content Code */
+    .content-left {
+        height:100%;
+        background-color: rgb(36, 36, 36);
+    }
+    
+    .content-right {
+        height:30vh;
+        background-color: rgba(105, 105, 105, 0);
+    }
+
+    .content-right:hover {
+        height:30vh;
+        background-color: rgba(105, 105, 105, 0.272);
+    }
+    
+ 
+    
+    /*contentBoxA*/
+    .contentBoxA {
+        background-color: rgb(0, 0, 0);
+        color:rgb(0, 0, 0);
+        height:100%;
+        margin:10px;
+        text-align:center;
+    }
+        
+        /*contentBoxA*/
+        .contentBoxA:hover {
+            background-color: rgb(124, 124, 124);
+            color:rgb(0, 0, 0);
+            height:100%;
+            margin:10px;
+            text-align:center;
+        }
+            
+
+
+
+
+/*topNavyContent */
+.topNavyWrapCONTENT{
+background-color:rgba(28, 0, 128, 0.362);
+display:flex;
+}
+
+.topNavyItemCONTENT {
+flex:1;
+}
+
+/*divUser*/
+.divUserWrapper {
+background-color:white;
+text-align:center;
+padding:20px;
+}
+
+/*pre and code styles */
+pre {
+background-color:rgb(236, 236, 236);
+text-align:left;
+overflow:hidden;
+max-width:100%;
+}
+
+/*contentContent*/
+.contentContent {
+padding:75px;
+}
+
+
+
+
+/* Friday Night Stylez */
+
+button {
+    background-color:rgba(0, 255, 255, 0.045);
+    color:white;
+    border-style:solid;
+    border-color:rgba(0, 255, 255, 0.365);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:aqua;
+    color: #4073ff; 
+    border-style:solid;
+    border-color:aquamarine;
+    cursor: pointer;
+}
