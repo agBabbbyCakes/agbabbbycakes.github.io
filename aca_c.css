@@ -372,6 +372,7 @@ button {
     border-style:solid;
     border-color:rgba(0, 255, 255, 0.365);
     cursor: pointer;
+    
 }
 
 button:hover {
@@ -380,4 +381,36 @@ button:hover {
     border-style:solid;
     border-color:aquamarine;
     cursor: pointer;
+}
+
+
+.specialNavLinks
+{color:white;}
+
+.divUserProfileDisplay {
+    background-image: url('https://media2.giphy.com/media/xT1R9FAHPXisPeSBHO/giphy.gif?cid=ecf05e47bknti46vv174evj3ucdie0aqafdtumupx594jvt3&rid=giphy.gif&ct=g');
+    background-size:contain;
+}
+
+/* Friday Night Stylez */
+
+.TOPbutton {
+    background-color:rgba(0, 255, 255, 0.045);
+    color:white;
+    border-style:solid;
+    border-color:aqua;
+    cursor: pointer;
+    width:100%;
+    font-weight:700;
+    text-transform: uppercase;
+    
+}
+
+.TOPbutton:hover {
+    background-color:aqua;
+    color: #4073ff; 
+    border-style:solid;
+    border-color:aquamarine;
+    cursor: pointer;
+    width:100%;
 }
