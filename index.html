@@ -1,13 +1,19 @@
 <html>
     <head>
+        <!-- Memberstack --> 
+<script src="https://api.memberstack.io/static/memberstack.js?custom" data-memberstack-id="9aa46f1f74d940eb80336e5432ab8905"> </script> 
         <title>
-            aca_b_6.html
+            aca_b_8.html
         </title>
 
         <!-- current css is aca_c.css -->
         <link rel="stylesheet" href="aca_c.css"> 
         <style>
             
+            .dark-mode {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0)!important;
+}
                 </style>
     </head>
 
@@ -19,22 +25,25 @@
 <div class="superTopNavy">
 <div class="topNavyWrap">
 <div class="topNavyItem">
-    <button onclick="window.location.href='aca_b_3.html';">Home</button>
+    <button class="TOPbutton" onclick="window.location.href='aca_b_3.html';">Home</button>
 </div>
 <div class="topNavyItem">
-    <button onclick="window.location.href='lib_c.html';">Tutorials</button>
+    <button class="TOPbutton" onclick="window.location.href='lib_c.html';">Tutorials</button>
 </div>
 <div class="topNavyItem">
-    <button onclick="window.location.href='showcase.html';">Showcase</button>
+    <button class="TOPbutton" onclick="window.location.href='showcase.html';">Showcase</button>
 </div>
 <div class="topNavyItem">
-    <button>Library</button>
+    <button class="TOPbutton" >Library</button>
 </div>
 <div class="topNavyItem">
-    <button onclick="window.location.href='c1.html';">Create</button>
+    <button class="TOPbutton" onclick="window.location.href='c1.html';">Create</button>
 </div>
 <div class="topNavyItem">
-    <button onclick="window.location.href='c1.html';">Login</button>
+    <a class="TOPbutton"href="#/ms/signup/635fd95ce335bc0004ad5564">LOGIN</a>
+</div>
+<div class="topNavyItem">
+    <button class="TOPbutton" onclick="myDarkLight()">Toggle dark mode</button>
 </div>
 
 </div>
@@ -43,8 +52,13 @@
 
 
 <!-- END OF TOP NAVY -->
-
-
+<!-- DARK/LIGHT MODE JS-->
+<script>
+    function myDarkLight() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
 
 
 
@@ -72,7 +86,7 @@ Content Box
 
 </div>
 <!-- START OF A STANDARD DEFAULT CONTENT BLOCK -->
-<div class="contentBoxA">
+<div class="contentBoxA dark-mode">
 
     Content Box </div>
 <div class="cbA contentBoxA">
@@ -1106,10 +1120,10 @@ Headline 3
 <div class="divUserInnerWrapper">
     <div class="divUserItem"><p id="userName">userName</p></div>
     <div class="userIMAGEwrap">
-        <div class="userIMAGEwrapChild">
+       
             <div class="divUserProfileDisplay">
                 <div class="userIMAGEdiv">
-
+<a class="specialNavLinks" href="#/ms/profile">My Profile</a>
                 </div>
             </div>
       </div>
