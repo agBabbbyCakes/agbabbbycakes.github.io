@@ -65,16 +65,12 @@ body {
 
 .space-header-colony {
 
-    background-image: url("bg4.png");
-    background-color:rgb(0, 0, 0);
+    background-color:antiquewhite;
     color:black;
-    padding-top:300px;
-    background-size: cover;
+    background-size: stretch;
     padding: 5rem;
     min-height:200vh;
     position: relative;
-    background-position-y: left; 
-
     scroll-behavior: smooth;
 }
 
@@ -97,7 +93,7 @@ body {
 /*School Scene */
 
 .school-header {
-    background-color:white;
+    background-color:rgb(0, 0, 0);
     color:black;
     padding-top:500px;
     background-image: url("school.png");
@@ -120,6 +116,47 @@ body {
     width:100%;
 }
 
+.school-text {
+    font-size:26px;
+    background-color:rgba(0, 0, 0, 0.268);
+    width:100%;
+    
+
+}
+
+/*TINKER AT NIGHT SCENE */
+
+.tinker-header {
+    background-color:rgb(0, 0, 0);
+    color:black;
+    padding-top:500px;
+    background-position: cover;
+    background-size: 100%;
+    padding: 5rem;
+    min-height:200vh;
+    position: relative;
+    z-index: 30;
+    scroll-behavior: smooth;
+    
+}
+
+/*Lonely Scene */
+
+.lonely-header {
+    background-color:rgb(0, 0, 0)!important;
+    padding-top:500px;
+    background-position: cover;
+    background-size: 100%;
+    padding: 5rem;
+    min-height:200vh;
+    position: relative;
+    z-index: 40;
+    scroll-behavior: smooth;
+}
+
+.lonely-text {
+    font-size: clamp(1.5rem, 2.5vw, 4rem); 
+}
 
 
 /*IMPORT FROM INDEX_build2.css */
@@ -186,7 +223,54 @@ body {
 /*Graphic styles */
 
 .cloud1 {
-    width:700px;
+    width:400px;
     height:auto;
     overflow:hidden;
 }
+
+.spaceManOnMoon {
+    width:500px;
+    height:auto;
+    overflow:hidden;
+}
+
+.sata {
+    width:500px;
+    height:auto;
+    overflow:hidden;
+}
+
+.apeOut {
+    width:900px;
+    padding:100px;
+    height:auto;
+    overflow:hidden;
+
+}
+
+.littleSpaceyA {
+    width:400px;
+    padding:100px;
+    height:auto;
+    overflow:hidden;
+    background-color:black;
+}
+
+/*imageWraps */
+
+.wrap2image {
+    display:flex;
+}
+
+/*Install Ape Screen*/
+
+.section-installApe {
+
+    width:100%;
+    height:100vh;
+    display:flex;
+    text-align:center;
+    justify-content: center;
+    align-items:center;
+}
+
