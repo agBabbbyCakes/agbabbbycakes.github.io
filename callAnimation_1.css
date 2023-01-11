@@ -1,0 +1,147 @@
+/*FADE IN GRAPHIC - BASIC BITCH */
+
+.spaceStuff-graphic {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+/*Fade in TEXT - BASIC BITCH */
+
+.fade-in-text {
+    animation: fadeInText 5s;
+  }
+
+  @keyframes fadeInText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @-moz-keyframes fadeInText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeInText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeInText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeInText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+/*Scroll into View with Tags*/
+
+.tag {
+    opacity: 0;
+    transform: translate(0, 70vh);
+    transition: all 1s;
+  }
+
+  .tag.visible {
+    animation: fadeSection 3s;
+    animation: colorChange 3s;
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  @keyframes fadeSection {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    
+  }
+
+  @keyframes colorChange {
+    from { color: blue; }
+	to { color: rgb(255, 255, 255); }
+  }
+
+
+/*CLOUD ANIMATIONS */
+
+#cloud1 {
+    bottom: 15%;
+    position: absolute;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: cloud1run;
+    -webkit-animation-duration: 105s;
+ 
+  }
+  @-webkit-keyframes cloud1run {
+    0% {
+      left: 0;
+    }
+    50% { 
+      left: calc(100% - 100px); 
+     }
+    100% {
+      left: 0;     
+    }
+  }
+
+  .clouds {
+
+    width:300px;
+    height:auto;
+
+  }
+
+
+  #stuff-animation-1 {
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: stuff-animation-1a;
+    -webkit-animation-duration: 40s;
+  }
+
+  #stuff-animation-2 {
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: stuff-animation-1a;
+    -webkit-animation-duration: 40s;
+  }
+
+  @keyframes stuff-animation-1a {
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    
+  }
+}
+
