@@ -2,12 +2,13 @@
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
-        <link rel="stylesheet" type="text/css" href="starrynight_d11.css"/>
+        <link rel="stylesheet" type="text/css" href="starrynight_d12.css"/>
         <link rel="stylesheet" type="text/css" href="callAnimation_1.css">
         <link rel="stylesheet" type="text/css" href="starz.css">
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
         <script src="scrollSugar.js"></script>
-        <title>d11 - ApeWorX, LTD | The Smart Contract Development Tool | starryNight_d11.html </title>
+        <script src="interactive.js"></script>
+        <title>d12_ApeWorX, LTD | The Smart Contract Development Tool | starryNight_d11.html </title>
     </head>
 <body>
     <script src="orbit.js"></script>
@@ -16,12 +17,12 @@
 <!-- STARRY NIGHT - A POEM BY AG -->
 <div class="topNav">
     <div class="menuLogo">
-        <a href="https://apeworx.io"><img src="apeworxLogo.png"></a>
+    <a href="https://apeworx.io"><img src="apeworxLogo.png"></a>
     </div>
     <div class="menuGroup">
-    <button class="menuButton">Product</button>
+    <a href="#techStack"><button class="menuButton">Product</button></a>
     <button class="menuButton">Documentation</button>
-    <button class="menuButton">Download</button>
+    <a href="#installApe"><button class="menuButton">Download</button></a>
     </div>
 </div>
 
@@ -42,10 +43,9 @@
         
     <div class="splashy-menu-section">
         <div class="splashy-menu-wrap">
-            <button class="splashButton">Tech Stack</button>
-        <button class="splashButton">Start Story</button>
-        
-        <button class="splashButton">Install Ape</button>
+        <a href="#techStack"><button class="splashButton">Tech Stack</button></a>
+        <a href="#story"><button class="splashButton">Start Story</button></a>
+        <a href="#installApe"><button class="splashButton">Install Ape</button></a>
             </div>
     </div>
     <div id='stars'></div>
@@ -60,19 +60,20 @@
 
 <!-- always wanted to go to space scene -->
 <section>
-<div class="always">
+<div class="always" id="story">
     <div id='stars4'></div>
     <h1 class="always-title">
-        <br>
-        <br>
+        
         I don't know what<br> it is about 
     <br>space
     <br>
     <br>
-    <br>    
+    <br><img src="spaceManOnMoon.png" class="spaceManOnMoon" >
     <br>
     <br>
     but i've always wanted to go
+    <br>
+    <br>
     <br>
     <br>
     </h1>
@@ -100,45 +101,31 @@
 <!-- "Backflip Off some Comet"-->
 <section class="tag">
 <div class="space-header-comet">
+    <div id='stars5'></div>
     <h1 class="space-title-comet">backflip off some comet</h1>
-            <img src="cometBackflip2.png" width="720px" height="auto">
-
+   
+    <br>
+    <br>
     <br>
     <div class="comet-wrap-backflip">
-    <img src="backflipClean.png" width="600px" height="auto">
-    <img src="backflipClean.png" width="600px" height="auto">
+    <img src="backflipClean.png" width="200px" height="auto">
+    <img src="backflipClean.png" width="200px" height="auto">
+    <img src="backflipClean.png" width="200px" height="auto">
     </div>
-    <div class="comet-wrap-backflip">
-        <div width="600px" height="auto"></div>
-        </div>
+    <br>
+    <br>
+    <br> <img src="cometBackflip2.png" width="720px" height="auto">
     
     </div>
 </section>
-
-<!-- Colonoy Scene-->
-<!-- "Build a little Colony"-->
-<section class="tag">
-    <div class="scene-header-build">
-        
-            
-        <br><img src="spaceManOnMoon.png" class="spaceManOnMoon" >
-        <br>
-        <br><div><img src="stuff-graphic-4.png"></div>
-        <br>
-        <br>
-        <br>
-        <br>
-    </h1>
-</div>
-</section>
-    
-
-
 
 <!-- spaceScene-->
 <!-- "You know - space stuff"-->
 <section class="tag">
 <div class="space-header-stuff">
+    <div class="centerImage">
+        
+        </div>
     <h1 class="space-title">You know, 
         <br> <div id='stars'></div>
         <br> <div id='stars2'></div>
@@ -354,7 +341,9 @@
 
 <main>
 <!-- INSTALL APE SCREEN -->
-<section class="section-installApe">
+<canvas></canvas>
+<section class="section-installApe" id="installApe">
+    
     <div class="wrapper-installApe">
         <a class="install-ape-text" href="#">Install Ape</a>
         <br><a class="install-ape-text" href="#">Documentation</a>
@@ -364,7 +353,7 @@
 
 
 <!--Tech Stack-->
-<div class="techStack_MainWrapper">
+<div class="techStack_MainWrapper" id="techStack">
     
     <div class="techStackContainer">
         <h2 class="techStack-title">The Tech Stack</h2>
