@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Megrim&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
 
 html {
     background-color:black!important;
@@ -210,7 +211,7 @@ footer {
     background-color:rgb(0, 0, 0);
     text-align:center;
     padding:20px;
-    background-image: url("spaceStuff.png");
+    /*background-image: url("spaceStuff.png");
     background-attachment: fixed;
     background-position: bottom;
     /*border-style:solid;
@@ -587,7 +588,6 @@ footer {
 
 .splashy-wrapper {
 
-    
     display:flex;
 }
 
@@ -611,15 +611,33 @@ footer {
 }
 
 .splashy-menu-wrap {
-    background-color:rgb(0, 0, 0);
+    background-color:rgba(0, 0, 0, 0);
     border-radius:25px;
     padding-right:20px;
     padding-left:20px;
     
 }
 
+.splashText-alt3 {
+    font-family:"Sigmar One";
+    padding-top:150px;
+    text-align:right;
+    text-transform: uppercase;
+    font-size: 6.5rem;
+    line-height: 1em;
+    font-weight: 600px;
+    display: inline-block;
+    margin: 0;
+    line-height: 1em;
+    font-weight: 900;
+    font-size: 100px;
+    align-items: center;
+    color:black;
+}
+
 .splashText-alt2 {
-    padding-top:100px;
+    font-family:"Sigmar One";
+    padding-top:195px;
     text-align:right;
     text-transform: uppercase;
     font-size: 6.5rem;
@@ -641,20 +659,26 @@ footer {
 }
 
 .splashButton {
-  font-family: Megrim,cursive ;
+  font-family:"Sigmar One";
   font-size: 5vh;
-  background-color:white;
+  background-color:rgba(255, 255, 255, 0);
   border-style:none;
-  color:rgb(0, 0, 0);
- 
+  color:rgb(255, 255, 255);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
   cursor: pointer;
+  border-style:solid;
+  border-color:black;
+  border-width: thin;
+  border-radius:25px;
 }
 
 .splashButton:hover {
-    font-family: Megrim, cursive;
-  font-size: tvh;
+    
+  
   background-color:rgb(0, 0, 0);
   mix-blend-mode:screen;
+  color:white;
 
 }
 
