@@ -2,17 +2,31 @@
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
-        <link rel="stylesheet" type="text/css" href="starrynight_d12.css"/>
+        <link rel="stylesheet" type="text/css" href="starrynight_d12b.css"/>
         <link rel="stylesheet" type="text/css" href="callAnimation_1.css">
         <link rel="stylesheet" type="text/css" href="starz.css">
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
-        <script src="scrollSugar.js"></script>
+        <!--<script src="scrollSugar.js"></script>-->
         <script src="interactive.js"></script>
         <title>d12_ApeWorX, LTD | The Smart Contract Development Tool | starryNight_d11.html </title>
+    
+    <!-- EXTERNAL COMMUNICATIONS -->
+
+    <!-- Story Scroll JS Import -->
+    <script src="storyScroll.js"></script>
+    
+    <!-- END OF EXTERNAL COMMUNICATIONS - LET'S GET BACK TO THE PARTY BABBBBBBy-->
+    <!-- INTERNAL JAVASCRIPT EFFECTS -->
+    <script src="orbit.js"></script>
+    <!-- EXTERNAL JAVASCRIPT EFFECTS-->
+    
     </head>
 <body>
-    <script src="orbit.js"></script>
-
+ 
+<div class="storyNav">
+    <button class="storyNav-button-up" onclick="scrollWinUp()">Up</button>
+    <button class="storyNav-button-down" onclick="scrollWinDown()">Down</button>
+</div>
 <!-- TOP NAV DON'T TOUCH - I MEAN YOU COULD JUST Don't-->
 <!-- STARRY NIGHT - A POEM BY AG -->
 <div class="topNav">
@@ -59,7 +73,6 @@
 
 
 <!-- always wanted to go to space scene -->
-<section>
 <div class="always" id="story">
     <div id='stars4'></div>
     <h1 class="always-title">
@@ -78,14 +91,13 @@
     <br>
     </h1>
 </div>
-</section>
+
 
 <!-- float scene-->
-<section class="tag">
 <div class="float-header">
 <h1 class="space-title-float">   
     <img src="sata.png" class="sata-graphic-underlay">
-    <br>Float around some SATELLITES 
+    <br>Float around <br>some SATELLITES 
     <br>
     <br><img src="sata2.png" class="sata-graphic">
     <br>
@@ -93,16 +105,15 @@
     </h1>
     </div>
 </div>
-</section>
+
 
 
 
 <!-- COMET SCENE -->
 <!-- "Backflip Off some Comet"-->
-<section class="tag">
 <div class="space-header-comet">
     <div id='stars5'></div>
-    <h1 class="space-title-comet">backflip off some comet</h1>
+    <h1 class="space-title-comet">backflip off<br> some comet</h1>
    
     <br>
     <br>
@@ -117,11 +128,11 @@
     <br> <img src="cometBackflip2.png" width="720px" height="auto">
     
     </div>
-</section>
+
 
 <!-- spaceScene-->
 <!-- "You know - space stuff"-->
-<section class="tag">
+
 <div class="space-header-stuff">
     <div class="centerImage">
         
@@ -129,25 +140,25 @@
     <h1 class="space-title">You know, 
         <br> <div id='stars'></div>
         <br> <div id='stars2'></div>
-        <br> <div id='stars3'></div>
-        <br><div id="stuff-animation-1"><img src="stuff-graphic-3.png"></div>  
+        <br> 
+        <br><div id="stuff-animation-1"><img src="stuff-graphic-3.png" class="littleStuff-graphics"></div>  
         <br>
-        <br><div id="stuff-animation-2"><img src="stuff-graphic-2.png"></div>    
+        <br><div id="stuff-animation-2"><img src="stuff-graphic-2.png" class="littleStuff-graphics"></div>    
         <br> space stuff
         <br>    
-        <br>
-        <br>   <div><img src="stuff-graphic-1.png"></div> 
+        
+        <br>   <div class="graphic-full"></div> 
         <br>
         <br>
         <br>
         <br></h1>
     
     </div>
-</section>
+
     <!-- spaceScene-->
 
     <!-- school-->
-<section class="tag">
+
 <div class="school-header">
     <h1 class="school-title">
         <br>
@@ -212,7 +223,7 @@
 
 
     </h1>
-</section>
+
     
     
     </div>
@@ -223,7 +234,7 @@
 <!-- "TINKER AT NIGHT"-->
 <div class="tinker-header">
     <h1 class="tinker-font">
-        <br>
+        <br><div id='stars3'></div>
         <br>
         At night, 
         <br>
@@ -320,14 +331,17 @@
 
     <!-- "AND THEN ONE DAY"-->
     <div class="notalone-header">
-        <h1 class="space-title-comet">but then I met ape
+        <h1 class="space-title-comet">
+            <br>but then I met ape
+            <br><img src="apeOut2.png" class="apeOutMove">  
             <br>
             <br><img class="lilSpaceApe" src="lilSpaceApe.png" width="700px;" height="auto;">
             <br>
+            <br><br><img class="graphic-buddy-move" src="buddyGun.png" width="300px;" height="auto;">
             <br>
-            <br><img class="lilSpaceApe" src="apeOut.png" class="apeOut">       
+            <br>The space fairing <br>web3 tooling<br>
+             companion from the future
             <br>
-            <br><img class="graphic-buddy" src="buddyGun.png" width="300px;" height="auto;">
             <br>
         </h1>    
     </div>
@@ -413,11 +427,26 @@
             <li>Well - funny you should ask</li>
             <li>Here is our street cred</li>
             <li>Access to our Discord</li>
+
             <li>Highly Controlled Version Controls baby</li>
+        </ul>
+    </div>
+    <div>
+        Oops here we go again - another footer - this footer is functionality
+        <ul>
+            <li>Little List 2 </li>
+            <li>Dedicated Developer Support</li>
+            <li>Powered by Ape</li>
+            <li>Downloadble Templates</li>
+            <li>Getting Started Guide</li>
         </ul>
     </div>
     <div>The footer will have a div like this - <br>Perhaps even some links </div>
 </footer>
+
+<div class="navigation-main-wrap">
+    Navigation
+</div>
 
 <script src="crazycloth.js"></script>
 </body>
