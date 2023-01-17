@@ -2,13 +2,13 @@
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
-        <link rel="stylesheet" type="text/css" href="starrynight_d12b.css"/>
+        <link rel="stylesheet" type="text/css" href="starrynight_d13a.css"/>
         <link rel="stylesheet" type="text/css" href="callAnimation_1.css">
         <link rel="stylesheet" type="text/css" href="starz.css">
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
         <!--<script src="scrollSugar.js"></script>-->
         <script src="interactive.js"></script>
-        <title>d12_ApeWorX, LTD | The Smart Contract Development Tool | starryNight_d11.html </title>
+        <title>d13a_ApeWorX, LTD | The Smart Contract Development Tool | starryNight_d13a.html </title>
     
     <!-- EXTERNAL COMMUNICATIONS -->
 
@@ -21,8 +21,7 @@
     <!-- EXTERNAL JAVASCRIPT EFFECTS-->
     
     </head>
-<body>
- 
+<body onmousedown="startScroll()" onmouseup="stopScroll()"> 
 <div class="storyNav">
     <button class="storyNav-button-up" onclick="scrollWinUp()">Up</button>
     <button class="storyNav-button-down" onclick="scrollWinDown()">Down</button>
@@ -52,6 +51,8 @@
                 Ape is for 
                 <br>the little space gorilla 
                 <br>in us all</h1>
+                <br><button id="start-scroll-btn">Start Auto-Scroll</button>
+                <!-- Your content goes here -->
         </div>
         <img src="splashyMan.png" class="splashImage">
         
@@ -107,12 +108,12 @@
 </div>
 
 
-
+<div id='stars5'></div>
 
 <!-- COMET SCENE -->
 <!-- "Backflip Off some Comet"-->
 <div class="space-header-comet">
-    <div id='stars5'></div>
+   
     <h1 class="space-title-comet">backflip off<br> some comet</h1>
    
     <br>
@@ -443,14 +444,86 @@
     </div>
     <div>The footer will have a div like this - <br>Perhaps even some links </div>
 </footer>
-
+<!-- NAVIGATION SETTINGS -->
 <div class="navigation-main-wrap">
     Navigation
 </div>
+<button id="scroll-up-btn">Scroll Up</button>
+
 
 <script src="crazycloth.js"></script>
+
+<!-- SCROLL ON MOUSE DOWN SCRIPT -->
+<script>
+let intervalId;
+let scrollSpeed = 10; // starting scroll speed
+
+function startScroll() {
+    intervalId = setInterval(() => {
+        window.scrollBy(0, scrollSpeed);
+        scrollSpeed += 5; // increment scroll speed
+    }, 50);
+}
+
+function stopScroll() {
+    clearInterval(intervalId);
+    scrollSpeed = 10; // reset scroll speed
+}
+
+</script>
+
+<!-- SCROLL UP SCRIPT -->
+<script>
+    // Get the button
+let scrollUpBtn = document.getElementById("scroll-up-btn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollUpBtn.style.display = "block";
+    } else {
+        scrollUpBtn.style.display = "none";
+    }
+};
+
+// When the user clicks on the button, scroll to the top of the document
+scrollUpBtn.onclick = function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+};
+
+</script>
+
+<script>
+
+// Get the button
+let startScrollBtn = document.getElementById("start-scroll-btn");
+
+// Auto-scroll function
+function autoScroll() {
+    window.scrollBy(0, 10); // scroll by 10 pixels
+    setTimeout(autoScroll, 50); // call the function again after 50 milliseconds
+}
+
+// Attach a click event listener to the button
+startScrollBtn.addEventListener("click", function() {
+    autoScroll();
+});
+
+
+</script>
+
+
 </body>
 </html>
 
 
-<!-- WHAT DO CLAMPS DO -->
+<!-- THINGS TO ADD 
+AS OF 1.16.23
+    - MOUSE BUTTON DOWN SUGAR - DONE DONE
+    - ADD INTERCTAIVE BACKGROUND FOUND ON CODEPEN
+
+-->
+
+<!-- THINGS TO ADD 
+AS OF 1.17.23 - Coulter Graphics
