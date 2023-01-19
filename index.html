@@ -5,12 +5,19 @@
         <link rel="stylesheet" type="text/css" href="starrynight_d14.css"/>
         <link rel="stylesheet" type="text/css" href="callAnimation_1.css">
         <link rel="stylesheet" type="text/css" href="starz.css">
+        <link rel="stylesheet" type="text/css" href="css-additions.css">
+        <link rel="stylesheet" type="text/css" href="animated-2d.css">
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
         <!--<script src="scrollSugar.js"></script>-->
         <script src="interactive.js"></script>
-        <title>d14_ApeWorX, LTD | The Smart Contract Development Tool | starryNight_d14.html </title>
+        <title>d14b_ApeWorX, LTD | The Smart Contract Development Tool | starryNight_d14b.html </title>
     
-    <!-- EXTERNAL COMMUNICATIONS -->
+<!-- EXTERNAL COMMUNICATIONS -->
+<!-- IMPORTED FONT = BARLOW FROM CDN FONT -->
+<link href="https://fonts.cdnfonts.com/css/barlow" rel="stylesheet">
+<style> @import url('https://fonts.cdnfonts.com/css/barlow'); </style>
+<!-- ANIMATE ON SCROLL --> <!-- NOT PRESENTLY ACTIVE SO CAN KILL-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!-- Story Scroll JS Import -->
     <script src="storyScroll.js"></script>
@@ -30,7 +37,7 @@
     <a href="https://apeworx.io"><img class="graphic-logo" src="apeBig.png"></a>
     </div>
     <div class="menuGroup">
-    <a href="#techStack"><button class="menuButton">Product</button></a>
+    <a href="#techStack"><button class="menuButton">Academy</button></a>
     <button class="menuButton">Documentation</button>
     <a href="#installApe"><button class="menuButton">Download</button></a>
     </div>
@@ -41,18 +48,20 @@
 <!-- SPLASHY  -->
 
 <div class="splashySplashSplash">
+    <div class="kenburns-top-left">
     <div class="splashy-wrapper">
         <div class="splashText-wrap">
+            
             <!-- OPTIONS FOR THE SPLASH TEXT-->
-            <h1 class="splashText-alt3">
+            <h1 class="splashText-alt5">
                 Ape is for 
                 <br>the little space gorilla 
                 <br>in us all</h1>
-                <br><button id="start-scroll-btn">Start Auto-Scroll</button>
+                
                 <!-- Your content goes here -->
         </div>
         <img src="splashyMan.png" class="splashImage">
-        
+    </div>
     <div class="splashy-menu-section">
         <div class="splashy-menu-wrap">
         <a href="#techStack"><button class="splashButton">Tech Stack</button></a>
@@ -78,16 +87,24 @@
         I don't know what<br> it is about 
     <br>space
     <br>
-    <br><br> <img src="blantz.png">
+    <br><br> <img class="always-graphic" src="blantz.png">
     <br>
     <br>
     <br>
-    but i've always wanted to go
+    but i've <br>
+    always wanted to go
     <br>
-    <br>
-    <br>
-    <br><img src="spaceManOnMoon.png" class="spaceManOnMoon" >
+   
+    <br><div class="content-box">
+        <div class="container circle-clip">
+          <div class="animated left face-img">
+          </div>
+          <div class="animated right face-img"></div>
+        </div>
     </h1>
+    
+    <div class="fade-in" data-aos="fade-in"><h1 class="always-title">Content to fade in</h1></div>
+
 </div>
 
 
@@ -95,7 +112,7 @@
 <div class="float-header">
 <h1 class="space-title-float">   
     <img src="sata.png" class="sata-graphic-underlay">
-    <br>Float around with<br>some SATELLITES 
+    <br>Float around <br> SATELLITES 
     <br>
     <br><img src="sata2.png" class="sata-graphic">
     <br>
@@ -105,12 +122,12 @@
 </div>
 
 
-<div id='stars5'></div>
+
 
 <!-- COMET SCENE -->
 <!-- "Backflip Off some Comet"-->
 <div class="space-header-comet">
-   
+    <div id='stars5'></div>
     <h1 class="space-title-comet">backflip off<br> some comet</h1>
    
     <br>
@@ -136,20 +153,17 @@
         
         </div>
     <h1 class="space-title">You know, 
-        <br> <div id='stars'></div>
-        <br> <div id='stars2'></div>
         <br> 
-        <br><div id="stuff-animation-1"><img src="stuff-graphic-3.png" class="littleStuff-graphics"></div>  
+        <br> <div id='stars2'></div>
+        <br> <div id="stuff-animation-2"><img src="stuff-graphic-2.png" class="littleStuff-graphics"></div>  
+        
         <br>
-        <br><div id="stuff-animation-2"><img src="stuff-graphic-2.png" class="littleStuff-graphics"></div>    
+        <br>  
         <br> space stuff
         <br>    
-        
-        <br>   <div class="graphic-full"></div> 
-        <br>
-        <br>
-        <br>
-        <br></h1>
+        <br><div id="stuff-animation-1"><img src="stuff-graphic-3.png" class="littleStuff-graphics"></div>  
+       <div class="graphic-full"></div> 
+      </h1>
     
     </div>
 
@@ -160,10 +174,11 @@
 <div class="school-header">
     <h1 class="school-title">
         <br>
+        <div class="kenburns-top-left">
         so I went to school 
         <br>
         <br><img class="spaceStuff-graphic" src="spaceStuff.png">
-
+    </div>
         <br>
         <br>
         <br>
@@ -308,14 +323,7 @@
         <br>i became unhinged
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+      
         
         <br></h1>
     
@@ -330,11 +338,9 @@
             <br>
             <br><img class="lilSpaceApe" src="lilSpaceApe.png" width="700px;" height="auto;">
             <br>
-            <br><br><img class="graphic-buddy-move" src="buddyGun.png" width="300px;" height="auto;">
-            <br>
+            <br><img class="graphic-buddy-move" src="buddyGun.png" width="300px;" height="auto;">
             <br>The space fairing <br>web3 tooling<br>
              companion from the future
-            <br>
             <br>
         </h1>    
     </div>
@@ -350,7 +356,7 @@
 <!-- INSTALL APE SCREEN -->
 <canvas></canvas>
 <section class="section-installApe" id="installApe">
-    
+    <div class="stars-position" id='stars'></div>
     <div class="wrapper-installApe">
         <a class="install-ape-text" href="#">Install Ape</a>
         <br><a class="install-ape-text" href="#">Documentation</a>
@@ -363,7 +369,7 @@
 <div class="techStack_MainWrapper" id="techStack">
     
     <div class="techStackContainer">
-        <h2 class="techStack-title">The Tech Stack</h2>
+        <h2 class="techStack-title">THE TECH STACK</h2>
         <br>
                 All-in-one development platform
                 Enabling Web3 developers to build, test, monitor, and operate smart contracts from their inception to mass adoption.
@@ -414,7 +420,11 @@
 
 <footer>
     <!--<canvas id="canvas"></canvas>-->
-    <div>This is where the footer content will go </div>
+    <img src="apeBig.png" class="footerLogo">
+    <div class="footerContent-wrap">
+    <div><h1>Mission Statement</h1>
+        <br>
+        <p>Ape is a web3 framework built in Python for serious<br> developers,traders and everyone in bewteen</p></div>
     <div>What kind of content you ask?
         <ul>
             <li>Well - funny you should ask</li>
@@ -435,7 +445,23 @@
         </ul>
     </div>
     <div>The footer will have a div like this - <br>Perhaps even some links </div>
+
+</div><!-- END OF FOOTER WRAP -->
+<br>
+Copyright 2023 
+<br>
 </footer>
+
+
+
+<!-- SCRIPTS BASBY SCFRIPTS!!!!!!!-->
+
+<!-- 1. SCRIPT FOR INIT Animate on Scroll Feature Plugin sugar -->
+<script>
+    AOS.init();
+  </script>
+
+
 <!-- NAVIGATION SETTINGS -->
 <div class="navigation-main-wrap">
     Navigation
