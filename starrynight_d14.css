@@ -366,11 +366,12 @@ footer {
 
 .space-header-stuff {
 
-    background-color:rgb(0, 0, 0);
+    background-color:rgba(0, 0, 0, 0);
     color:rgb(255, 255, 255);
     padding-top:10px;
     background-size: cover;
-    min-height:255vh;
+    min-height:375vh;
+    height:100%;
     position: relative;
     
     /*border-style:solid;
@@ -993,10 +994,10 @@ NAVIGATION */
 }
 
 .littleStuff-graphics {
-    width:64px;
+    width:24px;
     height:auto;
     transition: transform 45s ease-in-out;
-    transform:scale(2.5);
+    transform:scale(1.5);
 }
 
 .littleStuff-graphics:hover {
@@ -1026,3 +1027,4 @@ NAVIGATION */
     background-color: #2980b9;
     cursor: pointer;
 }
+

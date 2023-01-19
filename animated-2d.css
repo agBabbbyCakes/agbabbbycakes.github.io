@@ -1,0 +1,128 @@
+.content-box {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.075));
+    padding-bottom: 1em;
+  }
+  
+  .container {
+    height: 902px;
+    width: 100%;
+    cover:no-repeat;
+    max-width: 900px;
+    overflow:hidden;
+
+    display: inline-block;
+    position: relative;
+  }
+  
+  .circle-clip {
+    clip-path: square(299px at center);
+  }
+  
+  .left,
+  .right {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    perspective: 150px;
+    transform-style: preserve-3d;
+    transform: scaleX(0.88) scaleY(0.95);
+  }
+  
+  .left {
+    perspective-origin: left center;
+    clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
+  }
+  
+  .right {
+    perspective-origin: right center;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+    margin-left: -1px;
+  }
+  
+  .left::before,
+  .right::before {
+    content: "";
+    background-size: auto;
+    background-position-y: 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .face-img::before {
+    background: url("spaceManOnMoon.png");
+    background-position: center;
+    background-size:contain;
+  }
+  
+  .sign-img {
+    transform: scale(0.6);
+  }
+  
+  /*
+  .sign-img::before {
+    background: url("https://i2.wp.com/francoismarais.com/wp-content/uploads/2020/01/bg-t-1.png?w=602");
+    background-position: 50%;
+    background-size: contain;
+    background-position: center;
+  }
+
+  */
+  
+  .animated.left::before {
+    animation: left-side 1.2s ease-in-out infinite;
+    -webkit-animation: left-side 10.2s ease-in-out infinite;
+    animation-direction: alternate;
+  }
+  
+  .animated.right::before {
+    animation: right-side 1.2s ease-in-out infinite;
+    -webkit-animation: right-side 10.2s ease-in-out infinite;
+    animation-direction: alternate;
+  }
+  
+  .hover.left:hover::before {
+    transform: rotateY(-3deg) scaleX(0.8);
+  }
+  
+  .hover.right:hover::before {
+    transform: rotateY(3deg) scaleX(0.8);
+  }
+  
+  @keyframes left-side {
+    0% {
+      transform: rotateY(-3deg) scaleX(0.8);
+    }
+  
+    100% {
+      transform: rotateY(0deg) scaleX(1);
+    }
+  }
+  
+  @keyframes right-side {
+    0% {
+      transform: rotateY(0deg) scaleX(1);
+    }
+  
+    100% {
+      transform: rotateY(3deg) scaleX(0.8);
+    }
+  }
+  
+  a {
+    color: #fffb00;
+  }
+  .caption {
+    font-style: italic;
+    font-size: 0.8em;
+  }
+  
+  
