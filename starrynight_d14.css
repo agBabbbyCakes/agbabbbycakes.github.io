@@ -6,9 +6,13 @@ html {
     color:white;    
 }
 
+h1,h2 {
+    font-family: 'Barlow', sans-serif;
+}
+
 body {
     /*background-color: rgb(0, 0, 0);*/
-    
+    font-family: 'Barlow', sans-serif;
     -moz-appearance: none;
     -webkit-appearance: none;
     
@@ -22,15 +26,25 @@ canvas {
 
 footer {
     width:100%;
-    height:200px;
+    height:150px;
     background-color: transparent;
     border-style:solid;
     border-color:black;
-    border-size:300px;
-    display:flex;
+    display:block;
     text-align:center;
+    justify-content: space-between;
 }
 
+.footerContent-wrap {
+    width:100%;
+    display:inline-flex;
+    justify-content: space-between;
+}
+
+.footerLogo {
+    width:100px;
+    height:auto;
+}
 
 
 .site-title {
@@ -229,6 +243,12 @@ footer {
     padding:50px;
 }
 
+.always-graphic {
+    width:300px;
+    height:auto;
+    position:absolute;
+}
+
 /*Float scene */
 
 .float-header {
@@ -272,7 +292,7 @@ footer {
     background-color: rgba(0, 0, 0, 0)!important;
     position:relative;
     z-index: 1;
-    height:200vh;
+    min-height:200vh;
     overflow:hidden;
     display:block;
     /*padding-top:200px;
@@ -369,8 +389,9 @@ footer {
     background-color:rgba(0, 0, 0, 0);
     color:rgb(255, 255, 255);
     padding-top:10px;
-    background-size: cover;
-    min-height:375vh;
+    background-size: stretch;
+    min-height:200vh;
+    max-height:225vh;
     height:100%;
     position: relative;
     
@@ -554,8 +575,9 @@ footer {
 
 .menuButton {
     font-size:16px;
+    font-weight:600;
     text-transform: uppercase;
- 
+    font-family: 'Barlow', sans-serif;
     background-color: rgba(240, 248, 255, 0);
     border-style:solid;
     border-width:thin;
@@ -563,7 +585,7 @@ footer {
     font-family: 'Inter', sans-serif;
     color:rgb(255, 255, 255);
     mix-blend-mode: luminosity;
-    padding:10px;
+    padding:15px;
 }
 
 .menuButton:hover {
@@ -640,6 +662,41 @@ footer {
     font-family:"Sigmar One";
     padding-top:150px;
     text-align:right;
+    text-transform: none;
+    font-size: 6.5rem;
+    line-height: 1em;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0;
+    line-height: 1em;
+    font-weight: 900;
+    font-size: 100px;
+    align-items: center;
+    color:black;
+}
+/*With Imported Font */
+.splashText-alt4 {
+    font-family:"Abyss";
+    padding-top:150px;
+    text-align:right;
+    text-transform: uppercase;
+    font-size: 6.5rem;
+    line-height: 1em;
+    font-weight: 600px;
+    display: inline-block;
+    margin: 0;
+    line-height: 1em;
+    font-weight: 900;
+    font-size: 100px;
+    align-items: center;
+    color:black;
+}
+
+/*With Imported Font - BARLOW */
+.splashText-alt5 {
+    font-family: 'Barlow', sans-serif;";
+    padding-top:150px;
+    text-align:right;
     text-transform: uppercase;
     font-size: 6.5rem;
     line-height: 1em;
@@ -677,8 +734,10 @@ footer {
 }
 
 .splashButton {
-  font-family:"Sigmar One";
+    font-family: 'Barlow', sans-serif;
   font-size: 5vh;
+  font-weight:900;
+  padding:10px;
   background-color:rgba(0, 0, 0, 0.526);
   border-style:none;
   color:rgb(255, 255, 255);
@@ -689,6 +748,7 @@ footer {
   border-color:black;
   border-width: thin;
   border-radius:25px;
+  text-transform:uppercase;
 }
 
 .splashButton:hover {
@@ -707,6 +767,8 @@ footer {
     position:relative;
     mix-blend-mode: multiply;
     background-position: fixed;
+    left:430;
+    overflow:hidden;
 
     
 }
@@ -747,6 +809,7 @@ footer {
     width:700px;
     height:auto;
     overflow:visible;
+    padding-top:200px;
 }
 
 
@@ -852,6 +915,9 @@ footer {
 .lilSpaceApe {
     width:400px;
     height:auto;
+    position:absolute;
+    right:0;
+    top:0;
     /*
     border-style:solid;
     border-color:white;*/
@@ -967,9 +1033,11 @@ NAVIGATION */
     width:100%;
     background-image: url("stuff-graphic-1.png");
     background-size:cover;
-    height:700px;
+    
+    height:300px;
     background-position: fixed;
     transition: transform 10s ease-in-out;
+    
 }
 
 .graphic-full:hover {
@@ -978,6 +1046,9 @@ NAVIGATION */
 
 .apeOutMove {
     transition: transform 10s ease-in-out;
+    width:700px;
+    height:auto;
+    overflow:hidden;
 }
 
 .apeOutMove:hover {
@@ -987,6 +1058,11 @@ NAVIGATION */
 .graphic-buddy-move {
     transform:scale(2.5);
     transition: transform 10s ease-in-out;
+    overflow:hidden;
+    width:200px;
+    height:auto;
+    position:absolute;
+    top:0;
 }
 
 .graphic-buddy-move:hover {
@@ -1026,5 +1102,27 @@ NAVIGATION */
 #scroll-up-btn:hover {
     background-color: #2980b9;
     cursor: pointer;
+}
+
+/* AS OF JAN 19th */
+/*New font city */
+
+@font-face {
+    font-family: Abyss;
+    src: url("Abyss.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Abyss;
+    font-weight: bold;
+    src: url("Abyss.otf") format("opentype");
+}
+
+/*FIX THE POSITION OF THE STARS */
+.stars-position {
+
+    position:absolute;
+    left:0;
+
 }
 
