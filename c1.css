@@ -19,7 +19,7 @@ body {
 .showcaseMain_Item {
     height:128px;
     min-width:256px;
-    background-color:#000000!important;
+    background-color:#e93d3d!important;
     display: flex;
     justify-content: center;
     align-items: center;
