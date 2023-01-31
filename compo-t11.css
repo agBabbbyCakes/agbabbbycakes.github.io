@@ -127,6 +127,27 @@ s
     padding: 0;
     margin: 0;
   }
+
+  .card-full2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+  }
   
   @media screen and (min-width: 600px) {
     .card-tall {
@@ -358,12 +379,12 @@ ful
     border-color:transparent;
     font-family: 'Inter', sans-serif;
     color:rgb(255, 255, 255);
-    padding:25px;
+    padding:15.5px;
 }
 
 .menuButton:hover {
     font-size:16px;
-    background-color: rgba(240, 248, 255, 0);
+    background-color: rgba(32, 32, 32, 0.887);
     border-style:solid;
     border-color:rgb(255, 255, 255);
     cursor: pointer;
@@ -561,6 +582,17 @@ ful
 
 }
 
+.sceneGraphic-topAlign {
+    width:100%;
+    display:flex;
+    align-items: top;
+    justify-content: top;
+    position:absolute;
+    width:50%;
+    top:20;
+    left:0;
+}
+
 .scene-1-5 {
     width:100%;
     height:100%;
@@ -597,6 +629,22 @@ ful
     background-position: center;
     /* background-repeat: none;*/
     background-image:url("mofo.png");
+    text-align:center;
+    padding:20px;
+   /* mix-blend-mode: lighten; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.scene-2-graphicBlock-2 {
+    width:100%;
+    height:100%;
+    background-color:#D6D6D6;
+    background-size:40%;
+    background-position: center;
+    /* background-repeat: none;*/
+    background-image:url("unhinge-2.png");
     text-align:center;
     padding:20px;
    /* mix-blend-mode: lighten; */
@@ -673,6 +721,27 @@ ful
     width:100%;
     height:auto;
     text-align:center;
+}
+
+/*SCENE 3 GRAPHICS */
+
+/*UNHINGED GRAPHIC BLOCK*/
+.scene-3-graphicBlock-1 {
+    position: relative;
+    width:100%;
+    height:45%;
+    background-color:#D6D6D6;
+    background-size:contain;
+    background-position: top;
+    background-repeat: repeat-x;
+    
+    background-image:url("unhinge-color.png");
+    text-align:center;
+    padding:20px;
+   /* mix-blend-mode: lighten; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
 }
 
 .sceneText {
