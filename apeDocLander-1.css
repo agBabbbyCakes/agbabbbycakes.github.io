@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap');
+
+
+html {
+    background-color:black;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+body {
+    background-image: url("docBG.png");
+    background-size: cover;
+    background-position: fixed ;
+}
+
+/* LINK STYLES (Most on the a class) */
+.logoLink {
+    background-color:black;
+    width:50px;
+    height:50px;
+    background-image: url("docLOGO.png");
+}
+
+.desktop-Logo-center-left {
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0);
+    width: 620px;
+    height: 180px;
+    top: 470px;
+    left:150px;
+    transform: scale(1.0);
+    background-image: url("docLOGO.png");
+}
+
+.desktop-MenuHolder-center-left {
+    position:absolute;
+    width: 620px;
+    height:90px;
+    top:680px;
+    left:150px;
+    border-radius: 50px;
+    border-color: rgb(54, 54, 54);
+    box-sizing: border-box;
+    background-color: #2243ff00;
+    display:inline-flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.desktop-MenuButton {
+    width:100%;
+    height:90px;
+    border-radius: 25px;
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    border: 0.6px solid;
+    background-color: #141518;
+    font-size:22px;
+    color:white;
+    weight:900;
+    letter-spacing: -0.02em;
+}
+
+.desktop-MenuButton:hover {
+    background-color: #24262a;
+    cursor: pointer;
+}
+
+
+.FG-center-right {
+    float: right;
+}
+
+.glowButton {
+    max-width:250px;
+    
+    padding: 2px;
+    position: relative;
+    z-index:1;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); 
+    margin-right:25px;
+    filter: brightness(120%);
+  }
+  
+  .glowButton:before {
+    z-index:-1;
+    position: absolute;
+    content:"";
+    width:230px;
+    height:230px;
+    left:10px;
+    top:0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); 
+    filter: blur(20px);
+    
+  }
+  
+  .gradient {
+    background-color: #0b090a;
+    padding: 30px;
+    color: white; 
+    font-size: 35px;
+    font-family: arial;
+    text-align: center;
+  }
