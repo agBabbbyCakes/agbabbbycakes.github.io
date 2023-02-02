@@ -1,0 +1,911 @@
+/*compo-t10 css*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&display=swap');
+
+html {
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+body {
+    background-color: #000000;
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+a {
+    color:white;
+}
+
+p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.5rem;
+    text-align:center;
+    color:white;
+}
+
+h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size:6rem;
+    text-align:center;
+    color:white;
+    margin:0px;
+}
+
+h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size:4.5rem;
+    text-align:center;
+    margin-bottom:30px;
+    line-height: .85em;
+    color:white;
+}
+
+/*Footer Business */
+
+footer {
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding:40px;
+}
+
+.backFooter {
+    width:100%;
+    height:auto;
+    position:absolute;
+    z-index: (0);
+    left:0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color: black;
+    mix-blend-mode: lighten;
+}
+
+canvas {
+    position: absolute;
+    z-index: -10;
+    opacity: 0.5;
+
+}
+s
+.aboveCanvas {
+    position:absolute;
+    z-index: 10000;
+}
+
+.footerContainer {
+    width:50%;
+}
+
+.footerLogo-wrap {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*MENUS */
+
+.verticalMenu {
+    display:block;
+    margin:10px;
+    
+}
+
+
+
+
+/*The Story Business */
+.image-mosaic {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 240px;
+  }
+  
+  .bgLight {
+      background-color:white;
+      border-color:red!important;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card-full2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .card-tall {
+      grid-row: span 2 / auto;
+    }
+ful
+    .card-full {
+        grid-row: span .2 / auto;
+      }
+  
+    .card-wide {
+      grid-column: span 2 / auto;
+    }
+
+    .card-wide-wide {
+        grid-column: span 6/ auto;
+        width:100%;
+      }
+
+      .card-wide-75 {
+        grid-column: span 4/ auto;
+        width:100%;
+      }
+  }
+  
+  .glow {
+      border-style:solid;
+      border-width: 3px;
+      /*border-color: rgb(203, 255, 221);
+      border-radius: 25;*/
+  }
+
+  .storyWrap {
+    /*max-width:1900px;*/
+    width:100%;
+    height:auto;
+    justify-content: center;
+    
+  }
+
+  section {
+    margin:20px;
+    background-color:transparent;
+  }
+
+  /* SPACER BUSINESS */
+  .spacer {
+    width:100%;
+    height:40vh;
+  }
+
+  .spacer-small {
+    width:100%;
+    height: 15vh;
+  }
+
+  .spacer-scene1 {
+    width:100%;
+    height:40vh;
+    background-image:url("apeIntroSplash.png");
+  }
+
+.spacer-scene1a {
+    width:100%;
+    height:40vh;
+    background-image:url("spaceStuff.png");
+    background-position: top;
+    background-size:cover;
+ 
+    background-position-y:50px;
+    background-attachment: fixed;
+}
+
+/*
+  .spacer-scene2 {
+    width:100%;
+    height:40vh;
+    background-image:url("s2break.png");
+    background-position: contain;
+  }
+  */
+
+  .spacer-scene2 {
+    width:100%;
+    height:40vh;
+    background-image:url("spaceStuff.png");
+    background-position: center;
+    background-position-y:50px;
+    background-attachment: fixed;
+    
+  }
+
+
+
+  /*CRAZY SILL */
+
+  .card:hover {
+    border-color:red!important!;
+  }
+
+  /*TECH STACK IMPORT
+  as of 1.24.23 */
+
+  /*The Tech Stack */
+
+.techStack_MainWrapper {
+    display:flex;
+    align-items:top;
+    justify-content:center;
+    background-image:url(spacePat.png);
+    position:relative;
+    z-index:5;
+    padding:0px;
+    /*max-height:250vh; */
+    /*min-height:200vh;*/
+}
+
+.techStackContainer {
+    max-width:75%;
+    
+    padding-left:50px;
+    padding-right:50px;
+    border-style:solid;
+    border-width:thin;
+    border-color:white;
+    position:relative;
+    z-index: 10;
+    background-color:black;
+    color:white;
+}
+
+.techStack-title {
+    font-size: clamp(2rem, 10vw + 0.5rem ,9rem);
+    color:rgb(244, 244, 244);
+    text-align:center;
+    line-height:1em;
+    border-style:thin;
+    border-color:rgba(255, 255, 255, 0.142);
+    margin:40px;
+    line-height:.85em;
+    padding:10px;
+}
+
+/*Install Ape */
+/*Install Ape Screen*/
+
+.section-installApe {
+
+    width:100%;
+    height:100%;
+    display:flex;
+    text-align:center;
+    justify-content: center;
+    align-items:center;
+}
+
+.install-ape-text {
+    font-family: 'Barlow', sans-serif;
+
+    font-size:2rem;
+    line-height: 2.5em;
+    text-transform: uppercase;
+    color:white;
+    text-decoration: none;
+    border-style:solid;
+    border-width:thin;
+    border-color:rgba(255, 255, 255, 0);
+    padding:10px;
+    font-weight:600;
+    z-index:100;
+    cursor: pointer;
+}
+
+.install-ape-text:hover {
+    background-color:rgb(31, 31, 31);
+    color:rgb(255, 255, 255);
+    border-color:white;
+}
+
+
+.wrapper-installape {
+    display:block;
+
+}
+
+
+/*CODE WRAPS ASCI*/
+
+.codeWrap {
+    width:100%;
+    height:auto;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+/* ASCI CODE */
+
+.asci-container {
+    width:620px;
+    height:auto;
+}
+
+.asci-container-xl {
+    width: 960px;
+    height:auto;
+}
+
+/*SHUT OFF MADE BY ASCI */
+.powered {
+    display:none;
+}
+
+/*AG IMPORT FROM PREVIOUS AG WORK - MAGIC OF CODE EH?*/
+
+/*IMPORT FROM INDEX_build2.css */
+
+.topNav {
+    width:100%;
+    padding:15px;
+    margin-right: 30px;
+    position:fixed;
+    z-index: 400;
+    height:45px;
+    background-color:rgba(0, 0, 0, 0);
+    display:flex;
+    flex-direction: right;
+    justify-content:space-between;
+    /*mix-blend-mode: difference;*/
+        }
+
+ .topNav:hover {
+          
+            background-color:rgba(255, 255, 255, 0.023);
+            
+                }
+
+.menuGroup {
+    position:relative;
+    right:60;
+    top:5%;
+    mix-blend-mode: multiply;
+}
+
+.menuButton {
+    font-size:1rem;
+    font-weight:600;
+    text-transform: uppercase;
+    font-family: 'Barlow', sans-serif;
+    background-color: black;
+    border-style:solid;
+    border-width:thin;
+    border-color:transparent;
+    font-family: 'Inter', sans-serif;
+    color:rgb(255, 255, 255);
+    padding:15.5px;
+}
+
+.menuButton:hover {
+    font-size:16px;
+    background-color: rgba(32, 32, 32, 0.887);
+    border-style:solid;
+    border-color:rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.graphic-logo {
+    width:52px;
+    height:auto;
+    border-style:solid;
+    border-color:transparent;
+    border-width:thin;
+}
+
+.graphic-logo:hover {
+    border-color:white;
+}
+
+/*HEADER WORK */
+.full-header {
+    width:100%;
+   /* height:100vh; */
+    text-align:center;
+    display:Flex;
+    
+}
+
+
+.headerCenter {
+    width:100%;
+    max-height:100%;
+    background-color:rgba(149, 149, 149, 0);
+    background-image:url("apeIntroSplash.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    position:relative;
+    
+}
+
+.header-title {
+    text-transform :uppercase;
+    background-color:rgb(0, 0, 0);
+    z-index:30;
+    font-size: clamp(4rem, 10vw + 0.5rem ,9rem);
+    padding-left:20px;
+    padding-right:20px;
+    line-height:clamp(4rem, 10vw + 0.5rem ,9rem);;
+    letter-spacing: -0.02em;
+    margin-bottom:0px;
+
+}
+
+.header-sub {
+    background-color:transparent;
+    font-weight:500;
+    font-size: clamp(2.2rem, 1.25vw + 0.5rem ,3rem);
+}
+
+.headerLogo {
+    width:300px;
+    height:auto;
+    background-color:transparent;
+}
+
+/*HEADE SPLASH BUTTONS*/
+
+.splashButton {
+    width:250px;
+    height:75px;
+    margin-left: 5px;
+    margin-right:5px;
+    color:white;
+    font-size: 16px;
+    font-weight:400;
+    letter-spacing: -0.01em;
+    padding:7.5px;
+    background-color:black;
+    border-style:solid;
+    border-color:rgba(255, 255, 255, 0.792);
+    color:rgba(255, 255, 255, 0.792);
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.splashButton:hover {
+    color:white;
+    border-color:white;
+}
+
+
+/*AG SCENE TITLE DIV WORK */
+.scene {
+    width:100%;
+    height:100%;
+    background-color:rgb(0, 0, 0);
+    text-align:center;
+    padding:20px;
+  
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.scene1-end-wrap {
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-items: center;
+    background-image: url('s1-t6.png')
+}
+
+.scene-2-1 {
+    width:100%;
+    height:100%;
+    background-color:#D6D6D6;
+    text-align:center;
+    padding:20px;
+   /* mix-blend-mode: lighten; */
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.scene-1 {
+    width:100%;
+    height:100%;
+    background-color:#D6D6D6;
+    text-align:center;
+    padding:20px;
+   /* mix-blend-mode: lighten; */
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.scene-1:hover {
+   /* background-color:#fdfdfd; */
+}
+
+.scene-1-1 {
+    width:100%;
+    height:100%;
+    background-color:#d6d6d600;
+    text-align:center;
+    padding:20px;
+   /* mix-blend-mode: lighten; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.scene-1-1:hover {
+    background-color:#fdfdfd;
+}
+
+.scene-1-2 {
+    width:100%;
+    height:100%;
+    background-color:#d6d6d6;
+    text-align:center;
+    padding:20px;
+   /* mix-blend-mode: lighten; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.scene-1-2:hover {
+    /*background-color:#fdfdfd;*/
+}
+
+.scene-1-3 {
+    display:block;
+    background-color:#d6d6d6;
+    width:100%;
+    height:100%;
+}
+
+.scene-1-4 {
+    display:block;
+    background-color:#d6d6d6;
+    width:100%;
+    height:100%;
+}
+
+.sceneGraphic-wrap-tall {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sceneGraphic-topAlign {
+    width:100%;
+    display:flex;
+    align-items: top;
+    justify-content: top;
+    position:absolute;
+    width:50%;
+    top:20;
+    left:0;
+}
+
+.scene-1-5 {
+    width:100%;
+    height:100%;
+    background-color:#D6D6D6;
+    text-align:center;
+    padding:20px;
+   /* mix-blend-mode: lighten; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.scene-1-graphicBlock-1 {
+    width:100%;
+    height:100%;
+    background-color:#D6D6D6;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-image:url("space1.png");
+    text-align:center;
+    padding:20px;
+   /* mix-blend-mode: lighten; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.scene-2-graphicBlock-1 {
+    width:100%;
+    height:100%;
+    background-color:#D6D6D6;
+    background-size:40%;
+    background-position: center;
+    /* background-repeat: none;*/
+    background-image:url("mofo.png");
+    text-align:center;
+    padding:20px;
+   /* mix-blend-mode: lighten; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.scene-2-graphicBlock-2 {
+    width:100%;
+    height:100%;
+    background-color:#D6D6D6;
+    background-size:40%;
+    background-position: center;
+    /* background-repeat: none;*/
+    background-image:url("unhinge-2.png");
+    text-align:center;
+    padding:20px;
+   /* mix-blend-mode: lighten; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.scene-2-graphicBlock-2 {
+    width:100%;
+    height:100%;
+    background-color:#D6D6D6;
+    background-size:100%;
+    background-position: center;
+    /* background-repeat: none;*/
+    background-image:url("school-cell-a-3.png");
+    text-align:center;
+    padding:20px;
+   /* mix-blend-mode: lighten; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.scene-1-5:hover {
+    /*background-color:#fdfdfd;*/
+}
+
+.scene-1-6 {
+    width:100%;
+    height:100%;
+    background-color:#D6D6D6;
+    text-align:center;
+    padding:20px;
+   /* mix-blend-mode: lighten; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.scene-1-6:hover {
+    /*background-color:#fdfdfd;*/
+}
+
+.sceneText-5
+{
+    font-size: clamp(2rem, 5vw + 0.5rem ,9rem);
+    text-transform:uppercase;
+    color:black;
+    font-weight:800;
+
+}
+
+.sceneText-spaceStuff {
+    font-size: clamp(2rem, 10vw + 0.5rem ,9rem);
+    text-transform:uppercase;
+    color:black;
+    font-weight:800;
+    text-align:center!important;
+}
+
+.sceneText-meetApe {
+    font-size: clamp(2rem, 10vw + 0.5rem ,9rem);
+    text-transform:uppercase;
+    color:white;
+    font-weight:800;
+
+}
+
+.sceneText-spaceFair {
+    font-size: clamp(2rem, 10vw + 0.5rem ,9rem);
+    line-height:120px;
+    text-transform:uppercase;
+    color:white;
+    font-weight:800;
+
+}
+
+
+
+.sceneCopy {
+
+}
+
+.sceneGraphic {
+    width:33%;
+    height:auto;
+    text-align:center;
+}
+
+.sceneGraphic75 {
+    width:65%;
+    height:auto;
+
+    text-align:center;
+}
+
+.sceneGraphic-wrap {
+    width:100%;
+    height:auto;
+    text-align:center;
+}
+
+/*SCENE 3 GRAPHICS */
+
+/*UNHINGED GRAPHIC BLOCK*/
+.scene-3-graphicBlock-1 {
+    position: relative;
+    width:100%;
+    height:45%;
+    background-color:#D6D6D6;
+    background-size:contain;
+    background-position: top;
+    background-repeat: repeat-x;
+    
+    background-image:url("unhinge-color.png");
+    text-align:center;
+    padding:20px;
+   /* mix-blend-mode: lighten; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.sceneText {
+    text-transform:uppercase;
+   /* font-size:54px; */
+    font-size: clamp(2rem, 2.1vw + 0.5rem ,3.2rem);
+    line-height:40px;
+    font-weight:700;
+    color:black;
+    text-align:center;
+}
+
+/*SCENE TEXT MEDIUM */
+.sceneText-M {
+    text-transform:uppercase;
+   /* font-size:54px; */
+    font-size: clamp(1rem, 3.5vw + 3.5rem ,4.5rem);
+    line-height:55px;
+    font-weight:700;
+    color:rgb(35, 35, 35);
+    padding-left:20px;
+    mix-blend-mode: multiply;
+}
+
+/*SCENE TEXT MEDIUM */
+.sceneText-S {
+    text-transform:uppercase;
+   /* font-size:54px; */
+    font-size: clamp(1rem, 2.75vw + 3.5rem ,2.5rem);
+    line-height:35px;
+    font-weight:700;
+    color:rgb(35, 35, 35);
+    padding-left:20px;
+    mix-blend-mode: multiply;
+    text-align:center!important;
+}
+
+.sceneText-light {
+    text-transform:uppercase;
+   /* font-size:54px; */
+    font-size: clamp(2rem, 2vw + 0.5rem ,3rem);
+    line-height:40px;
+    font-weight:800;
+    color:rgb(255, 255, 255);
+}
+
+/*All about Floating Stars*/
+
+.fullStar {
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    background-color:red;
+}
+
+
+/*full width sugar*/
+
+.fullwidth-image {
+    width:100%;
+    height:auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*spacer test */
+
+
+
+/*stars override test */
+
+#stars {
+    box-shadow: black;
+}
+
+/*Partnership Section*/
+
+.section-partners {
+    
+    width:100%;
+}
+
+.partner-wrap {
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:100%;
+}
+
+
+/*GRAPHICS */
+
+.graphic50 {
+    width:50%;
+    height:auto;
+}
+
+.graphic75 {
+    width:75%;
+    height:auto;
+}
+
+
+/* CONTAINERS */
+
+.middleContainer {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
