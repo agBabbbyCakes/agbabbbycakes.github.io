@@ -9,7 +9,7 @@
         <style>
      
             body {
-                background-color:#ffe6c2; 
+                background-color:#ffdba8; 
                 padding:25px;
             }
 
@@ -21,7 +21,7 @@
 
             h1 {
                 font-family: 'Babylonica', cursive;
-                font-size:clamp(2rem, 8vw + 0.5rem ,7rem);
+                font-size:clamp(2rem, 8.5vw + 0.5rem ,8.5rem);
                 line-height:20px;
                 font-weight:900;
                 text-align:left;
@@ -36,6 +36,26 @@
             a {
                 text-decoration: none;
                 color:black;
+            }
+
+            .sneakyLink {
+                color:rgb(0, 0, 0);
+                border-style:solid;
+                border-width: 1.5px;
+                
+                border-top-color:transparent;
+                border-left-color:transparent;
+                border-right-color: transparent;
+                border-bottom-color: rgba(27, 0, 38, 0.24);
+            }
+
+            .sneakyLink:hover {
+                border-color:black;
+                background-color:#ffe2ba; 
+            }
+
+            .underline--purple {
+
             }
 
             .header-brownie {
@@ -59,6 +79,7 @@
                 border-style:solid;
                 border-color:transparent;
                 border-radius:30px;
+                mix-blend-mode: multiply;
             }
 
             .container {
@@ -92,6 +113,8 @@
             }
 
 
+
+
         </style>
         <title>Ape Loves Brownie</title>
     </head>
@@ -105,21 +128,26 @@
                    <h1> Dear Brownie,</h1>
                 </div>
                 <div class="letter-body">
-                    <p>Brownie changed the game of smart contract development in the heady days of 2020's DeFi Summer. It was the first Python-based framework that made development super easy; no more “async…await”, no more poor JS-based test tools. It had a Python-based console, pytest integration, fuzzing support, and so much more that eased the journey many devs faced entering the ecosystem to build their very first project.</p>
-            <p>
-            Fast forward to 2023, Brownie projects have supported over $20b in TVL at their peak, used by many top tier projects in the ecosystem. There's only one problem…
+                    <p>Brownie changed the game of smart contract development in the heady days of 2020's DeFi Summer. It was the first Python-based framework that made development super easy; no more “async…await”, no more poor JS-based test tools. It had a Python-based console, pytest integration, fuzzing support, and so much more that eased the journey many devs faced entering the ecosystem to build their very first project.
+                    </p>
+                    <p>
+                        Fast forward to 2023, Brownie projects have supported over $20b in TVL at their peak, used by many top tier projects in the ecosystem. There's only one problem…
+                    </p>
+            <p>Brownie's lead developer was involved in a lot of things in the ecosystem, and stepped away from doing any further feature development for Brownie in 2022. We built Ape from the ground up as a replacement for Brownie, to pay homage to it's massive featureset that allowed so many developers to increase their productivity, not just in testing Vyper- and Solidity-based projects, but unlocking the power of Python for other tasks like automation, data analysis, and much, much more.
             </p>
-            <p>Brownie's lead developer was involved in a lot of things in the ecosystem, and stepped away from doing any further feature development for Brownie in 2022. </p>
-            <p>So, We built Ape from the ground up as a replacement for Brownie, to pay homage to it's massive featureset that allowed so many developers to increase their productivity, not just in testing Vyper- and Solidity-based projects, but unlocking the power of Python for other tasks like automation, data analysis, and much, much more.</p>
+            <p>Ape is ready and honored to take the torch from Brownie, allowing it to finally go into retirement. ApeWorX, the developers of Ape, are ready to support you and your projects, both legacy and new. Ape's featureset is an expansion over what Brownie provided, unlocking your creativity and expanding what's possible in Web3.
+            </p>
            
-            <p>Ape is ready and honored to take the torch from Brownie, allowing it to finally go into retirement. ApeWorX, the developers of Ape, are ready to support you and your projects, both legacy and new. Ape's featureset is an expansion over what Brownie provided, unlocking your creativity and expanding what's possible in Web3.</p>
+            <p>But, we know there's some pain to get over first. We tried to make Ape as easy to convert over for Brownie users as we could, but there are some fundamental differences that <a class="sneakyLink" href="https://academy.apeworx.io/articles/porting-brownie-to-ape">we wanted to cover for you,</a> to help smooth over the upgrade process as much as possible.  Be on the lookout over the next two weeks for more content on converting over legacy Brownie projects to Ape!
+            </p>
          
-           <p> But, we know there's some pain to get over first. We tried to make Ape as easy to convert over for Brownie users as we could, but there are some fundamental differences that we wanted to cover for you, to help smooth over the upgrade process as much as possible.</p>
+           <p>We are really excited to <a href="https://academy.apeworx.io/community-2" class="sneakyLink">welcome you into the Ape Community</a>, a place where builders, analysts, and creators can share ideas, discover new projects, find others with common interests, and of course get help using Ape. <a href="https://academy.apeworx.io" class="sneakyLink">We have a really strong 2023 planned</a> for the entire Ape product suite,</a> so be on the lookout for <a href="https://github.com/ApeWorX" class="sneakyLink">new releases</a> to help supercharge your entire project workflow!
+        </p>
 
            <div class="float-right-sign">
             <p>
             With love,</p>
-            <a href="https://academy.apeworx.io">
+            <a href="https:/academy.apeworx.io">
                 
                 <img src="apeFull.png" class="logoImage">
                </div>
