@@ -337,7 +337,7 @@ ful
     display:flex;
     align-items:top;
     justify-content:center;
-    background-image:url(spacePat.png);
+    /*background-image:url(spacePat.png);*/
     position:relative;
     z-index:5;
     padding:0px;
@@ -1357,7 +1357,7 @@ justify-content: center;
 }
 
 .plotgraph {
-    width:99%;
+    width:720px;
     height:auto;
     filter: invert(1);
 }
