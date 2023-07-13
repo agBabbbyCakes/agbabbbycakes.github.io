@@ -1,6 +1,5 @@
 /*docs css*/
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root{
@@ -92,7 +91,7 @@ vertical-align: top;
 .navLogo {
     width:50px;
     height:50px;
-    background-image: url("../assets/nav-logo.png");
+    background-image: url("../assets/apeFull-8bit.png");
     background-size:cover;
     padding:5px;
     margin:5px;
@@ -119,7 +118,7 @@ align-items:center;
     top: 470px;
     left:150px;
     transform: scale(1.0);
-    background-image: url("../assets/doc-logo.png");
+    background-image: url("../assets/doc-logo-8bit.png");
     background-size:contain;
     background-repeat: no-repeat;
     transition: transform 1.153s;
@@ -146,8 +145,8 @@ align-items:center;
 }
 
 .desktop-MenuButton {
-    width:100%;
-    height:90px;
+    min-width:250px;
+    height:70px;
     border-radius: 7.5px;
     font-family: 'Press Start 2P', cursive;
     text-transform: uppercase;
@@ -289,3 +288,4 @@ align-items:center;
   cursor: pointer;
   color:var(--nav);
 }
+
