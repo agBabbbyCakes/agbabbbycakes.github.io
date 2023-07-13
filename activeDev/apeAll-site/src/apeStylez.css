@@ -140,3 +140,38 @@
             align-items:center;
             justify-content: center;
         }
+
+        .footer {
+            background-color: #171717;
+            padding: 20px;
+            text-align: center;
+        }
+    
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    
+        .footer-link {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    
+        .footer-link img {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            filter: invert(1);
+        }
+
+        .footer-link img:hover {
+            opacity: .7;
+        }
+    
+        .footer-link a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
