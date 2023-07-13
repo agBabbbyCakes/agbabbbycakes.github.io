@@ -8,20 +8,20 @@
     --mainlight: #172a46;
     --nav :#09192f;
     --white :#ccd6f6;
-    --cyan :#ea00ff;
+    --cyan :#4dff00;
     }
 * {
     margin: 0;
     padding: 0;
 
 }
-/*TEST 1*/
 
 html {
   margin:0;
   padding:0px;
-    background-color:black;
-font-family: 'Press Start 2P', cursive;
+  background-color:black;
+  font-family: 'Press Start 2P', cursive;
+  max-height:100vh;
 
 }
 
@@ -32,8 +32,63 @@ body {
 
 }
 
+/*GLOBAL STYLES */
+a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
 
-/*Nav Logo */
+a::before,
+a::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+a::before {
+  background-color: #54b3d6;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+a::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #54b3d6;
+}
+
+a:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+a:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+a span {
+  display: inline-block;
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+a:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+
+a {
+text-decoration: none;
+color: #18272F;
+font-weight: 700;
+vertical-align: top;
+}
+
+/*TOP Nav Logo */
 .navLogo {
     width:50px;
     height:50px;
@@ -49,8 +104,15 @@ body {
     transform:scale(1.13);
 }
 
-.desktop-Logo-center-left {
-    position:absolute;
+/*MAIN LOGO - CENTERED */
+
+.header-splash {
+display:flex;
+justify-content: center;
+align-items:center;
+}
+
+.desktop-Logo-center {
     background-color: rgba(255, 255, 255, 0);
     width: 620px;
     height: 180px;
@@ -63,48 +125,51 @@ body {
     transition: transform 1.153s;
 }
 
-.desktop-Logo-center-left:hover{
+.desktop-Logo-center:hover{
     transform:scale(1.1153);
 }
 
-.desktop-MenuHolder-center-left {
-    position:absolute;
+/*CENTERED MENU HOLDER */
+.desktop-MenuHolder {
     width: 620px;
     height:90px;
     top:680px;
     left:150px;
     border-radius: 50px;
-    border-color: rgb(54, 54, 54);
     box-sizing: border-box;
     background-color: #2243ff00;
     display:inline-flex;
     align-items: center;
     justify-items: center;
+    font-family: 'Press Start 2P', cursive;
+
 }
 
 .desktop-MenuButton {
     width:100%;
     height:90px;
-    border-radius: 25px;
-    font-family: 'Barlow', sans-serif;
+    border-radius: 7.5px;
+    font-family: 'Press Start 2P', cursive;
     text-transform: uppercase;
     border: 0.6px solid;
-    background-color: #141518d9;
-    font-size:22px;
+    background-color:rgba(0, 128, 0, 0.191)!important;
+    font-size:16px;
     color:white;
-    font-weight:900;
+    font-weight:400;
     letter-spacing: -0.01em;
-    transition: transform 1.153s;
+    transition: transform .33s;
     border: 1px solid var(--cyan);
     box-shadow: rgb(95, 240, 208, 15%)  0px 0px 50px;
+    padding:20px;
+    margin:5px
 }
 
 .desktop-MenuButton:hover {
-    color: var(--main);
+    color: white;
     background-color: var(--cyan);
-    box-shadow: var(--cyan) 0px 0px 50px;
+    box-shadow: var(--cyan) 0px 0px 10px;
     cursor: pointer;
-    transform:scale(1.0153);
+    transform:scale(1.005153);
 }
 
 .FG-center-right {
@@ -147,61 +212,80 @@ body {
     padding: 30px;
     color: white;
     font-size: 35px;
-    font-family: arial;
     text-align: center;
   }
 
-  a {
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-  }
+.bigBoyMenu-wrap {
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
 
-  a::before,
-  a::after {
-   content: '';
-    position: absolute;
-    width: 100%;
-    left: 0;
-  }
-  a::before {
-    background-color: #54b3d6;
-    height: 2px;
-    bottom: 0;
-    transform-origin: 100% 50%;
-    transform: scaleX(0);
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-  }
-  a::after {
-    content: attr(data-replace);
-    height: 100%;
-    top: 0;
-    transform-origin: 100% 50%;
-    transform: translate3d(200%, 0, 0);
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-    color: #54b3d6;
-  }
+/*Background Stars + Animations */
+#stars {
+  max-height:90vh;
+  overflow:hidden;
+}
 
-  a:hover::before {
-    transform-origin: 0% 50%;
-    transform: scaleX(1);
-  }
-  a:hover::after {
-    transform: translate3d(0, 0, 0);
-  }
+/*DOCS TABS*/
+.tab-content {
+  display: none;
+  color: white;
+}
+.tab-content.active {
+  display: block;
+}
 
-  a span {
-    display: inline-block;
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-  }
+/*MAIN DOC SYSTEM */
+.mainDocTab{
+  background-color:rgba(0, 128, 0, 0.191)!important;
+  padding:20px;
+  margin:20px;
+  border-style:solid;
+  border-color: var(--cyan);
+  border-radius:7.5px;
+}
 
-  a:hover span {
-    transform: translate3d(-200%, 0, 0);
-  }
+#tab-apePackages ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-  a {
-	text-decoration: none;
-	color: #18272F;
-	font-weight: 700;
-	vertical-align: top;
+#tab-apePackages li {
+  background-color: rgba(0, 128, 0, 0.191);
+  border: 1px solid var(--cyan);
+  border-radius: 7.5px;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+}
+
+#tab-apePackages li:hover {
+  background-color: var(--cyan);
+  cursor: pointer;
+  color:var(--nav);
+}
+
+#tab-apePlugins ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#tab-apePlugins li {
+  background-color: rgba(0, 128, 0, 0.191);
+  border: 1px solid var(--cyan);
+  border-radius: 7.5px;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+}
+
+#tab-apePlugins li:hover {
+  background-color: var(--cyan);
+  cursor: pointer;
+  color:var(--nav);
 }
