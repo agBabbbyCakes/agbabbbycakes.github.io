@@ -130,10 +130,11 @@ align-items:center;
 
 /*CENTERED MENU HOLDER */
 .desktop-MenuHolder {
-    width: 620px;
+    width: 100%;
     height:90px;
-    top:680px;
-    left:150px;
+    display:flex;
+    justify-content: center;
+   
     border-radius: 50px;
     box-sizing: border-box;
     background-color: #2243ff00;
@@ -146,7 +147,7 @@ align-items:center;
 
 .desktop-MenuButton {
     min-width:250px;
-    height:70px;
+    max-height:70px;
     border-radius: 7.5px;
     font-family: 'Press Start 2P', cursive;
     text-transform: uppercase;
@@ -230,9 +231,11 @@ align-items:center;
 .tab-content {
   display: none;
   color: white;
+
 }
 .tab-content.active {
   display: block;
+  
 }
 
 /*MAIN DOC SYSTEM */
@@ -243,6 +246,8 @@ align-items:center;
   border-style:solid;
   border-color: var(--cyan);
   border-radius:7.5px;
+  box-shadow: rgb(95, 240, 208, 15%)  0px 0px 50px;
+  height:300px;
 }
 
 #tab-apePackages ul {
@@ -289,3 +294,33 @@ align-items:center;
   color:var(--nav);
 }
 
+
+
+.mainDocNavigator {
+  background-color:yellow;
+}
+
+.menu {
+  display:flex;
+  align-items:center;
+  justify-content: center;  
+}
+
+.product-logo {
+  width:92px;
+  margin:20px;
+}
+
+.product-logo:hover {
+  opacity: .5;
+}
+
+#product-silverback {
+  width:48px;
+}
+
+.buttonwrap {
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}

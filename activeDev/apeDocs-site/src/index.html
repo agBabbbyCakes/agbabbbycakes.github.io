@@ -7,6 +7,8 @@
     <title>ApeDocs - ApeWorX, LTD </title>    
 </head>
 <body>
+    <div id="stars"></div>
+
         <nav>
             <a href="https://www.apeworx.io">
                 <div class="navLogo"></div>
@@ -20,7 +22,7 @@
         <div class="bigBoyMenu-wrap">
          <div class="desktop-MenuHolder">
                 <button class="desktop-MenuButton" onclick="openTab('tab-apeDocs');">
-                    Ape Documentation
+                    Ape FrameWork
                 </button>
                 <button class="desktop-MenuButton" onclick="openTab('tab-apePackages');">
                     Other Packages
@@ -33,13 +35,14 @@
             
         <section class="mainDocTab" id="mainDocNavigator">
             <div id="tab-apeDocs" class="tab-content active">
-                <p style="color: white;">This is where the tabbed content would go for the regular docs - using simple JavaScript</p>
-                <button class="desktop-MenuButton" >Ape Offical Documentation </button>
-            </div>
+                <div class="buttonwrap">
+                <button class="desktop-MenuButton" >Ape Framework Documentation </button>
+                </div>
+        </div>
             <div id="tab-apePlugins" class="tab-content">
                 <div>
-             
-                <p style="color: white; text-transform: uppercase;">This is where the PLUGINS GO</p>
+                    <div class="buttonwrap">
+                <p style="color: white; text-transform: uppercase;">This is where the PLUGINS GO</p></div>
                 <br>
                 <ul>
                     <li>Plugin 1</li>
@@ -51,7 +54,7 @@
                 </div>
             </div>
             <div id="tab-apePackages" class="tab-content">
-                <p style="color: white;">THIS IS WHERE ALL THE PACKAGES GO </p>
+                <div class="buttonwrap"><p style="color: white;">THIS IS WHERE ALL THE PACKAGES GO </p></div>
                 <br>
                 <ul>
                     <li>Package 1</li>
@@ -63,7 +66,29 @@
             </div>
         </section>
 
+<!-- FOOTER -->
 
+<footer>
+ 
+      <div class="menu">
+
+        <div class="menu-item">
+          <a href="/ahoymrag.github.io/work/product_All_APE/src/apes/chaosnet_1/chaosnet.html">
+            <img src="../assets/academy-8bit.png" alt="Logo" class="product-logo">
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="/ahoymrag.github.io/work/product_All_APE/src/apes/silverback_1/silverback.html">
+            <img src="../assets/silverBack-8bit.png" alt="Logo" class="product-logo" id="product-silverback">
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="https://apeworx.io">
+            <img src="../assets/chaos-8bit.png" alt="Logo" class="product-logo">
+          </a>
+        </div>
+
+  </footer>
 <!-- BACKGROUND ANIMATION STARS-->
 <div id="stars"></div>
 
