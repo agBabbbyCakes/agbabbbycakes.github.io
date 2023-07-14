@@ -3,6 +3,13 @@
 <head>
     <title>Silverback</title>
     <style>
+
+         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        html {
+            font-family: 'Press Start 2P';
+        }
+
         body {
             margin: 0;
             padding: 0;
@@ -39,6 +46,8 @@
         .container {
             text-align: center;
             padding: 20px;
+            display:flex;
+            flex-direction:column;
         }
         
         .logo {
@@ -72,7 +81,37 @@
         background: linear-gradient(to right, #808080, #e2e2e2);
     }
 }
+   .trailer-text-link {
+            margin-top:10px;
+            color: black;
+            text-decoration: none;
+            font-size: 12px;
+        }
 
+        .trailer-text-link:hover {
+            color: white;
+        }
+
+        /* Added styles for popup */
+        .popup-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .popup-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
 
     </style>
 </head>
@@ -80,6 +119,8 @@
     <div class="container">
         <a href="https://github.com/ApeWorX/ape" class="github-link"><img src="./silverback-grey.png" alt="Logo" class="logo">
      </a>
+
+      <a class="trailer-text-link" href="#" onclick="showPopup()">Trailer</a>
     </div>
 
 
@@ -90,6 +131,27 @@
 
             
 </footer>
+ <!-- Popup HTML -->
+    <div id="popup" class="popup-background" style="display: none;">
+        <div class="popup-content">
+            <iframe id="youtube-iframe" width="560" height="315" src="https://www.youtube.com/embed/cKdppwZrxqk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        function showPopup() {
+            var popup = document.getElementById('popup');
+            var iframe = document.getElementById('youtube-iframe');
+            popup.style.display = 'flex';
+
+            // Close the popup when clicked outside
+            window.onclick = function(event) {
+                if (event.target == popup || event.target == iframe) {
+                    popup.style.display = 'none';
+                }
+            };
+        }
+    </script>
     
 </body>
 </html>
