@@ -1,4 +1,5 @@
 /*docs css*/
+/*Colors We Like =     --cyan :#4dff00;*/
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
@@ -147,6 +148,7 @@ align-items:center;
 
 .desktop-MenuButton {
     min-width:250px;
+    min-height:70px;
     max-height:70px;
     border-radius: 7.5px;
     font-family: 'Press Start 2P', cursive;
@@ -154,7 +156,7 @@ align-items:center;
     border: 0.6px solid;
     background-color:rgba(0, 128, 0, 0.191)!important;
     font-size:16px;
-    color:white;
+    color:rgb(255, 255, 255);
     font-weight:400;
     letter-spacing: -0.01em;
     transition: transform .33s;
@@ -165,11 +167,10 @@ align-items:center;
 }
 
 .desktop-MenuButton:hover {
-    color: white;
-    background-color: var(--cyan);
-    box-shadow: var(--cyan) 0px 0px 10px;
-    cursor: pointer;
-    transform:scale(1.005153);
+  background-color: var(--cyan)!important;
+  cursor: pointer;
+  color:var(--nav);
+    transform:scale(1.015153);
 }
 
 .FG-center-right {
@@ -183,7 +184,7 @@ align-items:center;
     transform: scale(0.5153);
 }
 
-.glowButton {
+/*.glowButton {
     max-width:250px;
     padding: 2px;
     position: relative;
@@ -205,7 +206,7 @@ align-items:center;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     filter: blur(20px);
 
-  }
+  }*/
 
   .gradient {
     background-color: #0b090a;
@@ -261,9 +262,12 @@ align-items:center;
   border-radius: 7.5px;
   padding: 10px;
   margin-bottom: 5px;
-  color: white;
-  font-family: 'Press Start 2P', cursive;
+  color: rgb(255, 255, 255);
+  font-family: 'Press Start 2P';
   font-size: 16px;
+  min-width:100%!important;
+  min-width:700px!important;
+  text-align:left;
 }
 
 #tab-apePackages li:hover {
@@ -283,9 +287,12 @@ align-items:center;
   border-radius: 7.5px;
   padding: 10px;
   margin-bottom: 5px;
-  color: white;
-  font-family: 'Press Start 2P', cursive;
+  color: rgb(255, 255, 255);
+  font-family: 'Press Start 2P';
   font-size: 16px;
+  min-width:100%!important;
+  min-width:700px!important;
+  text-align:left;
 }
 
 #tab-apePlugins li:hover {
@@ -323,4 +330,38 @@ align-items:center;
   display:flex;
   align-items:center;
   justify-content: center;
+}
+
+#apeFramework-buttonwrap {
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  background-color:rgba(0, 255, 76, 0)!important;
+  height:100%;
+ /* border-style:solid;
+  border-color: var(--cyan);
+  border-radius:2.5%;*/
+}
+
+.ape-buttonwrap {
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  background-color:rgba(0, 255, 76, 0.048)!important;
+  height:100%;
+  /*border-style:solid;
+  border-color: var(--cyan);
+  border-radius:2.5%;*/
+}
+
+.apePluginWRAP {
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction:column;
+  /*background-color:rgba(0, 255, 76, 0.048)!important;
+  border-style:solid;
+  border-color: var(--cyan);
+  border-radius:2.5%;*/
 }
