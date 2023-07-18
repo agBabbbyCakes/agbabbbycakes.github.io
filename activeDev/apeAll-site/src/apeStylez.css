@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-
+:root {
+    --color-primary: #ff8dd1;
+    --color-secondary: #17171788;
+    --color-tertiary: #fff;
+    --color-hover:#ff8dd1;
+}
 
 /*STYLE FOR ALL APE*/
 
@@ -60,8 +65,8 @@
         }
 
         .product-logo {
-            min-width:180px;
-            max-width:180px;
+            min-width:280px;
+            max-width:280px;
             height:auto;
             overflow:hidden;
         }
@@ -71,12 +76,12 @@
     /*BREAKPOINT 2 AT 720 */
              @media only screen and (max-width: 720px) { 
             .container-product { 
-            background-color:rgb(241, 0, 241); 
+            background-color:rgba(241, 0, 241, 0); 
         }
 
         .product-logo {
-            min-width:100px;
-            max-width:100px;
+            min-width:300px;
+            max-width:300px;
             height:auto;
             max-height:50vh;
             overflow:hidden;
@@ -101,6 +106,10 @@
             height:auto;
             overflow:hidden;
         }
+
+        .footer {
+            position:static;
+        }
         }
        
 
@@ -115,7 +124,7 @@
         }
 
         .footer {
-            background-color: #171717;
+            background-color: var(--color-secondary);
             padding: 20px;
             text-align: center;
         }
@@ -150,6 +159,13 @@
             text-decoration: none;
             padding: 10px;
         }
+
+        .footer {
+            position:fixed;
+            width:100%;
+        }
+
+
 
         /*Mirror social */
 

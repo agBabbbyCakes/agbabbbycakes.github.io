@@ -7,6 +7,24 @@
             font-family: 'Press Start 2P';
         }
 
+    :root {
+            --color-primary: #beff8d;
+            --color-secondary: #00ff2688;
+            --color-tertiary: #000000;
+            --color-hover:#ff8dd1;
+        }
+
+        /*STYLE FOR ALL APE*/
+
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            font-family: 'Press Start 2P';
+
+        }
+
         .container {
             display:flex;
             align-items:center;
@@ -35,7 +53,7 @@
             background-color:rgba(0, 149, 255, 0.142);
             padding:20px;
             max-width:700px;
-            border-color:white;
+            border-color:(--color-secondary);
             border-style:solid;
             border-radius:10px;
         }
@@ -281,12 +299,21 @@
             width: 100%;
             padding: 10px;
             border-style:solid;
-            border-width:2px;
-            border-color: rgba(0, 255, 0, 0.9);
-            background-color:rgba(0, 255, 0, 0.652)!important;
-            color: #000000;
-            border: none;
+            border-width:1px;
+            border-color: var(--color-secondary);
+            background-color:transparent!important;
+            text-transform:uppercase;
             cursor: pointer;
+            margin:10px;
+            color: var(--color-secondary);
+            font-family: 'Press Start 2P';
+            font-size: 16px;
+        }
+
+        .downloadButton:hover {
+            background-color: var(--color-secondary);
+            border-color: var(--color-primary);
+            color: var(--color-primary);
         }
         .releaseNotesLink {
             text-align: center;
