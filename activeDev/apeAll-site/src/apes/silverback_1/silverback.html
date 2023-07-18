@@ -120,38 +120,96 @@
         <a href="https://github.com/ApeWorX/ape" class="github-link"><img src="./silverback-grey.png" alt="Logo" class="logo">
      </a>
 
-      <a class="trailer-text-link" href="#" onclick="showPopup()">Trailer</a>
+     <a class="trailer-text-link" href="#" onclick="trailerPopup()">Trailer</a>
+     <a class="trailer-text-link" href="#" onclick="mirrorArticlePopup()">Mirror Article</a>
+ </div>
     </div>
+
+
+
+
+
+<!-- Trailer Popup -->
+<div id="trailerPopup" class="popup-background" style="display: none;">
+    <div class="popup-content">
+        <iframe id="youtube-iframe" width="560" height="315" src="https://www.youtube.com/embed/cKdppwZrxqk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- STYLE -->
+<style>
+    #mirrorArticlePopup {
+        background-color: rgba(42, 42, 42, 0.392);
+    }
+
+    #mirrorArticlePopup .popup-content {
+        width:800px;
+        max-height: 500px;
+        overflow-y: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mirrorArticlePopup iframe {
+        position: absolute;
+        
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+</style>
+
+<!-- Mirror Article Popup -->
+<div id="mirrorArticlePopup" class="popup-background" style="display: none;"></div>
+
+<script>
+    function mirrorArticlePopup() {
+        var popup = document.getElementById("mirrorArticlePopup");
+        popup.style.display = "flex";
+        
+
+        var iframe = document.createElement("iframe");
+        iframe.src = "https://mirror.xyz/apeworx.eth/WX2LApZC9qtDq4rop-sSwqARXNL0ZBzlCXXaAMJVjfc";
+        popup.appendChild(iframe);
+
+        popup.addEventListener("click", function (event) {
+            if (event.target === popup) {
+                popup.style.display = "none";
+                popup.innerHTML = "";
+            }
+        });
+    }
+
+    function trailerPopup() {
+        var popup = document.getElementById('trailerPopup');
+        var iframe = document.getElementById('youtube-iframe');
+        popup.style.display = 'flex';
+
+        // Close the popup when clicked outside
+        window.onclick = function(event) {
+            if (event.target == popup || event.target == iframe) {
+                popup.style.display = 'none';
+            }
+        };
+    }
+</script>
+
+
+
 
 
     <footer>
    
-        <a href="/index.html"><img src="./apeFull.png" class="footer-logo"></a>
-  
-
+        <a href="/agbabbbycakes.github.io/index.html"><img src="./apeFull.png" class="footer-logo"></a>
+    
+    </div>  
             
-</footer>
- <!-- Popup HTML -->
-    <div id="popup" class="popup-background" style="display: none;">
-        <div class="popup-content">
-            <iframe id="youtube-iframe" width="560" height="315" src="https://www.youtube.com/embed/cKdppwZrxqk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <script>
-        function showPopup() {
-            var popup = document.getElementById('popup');
-            var iframe = document.getElementById('youtube-iframe');
-            popup.style.display = 'flex';
-
-            // Close the popup when clicked outside
-            window.onclick = function(event) {
-                if (event.target == popup || event.target == iframe) {
-                    popup.style.display = 'none';
-                }
-            };
-        }
-    </script>
+    </footer>
+    
     
 </body>
 </html>
