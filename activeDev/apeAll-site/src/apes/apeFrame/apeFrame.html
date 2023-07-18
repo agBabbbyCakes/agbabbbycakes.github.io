@@ -1,111 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>apeFramework - as of 7.17.23</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: monospace;
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            color:limegreen;
-        }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
-            padding: 20px;
-        }
-        
-        .section {
-            border: 2px solid rgb(0, 255, 132);
-            padding: 20px;
-            background-color: #000;
-            overflow: auto;
-        }
-        
-        .section h2 {
-            color: #0f0;
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        
-        .section p {
-            margin-bottom: 20px;
-        }
-        
-        .section .codeWrap {
-            padding: 10px;
-            background-color: #333;
-            color: #0f0;
-        }
-        
-        .asci-container-xl {
-            max-width: 100%;
-            overflow: hidden;
-            padding-bottom: 56.25%;
-            position: relative;
-        }
-        
-        .asci-container-xl iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
-    <style>
-            .superLogo {
-        width:20vw;
-        height: auto;
-    }
+    <title>apeFramework - as of 7.18.23</title>
+ <link rel="stylesheet" href="../apeFrame/apeFrame_css_1.css">
 
-    .top-container {
-        width:100%;
-        display:flex;
-        flex-direction: column;
-        justify-content:space-between;
-        align-items:center;
-        background-color: #000;
-        padding: 10px;
-    }
-
-
-    .splashMain {
-        width:100%;
-        height:100px;
-        background-color: #000;
-        border-style:solid;
-        border-color:#0f0;
-        border-width:2px;    
-    }
-
-    .splashScreen {
-        width:100%;
-        height:100%;
-        display:flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items:center;
-       
-    }
-
-    </style>
 </head>
+
 <body>
 
     <div class="top-container">
-        <a href="https://github.com/ApeWorX/ape" class="github-link">
+        <a href="https://github.com/ApeWorX/ape">
             <img src="./apeFrame-logo.png" alt="Logo" class="superLogo">
      </a>
+    </div>
 
-      <a style="color:white;" class="trailer-text-link" href="#" onclick="showPopup()">Install Ape</a>
+    <!-- Splash INSTALL STYLE -->
+
+    <!-- SPLASH INSTALL -->
+    <div class="splashInstall">
+        <div class="splashInstallContainer">
+            <div class="splashInstall-left">
+                <div>
+                    <button class="downloadButton">Download Ape</button>
+                </div>
+                <div class="releaseNotesLink">
+                    <a href="https://github.com/your-repo/release-notes">Release Notes</a>
+                </div>
+            </div>
+            <div class="splashInstall-right">
+                <img class="codeGraphic" src="path/to/code-graphic.jpg" alt="Code Graphic">
+            </div>
+        </div>
     </div>
 
 <!-- SPLASH -->
@@ -180,65 +105,6 @@
 
 <!-- END OF FEATURES-->
 
-<style>
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: monospace;
-        margin: 0;
-        padding: 0;
-        background-color: #000;
-        color: #0f0;
-    }
-
-    .containerPlugin {
-        border: 2px solid #0f0;
-        padding: 20px;
-        background-color: #000;
-        overflow: auto;
-    }
-
-    .containerPlugin h1 {
-        color: #0f0;
-        margin-bottom: 20px;
-    }
-
-    .grid-plugins {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 10px;
-    }
-
-    .grid-plugins li {
-        list-style-type: none;
-        border: 2px solid #0f0;
-        padding: 10px;
-    }
-
-    .grid-plugins li:hover {
-        list-style-type: none;
-        border: 2px solid #0f0;
-        cursor: pointer;
-        background-color:green;
-        padding: 10px;
-    }
-
-    .grid-plugins li a {
-        color: #0f0;
-        text-decoration: none;
-    }
-
-    .grid-plugins li a:hover {
-        text-decoration: underline;
-    }
-
-    .grid-plugins li:before {
-        content: ">";
-        margin-right: 10px;
-    }
-</style>
 
 <div class="containerPlugin">
     <h1>Plugins</h1>
@@ -288,86 +154,7 @@ footer {
 
 <!-- INSTALL -->
 
-<style>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
- 
-
-        .installApe-section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            with:100%;
-            height:700px;
-            border: 2px solid rgba(0, 255, 0, 0.28);
-            color: rgba(0, 255, 0, 0.278);
-         
-
-        }
-
-        .installApe-fullwidth-wrap {
-            position: relative;
-        }
-
-        .install {
-            display: flex;
-            justify-content: center;
-            
-        }
-
-        .installButton {
-            background-color: #000;
-            border: 2px solid #0f0;
-            color: #0f0;
-            font-size: 16px;
-            padding: 10px 20px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-transform:uppercase;
-            font-family: monospace;
-            min-width:85vw;
-            min-height:30vh;
-        }
-
-        .installButton:hover {
-            background-color: #0f0;
-            color: #000;
-        }
-
-        .popup-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            display: none;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .popup-content {
-            background-color: #000;
-            border: 2px solid #0f0;
-            color: #0f0;
-            padding: 20px;
-            max-width: 400px;
-            text-align: left;
-            line-height: 1.5;
-            display: none;
-        }
-
-        .popup-content img.superLogo {
-            width: 100px;
-            height: auto;
-            margin-bottom: 10px;
-        }
-</style>
 
 <section class="installApe-section">
         <div class="installApe-fullwidth-wrap">

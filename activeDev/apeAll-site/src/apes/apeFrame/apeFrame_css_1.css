@@ -25,7 +25,7 @@
             box-shadow: inset 0 0 10px #c9c9c9;
             animation: gradientAnimation 10s linear infinite ease-in-out;
         }
-  .superMain {
+    .superMain {
             width:100%;
             display:flex;
             align-items: center;
@@ -41,8 +41,7 @@
         }
 
         footer {
-            position: absolute;
-            bottom: 0;
+
             min-width: 100%;
             height: auto;
             display:flex;
@@ -87,26 +86,9 @@
             text-decoration: none;
             width:500px;
             height:auto;
+            color:rgb(0, 255, 0)!important;
         }
 
-
-        @keyframes gradientAnimation {
-    0% {
-        background: linear-gradient(to right, #e2e2e2, #c0c0c0);
-    }
-    25% {
-        background: linear-gradient(to right, #d0d0d0, #c0c0c0);
-    }
-    50% {
-        background: linear-gradient(to right, #c0c0c0, #a0a0a0);
-    }
-    75% {
-        background: linear-gradient(to right, #a0a0a0, #808080);
-    }
-    100% {
-        background: linear-gradient(to right, #808080, #e2e2e2);
-    }
-}
    .trailer-text-link {
             margin-top:10px;
             color: black;
@@ -138,3 +120,272 @@
             border-radius: 5px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         }
+
+
+        /*GRID + PLUGIN STYLES */
+
+        * {
+            box-sizing: border-box;
+        }
+    
+        body {
+            font-family: monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #0f0;
+        }
+    
+        .containerPlugin {
+            border: 2px solid #0f0;
+            padding: 20px;
+            background-color: #000;
+            overflow: auto;
+        }
+    
+        .containerPlugin h1 {
+            color: #0f0;
+            margin-bottom: 20px;
+        }
+    
+        .grid-plugins {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+    
+        .grid-plugins li {
+            list-style-type: none;
+            border: 2px solid #0f0;
+            padding: 10px;
+        }
+    
+        .grid-plugins li:hover {
+            list-style-type: none;
+            border: 2px solid #0f0;
+            cursor: pointer;
+            background-color:green;
+            padding: 10px;
+        }
+    
+        .grid-plugins li a {
+            color: #0f0;
+            text-decoration: none;
+        }
+    
+        .grid-plugins li a:hover {
+            text-decoration: underline;
+        }
+    
+        .grid-plugins li:before {
+            content: ">";
+            margin-right: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+ 
+
+        .installApe-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            with:100%;
+            height:700px;
+            border: 2px solid rgba(0, 255, 0, 0.28);
+            color: rgba(0, 255, 0, 0.278);
+         
+
+        }
+
+        .installApe-fullwidth-wrap {
+            position: relative;
+        }
+
+        .install {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .installButton {
+            background-color: #000;
+            border: 2px solid #0f0;
+            color: #0f0;
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform:uppercase;
+            font-family: monospace;
+            min-width:85vw;
+            min-height:30vh;
+        }
+
+        .installButton:hover {
+            background-color: #0f0;
+            color: #000;
+        }
+
+        .popup-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+            background-color: #000;
+            border: 2px solid #0f0;
+            color: #0f0;
+            padding: 20px;
+            max-width: 400px;
+            text-align: left;
+            line-height: 1.5;
+            display: none;
+        }
+
+        .popup-content img.superLogo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .splashInstallContainer {
+            display: flex;
+            height: 40vh;
+        }
+        .splashInstall-left {
+            flex: 1;
+            background-color: #e6e6e600;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .splashInstall-right {
+            flex: 2;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .downloadButton {
+            width: 100%;
+            padding: 10px;
+            border-style:solid;
+            border-width:2px;
+            border-color: rgba(0, 255, 0, 0.9);
+            background-color:rgba(0, 255, 0, 0.652)!important;
+            color: #000000;
+            border: none;
+            cursor: pointer;
+        }
+        .releaseNotesLink {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .codeGraphic {
+            max-width: 100%;
+            height: auto;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color:limegreen;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        
+        .section {
+            border: 2px solid rgb(0, 255, 132);
+            padding: 20px;
+            background-color: #000;
+            overflow: auto;
+        }
+        
+        .section h2 {
+            color: #0f0;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .section p {
+            margin-bottom: 20px;
+        }
+        
+        .section .codeWrap {
+            padding: 10px;
+            background-color: #333;
+            color: #0f0;
+        }
+        
+        .asci-container-xl {
+            max-width: 100%;
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+        
+        .asci-container-xl iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .superLogo {
+            width:20vw;
+            height: auto;
+        }
+    
+        .top-container {
+            min-width:100%;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            background-color: #000;
+            padding: 10px;
+        }
+    
+    
+        .splashMain {
+            width:100%;
+            height:100px;
+            background-color: #000;
+            border-style:solid;
+            border-color:#0f0;
+            border-width:2px;    
+        }
+    
+        .splashScreen {
+            width:100%;
+            height:100%;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+           
+        }
+    
