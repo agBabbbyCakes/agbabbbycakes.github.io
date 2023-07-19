@@ -1,9 +1,14 @@
-<html lang="en"><!-- APE INDEX -->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ApeWorx, LTD</title>
-    <link rel="stylesheet" href="./activeDev/apeAll-site/src/apeStylez.css">   
+    <title>EXPERIMENTAL ApeWorx, LTD</title>
+    <link rel="stylesheet" href="./activeDev/apeAll-site/src/apeStylez.css">
+    <style>
+        .menu-item {
+            transition: background-color 0.5s linear;
+        }
+    </style>
 </head>
 <body>
     <div class="splash">
@@ -18,42 +23,42 @@
         <div class="menu">
             <!-- apeFramework -->
             <a href="./activeDev/apeAll-site/src/apes/apeFrame/apeFrame.html">
-                <div class="menu-item">
+                <div id="menu-item-1" class="menu-item">
                     <img src="./activeDev/apeAll-site/assets/4.png" alt="apeFrameWork" class="product-logo">
                 </div>
             </a>
 
             <!-- apeDocs -->
             <a href="./activeDev/apeDocs-site/src/index.html">
-                <div class="menu-item">
+                <div id="menu-item-2" class="menu-item">
                     <img src="./activeDev/apeAll-site/assets/doc-logo-8bit.png" alt="docs" class="product-logo">
                 </div>
             </a>
 
             <!-- silverBack -->
             <a href="./activeDev/apeAll-site/src/apes/silverback_1/silverback.html">
-                <div class="menu-item">
+                <div id="menu-item-3" class="menu-item">
                     <img src="./activeDev/apeAll-site/assets/3_silver.png" alt="silverBack" class="product-logo">
                 </div>
             </a>
 
             <!-- cHaOSneT -->
             <a href="./activeDev/apeAll-site/src/apes/chaosnet_1/chaosnet.html">
-                <div class="menu-item">
+                <div id="menu-item-4" class="menu-item">
                     <img src="./activeDev/apeAll-site/assets/2.png" alt="chaosNet" class="product-logo">
                 </div>
             </a>
 
             <!-- APE PAY -->
             <a href="./activeDev/apeAll-site/src/apes/apepay_1/apepay_bubbles.html">
-                <div class="menu-item">
+                <div id="menu-item-5" class="menu-item">
                     <img src="./activeDev/apeAll-site/assets/3.png" alt="apePay" class="product-logo">
                 </div>
             </a>
 
             <!-- apeAcademy -->
             <a href="https://academy.apeworx.io">
-                <div class="menu-item">
+                <div id="menu-item-6" class="menu-item">
                     <img src="./activeDev/apeAll-site/assets/7.png" alt="apeFrameWork" class="product-logo">
                 </div>
             </a>
@@ -92,35 +97,45 @@
     </footer>
 
     <script>
-        const menuItems = document.querySelectorAll('.menu-item');
-        let focusIndex = 0;
+        function getRandomColor() {
+            return '#' + Math.floor(Math.random() * 16777215).toString(16);
+        }
 
-        function updateFocus() {
-            for (let i = 0; i < menuItems.length; i++) {
-                if (i === focusIndex) {
-                    menuItems[i].classList.add('focused');
+        function startColorMorph() {
+            const interval = 500; // 0.5 seconds
+            let elapsed = 0;
+            const menuItem = this;
+            const startColor = menuItem.dataset.colorStart;
+            const endColor = getRandomColor();
+
+            function animateColor(timestamp) {
+                elapsed += timestamp - (timestamp || performance.now());
+                if (elapsed >= interval) {
+                    menuItem.style.backgroundColor = endColor;
+                    menuItem.dataset.colorStart = endColor;
                 } else {
-                    menuItems[i].classList.remove('focused');
-                }
-            }
-        }
-
-        function handleKeyPress(event) {
-            if (event.key === 'ArrowUp') {
-                focusIndex = (focusIndex - 1 + menuItems.length) % menuItems.length;
-            } else if (event.key === 'ArrowDown') {
-                focusIndex = (focusIndex + 1) % menuItems.length;
-            } else if (event.key === ' ') {
-                const link = menuItems[focusIndex].querySelector('a');
-                if (link) {
-                    link.click();
+                    const t = elapsed / interval;
+                    menuItem.style.backgroundColor = `rgba(${startColor}, ${t})`;
+                    requestAnimationFrame(animateColor);
                 }
             }
 
-            updateFocus();
+            requestAnimationFrame(animateColor);
         }
 
-        document.addEventListener('keydown', handleKeyPress);
+        function endColorMorph() {
+            this.style.backgroundColor = this.dataset.colorStart;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuItems = document.querySelectorAll('.menu-item');
+            menuItems.forEach((menuItem) => {
+                menuItem.dataset.colorStart = '#ff00aac8';
+
+                menuItem.addEventListener('mouseenter', startColorMorph);
+                menuItem.addEventListener('mouseleave', endColorMorph);
+            });
+        });
     </script>
 </body>
 </html>

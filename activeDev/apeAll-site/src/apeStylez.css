@@ -4,7 +4,7 @@
     --color-primary: #ff8dd1;
     --color-secondary: #17171788;
     --color-tertiary: #fff;
-    --color-hover:#ff8dd1;
+    --color-hover:#ff00aac8;
 }
 
 /*STYLE FOR ALL APE*/
@@ -212,7 +212,7 @@
         }
 
         .menu-item:hover {
-            background-color: #ff8dd1;
+            background-color: var(--color-hover);
         }
 
         .menu-item a {
