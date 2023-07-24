@@ -1,7 +1,7 @@
-<!DOCTYPE html><!-- APE FRAME -->
+<!DOCTYPE html><!-- APE FRAME --><!-- AS OF 7.24.23 -->
 <html>
 <head>
-    <title>apeFramework - as of 7.18.23</title>
+    <title>apeFramework - as of 7.24.23</title>
     <link rel="stylesheet" href="../apeFrame/apeFrame_css_1.css">
 </head>
 <body>
@@ -19,8 +19,8 @@
         <div class="splashInstallContainer">
             <div class="splashInstall-left">
                 <div>
-                    <button class="downloadButton">Download Ape</button>
-                    <a href="#"><button class="downloadButton">Run Docker</button></a>
+                    <button class="downloadButton" onclick="showPopup()">Download Ape</button>
+                    <a href="#"><button class="downloadButton" onclick="showPopup()">Run Docker</button></a>
                 </div>
                 <div class="releaseNotesLink">
                     <a href="https://github.com/ApeWorX/ape/releases" class="github-link">Release Notes</a>
@@ -120,10 +120,29 @@
         <li><a href="https://github.com/ApeWorX/ape-polygon">Polygon</a></li>
         <li><a href="https://github.com/ApeWorX/ape-ens">Ens</a></li>
         <li><a href="https://github.com/ApeWorX/ape-arbitrum">Arbitrum</a></li>
+        <li><a href="https://github.com/ApeWorX/ape-vyper">Vyper</a></li>
+        <li><a href="https://github.com/ApeWorX/ape-solidity">Solidity</a></li>
+        <li><a href="https://github.com/ApeWorX/ape-etherscan">Etherscan</a></li>
+        <li><a href="https://github.com/ApeWorX/ape-hardhat">Hardhat</a></li>
+        <li><a href="https://github.com/ApeWorX/ape-starknet">Starknet</a></li>
+        <li><a href="https://github.com/ApeWorX/ape-tokens">Tokens</a></li>
+        <li><a href="https://github.com/ApeWorX/ape-ledger">Ledger</a></li>
+        <li><a href="https://github.com/ApeWorX/ape-foundry">Foundry</a></li>
+        <li><a href="https://github.com/ApeWorX/ape-alchemy">Alchemy</a></li>
+        <li><a href="https://github.com/ApeWorX/ape-polygon">Polygon</a></li>
+        <li><a href="https://github.com/ApeWorX/ape-ens">Ens</a></li>
+        <li><a href="https://github.com/ApeWorX/ape-arbitrum">Arbitrum</a></li>
     </ul>
 </div>
 
+<style>
+     
 
+        .superLogo {
+            width: 100px;
+            height: 100px;
+        }
+</style>
 <!-- Start of Footer -->
 
 <style>
@@ -153,40 +172,99 @@ footer {
 
 <!-- INSTALL -->
 
-
-
 <section class="installApe-section">
-        <div class="installApe-fullwidth-wrap">
-            <div class="install section">
-                <a href="#" onclick="showPopup()"><button class="installButton">Install</button></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Popup HTML -->
-    <div id="popup" class="popup-background">
-        <div class="popup-content">
-            <img src="./apeFrame-logo.png" alt="Logo" class="superLogo">
-            Step 1. Open Github and create a new repository. <br>
-            Step 2. Copy the repository URL. <br>
-            Step 3. Open Ape and select "New Project" <br>
+    <div class="installApe-fullwidth-wrap">
+        <div class="install section">
+            <button class="installButton" onclick="showPopup()">Install</button>
         </div>
     </div>
+</section>
 
-    <script>
-        function showPopup() {
-            var popup = document.getElementById('popup');
-            popup.style.display = 'flex';
+<!-- Popup HTML -->
+<div id="popup" class="popup-background">
+    <div class="fullwidth-wrapper">
+        <div class="innerCenter-wrapper">
+            <!-- INSTALL ITEM 1 -->
+            <div class="innerCenter-Item">
+            <div class="innerHeader">
+                <h1>Via Pip</h1>
+            </div>
+            <div class="innerBody">
+                <p>via pipx or pip</p>
+                    Install pipx via their installation instructions or pip via their installation instructions.
+                    <div class="code">pipx install eth-ape<button class="code-copy">Copy</button></div>
+                    <div class="code">pip install eth-ape<button class="code-copy">Copy</button></div>
+                    
+            </div>
+            </div>
+            <!-- INSTALL ITEM 2 -->
+            <div class="innerCenter-Item">
+                <div class="innerHeader">
+                    <h1>Via Docker</h1>
+                </div>
+                <div class="innerBody">
+                    <h1>Docker Command</h1>
 
-            // Close the popup when clicked outside
-            window.onclick = function(event) {
-                if (event.target == popup) {
-                    popup.style.display = 'none';
-                }
-            };
+                    <div class="code">
+                        docker run \
+                        --volume $HOME/.ape:/home/harambe/.ape \
+                        --volume $HOME/.vvm:/home/harambe/.vvm \
+                        --volume $HOME/.solcx:/home/harambe/.solcx \
+                        --volume $PWD:/home/harambe/project \
+                        apeworx/ape compile
+                    </div>
+                </div>
+             </div>
+              <!-- INSTALL ITEM 3 -->
+            <div class="innerCenter-Item">
+                This is where the code instructions would go perfectly in the center
+                <div class="innerHeader">
+                    <h1>Header Text</h1>Header of Text 
+                </div>
+                <div class="innerBody">
+                    <h1>Installation</h1>
+
+                    <div class="box">
+                        <h2>Considerations for Installing:</h2>
+                        <ul class="list">
+                            <li>We advise installing in a virtualenv or venv to avoid interfering with OS-level site packages.</li>
+                            <li>We advise installing ape with recommended plugins <code class="code">pip install eth-ape'[recommended-plugins]'</code>.</li>
+                            <li>We advise for macOS users to install virtual env via homebrew.</li>
+                        </ul>
+                    </div>
+                
+                    <div class="box">
+                        <h2>via pipx or pip</h2>
+                        <p>Install <code class="code">pipx</code> via their installation instructions or <code class="code">pip</code> via their installation instructions.</p>
+                        <p>Install ape via <code class="code">pipx install eth-ape</code> or <code class="code">pip install eth-ape</code>.</p>
+                    </div>
+                </div>
+             </div>
+
+        </div>
+    </div>
+    <div class="popup-content">
+        <img src="./apeFrame-logo.png" alt="Logo" class="superLogo">
+        <p>Step 1. Open Github and create a new repository.</p>
+        <p>Step 2. Copy the repository URL.</p>
+        <p>Step 3. Open Ape and select "New Project"</p>
+    </div>
+</div>
+
+<script>
+    function showPopup() {
+        var popup = document.getElementById('popup');
+        popup.style.display = 'block';
+    }
+
+    // Close the popup when clicked outside
+    window.onclick = function(event) {
+        var popup = document.getElementById('popup');
+        if (event.target == popup) {
+            popup.style.display = 'none';
         }
-    </script>
-
+    };
+</script>
 
 <footer>
    
