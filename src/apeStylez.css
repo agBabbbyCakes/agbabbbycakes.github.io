@@ -184,10 +184,10 @@
             height:auto;
             overflow:hidden;
         }
-
+/*
         .footer {
-            position:static;
-        }
+            position:fixed;
+        }*/
         }
        
 
@@ -261,6 +261,7 @@
             display:flex;
             align-items:center;
             justify-content: center;
+        
             min-width:20%;
             min-height:300px;
             max-height: 200px;
@@ -292,17 +293,24 @@
 
 
 
-        menu-item-silverback {
+       
+         .menu-item-silverback {
             display:flex;
             align-items:center;
             justify-content: center;
-            min-width:20%;
-            min-height:300px;
-            max-height: 200px;
+           
+            width:300px;
+            height: 300px;
             padding:20px;
             border-radius: 7.5px;
             margin: 10px;
             text-align: center;
             transition: background-color 0.3s ease;
             cursor: pointer; 
+         }
+
+
+                
+         .menu-item-silverback img {
+           width:100px; 
         }
