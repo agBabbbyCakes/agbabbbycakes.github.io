@@ -16,6 +16,10 @@
     --colorAcademy: #0f00df;
 
 
+    /*Layout Colors */
+    --footer-color: #17171788;
+
+
 }
 
 
@@ -66,11 +70,11 @@
 
 /*SILVERBACK LOGO STYLES */
 
-#logoSilverBack {
-    width: 30px;
+/*#logoSilverBack {
+    width: 100px;
     height: auto;
     overflow: hidden;
-}
+}*/
 
 
 
@@ -216,12 +220,7 @@
             font-size:12px;
         }
     
-        .footer-link img {
-            width: 24px;
-            height: 24px;
-            vertical-align: middle;
-            filter: invert(1);
-        }
+      
 
         .footer-link:hover {
             opacity: .7;
@@ -230,12 +229,12 @@
         .footer-link a {
             color: #fff;
             text-decoration: none;
-            padding: 10px;
+            padding-right: 10px;
         }
 
         .footer {
-            background-color:grey;
-            position:fixed;
+            background-color: var (--footer-color);
+            position:relative;
             width:100%;
         }
 
@@ -247,7 +246,7 @@
     /*Container PRODUCTS*/
 
         .container-product {
-            background-color:rgba(255, 0, 0, 0);
+            background-color:rgba(193, 42, 42, 0);
         }
 
         .menu {
@@ -277,6 +276,9 @@
             background-color: var(--color-hover);
         }
 
+
+
+
         .menu-item a {
             display: flex;
             justify-content: center;
@@ -286,4 +288,21 @@
             color: #333;
             font-weight: bold;
             font-size: 20px;
+        }
+
+
+
+        menu-item-silverback {
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            min-width:20%;
+            min-height:300px;
+            max-height: 200px;
+            padding:20px;
+            border-radius: 7.5px;
+            margin: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            cursor: pointer; 
         }
