@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <title>Silverback</title>
     <style>
 
@@ -113,6 +115,28 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         }
 
+        .info-popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+}
+
+.info-icon {
+    display: block;
+    font-size: 24px;
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.info-icon:hover {
+    color: white;
+}
+
+
     </style>
 </head>
 <body>
@@ -121,12 +145,19 @@
      </a>
      <a class="trailer-text-link" href="#" onclick="mirrorArticlePopup()">Mirror Article</a>
      <a class="trailer-text-link" href="#" onclick="trailerPopup()">Trailer</a>
- 
+     <a href="#" onclick="infoPopup()" class="info-icon"><i class="fas fa-info-circle"></i></a>
+
  </div>
     </div>
 
 
 
+<!-- Information Popup -->
+<div id="infoPopup" class="popup-background" style="display: none;">
+    <div class="info-popup-content">
+        This is some informational text. You can put anything you'd like here.
+    </div>
+</div>
 
 
 <!-- Trailer Popup -->
@@ -201,9 +232,20 @@
     }
 </script>
 
+<script>
+    function infoPopup() {
+    var popup = document.getElementById('infoPopup');
+    popup.style.display = 'flex';
 
+    // Close the popup when clicked outside
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = 'none';
+        }
+    };
+}
 
-
+</script>
 
     <footer>
    

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <title>Ape Academy | ApeWorx, LTD </title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
@@ -32,8 +36,9 @@
     background-position: center; /* center the image */
 }
 
-        footer {
-            position: fixed;
+footer {
+            position: absolute;
+            left:50%;
             bottom: 0;
             min-width: 100%;
             height: auto;
@@ -133,22 +138,60 @@
             text-align:center;
         }
 
+        .info-popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+}
+
+.info-icon {
+    display: block;
+    font-size: 24px;
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.info-icon:hover {
+    color: white;
+}
+
+
     </style>
 </head>
 <body>
     <div class="container">
         <a href="https://academy.apeworx.io" class="github-link">
             <img src="/assets/7.png" alt="AcdaemyLogo" class="logo">
-        <!--  <a class="trailer-text-link" href="#" onclick="showPopup()">BETA Trailer</a>
- 
-         <a class="trailer-text-link" href="#" onclick="showPopup()">Trailer</a>  -->     </div>
-<p class="subParagraph">
-    Ape Academy is a project-based learning platform for building in Web3 using Ape Framework. The platform consists of high-quality videos and in-depth articles on using Ape Framework for smart contract development.
-</p>
-    <footer>
-        <!-- ALL APE LINK -->
-        <a href="/index.html"><img src="/assets/apeFull.png" class="footer-logo"></a>
-    </footer>
+            <a href="#" onclick="infoPopup()" class="info-icon"><i class="fas fa-info-circle"></i></a>
+          </div>
+
+<style>
+    .academyButton {
+        color: black;
+        font-family: 'Press Start 2P';
+
+            text-decoration: none;
+            font-size: 12px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+    }
+</style>
+<!-- Information Popup -->
+<div id="infoPopup" class="popup-background" style="display: none;">
+    <div class="info-popup-content">
+        <p class="subParagraph" style="color:black; text-align:left;">
+            Ape Academy is a project-based learning platform for building in Web3 using Ape Framework. The platform consists of high-quality videos and in-depth articles on using Ape Framework for smart contract development.
+        </p>  <a href="https://academy.apeworx.io"><button class="academyButton">Visit the Academy</button></a> 
+     </div>
+</div>
+
+
+
+
 
     <!-- Popup HTML -->
     <div id="popup" class="popup-background" style="display: none;">
@@ -171,5 +214,24 @@
             };
         }
     </script>
+<script>
+function infoPopup() {
+    var popup = document.getElementById('infoPopup');
+    popup.style.display = 'flex';
+
+    // Close the popup when clicked outside
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = 'none';
+        }
+    };
+}
+</script>
+
+
+    <footer>
+        <!-- ALL APE LINK -->
+        <a href="/index.html"><img src="/assets/apeFull.png" class="footer-logo"></a>
+    </footer>
 </body>
 </html>
