@@ -135,7 +135,7 @@
 
         /* Added styles for popup */
         .popup-background {
-            position: fixed;
+            position: relative;
             top: 0;
             left: 0;
             width: 100%;
@@ -145,6 +145,7 @@
             justify-content: center;
             align-items: center;
             z-index: 9999;
+            overflow:auto;
         }
 
         .popup-content {
@@ -482,6 +483,7 @@
         .innerHeader {
             text-align:left!important;
             color: var(--color-primary) ;
+            padding:10px;
         }
 
         .innerHeader h1 {
@@ -565,5 +567,41 @@
     filter: brightness(200);
     mix-blend-mode: ligthen;
     width:200px;
-    
+
+}
+
+.popupHeader {
+   width:100%;
+    height:300px;
+    display:flex;
+    background-image: url(/assets/frameworkGraphics/spaceManOnMoon.png);
+    background-position: top;
+    background-size: cover;
+    mix-blend-mode: lighten;
+    opacity: .8;
+}
+
+
+/*BuTTONS*/
+
+.closeButton {
+    width: 100%;
+    padding: 10px;
+    border-style:solid;
+    border-width:1px;
+    border-color: var(--color-secondary);
+    background-color:transparent!important;
+    text-transform:uppercase;
+    cursor: pointer;
+    margin:10px;
+    color: var(--color-secondary);
+    font-family: 'Press Start 2P';
+    font-size: 16px;
+}
+
+.closeButton:hover {
+    filter: invert(1);
+    background-color: var(--color-secondary);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
 }

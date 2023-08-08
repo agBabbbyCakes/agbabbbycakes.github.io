@@ -192,24 +192,30 @@ footer {
         <div class="innerCenter-wrapper">
             <!-- INSTALL ITEM 1 -->
             <div class="innerCenter-Item">
+                <div class="popupHeader">
+                  
+                </div>
             <div class="innerHeader">
-                <h1>Via Pipppp</h1>
+               
+                <h1>INSTALL APE VIA PIP</h1>
             </div>
             <div class="innerBody">
+                
                 <p>via pipx or pip</p>
-                    Install pipx via their installation instructions or pip via their installation instructions.
-                    <div class="code">pipx install eth-ape<button class="code-copy">Copy</button></div>
-                    <div class="code">pip install eth-ape<button class="code-copy">Copy</button></div>
+
+          
+                    <div class="code">pipx install eth-ape</div>
+                    <div class="code">pip install eth-ape</div>
                     
             </div>
             </div>
             <!-- INSTALL ITEM 2 -->
             <div class="innerCenter-Item">
                 <div class="innerHeader">
-                    <h1>Via Docker</h1>
+                    <h1>Install Ape Via Docker</h1>
                 </div>
                 <div class="innerBody">
-                    <h1>Docker Command</h1>
+                    <p>docker command</p>
 
                     <div class="code">
                         docker run \
@@ -219,57 +225,50 @@ footer {
                         --volume $PWD:/home/harambe/project \
                         apeworx/ape compile
                     </div>
+                    <button class="closeButton" onclick="hidePopup()" style="background-color: red; color: white; padding: 10px 20px; cursor: pointer;">Close</button>
+
                 </div>
              </div>
-              <!-- INSTALL ITEM 3 -->
-            <div class="innerCenter-Item">
-                This is where the code instructions would go perfectly in the center
-                <div class="innerHeader">
-                    <h1>Header Text</h1>Header of Text 
-                </div>
-                <div class="innerBody">
-                    <h1>Installation</h1>
-
-                    <div class="box">
-                        <h2>Considerations for Installing:</h2>
-                        <ul class="list">
-                            <li>We advise installing in a virtualenv or venv to avoid interfering with OS-level site packages.</li>
-                            <li>We advise installing ape with recommended plugins <code class="code">pip install eth-ape'[recommended-plugins]'</code>.</li>
-                            <li>We advise for macOS users to install virtual env via homebrew.</li>
-                        </ul>
-                    </div>
-                
-                    <div class="box">
-                        <h2>via pipx or pip</h2>
-                        <p>Install <code class="code">pipx</code> via their installation instructions or <code class="code">pip</code> via their installation instructions.</p>
-                        <p>Install ape via <code class="code">pipx install eth-ape</code> or <code class="code">pip install eth-ape</code>.</p>
-                    </div>
-                </div>
-             </div>
-
-        </div>
-    </div>
-    <div class="popup-content">
-        <img src="./apeFrame-logo.png" alt="Logo" class="superLogo">
-        <p>Step 1. Open Github and create a new repository.</p>
-        <p>Step 2. Copy the repository URL.</p>
-        <p>Step 3. Open Ape and select "New Project"</p>
-    </div>
+            </div>
+            
 </div>
 
-<script>
-    function showPopup() {
-        var popup = document.getElementById('popup');
-        popup.style.display = 'block';
-    }
+<style>
+    .popup-background {
+    /* ... existing styles ... */
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 0.3s; /* Add a transition effect */
+}
 
-    // Close the popup when clicked outside
-    window.onclick = function(event) {
-        var popup = document.getElementById('popup');
-        if (event.target == popup) {
-            popup.style.display = 'none';
-        }
-    };
+.popup-show {
+    display: block;
+    opacity: 1;
+}
+
+</style>
+
+<script>
+function showPopup() {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'block';
+    setTimeout(() => popup.classList.add('popup-show'), 10); // Delay adding the class to allow the fade-in effect
+}
+
+function hidePopup() {
+    var popup = document.getElementById('popup');
+    popup.classList.remove('popup-show'); // Remove class to start the fade-out effect
+    setTimeout(() => popup.style.display = 'none', 300); // After the transition is over, hide the popup
+}
+
+// Close the popup when clicked outside
+window.onclick = function(event) {
+    var popup = document.getElementById('popup');
+    if (event.target == popup) {
+        hidePopup();
+    }
+};
+
+
 </script>
 
 <footer>
