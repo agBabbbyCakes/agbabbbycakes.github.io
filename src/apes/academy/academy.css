@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html {
+    font-family: 'Press Start 2P';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    background-color: #0051ff73;
+    font-family: 'Press Start 2P';
+}
+
+body::before {
+content: ""; /* add content for the pseudo-element to render */
+position: absolute;
+mix-blend-mode: color-burn;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: -1; /* place it behind the content */
+background-image: url('/assets/Gorrilla 4-03.png');
+background-repeat: no-repeat; /* prevent the image from repeating */
+background-size: cover; /* make the image cover the entire viewport */
+background-position: center; /* center the image */
+}
+
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    filter: invert(1);
+}
+
+.logo:hover {
+    filter: invert(0);
+}
+
+
+
+/* Added styles for popup */
+.popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.subParagraph {
+    color:white;
+    text-align:center;
+}
+
+.info-popup-content {
+background-color: #fff;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+max-width: 300px;
+text-align: center;
+min-width:50%;
+}
+
+.info-icon {
+display: block;
+font-size: 24px;
+margin-top: 20px;
+color: black;
+text-decoration: none;
+}
+
+.info-icon:hover {
+color: white;
+}
+
+
+.logo-ape-little {
+    width:62px;
+    height:62px;
+    margin-left:10px;
+}
+
+.logo-ape-little:hover {
+    filter: invert(1);
+}

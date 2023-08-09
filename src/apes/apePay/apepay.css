@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html {
+    font-family: 'Press Start 2P';
+}
 
 body {
     margin: 0;
     padding: 0;
     min-width:100%;
     background-color: #00ffbf39;
-    font-family: 'Nunito', sans-serif;
+
         /*background: radial-gradient(circle, #342c2c, #2b2527, #221f20, #191819, #111111);*/
         color: #000000;
         font-size: 30px;
@@ -15,9 +20,7 @@ body {
  
 }
 
-html {
-    font-family: 'Nunito', sans-serif;
-}
+
 
 a {
     color:white;
@@ -126,6 +129,7 @@ background: linear-gradient(to right, #eeff02, #e2e2e2);
 
 h2,h3,p,a {
 font-size:14px;
+line-height:2.2;
 }
 
 /* The Modal (background) */
@@ -152,13 +156,16 @@ border: 1px solid #888;
 border-color: #eeff02;
 color:white;
 
+width:700px;
+}
 
-width: 50%; /* Could be more or less, depending on screen size */
+.modal-content a {
+  color:#0fff6f;
 }
 
 /* The Close Button */
 .close {
-color: #aaa;
+color: #dcdcdc;
 float: right;
 font-size: 28px;
 font-weight: bold;

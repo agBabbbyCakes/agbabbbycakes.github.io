@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html><!-- as of 8.9.23 - a -->
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <title>Silverback</title>
@@ -143,9 +145,11 @@
     <div class="container">
         <a href="https://github.com/ApeWorX/ape" class="github-link"><img src="./silverback-grey.png" alt="Logo" class="logo">
      </a>
+     <a href="#" onclick="infoPopup()" class="info-icon"><i class="fas fa-info-circle"></i></a>
+     <a style="font-size:16px"class="trailer-text-link" href="#" onclick="mirrorArticlePopup()">Install SDK</a>
      <a class="trailer-text-link" href="#" onclick="mirrorArticlePopup()">Mirror Article</a>
      <a class="trailer-text-link" href="#" onclick="trailerPopup()">Trailer</a>
-     <a href="#" onclick="infoPopup()" class="info-icon"><i class="fas fa-info-circle"></i></a>
+  
 
  </div>
     </div>
@@ -155,8 +159,11 @@
 <!-- Information Popup -->
 <div id="infoPopup" class="popup-background" style="display: none;">
     <div class="info-popup-content">
-        This is some informational text. You can put anything you'd like here.
-    </div>
+        <h1>Ape SDK for the Silverback platform</h1>
+<p>
+Bot creation and testing library, and SDK for the Silverback platform</p>
+<a href="https://github.com/ApeWorX/silverback/blob/main/example.py">Example</a>
+        </div>
 </div>
 
 
