@@ -256,6 +256,29 @@
             flex-wrap: wrap;
         }
 
+        .container-product {
+            display: flex;  /* Use flexbox for centering */
+            justify-content: center;  /* Center horizontally */
+            align-items: center;  /* Center vertically */
+            min-height: 80vh;  /* Minimum height to take up the full viewport height */
+            padding: 20px; /* Optional spacing around the edges */
+        }
+        
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);  /* 3 columns */
+            grid-gap: 20px;  /* Gap between grid items */
+            max-width: 960px;  /* Max width of the grid */
+            width: 100%;  /* Make sure it takes up full width up to the max-width */
+        }
+        
+        @media only screen and (max-width: 720px) {
+            .menu {
+                grid-template-columns: 1fr;  /* 1 column for smaller screens */
+            }
+        }
+        
+
         .menu-item {
           
             display:flex;

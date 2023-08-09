@@ -327,12 +327,14 @@
             color: var(--color-secondary);
             font-family: 'Press Start 2P';
             font-size: 16px;
+            opacity: .50;
         }
 
         .downloadButton:hover {
             background-color: var(--color-secondary);
             border-color: var(--color-primary);
-            color: var(--color-primary);
+            opacity: 1;
+            
         }
         .releaseNotesLink {
             text-align: center;
@@ -527,9 +529,14 @@
                 padding: 10px;
                 border-radius: 5px;
                 border-style:solid;
-                border-color:var(--color-primary);
+                border-color:var(--border-color);
                 margin-top:10px;
                 margin-bottom:10px;
+                border-width:1px;
+            }
+
+            .code:hover {
+                filter: invert(1);
             }
 
             .code-copy {
@@ -594,8 +601,9 @@
     height:300px;
     display:flex;
     background-image: url(/assets/frameworkGraphics/spaceManOnMoon.png);
-    background-position: top;
-    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:50%;
     mix-blend-mode: lighten;
     background-color:rgba(0, 0, 0, 0.254);
     opacity: .8;
@@ -617,13 +625,12 @@
     color: var(--color-secondary);
     font-family: 'Press Start 2P';
     font-size: 16px;
+    opacity:.38;
 }
 
 .closeButton:hover {
 
-    background-color: var(--color-primary);
-    border-color: var(--color-primary);
-    color: black;
+ opacity : 1;
 }
 
 
