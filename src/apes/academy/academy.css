@@ -13,19 +13,33 @@ body {
 }
 
 body::before {
-content: ""; /* add content for the pseudo-element to render */
-position: absolute;
-mix-blend-mode: color-burn;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-z-index: -1; /* place it behind the content */
-background-image: url('/assets/Gorrilla 4-03.png');
-background-repeat: no-repeat; /* prevent the image from repeating */
-background-size: cover; /* make the image cover the entire viewport */
-background-position: center; /* center the image */
+    content: ""; 
+    position: absolute;
+    mix-blend-mode: color-burn;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+    background-image: url('/assets/Gorrilla 4-03.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
 }
+
+/* Use a media query for large screens to adjust the background settings */
+@media (min-width: 1024px) {
+    body::before {
+        background-size: contain; 
+        background-position: center;
+    }
+}
+
+
+
+
+
+
 
 
 .container {

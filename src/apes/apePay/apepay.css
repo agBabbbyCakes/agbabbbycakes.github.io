@@ -147,7 +147,6 @@ line-height:2.2;
   height: 100%; 
   overflow: auto; 
   background-color: rgba(0,0,0,0.4); 
-  display: flex;
   justify-content: center;
   align-items: flex-start; /* Aligns to the top of the viewport */
   z-index: 1;

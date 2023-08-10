@@ -1,19 +1,13 @@
-<!DOCTYPE html><!-- APE FRAME --><!-- AS OF 8.9a.23 -->
+<!DOCTYPE html><!-- APE FRAME --><!-- AS OF 8.10c.23 -->
 <html>
 <head>
     <title>ape framework | ApeWorX, LTD </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="description" content="ApeFramework: The most advanced smart contract on Earth. Trusted by leading platforms such as Yearn, Lido, Curve, Element, and more. Create next-level blockchain development today.">
     <link rel="stylesheet" href="../apeFrame/apeFrame_css_1.css">
 </head>
 <body>
-
-    <!--<div class="top-container">
-        <a href="https://github.com/ApeWorX/ape">
-            <img src="./apeFrame-logo.png" alt="Logo" class="graphic-frameTopLogo">
-     </a>
-    </div>-->
-
-    <!-- Splash INSTALL STYLE -->
 
 
 <!-- SPLASH -->
@@ -21,10 +15,10 @@
     <div class="splashScreen">
         <div class="splashText">
             <a href="https://github.com/ApeWorX/ape">
-                <img src="./apeFrame-logo.png" alt="Logo" class="graphic-frameTopLogo">
+                <img src="/assets/frame.png" alt="Logo" class="graphic-frameTopLogo">
          </a>
             <!--<h1 style="padding-left:10px">ape framework</h1>
-            --><p style="padding-left:10px">The most advanced smart contract framework on earth
+            --><p class="p-subHeader-main">The most advanced smart contract framework on earth
                 Trusted by Yearn, Lido, CURVE, Element and more</p>
         </div>
     </div>
@@ -210,28 +204,27 @@
 
 
 <script>
-function showPopup() {
-    var popup = document.getElementById('popup');
-    popup.style.display = 'block';
-    setTimeout(() => popup.classList.add('popup-show'), 10); // Delay adding the class to allow the fade-in effect
-}
-
-function hidePopup() {
-    var popup = document.getElementById('popup');
-    popup.classList.remove('popup-show'); // Remove class to start the fade-out effect
-    setTimeout(() => popup.style.display = 'none', 300); // After the transition is over, hide the popup
-}
-
-// Close the popup when clicked outside
-window.onclick = function(event) {
-    var popup = document.getElementById('popup');
-    if (event.target == popup) {
-        hidePopup();
+    function showPopup() {
+        var popup = document.getElementById('popup');
+        popup.style.display = 'block';
+        setTimeout(() => popup.classList.add('popup-show'), 10); // Delay adding the class to allow the fade-in effect
     }
-};
-
-
-</script>
+    
+    function hidePopup() {
+        var popup = document.getElementById('popup');
+        popup.classList.remove('popup-show'); // Remove class to start the fade-out effect
+        setTimeout(() => popup.style.display = 'none', 300); // After the transition is over, hide the popup
+    }
+    
+    // Close the popup when clicked outside
+    window.onclick = function(event) {
+        var popup = document.getElementById('popup');
+        if (event.target == event.currentTarget) {
+            hidePopup();
+        }
+    };
+    
+    </script>
 
 
         

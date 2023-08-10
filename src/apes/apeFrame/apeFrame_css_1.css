@@ -16,6 +16,16 @@
             color: var(--color-primary);
         }
 
+
+        a {
+            color:white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
     :root {
             --color-primary: #b7ff00;
             --color-secondary: #b7ff00;
@@ -44,6 +54,13 @@
 
         button {
             color: var(--color-primary)!important;
+        }
+
+
+        .p-subHeader-main {
+            padding-left:100px;
+            padding-right:100px;
+
         }
 
         .container {
@@ -605,9 +622,25 @@
     background-attachment: fixed;
     background-size:50%;
     mix-blend-mode: lighten;
-    background-color:rgba(0, 0, 0, 0.254);
+    background-color:rgba(0, 0, 0, 0.61);
     opacity: .8;
 }
+
+.popupHeader::after {
+    content: '';
+    position: relative; /* Positioned relative to the .popupHeader */
+    bottom: 0; /* Position it at the bottom */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Shift it back by half of its width to ensure it's centered */
+    width: 300px; /* Adjust to your desired width for the logo */
+    height: 100px; /* Adjust to your desired height for the logo */
+    background-image: url(/assets/frame.png); /* Path to your logo */
+    background-position: center;
+    background-repeat: no-repeat; /* Ensure the logo doesn't repeat */
+    background-size: contain; /* Adjust to fit the dimensions */
+    z-index: 2; /* To ensure it's above other elements */
+}
+
 
 
 /*BuTTONS*/
@@ -649,3 +682,33 @@
     display: block;
     opacity: 1;
 }
+
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {  /* 767px is a common breakpoint for targeting mobile devices */
+    .splashMain {
+  
+        padding-bottom: 20px;  /* Adjust this value as needed */
+    }
+
+
+}
+
+/* Default styles for desktop */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+    gap: 20px; /* Adjust this value for spacing between grid items */
+}
+
+.section {
+    margin: 10px; /* Adjust as needed for outer spacing */
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    .grid {
+        grid-template-columns: 1fr; /* One column on mobile */
+    }
+}
+
