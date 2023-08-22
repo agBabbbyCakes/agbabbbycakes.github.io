@@ -40,6 +40,7 @@
     .release-style-notes {
         background-color:rgba(0, 0, 0, 0.898);
         padding:30px;
+        min-height:100px;
     }
 
     .releaseName {
@@ -54,9 +55,11 @@
         z-index: 3;
         filter: invert(1);
         filter: brightness(100);
-
-       
+        background-color:rgba(0, 0, 0, 0.852);
+        transition: transform 0.3s;
     }
+
+    
 
     .releaseNumber {
         color:rgb(0, 0, 0);
@@ -69,7 +72,7 @@
         position:relative;
         z-index: 3;
         filter: brightness(100);
-
+        background-color:rgba(0, 0, 0, 0.851);
        
     }
 
@@ -83,7 +86,7 @@
                     <h1 class="releaseName">Latest Release</h1>
                     <h1 class="releaseNumber">0.6.18</h1>
                     <h1 class="big-font" style="font-size: 50px; text-align: center; color: white;" id="release-name"></h1>
-                    <div class="release-style-notes" id="release-list" style="font-size: 34px; text-align: center; color:white!important;"></div>
+                    <div class="release-style-notes" id="release-list" style="font-size: 16px; text-align: center; color:white!important;"></div>
                 </div>
             </div>
             </div>
