@@ -15,7 +15,7 @@
     <div class="splashScreen">
         <div class="splashText">
             <a href="https://github.com/ApeWorX/ape">
-                <img src="/assets/frame.png" alt="Logo" class="graphic-frameTopLogo">
+                <img src="frame.png" alt="Logo" class="graphic-frameTopLogo">
          </a>
             <!--<h1 style="padding-left:10px">ape framework</h1>
             --><p class="p-subHeader-main">The most advanced smart contract framework on earth
@@ -24,13 +24,92 @@
     </div>
 </div>
 
-    <!-- SPLASH INSTALL -->
-    <div class="splashInstall">
-        <div class="splashInstallContainer">
-            <div class="splashInstall-left">
-                <div>
-                    <!--TOPIMAGE-->
-                    <div class="splashInstall-image"></div>
+<!-- SPLASH INSTALL -->
+<div class="splashInstall">
+    <div class="splashInstallContainer">
+        <div class="splashInstall-left">
+            <div>
+                <!--TOPIMAGE-->
+                <div class="splashInstall-image">
+
+<style>
+    #release-list {
+        color: white!important;
+    }
+
+    .release-style-notes {
+        background-color:rgba(0, 0, 0, 0.898);
+        padding:30px;
+    }
+
+    .releaseName {
+        color:rgb(20, 15, 15);
+        font-size:2vw;
+        text-align:center;
+        display:flex;
+        justify-content: center;
+        mix-blend-mode: normal;
+        z-index:3;
+        position:relative;
+        z-index: 3;
+        filter: invert(1);
+        filter: brightness(100);
+
+       
+    }
+
+    .releaseNumber {
+        color:rgb(0, 0, 0);
+        font-size:10vw;
+        text-align:center;
+        display:flex;
+        justify-content: center;
+        mix-blend-mode: normal;
+        z-index:3;
+        position:relative;
+        z-index: 3;
+        filter: brightness(100);
+
+       
+    }
+
+    </style>
+    
+    
+</style>
+
+                <!-- Release Section -->
+                <div class="release-section">
+                    <h1 class="releaseName">Latest Release</h1>
+                    <h1 class="releaseNumber">0.6.18</h1>
+                    <h1 class="big-font" style="font-size: 50px; text-align: center; color: white;" id="release-name"></h1>
+                    <div class="release-style-notes" id="release-list" style="font-size: 34px; text-align: center; color:white!important;"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.onload = function() {
+        fetch('https://api.github.com/repos/ApeWorX/ape/releases/latest')
+            .then(response => response.json())
+            .then(data => {
+                let releaseList = document.getElementById('release-list');
+                let releaseElement = document.createElement('p');
+                releaseElement.textContent = `Name: ${data.name}, Published at: ${data.published_at}, Description: ${data.body}`;
+                releaseList.appendChild(releaseElement);
+            });
+    };
+</script>
+
+
+
+
+
+
+                    
                 </div>
                 <div class="releaseNotesLink">
                     <p>current version = .06</p>

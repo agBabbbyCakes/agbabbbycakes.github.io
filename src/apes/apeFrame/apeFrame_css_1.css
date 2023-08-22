@@ -60,6 +60,7 @@
         .p-subHeader-main {
             padding-left:100px;
             padding-right:100px;
+            
 
         }
 
@@ -312,7 +313,8 @@
 
         .splashInstallContainer {
             display: flex;
-            height: 40vh;
+            height: 50vh;
+            overflow:hidden;
             border-style:solid;
             border-width:1px;
             border-color: var(--border-color);
@@ -585,12 +587,13 @@
 .splashInstall-image {
     position: relative; /* Needed to place the ::before pseudo-element on top of it */
     width: 100%;
-    height: 25vh;
+    height: 200%;
     overflow: hidden;
-    background-image: url(/assets/frameworkGraphics/spaceStuff.png);
+    background-image: url(s2break.png);
     background-size: contain;
-    mix-blend-mode: lighten;
+    mix-blend-mode: ;
     background-attachment: fixed;
+
 }
 
 .splashInstall-image::before {
@@ -634,7 +637,7 @@
     transform: translateX(-50%); /* Shift it back by half of its width to ensure it's centered */
     width: 300px; /* Adjust to your desired width for the logo */
     height: 100px; /* Adjust to your desired height for the logo */
-    background-image: url(/assets/frame.png); /* Path to your logo */
+    background-image: url(./frame.png); /* Path to your logo */
     background-position: center;
     background-repeat: no-repeat; /* Ensure the logo doesn't repeat */
     background-size: contain; /* Adjust to fit the dimensions */
