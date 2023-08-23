@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+
+
 :root {
     --color-primary: #ff8dd1;
     --color-secondary: #17171788;
@@ -29,7 +35,7 @@
 .header {
     text-align: center;
     color: white;
-    padding:5px;
+    padding:15px;
     background-color:rgba(255, 0, 0, 0);
     height:40px;
     animation: change-typography 9s infinite;
@@ -39,16 +45,16 @@
 @keyframes change-typography {
     0% {
         font-size: 15px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif
-        text-transform: uppercase;
+        font-family:'encode sans';
+        font-weight:900;
     }
     50% {
         font-size: 15px;
-        font-family: monospace;
+        font-family: 'Press Start 2P', cursive;
     }
     100% {
         font-size: 15px;
-        font-family: barlow;
+        font-family: 'space mono';
     }
 }
 
@@ -315,7 +321,7 @@
             align-items:center;
             justify-content: center;
         
-            min-width:20%;
+        
             min-height:300px;
             max-height: 200px;
             padding:20px;
@@ -413,14 +419,38 @@
             .header {
                 text-align: center;
                 color: white;
-                padding:5px;
+                padding:25px;
                 background-color:rgba(255, 0, 0, 0);
-                height:100px;
+                height:80px;
                 display:flex;
                 flex-direction:column;
                 align-items:center;
                 justify-content:center;
                 animation: change-typography 9s infinite ease-in-out;
+            }
+
+
+            /*Silverback Logo Center*/
+
+            .menu-item-silverback {
+                display:flex;
+                align-items:center;
+                justify-content: center;
+    
+                min-width:300px;
+                width:300px;
+                min-height: 300px;
+                padding:20px;
+                border-radius: 7.5px;
+                text-align: center;
+                transition: background-color 0.3s ease;
+                cursor: pointer; 
+             }
+    
+    
+                    
+             .menu-item-silverback img {
+               width:100px; 
             }
         }
 
