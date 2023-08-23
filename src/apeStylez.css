@@ -18,7 +18,7 @@
     --colorApeDocs: #00ff15;
     --colorSilverBack: rgb(214, 214, 214);
     --colorChaos: #ff0062dd;
-    --colorApePay: #d9ff00;
+    --colorApePay: #00ffcc;
     --colorAcademy: #0f00df;
 
 
@@ -415,10 +415,10 @@ html {
             }
 
             .footer-link:hover {
-                background-color:white;
+                background-color:rgba(255, 255, 255, 0.529);
                 color:black;
-                mix-blend-mode: normal;
                 opacity: 1;
+                cursor: pointer;
 
             }
 

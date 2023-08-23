@@ -20,7 +20,12 @@ body {
  
 }
 
-
+html {
+  height: 100%;
+  background:rgb(91, 255, 236);
+  background: radial-gradient(ellipse at bottom, #ffffff 0%, #00ffcc 100%);*/
+  overflow: hidden;
+}
 
 a {
     color:white;
@@ -247,12 +252,7 @@ cursor: pointer;
     --direction: -2000;
   }
   
-  html {
-    height: 100%;
-    background:rgb(91, 255, 236);
-    background: radial-gradient(ellipse at bottom, #ffffff 0%, #eaff00 100%);*/
-    overflow: hidden;
-  }
+
   
   #bubbles {
     width: 4px;
