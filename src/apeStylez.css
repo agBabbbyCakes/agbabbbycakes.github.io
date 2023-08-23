@@ -203,7 +203,6 @@
 
         .footer {
             background-color: var(--color-secondary);
-            padding: 20px;
             text-align: center;
         }
     
@@ -211,13 +210,13 @@
             display: flex;
             justify-content: space-between;
             max-width: 400px;
-            margin: 0 auto;
+            margin: 0;
         }
     
         .footer-link {
             display: inline-block;
             text-transform:uppercase;
-            font-size:12px;
+            font-size:14px;
         }
     
       
@@ -337,3 +336,45 @@
          .menu-item-silverback img {
            width:100px; 
         }
+
+
+
+        /*Mobile Considerations */
+
+        @media only screen and (max-width: 620px) {
+            #mainFooter {
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                max-width:100%;
+                overflow:hidden;
+            }
+            /* Footer links as one row on mobile */
+            .footer-links {
+            flex-wrap: nowrap;
+            flex-direction: column; 
+            
+            }
+
+            .footer-link {
+                margin-top: 50px;
+                border-style:solid;
+                border-color:white;
+                text-align:center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 50px;
+                padding:20px;
+            }
+
+            .footer-link a {
+                padding:0px;
+            }
+        }
+
+        
