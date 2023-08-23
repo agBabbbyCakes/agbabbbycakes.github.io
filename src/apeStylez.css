@@ -28,6 +28,21 @@
 
 }
 
+html {
+    max-width:100%;
+    max-width:100vw;
+
+}
+
+    /* Global Styles */
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        font-family: 'Press Start 2P', cursive;
+
+    }
+
 
 
 /*HEADER CONSIDERATIONS */
@@ -107,12 +122,12 @@
 
 /*SILVERBACK LOGO STYLES */
 
-/*#logoSilverBack {
-    width: 100px;
-    height: auto;
-    overflow: hidden;
-}*/
 
+
+.silverbackLogo {
+    width: 200;
+    height: 100%;
+}
 
 
 
@@ -121,20 +136,7 @@
 /*STYLE FOR ALL APE*/
 
 
-    html {
-        max-width:100%;
-        max-width:100vw;
 
-    }
-
-        /* Global Styles */
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            font-family: 'Press Start 2P', cursive;
-
-        }
 
         /*SPLASH*/
 
@@ -272,6 +274,9 @@
             background-color: var (--footer-color);
             position:relative;
             width:100%;
+            display:flex;
+            align-items:center;
+            justify-content: center;
         }
 
 
@@ -409,10 +414,19 @@
                 padding:20px;
             }
 
+            .footer-link:hover {
+                background-color:white;
+                color:black;
+                mix-blend-mode: normal;
+                opacity: 1;
+
+            }
+
             .footer-link a {
                 padding:0px;
             }
 
+         
 
 
             /*Header on MObile height increase */
@@ -430,28 +444,7 @@
             }
 
 
-            /*Silverback Logo Center*/
-
-            .menu-item-silverback {
-                display:flex;
-                align-items:center;
-                justify-content: center;
-    
-                min-width:300px;
-                width:300px;
-                min-height: 300px;
-                padding:20px;
-                border-radius: 7.5px;
-                text-align: center;
-                transition: background-color 0.3s ease;
-                cursor: pointer; 
-             }
-    
-    
-                    
-             .menu-item-silverback img {
-               width:100px; 
-            }
+        
         }
 
         
