@@ -1,22 +1,64 @@
 <!DOCTYPE html>
-<html><!-- as of 8.9.23 - a -->
+<html><!-- as of 8.27.23 - a -->
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Silverback is an open source Python development tool for creating bots for the Ethereum blockchain.">
+    <meta name="keywords" content="Silverback, Python, development, tool, bots, Ethereum, blockchain">
+    <meta name="author" content="ApeWorx,LTD">
+    <title>Silverback - ApeWorx, LTD </title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="silverback.css">
     <title>Silverback</title>
-    <style>
 
-
-
-
-    </style>
 </head>
 <body>
     <div class="container">
         <a href="https://github.com/ApeWorX/ape" class="github-link"><img src="./silverback-grey.png" alt="Logo" class="logo">
      </a>
+     <style>
+
+.text-container {
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container h1{
+  margin: 0;
+  font-size: 52px;
+  color: rgba(225,225,225, .01);
+  background-image: url("https://source.unsplash.com/featured/?jungle");
+  background-repeat: repeat;
+  background-size:cover;
+  -webkit-background-clip:text;
+  animation: animate 15s ease-in-out infinite;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+  @keyframes animate {
+    0%, 100% {
+      background-position: left top;
+    }
+    25%{
+      background-position: right bottom;
+     }
+    50% {
+      background-position: left bottom;
+    }
+    75% {
+      background-position: right top;
+    }   
+}
+     </style>
+     <div class="text-container">
+        <h1>silverback
+        </h1>
+      </div>
      <a href="#" onclick="infoPopup()" class="info-icon"><i class="fas fa-info-circle"></i></a>
      <a style="font-size:16px"class="trailer-text-link" href="#" onclick="mirrorArticlePopup()">Install SDK</a>
      <a class="trailer-text-link" href="#" onclick="mirrorArticlePopup()">Mirror Article</a>
