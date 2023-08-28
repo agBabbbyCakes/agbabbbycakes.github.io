@@ -502,3 +502,77 @@ color: white;
     color: white;
 }
 
+
+
+/*MAGIC TRICK */
+
+.text-container {
+
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-container a {
+      text-decoration: none;
+  }
+  
+  .text-container h1{
+    margin: 0;
+    font-size: 52px;
+    color: rgba(225,225,225, .01);
+    background-image: url("https://source.unsplash.com/featured/?jungle");
+    background-repeat: repeat;
+    background-size:cover;
+    -webkit-background-clip:text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+    @keyframes animate {
+      0%, 100% {
+        background-position: left top;
+      }
+      25%{
+        background-position: right bottom;
+       }
+      50% {
+        background-position: left bottom;
+      }
+      75% {
+        background-position: right top;
+      }   
+  }
+
+
+  /*END OF MAGIC TRICK */
+
+  #mirrorArticlePopup {
+    background-color: rgba(42, 42, 42, 0.392);
+}
+
+#mirrorArticlePopup .popup-content {
+    width:800px;
+    max-height: 500px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mirrorArticlePopup iframe {
+    position: absolute;
+    
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style:solid;
+    border-color:grey;
+    border-width: 30px;
+
+}
