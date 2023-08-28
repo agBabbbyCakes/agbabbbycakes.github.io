@@ -35,6 +35,7 @@ body::before {
 
 
 
+
 footer {
     position: absolute;
     bottom: 0;
@@ -44,18 +45,6 @@ footer {
     justify-content:center;
     align-items:center;
     
-}
-
-
-
-.footer-logo {
-    width:64px;
-    height:64px;
-}
-
-.footer-logo:hover {
- 
-    filter: invert(1);
 }
 
 .container {
@@ -71,6 +60,8 @@ footer {
     margin-bottom: 20px;
 }
 
+
+
 .github-link {
     font-size: 18px;
     text-decoration: none;
@@ -79,23 +70,6 @@ footer {
 }
 
 
-@keyframes gradientAnimation {
-0% {
-background: linear-gradient(to right, #e2e2e2, #c0c0c0);
-}
-25% {
-background: linear-gradient(to right, #d0d0d0, #c0c0c0);
-}
-50% {
-background: linear-gradient(to right, #c0c0c0, #a0a0a0);
-}
-75% {
-background: linear-gradient(to right, #a0a0a0, #808080);
-}
-100% {
-background: linear-gradient(to right, #808080, #e2e2e2);
-}
-}
 .trailer-text-link {
     margin-top:10px;
     color: black;
@@ -150,8 +124,6 @@ color: white;
 }
 
 
-
-
 .footer-logo {
     width:64px;
     height:64px;
@@ -162,62 +134,6 @@ color: white;
     filter: invert(1);
 }
 
-.container {
-    text-align: center;
-    padding: 20px;
-    display:flex;
-    flex-direction:column;
-}
-
-.logo {
-    max-width: 33%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.github-link {
-    font-size: 18px;
-    text-decoration: none;
-    width:500px;
-    height:auto;
-}
-
-
-
-.trailer-text-link {
-    margin-top:10px;
-    color: black;
-    text-decoration: none;
-    font-size: 12px;
-}
-
-.trailer-text-link:hover {
-    color: white;
-}
-
-/* Added styles for popup */
-.popup-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.popup-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-         
-        
         .container {
             text-align: center;
             padding: 20px;
@@ -225,18 +141,7 @@ color: white;
             flex-direction:column;
         }
         
-        .logo {
-            max-width: 33%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        
-        .github-link {
-            font-size: 18px;
-            text-decoration: none;
-            width:500px;
-            height:auto;
-        }
+
 
 
         .info-popup-content {
@@ -256,251 +161,8 @@ color: white;
     text-decoration: none;
 }
 
-.info-icon:hover {
-    color: white;
-}
 
 
-
-
-
-
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #d2d2d2;
-    box-shadow: inset 0 0 10px #c9c9c9;
-    animation: gradientAnimation 10s linear infinite ease-in-out;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    min-width: 100%;
-    height: auto;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    
-}
-
-
-
-.footer-logo {
-    width:64px;
-    height:64px;
-}
-
-.footer-logo:hover {
- 
-    filter: invert(1);
-}
-
-.container {
-    text-align: center;
-    padding: 20px;
-    display:flex;
-    flex-direction:column;
-}
-
-.logo {
-    max-width: 33%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.github-link {
-    font-size: 18px;
-    text-decoration: none;
-    width:500px;
-    height:auto;
-}
-
-
-@keyframes gradientAnimation {
-0% {
-background: linear-gradient(to right, #e2e2e2, #c0c0c0);
-}
-25% {
-background: linear-gradient(to right, #d0d0d0, #c0c0c0);
-}
-50% {
-background: linear-gradient(to right, #c0c0c0, #a0a0a0);
-}
-75% {
-background: linear-gradient(to right, #a0a0a0, #808080);
-}
-100% {
-background: linear-gradient(to right, #808080, #e2e2e2);
-}
-}
-.trailer-text-link {
-    margin-top:10px;
-    color: black;
-    text-decoration: none;
-    font-size: 12px;
-}
-
-.trailer-text-link:hover {
-    color: white;
-}
-
-/* Added styles for popup */
-.popup-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.popup-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.info-popup-content {
-background-color: #fff;
-padding: 20px;
-border-radius: 5px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-max-width: 300px;
-text-align: center;
-}
-
-.info-icon {
-display: block;
-font-size: 24px;
-margin-top: 20px;
-color: black;
-text-decoration: none;
-}
-
-.info-icon:hover {
-color: white;
-}
-
-
-
-
-.footer-logo {
-    width:64px;
-    height:64px;
-}
-
-.footer-logo:hover {
- 
-    filter: invert(1);
-}
-
-.container {
-    text-align: center;
-    padding: 20px;
-    display:flex;
-    flex-direction:column;
-}
-
-.logo {
-    max-width: 33%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.github-link {
-    font-size: 18px;
-    text-decoration: none;
-    width:500px;
-    height:auto;
-}
-
-
-
-.trailer-text-link {
-    margin-top:10px;
-    color: black;
-    text-decoration: none;
-    font-size: 12px;
-}
-
-.trailer-text-link:hover {
-    color: white;
-}
-
-/* Added styles for popup */
-.popup-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.popup-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-         
-        
-        .container {
-            text-align: center;
-            padding: 20px;
-            display:flex;
-            flex-direction:column;
-        }
-        
-        .logo {
-            max-width: 33%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        
-        .github-link {
-            font-size: 18px;
-            text-decoration: none;
-            width:500px;
-            height:auto;
-        }
-
-
-        .info-popup-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    text-align: center;
-}
-
-.info-icon {
-    display: block;
-    font-size: 24px;
-    margin-top: 20px;
-    color: black;
-    text-decoration: none;
-}
-
-.info-icon:hover {
-    color: white;
-}
 
 
 
