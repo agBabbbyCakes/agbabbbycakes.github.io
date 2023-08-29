@@ -21,16 +21,36 @@
     </div>
 </div>
 
+<style>
+.chaosMenu {
+    display: flex;
+    flex-direction: column;
+    min-width:500px!important;
+    justify-content: space-between;
+}
+
+.chaosMenu a {
+    flex: 1; /* This will make each link take up an equal amount of space */
+    text-align: center; /* This will center the link text */
+}
+
+.trailer-text-link {
+    min-width:500px!important;
+    
+    text-transform:uppercase;
+}
+</style>
 <!-- Main Container -->
     <div class="container">
         <a href="https://chaos.apeworx.io" class="github-link">
             <img src="/src/apes/cHaOSneT/2.png" alt="Logo" class="logo">
-            <a style="font-size:16px; padding:10px;" class="trailer-text-link" href="https://chaos.apeworx.io">Launch cHaOSneT</a>        
-            <a class="trailer-text-link" href="#" onclick="showPopup()">BETA Launch Trailer</a>        
-         <a class="trailer-text-link" href="#" onclick="showPopup()">Teaser Trailer</a>  
-            <a class="trailer-text-link" href="cHaOSneT-whitePAPER.pdf">Chaos White Paper</a>
-         
-         <!--<a href="#" onclick="infoPopup()" class="info-icon"><i style="padding:20px;" class="fas fa-info-circle"></i></a>-->
+            <div class="chaosMenu">
+                <a style="font-size:16px; padding:10px;" class="trailer-text-link" href="https://chaos.apeworx.io">Launch cHaOSneT</a> 
+                <a class="trailer-text-link" href="cHaOSneT-whitePAPER.pdf">Chaos White Paper</a>       
+                <a class="trailer-text-link" href="#" onclick="showPopup()">BETA Launch Trailer</a>        
+                <a class="trailer-text-link" href="#" onclick="showPopup()">Teaser Trailer</a>  
+
+            </div>
         </div>
 
     <footer>
