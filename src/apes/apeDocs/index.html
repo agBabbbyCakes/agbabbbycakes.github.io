@@ -35,40 +35,57 @@
         
       }
     </style>
-    <div class="searchResults">
-      <p>This is where the Search Results will live </p>
-    </div>
+
     
     
- <script>
-
-  document.getElementById('searchBar').addEventListener('keyup', function(event) {
-    var input = event.target.value.toLowerCase();
-    var resultsDiv = document.querySelector('.searchResults');
-    var results = []; // This should be replaced with your actual search logic
-
-    // Clear previous results
-    resultsDiv.innerHTML = '';
-
-    // Perform search and update results
-    results.forEach(function(result) {
-      var p = document.createElement('p');
-      p.textContent = result;
-      resultsDiv.appendChild(p);
-    });
-
-    // Show or hide results based on whether there are any
-    resultsDiv.style.display = results.length ? 'block' : 'none';
-  });
-
- </script>
+    <script>
+      document.getElementById('searchBar').addEventListener('keyup', function(event) {
+        var input = event.target.value.toLowerCase();
+        var resultsDiv = document.querySelector('.searchResults');
+        var results = [];
+    
+        // Get all links in the document
+        var links = document.querySelectorAll('a');
+    
+        // Clear previous results
+        resultsDiv.innerHTML = '';
+    
+        // Perform search and update results
+        links.forEach(function(link) {
+          if (link.textContent.toLowerCase().includes(input)) {
+            results.push(link.textContent);
+          }
+        });
+    
+        results.forEach(function(result) {
+          var p = document.createElement('p');
+          p.textContent = result;
+          resultsDiv.appendChild(p);
+        });
+    
+        // Show or hide results based on whether there are any
+        resultsDiv.style.display = results.length ? 'block' : 'none';
+      });
+    
+      function openTab(tabId) {
+        // Hide all tab content
+        const tabContents = document.getElementsByClassName("tab-content");
+        for (let i = 0; i < tabContents.length; i++) {
+          tabContents[i].classList.remove("active");
+        }
+    
+        // Show the selected tab content
+        const selectedTab = document.getElementById(tabId);
+        selectedTab.classList.add("active");
+      }
+    </script>
     </section>
 
 
  
 
     <section class="mainDocTab" id="mainDocNavigator">
-      <div id="tab-apeDocs" class="tab-content active">
+      <div id="tab-apeDocs" class="tab-content">
         <div class="buttonwrap" id="apeFramework-buttonwrap">
           <p style="color: white; text-transform: uppercase">Core Framework</p>
 
@@ -112,7 +129,7 @@
           </ul>
         </div>
       </div>
-      <div id="tab-searchResults" class="tab-content">
+      <div id="tab-searchResults" class="tab-content active">
         <div class="searchResults"></div>
       </div>
     </section>
