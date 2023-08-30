@@ -35,11 +35,27 @@ body::before {
     }
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+    height: auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
 
 
+.footer-logo {
+    width:64px;
+    height:64px;
+    filter: invert(1);
+}
 
-
-
+.footer-logo:hover {
+    filter: invert(0);
+}
 
 
 .container {
