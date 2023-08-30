@@ -145,21 +145,21 @@ color: white;
 
 
         .info-popup-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    text-align: center;
-}
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            text-align: center;
+        }
 
-.info-icon {
-    display: block;
-    font-size: 24px;
-    margin-top: 20px;
-    color: black;
-    text-decoration: none;
-}
+        .info-icon {
+            display: block;
+            font-size: 24px;
+            margin-top: 20px;
+            color: black;
+            text-decoration: none;
+        }
 
 
 
