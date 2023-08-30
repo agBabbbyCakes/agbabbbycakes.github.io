@@ -11,6 +11,9 @@
       src="https://plausible.io/js/script.js"
     ></script>
     <title>ApeDocs - ApeWorX, LTD</title>
+    <style>
+
+    </style>
   </head>
   <body>
     <div id="stars" style="position: relative; width: .1%; z-index: -1;"></div>
@@ -28,63 +31,26 @@
     <!-- SUPER SEARCH - DRAFT 1 -->
     <section>
 
-    <input class="search-bar" type="text" id="searchBar" placeholder="Search..." />
     <style>
       .searchResults {
-    background-color:green;
+    background-color:rgba(0, 128, 0, 0);
         
       }
     </style>
 
     
     
-    <script>
-      document.getElementById('searchBar').addEventListener('keyup', function(event) {
-        var input = event.target.value.toLowerCase();
-        var resultsDiv = document.querySelector('.searchResults');
-        var results = [];
-    
-        // Get all links in the document
-        var links = document.querySelectorAll('a');
-    
-        // Clear previous results
-        resultsDiv.innerHTML = '';
-    
-        // Perform search and update results
-        links.forEach(function(link) {
-          if (link.textContent.toLowerCase().includes(input)) {
-            results.push(link.textContent);
-          }
-        });
-    
-        results.forEach(function(result) {
-          var p = document.createElement('p');
-          p.textContent = result;
-          resultsDiv.appendChild(p);
-        });
-    
-        // Show or hide results based on whether there are any
-        resultsDiv.style.display = results.length ? 'block' : 'none';
-      });
-    
-      function openTab(tabId) {
-        // Hide all tab content
-        const tabContents = document.getElementsByClassName("tab-content");
-        for (let i = 0; i < tabContents.length; i++) {
-          tabContents[i].classList.remove("active");
-        }
-    
-        // Show the selected tab content
-        const selectedTab = document.getElementById(tabId);
-        selectedTab.classList.add("active");
-      }
-    </script>
+
     </section>
 
+<div class="searchWrap">
+    <input type="text" id="searchBar" placeholder="Search..." class="search-bar" />
 
- 
+
+</div>
 
     <section class="mainDocTab" id="mainDocNavigator">
+
       <div id="tab-apeDocs" class="tab-content">
         <div class="buttonwrap" id="apeFramework-buttonwrap">
           <p style="color: white; text-transform: uppercase">Core Framework</p>
@@ -133,7 +99,6 @@
         <div class="searchResults"></div>
       </div>
     </section>
-
     <!-- MAIN DOC TABS -->
     <div class="bigBoyMenu-wrap">
       <div class="desktop-MenuHolder">
@@ -192,5 +157,38 @@
         selectedTab.classList.add("active");
       }
     </script>
+
+<script>
+document.getElementById('searchBar').addEventListener('keyup', function(event) {
+  var input = event.target.value.toLowerCase();
+  var resultsDiv = document.querySelector('.searchResults');
+  var results = [];
+
+  // Get all links in the document
+  var links = document.querySelectorAll('a');
+
+  // Clear previous results
+  resultsDiv.innerHTML = '';
+
+  // Perform search and update results
+  links.forEach(function(link) {
+    if (link.textContent.toLowerCase().includes(input)) {
+      results.push(link);
+    }
+  });
+
+  results.forEach(function(result) {
+    var a = document.createElement('a');
+    a.textContent = result.textContent;
+    a.href = result.href;
+    a.classList.add('search-result-button'); // Add this if you want the search results to look like buttons
+    resultsDiv.appendChild(a);
+  });
+
+  // Show or hide results based on whether there are any
+  resultsDiv.style.display = results.length ? 'block' : 'none';
+});
+</script>
+
   </body>
 </html>

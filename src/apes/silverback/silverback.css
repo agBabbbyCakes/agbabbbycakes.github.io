@@ -180,20 +180,14 @@ color: white;
       text-decoration: none;
   }
   
-  .text-container h1{
-    margin: 0;
-    font-size: 52px;
-    color: rgba(225,225,225, .01);
-    background-image: url("https://source.unsplash.com/featured/?jungle");
-    background-repeat: repeat;
-    background-size:cover;
-    -webkit-background-clip:text;
-    animation: animate 15s ease-in-out infinite;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
+  .searchWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
-
+  
+ 
   @media screen and (max-width: 600px) {
     .text-container h1 {
         font-size: 32px; /* Adjust this value to what looks best on mobile */
