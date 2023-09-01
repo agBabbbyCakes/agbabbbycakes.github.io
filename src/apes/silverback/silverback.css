@@ -192,6 +192,20 @@ color: white;
     .text-container h1 {
         font-size: 32px; /* Adjust this value to what looks best on mobile */
     }
+
+    @keyframes animate {
+        0%, 100% {
+          background-position: left top;
+        }
+        25%{
+          background-position: right bottom;
+         }
+        50% {
+          background-position: left bottom;
+        }
+        75% {
+          background-position: right top;
+        }   
 }
   
     @keyframes animate {
