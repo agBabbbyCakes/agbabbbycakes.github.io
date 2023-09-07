@@ -951,15 +951,9 @@
           margin-top:100px;
           margin-bottom:100px;
         }
-        .finalSplash-section h1 {
-          font-size:50px!important;
-          padding-left:20px;
-          text-align:left!important;
-          padding:40px;
-          line-height:80%;
-        }
     
-        .finalSplash-sectiona h2 {
+    
+        .finalSplash-section h2 {
           font-size:22px!important;
           padding-left:20px;
           text-align:left!important;
@@ -969,7 +963,7 @@
 
       @media only screen and (max-width: 600px) {
         .finalSplash {
-          margin-top:300px;
+          margin-top:200px;
         }
       }
 
