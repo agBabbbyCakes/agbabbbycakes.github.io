@@ -228,6 +228,65 @@
   }
 </script>
 
+
+<!-- NEW FEATURE #1 -- PLUGIN SYSTEM -->
+<style>
+  .splashCollaboration {
+    border-style:solid;
+    border-width: 1px;
+  }
+  @media (min-width: 768px) {
+        .splashCollaboration {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+
+    .splashCollaboration p, h1 {
+      text-align:left;
+      padding-left:20px;
+
+    }
+    .splashCol2 {
+      min-height:400px;
+      min-width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-image: url(./ape-plugin-llamanodes.png);
+      background-size: 30%;
+      background-attachment: fixed;
+      mix-blend-mode: luminosity;
+    }
+</style>
+<!-- FEATURE #2 - SPLASH ABOUT PLUGINS -->
+<!-- Custom Section -->
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div style="text-align: left;">
+        <h1 style="font-size: 50px;">Customize your stack with ape-plugins</h1>
+        <h1 style="font-size: 30px;">Plugin creation and support from simple integrations to a more complex ecosystem.</h1>
+        <h1 style="font-size: 30px;">Non-EVM chains are already being supported.</h1>
+    </div>
+</div>
+
+<!-- SPLASH COLLABORATION -->
+<div class="splashCollaboration" style="width: 100%; min-height: 30vh; display: flex; flex-direction: row; align-items: center; justify-content: center; text-align: center;">
+  <div class="splashCol1">
+    <h1>Featured Plugin</h1>
+    <h2>LlamaNodes</h2>
+   <p>LlamaNodes provides public and premium RPCs with industry leading features, crypto payments, and no contracts.</p>
+    <button class="downloadButton" onclick="window.location.href='https://llamanodes.com/'">Visit LlamaNodes</button>
+  
+  </div>  
+  <div class="splashCol2"></div>  
+ 
+</div>
+
+
+
 <!-- END OF FEATURES-->
 
 <div class="containerPlugin">
@@ -265,6 +324,19 @@
         <li><a href="https://github.com/ApeWorX/ape-arbitrum" target="_blank"> Arbitrum</a></li>
     </ul>
 </div>
+
+
+<!-- APE FRAMEWORK SECTION -->
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+    <img src="ape-logo.png" alt="Ape Framework Logo" style="width: 200px; height: auto;">
+    <div style="text-align: center;">
+        <h1 style="font-size: 50px;">Ape Framework</h1>
+        <p style="font-size: 30px;">Ape Framework is an easy-to-use Web3 development tool. Users can compile, test, and interact with smart contracts all in one command line session. With our modular plugin system, Ape supports multiple contract languages and chains.</p>
+    </div>
+</div>
+
+
+
 
 
 <!-- INSTALL -->
@@ -308,6 +380,10 @@
                       --volume $PWD:/home/harambe/project \
                       apeworx/ape compile
                   </div>
+                  <div class="innerFooter">
+                      <p>For more information, read our <a href="https://docs.apeworx.io/ape/stable/userguides/quickstart.html" target="_blank">Quickstart Guide</a>.</p>
+                  </div>
+                  
                   <button class="closeButton" onclick="hidePopup()" style="background-color: red; color: white; padding: 10px 20px; cursor: pointer;">Close</button>
                 </div>
             </div>
