@@ -1,10 +1,17 @@
-<!DOCTYPE html><!-- APE FRAME --><!-- AS OF 8.10c.23 -->
+<!DOCTYPE html><!-- APE FRAME --><!-- AS OF 9.07.23 -->
 <html>
 <head>
+    <meta name="keywords" content="ApeWorX, Ape Framework, Blockchain, Smart Contract, Yearn, Lido, Curve, Element">
+    <meta name="author" content="ApeWorX LTD">
+    <meta property="og:title" content="Ape Framework | ApeWorX LTD">
+    <meta property="og:description" content="ApeFramework: The most advanced smart contract on Earth. Trusted by leading platforms such as Yearn, Lido, Curve, Element, and more. Create next-level blockchain development today.">
+
+  
     <title>ape framework | ApeWorX, LTD </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="ApeFramework: The most advanced smart contract on Earth. Trusted by leading platforms such as Yearn, Lido, Curve, Element, and more. Create next-level blockchain development today.">
     <link rel="stylesheet" href="../apeFrame/apeFrame_css_1.css">
+    
 </head>
 <body>
 
@@ -26,18 +33,15 @@
 <div class="splashInstall">
     <div class="splashInstallContainer">
         <div class="splashInstall-left">
-            <div>
+          <div>
                 <!--TOPIMAGE-->
-                <div class="splashInstall-image">
+        <div class="splashInstall-image">
 
-                  <!-- New FEATURE #3 = Download Button up top-->
                 <!-- Release Section -->
                 <div class="release-section">
                     <h1 class="releaseName">Latest Release</h1>
                     <h1 class="releaseNumber"></h1>
-                    <div style="display: flex; justify-content: center;">
-                    <button class="downloadButton2" onclick="showPopup()">Download Ape</button></div>
-                    <h1 class="big-font" style="font-size: 50px; text-align: center; color: white;" id="release-name"></h1>
+                      <h1 class="big-font" style="font-size: 50px; text-align: center; color: white;" id="release-name"></h1>
                     <p class="release-style-notes" id="release-list" style="font-size: 16px; text-align: center;"></p>
                 </div>
             </div>
@@ -45,7 +49,10 @@
         </div>
     </div>
 </div>
-
+<!-- OMIT THE DOWNLOAD BUTTON FOR NOW 
+<div style="display: flex; justify-content: center;">
+  <button class="downloadButton2" onclick="showPopup()">Download Ape</button>
+  </div>-->
 <script>
     window.onload = function() {
         fetch('https://api.github.com/repos/ApeWorX/ape/releases/latest')
@@ -231,39 +238,7 @@
 </script>
 
 
-<!-- NEW FEATURE #1 -- PLUGIN SYSTEM -->
-<style>
-  .splashCollaboration {
-    border-style:solid;
-    border-width: 1px;
-  }
-  @media (min-width: 768px) {
-        .splashCollaboration {
-            flex-direction: row;
-            justify-content: space-evenly;
-        }
-    }
 
-    .splashCollaboration p, h1 {
-      text-align:left;
-      padding-left:20px;
-
-    }
-    .splashCol2 {
-      min-height:400px;
-      min-width: 50%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background-image: url(./ape-plugin-llamanodes.png);
-      background-size: 30%;
-      background-attachment: fixed;
-      mix-blend-mode: luminosity;
-    }
-</style>
 <!-- FEATURE #2 - SPLASH ABOUT PLUGINS -->
 <!-- Custom Section -->
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
@@ -395,29 +370,7 @@
     </div>
 </div>
 
-<!-- INSTALL APE POPUP -->
-<script>
-  var wrapper = document.querySelector(".fullwidth-wrapper");
-  var popup = document.getElementById("popup");
 
-    function showPopup() {
-        popup.style.display = 'block';
-        setTimeout(() => popup.classList.add('popup-show'), 10); // Delay adding the class to allow the fade-in effect
-    }
-
-    function hidePopup() {
-          popup.classList.remove('popup-show'); // Remove class to start the fade-out effect
-          setTimeout(() => popup.style.display = 'none', 300); // After the transition is over, hide the popup
-    }
-
-    // listen to click on document;
-    window.addEventListener("click", function(event) {
-      if (event.target === wrapper)  {
-        hidePopup()
-    }
-});
-
-</script>
 
 </body>
 </html>
