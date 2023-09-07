@@ -1005,3 +1005,17 @@
           margin-top:0px;
         }
       }
+
+/*ALEX UPDATES BASED OFF ALEXI RE@UESTS" */
+      .finalSplash {
+        margin:50px;
+      }
+
+      @media only screen and (max-width: 600px)
+
+      {
+        .finalSplash {
+            margin:0px;
+        }
+      }
+
