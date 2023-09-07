@@ -357,9 +357,13 @@ html {
 
         .footer-link {
             flex: 1;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            color:white;    
             text-align: center;
             text-transform:uppercase;
-            margin-bottom:15px;
+           
         }
 
         .footer-link a {
@@ -413,6 +417,16 @@ html {
               height: 50px;
               padding: 5%;
           }
+          .footer-link a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            color:white;
+        }
 
           .footer-link:hover {
               background-color:rgba(255, 255, 255, 0.529);
