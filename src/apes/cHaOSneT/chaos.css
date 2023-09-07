@@ -62,6 +62,12 @@ footer {
     filter: invert(0);
 }
 
+@media only screen and (max-width: 600px) {
+    .logo {
+        max-width: 250px;
+    }
+}
+
 .github-link {
     font-size: 18px;
     text-decoration: none;
@@ -172,4 +178,23 @@ footer {
 
 .info-icon:hover {
     color: white;
+}
+
+
+.chaosMenu {
+    display: flex;
+    flex-direction: column;
+    min-width:500px!important;
+    justify-content: space-between;
+}
+
+.chaosMenu a {
+    flex: 1; /* This will make each link take up an equal amount of space */
+    text-align: center; /* This will center the link text */
+}
+
+.trailer-text-link {
+    min-width:500px!important;
+
+    text-transform:uppercase;
 }
