@@ -363,6 +363,30 @@
             opacity: 1;
 
         }
+        .downloadButton2 {
+            width: 50%;
+            padding: 10px;
+            border-style:solid;
+            border-width:1px;
+            background-color:black;
+            border-color: var(--color-secondary);
+            text-transform:uppercase;
+            cursor: pointer;
+            margin:10px;
+            color: white;
+            font-family: 'Press Start 2P';
+            font-size: 16px;
+            opacity: 100;
+            transition: all 0.3s ease; /* Smooth transition */
+        }
+
+        .downloadButton2:hover {
+            background-color: rgba(255, 255, 255, 0.3); /* Darker frosty glass on hover */
+            border-color: var(--color-primary);
+            opacity: .71;
+        }
+
+
         .releaseNotesLink {
             text-align: center;
             margin-top: 20px;

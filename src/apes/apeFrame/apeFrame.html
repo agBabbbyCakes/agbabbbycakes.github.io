@@ -30,11 +30,14 @@
                 <!--TOPIMAGE-->
                 <div class="splashInstall-image">
 
+                  <!-- New FEATURE #3 = Download Button up top-->
                 <!-- Release Section -->
                 <div class="release-section">
                     <h1 class="releaseName">Latest Release</h1>
                     <!-- Set dynamically with following script -->
                     <h1 class="releaseNumber"></h1>
+                    <div style="display: flex; justify-content: center;">
+                    <button class="downloadButton2" onclick="showPopup()">Download Ape</button></div>
                     <h1 class="big-font" style="font-size: 50px; text-align: center; color: white;" id="release-name"></h1>
                     <p class="release-style-notes" id="release-list" style="font-size: 16px; text-align: center;"></p>
                 </div>
@@ -273,7 +276,7 @@
 </div>
 
 <!-- SPLASH COLLABORATION -->
-<div class="splashCollaboration" style="width: 100%; min-height: 30vh; display: flex; flex-direction: row; align-items: center; justify-content: center; text-align: center;">
+<div class="splashCollaboration" style="width: 100%; height: 50vh; display: flex; flex-direction: row; align-items: center; justify-content: center; text-align: center;">
   <div class="splashCol1">
     <h1>Featured Plugin</h1>
     <h2>LlamaNodes</h2>
@@ -327,11 +330,11 @@
 
 
 <!-- APE FRAMEWORK SECTION -->
-<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
-    <img src="ape-logo.png" alt="Ape Framework Logo" style="width: 200px; height: auto;">
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 50vh;">
+    <img src="apeFrame-logo.png" alt="Ape Framework Logo" style="width: 500px; height: auto;">
     <div style="text-align: center;">
         <h1 style="font-size: 50px;">Ape Framework</h1>
-        <p style="font-size: 30px;">Ape Framework is an easy-to-use Web3 development tool. Users can compile, test, and interact with smart contracts all in one command line session. With our modular plugin system, Ape supports multiple contract languages and chains.</p>
+        <h1 style="font-size: 30px;">Ape Framework is an easy-to-use Web3 development tool. Users can compile, test, and interact with smart contracts all in one command line session. With our modular plugin system, Ape supports multiple contract languages and chains.</h1>
     </div>
 </div>
 
@@ -380,6 +383,8 @@
                       --volume $PWD:/home/harambe/project \
                       apeworx/ape compile
                   </div>
+              
+                  
                   <div class="innerFooter">
                       <p>For more information, read our <a href="https://docs.apeworx.io/ape/stable/userguides/quickstart.html" target="_blank">Quickstart Guide</a>.</p>
                   </div>
