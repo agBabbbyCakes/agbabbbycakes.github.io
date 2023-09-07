@@ -903,6 +903,27 @@
           margin-top:300px;
           margin-bottom:100px;
         }
+
+        .splashCol1 h1{
+            font-size:50px!important;
+            padding-left:20px;
+            text-align:center!important;
+            line-height:80%;
+            margin-bottom:20px;
+        }
+        .splashCol1 h2{
+            font-size:22px!important;
+            text-align:left!important;
+            padding-left:20px;
+            margin-bottom:5px;
+        }
+
+        .splashCol1 p {
+            font-size:16px!important;
+            text-align:left!important;
+            margin-bottom:5px;
+          
+        }
       .splashCollaboration {
         flex-direction: column!important;
         
