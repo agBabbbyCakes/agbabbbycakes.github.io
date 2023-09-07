@@ -909,7 +909,70 @@
       }
       .splashCol2 {
         width:100%;
-        overflow:hidden;
+
+        display:none;
         
       }
     }
+
+
+    @media (max-width: 600px) { 
+
+.splashMain {
+    height:300px;
+    padding:50px;
+}
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        .finalSplash-section {
+          margin-top:100px;
+          margin-bottom:100px;
+        }
+        .finalSplash-section h1 {
+          font-size:50px!important;
+          padding-left:20px;
+          text-align:left!important;
+          padding:40px;
+          line-height:80%;
+        }
+    
+        .finalSplash-sectiona h2 {
+          font-size:22px!important;
+          padding-left:20px;
+          text-align:left!important;
+          padding:40px;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        .finalSplash {
+          margin-top:300px;
+        }
+      }
+
+
+      @media only screen and (max-width: 600px) {
+        .aboutPluginsSection {
+          margin-top:50px;
+          margin-bottom:50px;
+          max-height:150px;
+        }
+    
+        .aboutPluginsSection h1 {
+          font-size:50px!important;
+          padding-left:20px;
+          text-align:center!important;
+          padding:40px;
+          line-height:80%;
+        }
+    
+        .aboutPluginsSection h2 {
+          font-size:22px!important;
+          padding-left:20px;
+          text-align:left!important;
+          padding:40px;
+          margin-top:0px;
+        }
+      }
