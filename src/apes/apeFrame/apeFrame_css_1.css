@@ -102,6 +102,12 @@
 
     }
 
+    @media (max-width: 600px) { /* Adjust max-width as per your requirements */
+        .frame-footer {
+            padding-bottom: 100px; /* Adjust padding as per your requirements */
+        }
+    }
+
 
 
     .footer-logo {
@@ -889,4 +895,21 @@
       background-size: 30%;
       background-attachment: fixed;
       mix-blend-mode: luminosity;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        .section-splashFeaturedPlugin {
+          margin-top:300px;
+          margin-bottom:100px;
+        }
+      .splashCollaboration {
+        flex-direction: column!important;
+        
+      }
+      .splashCol2 {
+        width:100%;
+        overflow:hidden;
+        
+      }
     }
