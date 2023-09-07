@@ -894,7 +894,15 @@
       background-image: url(./ape-plugin-llamanodes.png);
       background-size: 30%;
       background-attachment: fixed;
-      mix-blend-mode: luminosity;
+      mix-blend-mode: lighten;
+    }
+
+    .splashCol1 h2 {
+        font-size:50px!important;
+        padding-left:20px;
+        text-align:left!important;
+        line-height:80%;
+        margin-bottom:20px;
     }
 
     @media only screen and (max-width: 600px) {
@@ -934,7 +942,13 @@
         display:none;
         
       }
+
+   
     }
+
+    .downloadButton2 {
+        font-size:12px!important;
+      }
 
 
     @media (max-width: 600px) { 
