@@ -951,7 +951,51 @@
       }
 
 
-    @media (max-width: 600px) { 
+    /* Large screens */
+    @media (min-width: 1200px) {
+    
+
+    .finalSplash-logo {
+        width: 700px;
+        height: auto;
+        margin-top:100px;
+      }
+    }
+
+    /* Medium screens */
+    @media (min-width: 768px) and (max-width: 1199px) {
+    
+
+    .finalSplash-logo {
+        width: 500px;
+        height: auto;
+        margin-top:100px;
+      }
+
+    }
+
+    /* Small screens */
+    @media (min-width: 576px) and (max-width: 767px) {
+    
+
+    .finalSplash-logo {
+        width: 400px;
+        height: auto;
+        margin-top:100px;
+      }
+
+    }
+
+    /* Mobile */
+    @media (max-width: 575px) {
+
+        .finalSplash-logo {
+            width: 200px;
+            height: auto;
+            margin-top:100px;
+            
+          }
+    }
 
 .splashMain {
     height:300px;

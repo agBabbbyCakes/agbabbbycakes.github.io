@@ -12,6 +12,15 @@
     <meta name="description" content="ApeFramework: The most advanced smart contract on Earth. Trusted by leading platforms such as Yearn, Lido, Curve, Element, and more. Create next-level blockchain development today.">
     <link rel="stylesheet" href="../apeFrame/apeFrame_css_1.css">
     
+
+<!-- BASIC BITCH SCRIPTS -->
+<script>
+  function showPopup() {
+      var popup = document.getElementById('popup');
+      popup.style.display = 'block';
+  }
+  </script>
+
 </head>
 <body>
 
@@ -35,13 +44,17 @@
           <div>
                 <!--TOPIMAGE-->
         <div class="splashInstall-image">
-
                 <!-- Release Section -->
                 <div class="release-section">
                     <h1 class="releaseName">Latest Release</h1>
                     <h1 class="releaseNumber"></h1>
-                      <h1 class="big-font" style="font-size: 50px; text-align: center; color: white;" id="release-name"></h1>
-                    <p class="release-style-notes" id="release-list" style="font-size: 16px; text-align: center;"></p>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                      <button class="downloadButton2" onclick="window.location.href='https://github.com/ApeWorX/ape/releases'">Release Notes</button>
+                  </div>
+                    
+                    <!-- OMITTED THE DYNAMIC RELEASE NOTES -->
+                    <!-- <h1 class="big-font" style="font-size: 50px; text-align: center; color: white;" id="release-name"></h1>
+                    <p class="release-style-notes" id="release-list" style="font-size: 16px; text-align: center;"></p>-->
                 </div>
             </div>
             </div>
@@ -264,7 +277,7 @@
 <section class="section-splashFeaturedPlugin">
 <div class="splashCollaboration" style="width: 100%; height: 50vh; display: flex; flex-direction: row; align-items: center; justify-content: center; text-align: center;">
   <div class="splashCol1">
-    <h1 style="font-size:50px; text-align:left;">Featured Plugin</h1>
+    <h1 style="font-size:50px; text-align:left;">Featured Plugin:</h1>
     <h2 style="font-size:30px; text-align:left;">LlamaNodes</h2>
    <p>LlamaNodes provides public and premium RPCs with industry leading features, crypto payments, and no contracts.</p>
     <button class="downloadButton2" onclick="window.location.href='https://llamanodes.com/'">Visit LlamaNodes</button>
@@ -312,11 +325,18 @@
         <li><a href="https://github.com/ApeWorX/ape-arbitrum" target="_blank"> Arbitrum</a></li>
     </ul>
 </div>
+<style>
 
+
+
+
+
+
+</style>
 <!-- APE FRAMEWORK Final SECTION -->
 <section class="finalSplash-section">
 <div class="finalSplash" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 50vh;">
-    <img src="apeFrame-logo.png" alt="Ape Framework Logo" style="width: 500px; height: auto;">
+    <img src="apeFrame-logo.png" alt="Ape Framework Logo" class="finalSplash-logo">
     <div style="text-align: center;">
         <h2 style="font-size: 30px;">Ape Framework is an easy-to-use Web3 development tool. Users can compile, test, and interact with smart contracts all in one command line session. With our modular plugin system, Ape supports multiple contract languages and chains.</h2>
     </div>
@@ -380,6 +400,9 @@
         </div>
     </div>
 </div>
+
+<!-- ADD ALL THE SCRIPTS HERE (EVENTUALLY )-->
+<!-- POPUP SCRIPT-->
 
 
 
