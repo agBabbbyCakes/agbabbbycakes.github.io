@@ -381,7 +381,7 @@
         }
 
         .downloadButton2:hover {
-            background-color: rgba(255, 255, 255, 0.3); /* Darker frosty glass on hover */
+            background-color: green; /* Green background on hover */
             border-color: var(--color-primary);
             opacity: .71;
         }
