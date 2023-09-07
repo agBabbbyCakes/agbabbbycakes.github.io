@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Full-Screen Sticky Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        
+        .section {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .section:nth-child(even) {
+            background-color: #222;
+        }
+        
+        .section:nth-child(odd) {
+            background-color: #333;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h1>Section 1</h1>
+        <p>Description for Section 1</p>
+    </div>
+    
+    <div class="section">
+        <h1>Section 2</h1>
+        <p>Description for Section 2</p>
+    </div>
+    
+    <div class="section">
+        <h1>Section 3</h1>
+        <p>Description for Section 3</p>
+    </div>
+    
+    <div class="section">
+        <h1>Section 4</h1>
+        <p>Description for Section 4</p>
+    </div>
+    
+    <div class="section">
+        <h1>Section 5</h1>
+        <p>Description for Section 5</p>
+    </div>
+    
+    <div class="section">
+        <h1>Section 6</h1>
+        <p>Description for Section 6</p>
+    </div>
+    
+    <div class="section">
+        <h1>Section 7</h1>
+        <p>Description for Section 7</p>
+    </div>
+    
+    <div class="section">
+        <h1>Section 8</h1>
+        <p>Description for Section 8</p>
+    </div>
+    
+    <div class="section">
+        <h1>Section 9</h1>
+        <p>Description for Section 9</p>
+    </div>
+    
+    <div class="section">
+        <h1>Section 10</h1>
+        <p>Description for Section 10</p>
+    </div>
+    
+    <script>
+        let startY;
+        let currentY;
+        let scrolling = false;
+        
+        window.addEventListener('touchstart', (e) => {
+            startY = e.touches[0].clientY;
+            currentY = startY;
+        });
+        
+        window.addEventListener('touchmove', (e) => {
+            if (!scrolling) {
+                const deltaY = e.touches[0].clientY - currentY;
+                window.scrollBy(0, deltaY * -1);
+                currentY = e.touches[0].clientY;
+            }
+        });
+        
+        window.addEventListener('touchend', () => {
+            scrolling = false;
+        });
+        
+        window.addEventListener('scroll', () => {
+            scrolling = true;
+        });
+    </script>
+</body>
+</html>

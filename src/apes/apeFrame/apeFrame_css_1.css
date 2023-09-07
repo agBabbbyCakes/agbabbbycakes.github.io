@@ -1,0 +1,832 @@
+/*apeFrame CSS #1*/
+
+
+         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        html {
+            font-family: 'Press Start 2P';
+        }
+
+
+        body {
+            font-family: monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: var(--color-primary);
+        }
+
+
+        a {
+            color:white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    :root {
+            --color-primary: #b7ff00;
+            --color-secondary: #b7ff00;
+            --color-tertiary: #000000;
+            --color-hover:#ff8dd1;
+            --border-color: #b7ff00;
+            --border-color-hover :lime;
+        }
+
+
+
+        /*STYLE FOR ALL APE*/
+
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Press Start 2P';
+
+        }
+
+        h1, h2, h3, h4, h5, h6, p {
+            color: var(--color-primary)!important;
+        }
+
+        button {
+            color: var(--color-primary)!important;
+        }
+
+
+        .p-subHeader-main {
+            padding-left:100px;
+            padding-right:100px;
+        }
+
+        .container {
+            display:flex;
+            align-items:center;
+
+
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #000000;
+            box-shadow: inset 0 0 10px #c9c9c900;
+            animation: gradientAnimation 10s linear infinite ease-in-out;
+        }
+    .superMain {
+            width:100%;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .mainDeal {
+            background-color:rgba(0, 149, 255, 0.142);
+            padding:20px;
+            max-width:700px;
+            border-color:var(--color-primary);
+            border-style:solid;
+            border-radius:10px;
+        }
+
+
+    .frame-footer {
+        min-width:100%;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+
+    }
+
+
+
+    .footer-logo {
+        width:62px;
+    }
+
+    .footer-logo:hover {
+      filter: invert(.71);
+      animation: horizontal-shaking 0.2s infinite; /* Adjust duration and other properties as needed */
+    }
+
+    @keyframes horizontal-shaking {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(5px); }
+      50% { transform: translateX(-5px); }
+      75% { transform: translateX(5px); }
+      100% { transform: translateX(0); }
+  }
+        .container {
+            text-align: center;
+            padding: 20px;
+            display:flex;
+            flex-direction:column;
+        }
+
+        .logo {
+            max-width: 33%;
+            height: auto;
+            margin-bottom: 20px;
+            opacity:.85;
+        }
+
+        .logo:hover {
+            opacity:1;
+        }
+
+        .github-link {
+            font-size: 18px;
+            text-decoration: none;
+            width:500px;
+            height:auto;
+            color:var(--color-primary);
+            text-decoration: underline;
+        }
+
+        .github-link:hover {
+            color:var(--color-hover);
+        }
+
+   .trailer-text-link {
+            margin-top:10px;
+            color: black;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .trailer-text-link:hover {
+            color: white;
+        }
+
+        /* Added styles for popup */
+        .popup-background {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            overflow:auto;
+        }
+
+        .popup-content {
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+
+        /*GRID + PLUGIN STYLES */
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        .containerPlugin {
+            padding: 20px;
+            background-color: #000;
+            overflow: auto;
+            border-style:solid;
+            border-color:var(--border-color);
+            border-width:1px;
+        }
+
+        .containerPlugin h1 {
+            color: #0f0;
+            margin-bottom: 20px;
+        }
+
+        .grid-plugins {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap
+            : 10px;
+        }
+
+        .grid-plugins li {
+            list-style-type: none;
+            border: 2px solid var(--border-color);
+            padding: 10px;
+            display: flex;
+        }
+
+        .grid-plugins li:hover {
+            list-style-type: none;
+            border: 2px solid var(--border-color);
+            cursor: pointer;
+            background-color:green;
+            padding: 10px;
+        }
+
+        .grid-plugins li a {
+            color: var(--color-primary);
+            text-decoration: none;
+            flex-grow: 1;
+        }
+
+        .grid-plugins li a:hover {
+            text-decoration: underline;
+        }
+
+        .grid-plugins li:before {
+            content: ">";
+            margin-right: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        .installApe-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height:700px;
+            color: rgba(0, 255, 0, 0.278);
+
+
+        }
+
+        .installApe-fullwidth-wrap {
+            position: relative;
+        }
+
+        .install {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .installButton {
+            background-color: #000;
+            border-color:transparent;
+            color: var(--color-primary);
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform:uppercase;
+            font-family: monospace;
+            min-width:85vw;
+            min-height:30vh;
+        }
+
+        .installButton:hover {
+            background-color: var(--color-primary);
+            color: #000!important;
+        }
+
+        .popup-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+            background-color: #000;
+            border: 2px solid #0f0;
+            color: #0f0;
+            padding: 20px;
+            max-width: 400px;
+            text-align: left;
+            line-height: 1.5;
+            display: none;
+        }
+
+        .popup-content img.superLogo {
+            width: 300px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .splashInstallContainer {
+            display: flex;
+            height: 50vh;
+            overflow:hidden;
+            border-style:solid;
+            border-width:1px;
+            border-color: var(--border-color);
+
+        }
+        .splashInstall-left {
+            flex: 1;
+            background-color: #e6e6e600;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .splashInstall-right {
+            flex: 2;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .downloadButton {
+            width: 100%;
+            padding: 10px;
+            border-style:solid;
+            border-width:1px;
+            border-color: var(--color-secondary);
+            background-color:transparent!important;
+            text-transform:uppercase;
+            cursor: pointer;
+            margin:10px;
+            color: var(--color-secondary);
+            font-family: 'Press Start 2P';
+            font-size: 16px;
+            opacity: .50;
+        }
+
+        .downloadButton:hover {
+            background-color: var(--color-secondary);
+            border-color: var(--color-primary);
+            opacity: 1;
+
+        }
+        .releaseNotesLink {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .codeGraphic {
+            max-width: 100%;
+            height: auto;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color:limegreen;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .section {
+            border-style:solid;
+            border-color:var(--border-color);
+            padding: 20px;
+            background-color: #000;
+            overflow: auto;
+        }
+
+        .section h2 {
+            color: #0f0;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            margin-bottom: 20px;
+        }
+
+        .section .codeWrap {
+            padding: 10px;
+            background-color: #333;
+            color: #0f0;
+        }
+
+        .card-image {
+          padding: 0px;
+          width:100%;
+          background-color: #333;
+      }
+        .asci-container-xl {
+            max-width: 100%;
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+
+        .asci-container-xl iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .superLogo {
+            width:200px;
+            height: auto;
+        }
+
+        .top-container {
+            min-width:100%;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            background-color: #000;
+            padding: 10px;
+        }
+
+        .splashText {
+            text-align:center;
+        }
+
+        .splashText h1 {
+            text-align:center;
+            text-transform:uppercase;
+            font-size:120px;
+            line-height:1;
+        }
+
+
+        .splashMain {
+            width:100%;
+            height:150px;
+            background-color: #000;
+
+        }
+
+        .splashScreen {
+            width:100%;
+            height:100%;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+
+        }
+
+
+        /*Install Popup */
+        .fullwidth-wrapper {
+            width:100%;
+            height:100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            z-index: -1;
+        }
+        .innerCenter-wrapper {
+            width:80%;
+            min-height:700px;
+            border-style:solid;
+            border-width:1px;
+            border-color: var(--color-secondary);
+            background-color:rgba(0, 0, 0, 0.814);
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+        }
+        .innerCenter-Item {
+            width:100%;
+            height:100%;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:left;
+            padding:10px;
+        }
+
+        .innerBody {
+            text-align:left;
+            min-width:100%;
+        }
+
+        .innerHeader {
+            text-align:left!important;
+            color: var(--color-primary) ;
+            padding:10px;
+        }
+
+        .innerHeader h1 {
+            text-transform:uppercase;
+        }
+
+        /* High Contrast Popup Styles */
+     .popup-background {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.357); /* Change the background color to a dark shade */
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .popup-content {
+        padding: 20px;
+        border-radius: 5px;
+        text-align: left;
+        color: #ffffff; /* Change the text color to black */
+    }
+
+            /* Box Styles */
+            .box {
+                border: 2px solid var(--color-primary);
+                border-radius: 5px;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+
+            /* Code Block Styles */
+            .code {
+                font-family: "Courier New", monospace;
+                padding: 10px;
+                border-radius: 5px;
+                border-style:solid;
+                border-color:var(--border-color);
+                margin-top:10px;
+                margin-bottom:10px;
+                border-width:1px;
+            }
+
+            .code:hover {
+                filter: invert(1);
+            }
+
+            .code-copy {
+                background-color:black;
+                min-width:100px;
+                min-height:25px;
+                padding:20px;
+                color: var(--color-primary);
+                float: right;
+                border-style:solid;
+                border-color: var(--color-primary);
+                text-transform: uppercase;
+                font-size: 10px;
+
+            }
+
+            /* List Styles */
+            .list {
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+
+
+/*GRAPHICS */
+
+/* Defining the primary color variable */
+
+
+.splashInstall-image {
+    position: relative; /* Needed to place the ::before pseudo-element on top of it */
+    width: 100%;
+    height: 200%;
+    overflow: hidden;
+    background-image: url(s2break.png);
+    background-size: contain;
+    mix-blend-mode: ;
+    background-attachment: fixed;
+
+}
+
+.splashInstall-image::before {
+    content: ""; /* Necessary for the pseudo-element to work */
+    position: absolute; /* To cover the entire parent */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-primary); /* Using the primary color variable for the tint */
+    opacity: 0.5; /* Adjust as needed. 0.5 means 50% opacity which will give a noticeable green tint without entirely covering the image */
+    mix-blend-mode: multiply; /* Using multiply will blend the green tint with the image. */
+}
+
+
+.graphic-frameTopLogo {
+    filter: brightness(200);
+    mix-blend-mode: ligthen;
+    width:300px;
+
+}
+
+.popupHeader {
+   width:100%;
+    height:300px;
+    display:flex;
+    background-image: url(/assets/frameworkGraphics/spaceManOnMoon.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size:50%;
+    mix-blend-mode: lighten;
+    background-color:rgba(0, 0, 0, 0.61);
+    opacity: .8;
+}
+
+.popupHeader::after {
+    content: '';
+    position: relative; /* Positioned relative to the .popupHeader */
+    bottom: 0; /* Position it at the bottom */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Shift it back by half of its width to ensure it's centered */
+    width: 300px; /* Adjust to your desired width for the logo */
+    height: 100px; /* Adjust to your desired height for the logo */
+    background-image: url(./frame.png); /* Path to your logo */
+    background-position: center;
+    background-repeat: no-repeat; /* Ensure the logo doesn't repeat */
+    background-size: contain; /* Adjust to fit the dimensions */
+    z-index: 2; /* To ensure it's above other elements */
+}
+
+
+
+/*BuTTONS*/
+
+.closeButton {
+    width: 100%;
+    padding: 10px;
+    border-style:solid;
+    border-width:1px;
+    border-color: var(--color-primary);
+    background-color:transparent!important;
+    text-transform:uppercase;
+    cursor: pointer;
+    margin:10px;
+    color: var(--color-secondary);
+    font-family: 'Press Start 2P';
+    font-size: 16px;
+    opacity:.38;
+}
+
+.closeButton:hover {
+
+ opacity : 1;
+}
+
+
+.superLogo {
+    width: 100px;
+    height: 100px;
+}
+
+.popup-background {
+    /* ... existing styles ... */
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 0.3s; /* Add a transition effect */
+}
+
+.popup-show {
+    display: block;
+    opacity: 1;
+}
+
+
+
+/* Default styles for desktop */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+    gap: 20px; /* Adjust this value for spacing between grid items */
+}
+
+.section {
+    margin: 10px; /* Adjust as needed for outer spacing */
+}
+
+.section:hover {
+  cursor: pointer;
+}
+
+
+/* CS orga - to be refined */
+#release-list {
+  position: relative;
+  color: var(--color-primary);
+}
+
+.release-style-notes {
+  background-color:rgba(0, 0, 0, 0.898);
+  padding:30px;
+  min-height:100px;
+}
+
+.releaseName {
+  color:rgb(20, 15, 15);
+  font-size:2vw;
+  text-align:center;
+  display:flex;
+  justify-content: center;
+  mix-blend-mode: normal;
+  z-index:3;
+  position:relative;
+  z-index: 3;
+  filter: invert(1);
+  filter: brightness(100);
+  background-color:rgba(0, 0, 0, 0.852);
+  transition: transform 0.3s;
+}
+
+.releaseNumber {
+  color:rgb(0, 0, 0);
+  font-size:10vw;
+  text-align:center;
+  display:flex;
+  justify-content: center;
+  mix-blend-mode: normal;
+  z-index:3;
+  position:relative;
+  z-index: 3;
+  filter: brightness(100);
+  background-color:rgba(0, 0, 0, 0.851);
+}
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: var(--color-tertiary); ;
+  padding: 20px;
+  border: 1px solid #b7ff00;
+  width: 60%;
+  margin-left: 21%;
+  margin-top: 5%;
+
+}
+
+.close {
+  color:white;
+  float: left;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 7px;
+  margin-top: -8px;
+}
+
+.close:hover,
+.close:focus {
+  color: #b7ff00;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {  /* 767px is a common breakpoint for targeting mobile devices */
+  .splashMain {
+      padding-bottom: 20px;  /* Adjust this value as needed */
+  }
+  .p-subHeader-main {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.grid {
+  grid-template-columns: 1fr; /* One column on mobile */
+}
+
+.splashInstall-left{
+  overflow: scroll;
+}
+
+}
