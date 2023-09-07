@@ -241,15 +241,58 @@
 
 <!-- FEATURE #2 - SPLASH ABOUT PLUGINS -->
 <!-- Custom Section -->
-<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+<style>
+  @media only screen and (max-width: 600px) {
+    .aboutPluginsSection {
+      margin-top:100px;
+      margin-bottom:100px;
+    }
+
+    .aboutPluginsSection h1 {
+      font-size:50px!important;
+      padding-left:20px;
+      text-align:left!important;
+      padding:40px;
+      line-height:80%;
+    }
+
+    .aboutPluginsSection h2 {
+      font-size:22px!important;
+      padding-left:20px;
+      text-align:left!important;
+      padding:40px;
+    }
+  }
+</style>
+<section class="aboutPluginsSection">
+<div style="display: flex; justify-content: center; align-items: center; height: 50vh;">
     <div style="text-align: left;">
-        <h1 style="font-size: 50px;">Customize your stack with ape-plugins</h1>
-        <h1 style="font-size: 30px;">Plugin creation and support from simple integrations to a more complex ecosystem.</h1>
-        <h1 style="font-size: 30px;">Non-EVM chains are already being supported.</h1>
+        <h1 style="font-size: 50px; text-align: center;">Customize your stack with ape-plugins</h1>
+        <h2 style="font-size: 30px; text-align: center;">Plugin creation and support from simple integrations to a more complex ecosystem.</h2>
+        <h2 style="font-size: 30px;">Non-EVM chains are already being supported.</h2>
     </div>
 </div>
+</section>
+<style>
+  @media only screen and (max-width: 600px) {
 
+    .section-splashFeaturedPlugin {
+      margin-top:300px;
+      margin-bottom:100px;
+    }
+  .splashCollaboration {
+    flex-direction: column!important;
+    
+  }
+  .splashCol2 {
+    width:100%;
+    overflow:hidden;
+    
+  }
+}
+</style>
 <!-- SPLASH COLLABORATION -->
+<section class="section-splashFeaturedPlugin">
 <div class="splashCollaboration" style="width: 100%; height: 50vh; display: flex; flex-direction: row; align-items: center; justify-content: center; text-align: center;">
   <div class="splashCol1">
     <h1 style="font-size:50px;">Featured Plugin</h1>
@@ -261,7 +304,7 @@
   <div class="splashCol2"></div>  
  
 </div>
-
+</section>
 
 
 <!-- END OF FEATURES-->
@@ -302,9 +345,16 @@
     </ul>
 </div>
 
+<style>
+  @media only screen and (max-width: 600px) {
+    .finalSplash {
+      margin-top:300px;
+    }
+  }
+</style>
 
 <!-- APE FRAMEWORK SECTION -->
-<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 50vh;">
+<div class="finalSplash" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 50vh;">
     <img src="apeFrame-logo.png" alt="Ape Framework Logo" style="width: 500px; height: auto;">
     <div style="text-align: center;">
         <h1 style="font-size: 50px;">Ape Framework</h1>
