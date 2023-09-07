@@ -29,6 +29,16 @@ footer {
 
 .footer-logo:hover {
     filter: invert(1);
+    animation: horizontal-shaking 0.2s infinite; /* Adjust duration and other properties as needed */
+
+}
+
+@keyframes horizontal-shaking {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(5px); }
+  50% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
 }
 
 .container {
@@ -126,7 +136,7 @@ footer {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
- 
+
 }
 
 .subParagraph {
@@ -136,7 +146,7 @@ footer {
     padding:10px;
     text-align: justify;
 
-    
+
 }
 
 .info-popup-content {
@@ -163,4 +173,3 @@ footer {
 .info-icon:hover {
     color: white;
 }
-

@@ -176,9 +176,9 @@ html {
         /* RESPONSIVE SUGAR */
 
     /* BREAKPOINT 1 AT 920 */
-        @media only screen and (max-width: 920px) { 
-            .container-product { 
-            background-color:rgba(128, 0, 128, 0); 
+        @media only screen and (max-width: 920px) {
+            .container-product {
+            background-color:rgba(128, 0, 128, 0);
         }
 
         .product-logo {
@@ -191,9 +191,9 @@ html {
         }
 
     /*BREAKPOINT 2 AT 720 */
-             @media only screen and (max-width: 720px) { 
-            .container-product { 
-            background-color:rgba(241, 0, 241, 0); 
+             @media only screen and (max-width: 720px) {
+            .container-product {
+            background-color:rgba(241, 0, 241, 0);
         }
 
         .product-logo {
@@ -207,7 +207,7 @@ html {
         }
 
    /* BREAK POINT 3 AT 620 */
-       @media only screen and (max-width: 620px) { 
+       @media only screen and (max-width: 620px) {
 
             .container-product {
                 background-color:rgba(255, 255, 0, 0);
@@ -225,7 +225,7 @@ html {
         }
 
         }
-       
+
 
         .container-bottom {
             background-color:rgba(0, 128, 0, 0);
@@ -237,7 +237,7 @@ html {
             color:white;
         }
 
-      
+
 
 
 
@@ -263,7 +263,7 @@ html {
             min-height: 80vh;  /* Minimum height to take up the full viewport height */
             padding: 20px; /* Optional spacing around the edges */
         }
-        
+
         .menu {
             display: grid;
             grid-template-columns: repeat(3, 1fr);  /* 3 columns */
@@ -271,21 +271,21 @@ html {
             max-width: 960px;  /* Max width of the grid */
             width: 100%;  /* Make sure it takes up full width up to the max-width */
         }
-        
+
         @media only screen and (max-width: 720px) {
             .menu {
                 grid-template-columns: 1fr;  /* 1 column for smaller screens */
             }
         }
-        
+
 
         .menu-item {
-          
+
             display:flex;
             align-items:center;
             justify-content: center;
-        
-        
+
+
             min-height:300px;
             max-height: 200px;
             padding:20px;
@@ -316,12 +316,12 @@ html {
 
 
 
-       
+
          .menu-item-silverback {
             display:flex;
             align-items:center;
             justify-content: center;
-           
+
             width:300px;
             height: 300px;
             padding:20px;
@@ -329,82 +329,15 @@ html {
             margin: 10px;
             text-align: center;
             transition: background-color 0.3s ease;
-            cursor: pointer; 
+            cursor: pointer;
          }
 
 
-                
+
          .menu-item-silverback img {
-           width:100px; 
+           width:100px;
         }
 
-
-
-        /*Mobile Considerations */
-
-        @media only screen and (max-width: 620px) {
-            #mainFooter {
-                background-size: cover;
-                background-position: center;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                max-width:100%;
-                overflow:hidden;
-            }
-            /* Footer links as one row on mobile */
-            .footer-links {
-            flex-wrap: nowrap;
-            flex-direction: column; 
-            
-            }
-
-            .footer-link {
-                margin-top: 50px;
-                border-style:solid;
-                border-color:white;
-                text-align:center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: 50px;
-                padding:20px;
-            }
-
-            .footer-link:hover {
-                background-color:rgba(255, 255, 255, 0.529);
-                color:black;
-                opacity: 1;
-                cursor: pointer;
-
-            }
-
-            .footer-link a {
-                padding:0px;
-            }
-
-         
-
-
-            /*Header on MObile height increase */
-            .header {
-                text-align: center;
-                color: white;
-                padding:25px;
-                background-color:rgba(255, 0, 0, 0);
-                height:80px;
-                display:flex;
-                flex-direction:column;
-                align-items:center;
-                justify-content:center;
-                animation: change-typography 9s infinite ease-in-out;
-            }
-
-
-        
-        }
 
 
 
@@ -441,4 +374,68 @@ html {
         .footer-link a:hover {
             color: #ffffff;
         }
-        
+
+
+
+
+        /*Mobile Considerations */
+
+        @media only screen and (max-width: 767px) {
+          #mainFooter {
+              background-size: cover;
+              background-position: center;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              max-width:100%;
+              overflow:hidden;
+          }
+          /* Footer links as one row on mobile */
+          .footer-links {
+          flex-wrap: nowrap;
+          flex-direction: column;
+          }
+
+          /* silverback logo is not the same size as the others */
+          #itemSilverBack {
+            width: inherit;
+          }
+
+          .footer-link {
+              margin-top: 7%;
+              border-style:solid;
+              border-color:white;
+              text-align:center;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 50px;
+              padding: 5%;
+          }
+
+          .footer-link:hover {
+              background-color:rgba(255, 255, 255, 0.529);
+              color:black;
+              opacity: 1;
+              cursor: pointer;
+          }
+
+          .footer-link a {
+              padding:0px;
+          }
+
+          /*Header on Mobile height increase */
+          .header {
+              text-align: center;
+              color: white;
+              padding:25px;
+              background-color:rgba(255, 0, 0, 0);
+              height:80px;
+              display:flex;
+              flex-direction:column;
+              align-items:center;
+              justify-content:center;
+              animation: change-typography 9s infinite ease-in-out;
+          }
+      }

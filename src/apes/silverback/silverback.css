@@ -44,7 +44,7 @@ footer {
     display:flex;
     justify-content:center;
     align-items:center;
-    
+
 }
 
 .container {
@@ -130,9 +130,18 @@ color: white;
 }
 
 .footer-logo:hover {
- 
-    filter: invert(1);
+  filter: invert(1);
+  animation: horizontal-shaking 0.2s infinite; /* Adjust duration and other properties as needed */
+
 }
+
+  @keyframes horizontal-shaking {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(5px); }
+  50% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+  }
 
         .container {
             text-align: center;
@@ -140,7 +149,7 @@ color: white;
             display:flex;
             flex-direction:column;
         }
-        
+
 
 
 
@@ -170,58 +179,48 @@ color: white;
 
 .text-container {
 
-  
+
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .text-container a {
       text-decoration: none;
   }
-  
+
   .searchWrap {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-  
- 
+
+  @keyframes animate {
+    0%, 100% {
+      background-position: left top;
+    }
+    25%{
+      background-position: right bottom;
+     }
+    50% {
+      background-position: left bottom;
+    }
+    75% {
+      background-position: right top;
+    }
+}
+
+
   @media screen and (max-width: 600px) {
     .text-container h1 {
         font-size: 32px; /* Adjust this value to what looks best on mobile */
     }
 
-    @keyframes animate {
-        0%, 100% {
-          background-position: left top;
-        }
-        25%{
-          background-position: right bottom;
-         }
-        50% {
-          background-position: left bottom;
-        }
-        75% {
-          background-position: right top;
-        }   
+
+
+
 }
-  
-    @keyframes animate {
-      0%, 100% {
-        background-position: left top;
-      }
-      25%{
-        background-position: right bottom;
-       }
-      50% {
-        background-position: left bottom;
-      }
-      75% {
-        background-position: right top;
-      }   
-  }
 
 
   /*END OF MAGIC TRICK */
@@ -241,7 +240,7 @@ color: white;
 
 #mirrorArticlePopup iframe {
     position: absolute;
-    
+
     width: 70%;
     height: 100%;
     display: flex;

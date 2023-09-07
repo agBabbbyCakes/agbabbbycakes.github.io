@@ -262,7 +262,22 @@ a {
 
 .product-logo:hover {
   opacity: 0.5;
+  animation: horizontal-shaking 0.2s infinite; /* Adjust duration and other properties as needed */
 }
+
+@keyframes horizontal-shaking {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(5px); }
+  50% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+
+
+
+
+
 
 #product-silverback {
   width: 48px;
@@ -324,7 +339,7 @@ a {
   border-radius:2.5%;
   margin-right:10px;
   margin-left:10px;
-  
+
 }
 
 .search-result-button {

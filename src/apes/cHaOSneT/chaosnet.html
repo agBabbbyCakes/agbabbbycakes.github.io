@@ -13,11 +13,11 @@
 <div id="infoPopup" class="popup-background" style="display: none;">
     <div class="info-popup-content">
       <h1 style="margin-bottom:10px; padding:10px;">chaosnets = "testnets" with chaotic behavior
-      </h1> 
+      </h1>
     <p style="margin-bottom:30px;">
         forget testnets -  build  a robot army
     </p>
-       <a class="text-popup-links" href="#">Launch cHaOSneT</a>        
+       <a class="text-popup-links" href="#">Launch cHaOSneT</a>
     </div>
 </div>
 
@@ -36,7 +36,7 @@
 
 .trailer-text-link {
     min-width:500px!important;
-    
+
     text-transform:uppercase;
 }
 </style>
@@ -45,17 +45,17 @@
         <a href="https://chaos.apeworx.io" class="github-link">
             <img src="/src/apes/cHaOSneT/2.png" alt="Logo" class="logo">
             <div class="chaosMenu">
-                <a style="font-size:16px; padding:10px;" class="trailer-text-link" href="https://chaos.apeworx.io">Launch cHaOSneT</a> 
-                <a class="trailer-text-link" href="cHaOSneT-whitePAPER.pdf">Chaos White Paper</a>       
-                <a class="trailer-text-link" href="#" onclick="showPopup()">BETA Launch Trailer</a>        
-                <a class="trailer-text-link" href="#" onclick="showPopup()">Teaser Trailer</a>  
+                <a style="font-size:16px; padding:10px;" class="trailer-text-link" href="https://chaos.apeworx.io">Launch cHaOSneT</a>
+                <a class="trailer-text-link" href="cHaOSneT-whitePAPER.pdf">Chaos White Paper</a>
+                <a class="trailer-text-link" href="#" onclick="showPopup()">BETA Launch Trailer</a>
+                <a class="trailer-text-link" href="#" onclick="showPopup()">Teaser Trailer</a>
 
             </div>
         </div>
 
     <footer>
         <!-- ALL APE LINK -->
-        <a href="/index.html"><img src="./apeFull.png" class="footer-logo"></a>
+        <a href="../../../index.html"><img src="./apeFull.png" class="footer-logo"></a>
     </footer>
 
     <!-- Popup HTML -->
@@ -70,20 +70,25 @@
             var popup = document.getElementById('popup');
             var iframe = document.getElementById('youtube-iframe');
             popup.style.display = 'flex';
+              // change src so that the video autoplays
+            iframe.src = 'https://www.youtube.com/embed/gGs20VPra6o?autoplay=1';
 
             // Close the popup when clicked outside
             window.onclick = function(event) {
                 if (event.target == popup || event.target == iframe) {
                     popup.style.display = 'none';
+                    iframe.src = 'https://www.youtube.com/embed/gGs20VPra6o';
                 }
             };
         }
     </script>
 
+
+
     <script>
-        function infoPopup() {
-    var popup = document.getElementById('infoPopup');
-    popup.style.display = 'flex';
+    function infoPopup() {
+        var popup = document.getElementById('infoPopup');
+        popup.style.display = 'flex';
 
     // Close the popup when clicked outside
     window.onclick = function(event) {
@@ -92,7 +97,7 @@
         }
     };
 }
-
     </script>
+
 </body>
 </html>

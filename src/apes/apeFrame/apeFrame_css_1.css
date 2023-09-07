@@ -7,7 +7,7 @@
             font-family: 'Press Start 2P';
         }
 
-            
+
         body {
             font-family: monospace;
             margin: 0;
@@ -59,8 +59,6 @@
         .p-subHeader-main {
             padding-left:100px;
             padding-right:100px;
-            
-
         }
 
         .container {
@@ -101,25 +99,34 @@
         display:flex;
         align-items:center;
         justify-content: center;
-       
+
     }
+
+
 
     .footer-logo {
         width:62px;
     }
 
     .footer-logo:hover {
-        filter: invert(.71);
+      filter: invert(.71);
+      animation: horizontal-shaking 0.2s infinite; /* Adjust duration and other properties as needed */
     }
 
-       
+    @keyframes horizontal-shaking {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(5px); }
+      50% { transform: translateX(-5px); }
+      75% { transform: translateX(5px); }
+      100% { transform: translateX(0); }
+  }
         .container {
             text-align: center;
             padding: 20px;
             display:flex;
             flex-direction:column;
         }
-        
+
         .logo {
             max-width: 33%;
             height: auto;
@@ -130,7 +137,7 @@
         .logo:hover {
             opacity:1;
         }
-        
+
         .github-link {
             font-size: 18px;
             text-decoration: none;
@@ -183,9 +190,8 @@
             box-sizing: border-box;
         }
 
-    
+
         .containerPlugin {
-            
             padding: 20px;
             background-color: #000;
             overflow: auto;
@@ -193,24 +199,26 @@
             border-color:var(--border-color);
             border-width:1px;
         }
-    
+
         .containerPlugin h1 {
             color: #0f0;
             margin-bottom: 20px;
         }
-    
+
         .grid-plugins {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
+            gap
+            : 10px;
         }
-    
+
         .grid-plugins li {
             list-style-type: none;
             border: 2px solid var(--border-color);
             padding: 10px;
+            display: flex;
         }
-    
+
         .grid-plugins li:hover {
             list-style-type: none;
             border: 2px solid var(--border-color);
@@ -218,16 +226,17 @@
             background-color:green;
             padding: 10px;
         }
-    
+
         .grid-plugins li a {
             color: var(--color-primary);
             text-decoration: none;
+            flex-grow: 1;
         }
-    
+
         .grid-plugins li a:hover {
             text-decoration: underline;
         }
-    
+
         .grid-plugins li:before {
             content: ">";
             margin-right: 10px;
@@ -239,7 +248,7 @@
             box-sizing: border-box;
         }
 
- 
+
 
         .installApe-section {
             display: flex;
@@ -248,7 +257,7 @@
 
             height:700px;
             color: rgba(0, 255, 0, 0.278);
-         
+
 
         }
 
@@ -259,7 +268,7 @@
         .install {
             display: flex;
             justify-content: center;
-            
+
         }
 
         .installButton {
@@ -317,7 +326,7 @@
             border-style:solid;
             border-width:1px;
             border-color: var(--border-color);
-        
+
         }
         .splashInstall-left {
             flex: 1;
@@ -352,7 +361,7 @@
             background-color: var(--color-secondary);
             border-color: var(--color-primary);
             opacity: 1;
-            
+
         }
         .releaseNotesLink {
             text-align: center;
@@ -366,7 +375,7 @@
         * {
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: monospace;
             margin: 0;
@@ -374,46 +383,50 @@
             background-color: #000;
             color:limegreen;
         }
-        
+
         .grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 20px;
             padding: 20px;
         }
-        
-        .section {
 
+        .section {
             border-style:solid;
             border-color:var(--border-color);
             padding: 20px;
             background-color: #000;
             overflow: auto;
         }
-        
+
         .section h2 {
             color: #0f0;
             font-size: 18px;
             margin-bottom: 10px;
         }
-        
+
         .section p {
             margin-bottom: 20px;
         }
-        
+
         .section .codeWrap {
             padding: 10px;
             background-color: #333;
             color: #0f0;
         }
-        
+
+        .card-image {
+          padding: 0px;
+          width:100%;
+          background-color: #333;
+      }
         .asci-container-xl {
             max-width: 100%;
             overflow: hidden;
             padding-bottom: 56.25%;
             position: relative;
         }
-        
+
         .asci-container-xl iframe {
             position: absolute;
             top: 0;
@@ -426,7 +439,7 @@
             width:200px;
             height: auto;
         }
-    
+
         .top-container {
             min-width:100%;
             display:flex;
@@ -447,15 +460,15 @@
             font-size:120px;
             line-height:1;
         }
-    
-    
+
+
         .splashMain {
             width:100%;
             height:150px;
             background-color: #000;
-         
+
         }
-    
+
         .splashScreen {
             width:100%;
             height:100%;
@@ -463,9 +476,9 @@
             flex-direction: column;
             justify-content:center;
             align-items:center;
-           
+
         }
-    
+
 
         /*Install Popup */
         .fullwidth-wrapper {
@@ -474,6 +487,7 @@
             display:flex;
             justify-content:center;
             align-items:center;
+            z-index: -1;
         }
         .innerCenter-wrapper {
             width:80%;
@@ -524,6 +538,7 @@
         background-color: rgba(0, 0, 0, 0.357); /* Change the background color to a dark shade */
         justify-content: center;
         align-items: center;
+        z-index: 100;
     }
 
     .popup-content {
@@ -540,7 +555,7 @@
                 padding: 10px;
                 margin-bottom: 20px;
             }
-    
+
             /* Code Block Styles */
             .code {
                 font-family: "Courier New", monospace;
@@ -570,7 +585,7 @@
                 font-size: 10px;
 
             }
-    
+
             /* List Styles */
             .list {
                 list-style-type: disc;
@@ -686,15 +701,6 @@
 }
 
 
-/* Media query for mobile devices */
-@media (max-width: 767px) {  /* 767px is a common breakpoint for targeting mobile devices */
-    .splashMain {
-  
-        padding-bottom: 20px;  /* Adjust this value as needed */
-    }
-
-
-}
 
 /* Default styles for desktop */
 .grid {
@@ -707,10 +713,120 @@
     margin: 10px; /* Adjust as needed for outer spacing */
 }
 
-/* Mobile styles */
-@media (max-width: 767px) {
-    .grid {
-        grid-template-columns: 1fr; /* One column on mobile */
-    }
+.section:hover {
+  cursor: pointer;
 }
 
+
+/* CS orga - to be refined */
+#release-list {
+  position: relative;
+  color: var(--color-primary);
+}
+
+.release-style-notes {
+  background-color:rgba(0, 0, 0, 0.898);
+  padding:30px;
+  min-height:100px;
+}
+
+.releaseName {
+  color:rgb(20, 15, 15);
+  font-size:2vw;
+  text-align:center;
+  display:flex;
+  justify-content: center;
+  mix-blend-mode: normal;
+  z-index:3;
+  position:relative;
+  z-index: 3;
+  filter: invert(1);
+  filter: brightness(100);
+  background-color:rgba(0, 0, 0, 0.852);
+  transition: transform 0.3s;
+}
+
+.releaseNumber {
+  color:rgb(0, 0, 0);
+  font-size:10vw;
+  text-align:center;
+  display:flex;
+  justify-content: center;
+  mix-blend-mode: normal;
+  z-index:3;
+  position:relative;
+  z-index: 3;
+  filter: brightness(100);
+  background-color:rgba(0, 0, 0, 0.851);
+}
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: var(--color-tertiary); ;
+  padding: 20px;
+  border: 1px solid #b7ff00;
+  width: 60%;
+  margin-left: 21%;
+  margin-top: 5%;
+
+}
+
+.close {
+  color:white;
+  float: left;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 7px;
+  margin-top: -8px;
+}
+
+.close:hover,
+.close:focus {
+  color: #b7ff00;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {  /* 767px is a common breakpoint for targeting mobile devices */
+  .splashMain {
+      padding-bottom: 20px;  /* Adjust this value as needed */
+  }
+  .p-subHeader-main {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.grid {
+  grid-template-columns: 1fr; /* One column on mobile */
+}
+
+.splashInstall-left{
+  overflow: scroll;
+}
+
+}
