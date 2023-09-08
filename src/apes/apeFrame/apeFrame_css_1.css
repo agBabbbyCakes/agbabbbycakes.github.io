@@ -1,6 +1,5 @@
 /*apeFrame CSS #1*/
 
-
          @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
         html {
@@ -34,6 +33,10 @@
             --border-color: #b7ff00;
             --border-color-hover :lime;
         }
+
+    :root {
+        --innerPadding: 55px;
+    }
 
 
 
@@ -1001,7 +1004,7 @@
     height:300px;
     padding:50px;
 }
-    }
+    
 
 
     @media only screen and (max-width: 600px) {
@@ -1088,3 +1091,9 @@
         line-height:90%;
     
       }
+
+/*Quick fix plugin section padding */
+
+.aboutPluginsSection {
+    padding:var(--innerPadding);
+}
