@@ -1070,3 +1070,21 @@
         }
       }
 
+      @media only screen and (max-width: 600px) {
+        .containerPlugin {
+            padding:40px;
+
+        }
+      }
+
+
+      /*card section typography */
+      .section p {
+        font-size:16px;
+      }
+    
+      .section h2 {
+        font-size: 30px;
+        line-height:90%;
+    
+      }
