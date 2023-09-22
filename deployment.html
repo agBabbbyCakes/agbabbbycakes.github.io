@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rough Deployment Detail Page</title>
+    <link rel="stylesheet" href="App.css">
+    <link rel="stylesheet" href="deploy-addon.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #994caf;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <h2>Rough Deployment Screen</h2> 
+    </header>
+    <div class="card">
+        <table id="deploymentTable">
+            <tr>
+                <th>Name of Deployment</th>
+                <th>Name of Chain</th>
+                <th>Cost</th>
+                <th>Timestamp</th>
+                <th>View Deployment</th>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        var table = document.getElementById('deploymentTable');
+        var data = [
+            {
+                name: 'Deployment 1',
+                chain: 'Chain 1',
+                cost: '$100',
+                timestamp: '2022-01-01 12:00:00',
+                view: 'Link 1'
+            },
+            {
+                name: 'Deployment 2',
+                chain: 'Chain 2',
+                cost: '$200',
+                timestamp: '2022-02-01 12:00:00',
+                view: 'Link 2'
+            }
+            // Add more data as needed
+        ];
+
+        for (var i = 0; i < data.length; i++) {
+            var row = `<tr>
+                            <td>${data[i].name}</td>
+                            <td>${data[i].chain}</td>
+                            <td>${data[i].cost}</td>
+                            <td>${data[i].timestamp}</td>
+                            <td><a href="${data[i].view}">View</a></td>
+                       </tr>`;
+            table.innerHTML += row;
+        }
+    </script>
+</body>
+</html>

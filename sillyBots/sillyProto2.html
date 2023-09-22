@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Silly Protocol Choices</title>
+    <link rel="stylesheet" href="../App.css">
+
+    <link rel="stylesheet" href="./sillyProto2.css">
+</head>
+
+<body>
+    <div class="header-box">
+        <h2 class="header-label">Protocol Choices</h2>
+        <p class="header-text">
+            Add activity to the following protocols using chaosbots...
+        </p>
+    </div>
+    <div class="protocolChoiceWrap-B">
+        <b>Protocol Name</b>
+        <br />
+        0 Bots
+    </div>
+    <div class="bot-all-wrap">
+        <div class="super-col-1">
+            <div class="botCardContainer">
+                <!-- BOT 1-->
+                <div class="botCardItem-wrap botCard" id="bot-A">
+                    <!-- BOT COL 1 -->
+                    <div class="botCardItem-col1">
+                        <div class="botCardItem-header-a">
+                            <div class="botGraphic" id="bot-A-graphic" data-img-url="./sillyBot-images/bot-A.png"></div>
+                            <p class="botText-Name">Bot Name A</p>
+                        </div>
+                        <div class="botCardItem-footer-a">
+                            <button class="botCardMinus">-</button>
+                            <input class="botCardInput" type="number" value="0" />
+                            <button class="botCardPlus">+</button>
+                        </div>
+                        <div class="botCardPrice-wrap">
+                            Subtotal: 0.00 per day
+                        </div>
+                    </div>
+                    <!-- BOT COL 2 -->
+                    <div class="botCardItem-col2">
+                        <div class="botCardItem-body">
+                            <p class="botText-desc">Bot Description</p>
+                            <p style="text-align:left; text-transform:capitalize">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit
+                                amet, adipiscing nec, ultricies sed, dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- BOT 2 -->
+                <div class="botCardItem-wrap botCard" id="bot-B">
+                    <!-- BOT COL 1 -->
+                    <div class="botCardItem-col1">
+                        <div class="botCardItem-header-a">
+                            <div class="botGraphic" id="bot-B-graphic" data-img-url="./sillyBot-images/bot-B.png"></div>
+                            <p class="botText-Name">Bot Namez</p>
+                        </div>
+                        <div class="botCardItem-footer-a">
+                            <button class="botCardMinus">-</button>
+                            <input class="botCardInput" type="number" value="0" />
+                            <button class="botCardPlus">+</button>
+                        </div>
+                        <div class="botCardPrice-wrap">
+                            Subtotal: 0.00 per day
+                        </div>
+                    </div>
+                    <!-- BOT COL 2 -->
+                    <div class="botCardItem-col2">
+                        <div class="botCardItem-body">
+                            <p class="botText-desc">Bot Description</p>
+                            <p style="text-align:left; text-transform:capitalize">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit
+                                amet, adipiscing nec, ultricies sed, dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- BOT 3 -->
+                <div class="botCardItem-wrap botCard" id="bot-C">
+                    <!-- BOT COL 1 -->
+                    <div class="botCardItem-col1">
+                        <div class="botCardItem-header-a">
+                            <div class="botGraphic" id="bot-C-graphic" data-img-url="./sillyBot-images/bot-C.png"></div>
+                            <p class="botText-Name">Bot Name C</p>
+                        </div>
+                        <div class="botCardItem-footer-a">
+                            <button class="botCardMinus">-</button>
+                            <input class="botCardInput" type="number" value="0" />
+                            <button class="botCardPlus">+</button>
+                        </div>
+                        <div class="botCardPrice-wrap">
+                            Subtotal: 0.00 per day
+                        </div>
+                    </div>
+                    <!-- BOT COL 2 -->
+                    <div class="botCardItem-col2">
+                        <div class="botCardItem-body">
+                            <p class="botText-desc">Bot Description</p>
+                            <p style="text-align:left; text-transform:capitalize">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit
+                                amet, adipiscing nec, ultricies sed, dolor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="super-col-2">
+            <div>
+                <img src="./sillyBot-images/bot-A.png" alt="protocol-1" class="protocolGraphic" />
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <a href="prevLink" class="previousButton">Previous</a>
+        <a href="nextLink" class="newNextButton">Review</a>
+    </div>
+    </div>
+    <script>
+        document.querySelectorAll('.botCard').forEach(botCard => {
+            botCard.addEventListener('mouseover', function () {
+                const botId = this.id;
+                const botGraphic = document.getElementById(`${botId}-graphic`);
+                const protocolGraphic = document.querySelector('.protocolGraphic');
+                protocolGraphic.src = botGraphic.dataset.imgUrl;
+            });
+        });
+    </script>
+</body>
+
+</html>
