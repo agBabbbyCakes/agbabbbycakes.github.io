@@ -7,7 +7,7 @@ body {
     line-height:1.5;
     margin:0;
     padding:0;
-    text-align:center;
+
 }
 
 /* General Styles */
@@ -31,7 +31,6 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 20px; /* adjust as needed */
-        overflow: auto; /* enables scrolling */
         min-width:100%;
         width:100%;
         max-width:100%;
@@ -60,6 +59,7 @@ body {
 
 .protocolChoiceWrap-B {
     margin-bottom:10px;
+
 }
 
 
@@ -147,6 +147,51 @@ body {
   .protocolGraphic {
     min-width: 60%;
     max-width:100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .protocolGraphic {
+    min-width: 50%;
+    max-width:100%;
+  }
+}
+
+.botText-Name {
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+/* Existing CSS */
+
+/* ... */
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .botCardContainer {
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+  }
+
+  .botCardItem-col1,
+  .botCardItem-col2 {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .protocolGraphic {
+    min-width: 60%;
+    max-width:100%;
+  }
+
+  .botCardContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .botCardItem-wrap {
+    flex-direction: column;
   }
 }
 
