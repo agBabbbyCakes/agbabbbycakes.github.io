@@ -4,7 +4,7 @@ body {
     background-color: #C5E9B9; /* light baby green */
     font-family: Arial, sans-serif;
     margin: 20px;
-    font-size:2vw;
+    
   }
   h1, h2, h3 {
     color: #008080; /* emerald green */
@@ -39,11 +39,11 @@ body {
   }
 
 .schedule {
-    font-size: 20px;
+    font-size: 16px;
     list-style-type: none;
   }
   .schedule > li {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
     color: #008080; /* emerald green */
@@ -51,4 +51,26 @@ body {
   }
   .schedule > li > ul > li {
     margin-bottom: 5px;
+    
   }
+
+  #vyperLogo {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    mix-blend-mode: screen;
+    border-style:node;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #b8d8d8, 0 0 10px #b8d8d8, 0 0 15px #b8d8d8, 0 0 20px #b8d8d8;
+    }
+    50% {
+        box-shadow: 0 0 10px #b8d8d8, 0 0 20px #b8d8d8, 0 0 30px #b8d8d8, 0 0 40px #b8d8d8;
+    }
+    100% {
+        box-shadow: 0 0 5px #b8d8d8, 0 0 10px #b8d8d8, 0 0 15px #b8d8d8, 0 0 20px #b8d8d8;
+    }
+}
