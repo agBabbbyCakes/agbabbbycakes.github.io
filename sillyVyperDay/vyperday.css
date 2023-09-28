@@ -4,6 +4,8 @@ body {
     background-color: #C5E9B9; /* light baby green */
     font-family: Arial, sans-serif;
     margin: 20px;
+    animation: gradient 30s ease-in-out infinite;
+
     
   }
   h1, h2, h3 {
@@ -23,6 +25,19 @@ body {
   p {
     line-height: 1.6;
   }
+
+.button-container {
+  width:100%;
+  text-align:center;
+  margin: 20px 0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+
+}
+
+
   .button {
     display: inline-block;
     padding: 10px 20px;
@@ -31,7 +46,14 @@ body {
     background-color: #008080;
     text-decoration: none;
     border-radius: 5px;
-  }
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  color:#008080;
+  background-color: #C5E9B9; /* light baby green */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
   @media (max-width: 600px) {
     .container {
       padding: 10px;
@@ -73,4 +95,85 @@ body {
     100% {
         box-shadow: 0 0 5px #b8d8d8, 0 0 10px #b8d8d8, 0 0 15px #b8d8d8, 0 0 20px #b8d8d8;
     }
+}
+
+.duotone-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* for 16:9 aspect ratio */
+  overflow: hidden;
+}
+
+.duotone-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position:center;
+  background-attachment: fixed;
+  mix-blend-mode: multiply;
+  border-radius:2px;
+}
+
+.duotone-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#vyper-day-body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle, green, lightgreen);
+}
+
+@keyframes gradient {
+  0% {
+    background-color: #C5E9B9; /* light baby green */
+  }
+  50% {
+    background-color: #8ae26d; /* light baby green */
+  }
+  100% {
+    background-color: #C5E9B9; /* light baby green */
+  }
+}
+
+.glass-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  border-radius: 0 0 0 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.glass-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.glass-nav li {
+  display: inline;
+  margin-right: 10px;
+  font-family: 'Courier', monospace;
+  font-size: 0.8em;
+  text-transform:uppercase;
+}
+
+.glass-nav a {
+  color: #008080;
+  text-decoration: none;
 }
