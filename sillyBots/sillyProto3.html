@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3 Silly Protocol Choices</title>
+    <!-- as of 10.2.23 -->
+</head>
+
+<body>
+
+
+<section id="take2">
+    <h1>Take 2 </h1>
+    <style>
+        .character-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    max-width:400px;
+}
+
+.character-item {
+    width: 175px;
+    height: 245px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected-character-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:yellow;
+    width:300px;
+}
+
+.selected-character {
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color:green;
+}
+
+.selected-character-graphic {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+.main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* This will make it take the full height of the viewport */
+        }
+
+        .character-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            max-width:400px;
+        }
+    </style>
+    <div class="main-container">
+        <div class="character-container">
+            <div class="character-item">1</div>
+            <div class="character-item">2</div>
+            <div class="character-item">3</div>
+            <div class="character-item">4</div>
+            <div class="character-item">5</div>
+            <div class="character-item">6</div>
+        </div>
+        <div class="selected-character-container">
+            <div class="selected-character">Selected Bot: None</div>
+            <div class="selected-character-graphic"></div>
+        </div>
+    </div>
+
+</section>
+
+
+
+    <div class="footer">
+        <a href="prevLink" class="previousButton">Previous</a>
+        <a href="nextLink" class="newNextButton">Review</a>
+    </div>
+    </div>
+    <script>
+        document.querySelectorAll('.botCard').forEach(botCard => {
+            botCard.addEventListener('mouseover', function () {
+                const botId = this.id;
+                const botGraphic = document.getElementById(`${botId}-graphic`);
+                const protocolGraphic = document.querySelector('.protocolGraphic');
+                protocolGraphic.src = botGraphic.dataset.imgUrl;
+            });
+        });
+    </script>
+</body>
+
+</html>
