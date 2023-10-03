@@ -1,11 +1,14 @@
 /*VYPER DAY CSS */
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap');
+
+
 body {
     background-color: #C5E9B9; /* light baby green */
     font-family: Arial, sans-serif;
     margin: 20px;
     animation: gradient 30s ease-in-out infinite;
-
+    font-family: 'Barlow', sans-serif;
     
   }
   h1, h2, h3 {
@@ -176,4 +179,28 @@ body {
 .glass-nav a {
   color: #008080;
   text-decoration: none;
+}
+
+.splash-info {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #C5E9B9;
+  color: #008080;
+}
+
+.splash-info h1 {
+  font-size: 2.5em;
+  margin:0px;
+}
+
+.splash-info h2, .splash-info h3 {
+  font-size: 2em;
+}
+
+.splash-info h4, .splash-info h5 {
+  font-size: 1.5em;
+}
+
+.splash-info p {
+  font-size: 1.2em;
 }
