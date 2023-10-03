@@ -218,3 +218,24 @@ body {
   color: var(--vyperDarkGreen);
 
 }
+
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor img {
+  max-width: 100%;
+  max-height: 100%;
+}
