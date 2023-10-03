@@ -156,7 +156,7 @@ body {
 }
 
 .glass-nav {
-  position: fixed;
+  position: relative;
   top: 0;
   right: 0;
   padding: 20px;
