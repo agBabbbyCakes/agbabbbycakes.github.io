@@ -85,6 +85,14 @@ body{
         .character-item, .selected-character-graphic {
             filter: grayscale(100%) contrast(1) brightness(90%);
         }
+
+
+        .characterWrap {
+            width:50%;
+            height:auto;
+            overflow:hidden;
+            object-fit: cover;
+        }
     </style>
 </head>
 
@@ -97,9 +105,16 @@ body{
             <div class="selected-character-graphic"></div>
         </div>
         <div class="character-container">
-            <div class="character-item">1</div>
-            <div class="character-item">2</div>
-            <div class="character-item">3</div>
+            <div class="character-item">
+                <img src="./sillyBot-images/bot-A.png" alt="protocol-1" class="characterWrap" />
+
+            </div>
+            <div class="character-item">
+                <img src="./sillyBot-images/bot-B.png" alt="protocol-1" class="characterWrap" />
+            </div>
+            <div class="character-item">
+                <img src="./sillyBot-images/bot-C.png" alt="protocol-1" class="characterWrap" />
+            </div>
             <div class="character-item">4</div>
             <div class="character-item">5</div>
             <div class="character-item">6</div>
