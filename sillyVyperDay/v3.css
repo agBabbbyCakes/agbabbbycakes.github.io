@@ -1,0 +1,135 @@
+html {
+    font-family: 'Space Mono', monospace;
+}
+
+
+body {
+
+
+            
+            background-color: #00e171;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+			background-color:black;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .address {
+            font-style: italic;
+            font-size: 0.9em;
+        }
+
+        .info, .schedule {
+            background-color: #0431001d;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin-bottom: 20px;
+			border-style:solid;
+			border-color:rgba(0, 0, 0, 0.487);
+        }
+
+        .cta {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #00000054;
+            color: #04ffe6;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+			border-style:solid;
+			
+            transition: background-color 0.3s;
+        }
+
+        .cta:hover {
+            background-color: #000000;
+			color:white;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            text-align: left;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+		.card {
+    width: 500px;
+}
+
+a {
+	color:white;
+	text-decoration:none;
+}
+
+.specialTitle {
+    color: #ffffff;
+    font-size: 5em;
+    overflow: hidden;
+    margin:0px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+	text-shadow: 
+	1px 1px 0px rgba(255,0,0,0.7), 
+	-1px -1px 0px rgba(0,0,255,0.7), 
+	2px 2px 0px rgba(255,0,0,0.7), 
+	-2px -2px 0px rgba(0,0,255,0.7), 
+	3px 3px 0px rgba(255,0,0,0.7), 
+	-3px -3px 0px rgba(0,0,255,0.7);
+	mix-blend-mode:screen;
+    transition: transform 0.5s; /* Add transition for smooth transform */
+}
+
+@keyframes rock {
+    0% { transform: perspective(500px) rotateY(-20deg); }
+    50% { transform: perspective(500px) rotateY(20deg); }
+    100% { transform: perspective(500px) rotateY(-20deg); }
+}
+
+.specialTitle {
+    animation: rock 3.5s infinite; /* Adjust the time as needed */
+}
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .info, .schedule {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .cta {
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

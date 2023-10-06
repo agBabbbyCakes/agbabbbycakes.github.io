@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3 Silly Protocol Choices</title>
+    <!-- as of 10.3.23 -->
+
+    <style>
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+        
+
+.character-item {
+    width: 175px;
+    height: 145px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected-character-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+    width:100%;
+}
+
+.selected-character {
+    font-size: 24px;
+    margin-bottom: 10px;
+
+}
+
+.selected-character-graphic {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+}
+.main-container {
+            display: flex;
+            flex-direction: column; /* Add this line */
+            min-width:800px;
+            max-width:800px;
+            justify-content: center;
+            align-items: center;
+            border-style:solid;
+            border-color:white;
+            border-width:thin;
+            height: 80vh; /* This will make it take the full height of the viewport */
+        }
+
+        .character-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        
+            grid-gap: 10px;
+            margin-top:20px;
+        }
+
+
+.superWrap {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+}
+.superWrap, .main-container,  .character-item {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            background-color: rgba(255, 0, 72, 0.436);
+        }
+
+        .character-item, .selected-character-graphic {
+            filter: grayscale(100%) contrast(1) brightness(90%);
+        }
+
+
+        .characterWrap {
+            width:50%;
+            height:auto;
+            overflow:hidden;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="superWrap">
+    <div class="main-container">
+        <div class="selected-character-container">
+            <div class="selected-character">Selected Bot: None</div>
+            <div class="selected-character-graphic">
+                <img src="./sillyBot-images/bot-A.png" alt="protocol-1" class="characterSnap" />
+
+            </div>
+        </div>
+        <div class="character-container">
+            <div class="character-item">
+                <img src="./sillyBot-images/bot-A.png" alt="protocol-1" class="characterWrap" />
+
+            </div>
+            <div class="character-item">
+                <img src="./sillyBot-images/bot-B.png" alt="protocol-1" class="characterWrap" />
+            </div>
+            <div class="character-item">
+                <img src="./sillyBot-images/bot-C.png" alt="protocol-1" class="characterWrap" />
+            </div>
+            <div class="character-item">4</div>
+            <div class="character-item">5</div>
+            <div class="character-item">6</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <script>
+        document.querySelectorAll('.botCard').forEach(botCard => {
+            botCard.addEventListener('mouseover', function () {
+                const botId = this.id;
+                const botGraphic = document.getElementById(`${botId}-graphic`);
+                const protocolGraphic = document.querySelector('.protocolGraphic');
+                protocolGraphic.src = botGraphic.dataset.imgUrl;
+            });
+        });
+    </script>
+</body>
+
+</html>
