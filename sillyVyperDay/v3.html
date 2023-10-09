@@ -26,9 +26,10 @@
         <style>
             .scheduleHeader {
                 text-align: center;
-                font-size:92px;
+                font-size:64px;
                 margin: 0;
                 padding: 0;
+                letter-spacing: -2px; 
 
             }
         </style>
@@ -41,6 +42,7 @@
                 margin-left: 20px;
             }
         </style>
+        <div class="glass">
         <ul>
             <li class="header">Check-in & Coffee - 10am</li>
             <li class="indent">Morning Talks, Presentations, Breakouts - 11am</li>
@@ -56,20 +58,36 @@
             <li class="indent">Vyper LSP, by @z80dev (ApeWorX)</li>
             <li class="header">Keynote by @big_tech_sux - 6pm</li>
         </ul>
-  
+    </div>
     </div>
 	<div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.708785695108!2d28.992029315422676!3d41.04461997929725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab76d2169302b%3A0x8e6c7e0a0a5e990b!2sHilton%20Istanbul%20Bosphorus!5e0!3m2!1sen!2sus!4v1633803072191!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 	</div>
 	<style>
-	
-	</style>
-	<div class="sponsor card">
+	.sponsor2 {
+        background-color: #f5f5f5;
+        margin:0px;
+        padding:0px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        width:100%;
 
-		<div class="sponsor"><img src="https://cryptologos.cc/logos/steth-steth-logo.png" alt="Lido"></div>
-   		<div class="sponsor"><img src="https://cryptologos.cc/logos/curve-dao-token-crv-logo.png" alt="Curve"></div>
-		   <div class="sponsor"><img src="./apeFull-8bit.png" alt="ApeWorX"></div>
-		<p>Sponsored by Lido and Curve, Hosted by <a href="https://apeworx.io">ApeWorX</a></p>
-	</div>
+    }
+
+    .sponsor2 img {
+        width: 700px;
+        height: auto;
+        margin: 0px 200px;
+    }
+	</style>
+	<div class="sponsor2">
+        <div class="sponsor"><a href="https://lido.fi" rel="nofollow noopener noreferrer"><img src="https://cryptologos.cc/logos/steth-steth-logo.png" alt="Lido"></a></div>
+        <div class="sponsor"><a href="https://curve.fi" rel="nofollow noopener noreferrer"><img src="https://cryptologos.cc/logos/curve-dao-token-crv-logo.png" alt="Curve"></a></div>
+        <div class="sponsor"><a href="https://apeworx.io" rel="nofollow noopener noreferrer"><img src="./apeFull-8bit.png" alt="ApeWorX"></a></div>
+        <p>Sponsored by <a href="https://curve.fi/" rel="nofollow noopener noreferrer">Curve</a> and <a href="https://lido.fi/" rel="nofollow noopener noreferrer">Lido</a>, Hosted by <a href="https://apeworx.io" rel="nofollow noopener noreferrer">ApeWorX</a></p>
+    </div>
 </body>
 </html>
