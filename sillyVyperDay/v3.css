@@ -8,7 +8,7 @@ body {
 
             
             background-color: #00e171;
-            color: #333;
+            color: #1f1f1f;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -16,6 +16,24 @@ body {
             height: auto;
             padding: 20px;
             text-align: center;
+        }
+
+        body {
+            animation: gradient 10s ease-in-out infinite;
+            background: linear-gradient(270deg, #00e171, #24ff92);
+            background-size: 200% 200%;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         h1, h2, h3 {
@@ -86,7 +104,7 @@ a {
 }
 
 .specialTitle {
-    color: #ffffff;
+    color: #433b3b;
     font-size: 5em;
     overflow: hidden;
     margin:0px;
@@ -101,7 +119,7 @@ a {
 	-2px -2px 0px rgba(0,0,255,0.7), 
 	3px 3px 0px rgba(255,0,0,0.7), 
 	-3px -3px 0px rgba(0,0,255,0.7);
-	mix-blend-mode:screen;
+	mix-blend-mode:multipy;
     transition: transform 0.5s; /* Add transition for smooth transform */
 }
 
@@ -111,9 +129,7 @@ a {
     100% { transform: perspective(500px) rotateY(-20deg); }
 }
 
-.specialTitle {
-    animation: rock 3.5s infinite; /* Adjust the time as needed */
-}
+
 
 .sponsor {
     display: flex;
@@ -159,7 +175,6 @@ a {
 
     .specialTitle {
         font-size: 4em; /* Increase font size */
-        animation: rock 2s infinite;
     }
 
     /* Ensure images are not wider than the screen */
@@ -167,32 +182,44 @@ a {
         max-width: 100%;
         height: auto;
     }
+
+   
 }
 
-/*SPECIAL EFFECTS*/
+.sponsor2 {
+    background-color: #f5f5f500;
+    margin:0px;
+    padding:0px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    width:100%;
 
-.duotone-map {
-    position: relative;
-    display: inline-block;
 }
 
-.duotone-map img {
-    display: block;
-    width: 100%;
+.sponsor2 img {
+    width: 720px;
     height: auto;
+    
 }
 
-.duotone-map::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    mix-blend-mode: multiply;
-}
+@media only screen and (max-width: 600px) {
+    body {
+        overflow-x:hidden;
+        padding: 10px;
+        max-width: 420px;
+        margin: 0 auto; /* This will center the body if the screen width is more than 400px */
+    }
 
+    .map iframe {
+        max-width:400px;
+        width:100%;
+    }
+
+    /* Rest of your CSS rules */
+}
 
 .sponsor {
     display: flex;
