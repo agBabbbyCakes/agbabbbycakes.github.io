@@ -217,6 +217,11 @@ a {
         max-width:400px;
         width:100%;
     }
+    .sponsor2 img {
+        width: 320px;
+        height: auto;
+        
+    }
 
     /* Rest of your CSS rules */
 }
