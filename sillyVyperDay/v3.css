@@ -133,3 +133,40 @@ a {
         width: 100%;
     }
 }
+
+/*MOBILE RULES*/
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em; /* Adjust as needed */
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 1em; /* Adjust as needed */
+        margin-bottom: 10px;
+    }
+
+    .info, .schedule {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .cta {
+        padding: 15px; /* Larger touch target */
+        font-size: 1.2em; /* Larger text */
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .specialTitle {
+        font-size: 3em; /* Adjust as needed */
+        animation: rock 2s infinite; /* Adjust as needed */
+    }
+}
