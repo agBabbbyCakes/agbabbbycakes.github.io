@@ -4,8 +4,6 @@ html {
 
 
 body {
-
-
             
             background-color: #00e171;
             color: #1f1f1f;
@@ -18,23 +16,8 @@ body {
             text-align: center;
         }
 
-        body {
-            animation: gradient 10s ease-in-out infinite;
-            background: linear-gradient(270deg, #00e171, #24ff92);
-            background-size: 200% 200%;
-        }
-        
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
+
+
 
         h1, h2, h3 {
             margin-bottom: 20px;
@@ -200,7 +183,7 @@ a {
 }
 
 .sponsor2 img {
-    width: 720px;
+    width: 320px;
     height: auto;
     
 }
@@ -218,7 +201,7 @@ a {
         width:100%;
     }
     .sponsor2 img {
-        width: 320px;
+        width: 220px;
         height: auto;
         
     }
