@@ -114,40 +114,32 @@ a {
 .specialTitle {
     animation: rock 3.5s infinite; /* Adjust the time as needed */
 }
+
+.sponsor {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsor img {
+    width: 100%; /* Adjust this value to make the image larger or smaller */
+    max-width: 4000px; /* This will prevent the image from becoming too large on big screens */
+    margin:30vh;
+}
 /* Mobile styles */
 @media only screen and (max-width: 600px) {
     body {
         padding: 10px;
     }
 
-    .info, .schedule {
-        padding: 20px;
-        max-width: 100%;
-    }
-
-    .cta {
-        padding: 10px;
-    }
-
-    .card {
-        width: 100%;
-    }
-}
-
-/*MOBILE RULES*/
-
-@media only screen and (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
-
     h1, h2, h3 {
-        font-size: 1.5em; /* Adjust as needed */
+        font-size: 2em; /* Increase font size */
         margin-bottom: 15px;
     }
 
     p {
-        font-size: 1em; /* Adjust as needed */
+        font-size: 1.2em; /* Increase font size */
         margin-bottom: 10px;
     }
 
@@ -157,8 +149,8 @@ a {
     }
 
     .cta {
-        padding: 15px; /* Larger touch target */
-        font-size: 1.2em; /* Larger text */
+        padding: 20px; /* Increase touch target */
+        font-size: 1.5em; /* Increase font size */
     }
 
     .card {
@@ -166,7 +158,37 @@ a {
     }
 
     .specialTitle {
-        font-size: 3em; /* Adjust as needed */
-        animation: rock 2s infinite; /* Adjust as needed */
+        font-size: 4em; /* Increase font size */
+        animation: rock 2s infinite;
     }
+
+    /* Ensure images are not wider than the screen */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/*SPECIAL EFFECTS*/
+
+.duotone-map {
+    position: relative;
+    display: inline-block;
+}
+
+.duotone-map img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.duotone-map::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    mix-blend-mode: multiply;
 }
