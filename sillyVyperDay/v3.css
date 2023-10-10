@@ -6,7 +6,6 @@ html {
     animation: borderAnimation 10s infinite;
 }
 
-
 body {
     position: relative;
     color: #1f1f1f;
@@ -33,7 +32,6 @@ body::before {
     z-index: -1;
 }
 
-
 h1,h2, h3 {
     margin-bottom: 10px;
 }
@@ -49,7 +47,9 @@ a {
 
 .card {
     background-color: #00e171!important;
-   
+    min-width:500px !important;
+    max-width: 500px;
+    
 }
 
 .highlight {
@@ -75,15 +75,10 @@ a {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 500px;
     margin-bottom: 20px;
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.487);
-}
-
-.sponsor2 {
-    display: flex!important;
-    justify-content: space-between;
 }
 
 .cta {
@@ -95,7 +90,6 @@ a {
     border-radius: 5px;
     cursor: pointer;
     border-style: solid;
-
     transition: background-color 0.3s;
 }
 
@@ -113,12 +107,6 @@ ul {
 ul li {
     margin-bottom: 10px;
 }
-
-.card {
-    max-width: 500px;
-}
-
-
 
 .specialTitle {
     color: #ffffff;
@@ -138,58 +126,10 @@ ul li {
     -3px -3px 0px rgba(174, 255, 215, 0.95);
     mix-blend-mode: multipy;
     transition: transform 0.5s;
-    /* Add transition for smooth transform */
 }
 
 
 
-
-
-.sponsor {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.sponsor img {
-    width: 100%;
-    /* Adjust this value to make the image larger or smaller */
-    max-width: 4000px;
-    /* This will prevent the image from becoming too large on big screens */
-    margin: 30vh;
-}
-
-
-.sponsor2 {
-    background-color: #f5f5f500;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-
-}
-
-.sponsor2 img {
-    width: 320px;
-    height: auto;
-
-}
-
-
-
-.sponsor {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-/*ANIMATIONS*/
 @keyframes borderAnimation {
     0% {
         border-color: #000;
@@ -218,91 +158,29 @@ ul li {
     }
 }
 
-
-
-.sponsor2 {
-    display: flex;
-    justify-content: space-around
-}
-.sponsor2 img {
-    width: 120px;
-    /* Adjust this value to change the size of the sponsor images */
-    height: auto;
-}
-
-
-
-
-
-
-
-/*MOBILE */
-
-
-
-
 @media only screen and (max-width: 600px) {
     body {
         overflow-x: hidden;
         padding: 10px;
         max-width: 420px;
         margin: 0 auto;
-        /* This will center the body if the screen width is more than 400px */
-    }
-
-    .sponsor2 {
-        background-color: #f5f5f500;
-        margin: 0px;
-        padding: 0px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        min-width: 100%;
-
-    }
-
-    .map iframe {
-        display: none;
-        max-width: 400px;
-        width: 100%;
-        border-style: solid;
-        border-color: rgba(0, 0, 0, 0.487);
     }
 
     .sponsor2 img {
         width: 100%;
-        max-width: 400px;
-
-    }
-
-    /* Rest of your CSS rules */
-}
-
-
-/* Mobile styles */
-@media only screen and (max-width: 600px) {
-    body {
-        padding: 10px;
+        max-width: 200px;
     }
 
     h1,
     h2,
     h3 {
         font-size: 2em;
-        /* Increase font size */
         margin-bottom: 15px;
     }
 
     p {
         font-size: 1.2em;
-        /* Increase font size */
         margin-bottom: 10px;
-    }
-
-    .info {
-        background-color:green;
     }
 
     .info,
@@ -313,37 +191,18 @@ ul li {
 
     .cta {
         padding: 20px;
-        /* Increase touch target */
         font-size: 1.5em;
-        /* Increase font size */
-    }
-
-    .card {
-        width: 100%;
     }
 
     .specialTitle {
         font-size: 4em;
-        /* Increase font size */
     }
 
-    /* Ensure images are not wider than the screen */
     img {
         max-width: 100%;
         height: auto;
     }
-
-
 }
 
-@media (max-width: 600px) {
-    .sponsor2 {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .sponsor2 img {
-        width:200px;
-        height:auto;
-    }
-}
+
