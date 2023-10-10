@@ -26,15 +26,16 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 225, 113, 0.9), rgba(0, 225, 113, 0.8)), url(vyperBG.png);
+    background: linear-gradient(rgba(0, 225, 113, 0.95), rgba(0, 225, 113, 0.85)), url(vyperBG.png);
     background-attachment: fixed;
     background-size: cover;
+    mix-blend-mode: difference!important;
     z-index: -1;
 }
 
 
 h1,h2, h3 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 p {
@@ -60,6 +61,13 @@ a {
 .address {
     font-style: italic;
     font-size: 0.9em;
+}
+
+.vyperLogo {
+    mix-blend-mode:darken;
+    width:400px;
+    height:auto;
+    margin:0px;
 }
 
 .info,
@@ -113,7 +121,7 @@ ul li {
 
 
 .specialTitle {
-    color: #433b3b;
+    color: #ffffff;
     font-size: 5em;
     overflow: hidden;
     margin: 0px;
@@ -122,12 +130,12 @@ ul li {
     letter-spacing: 2px;
     line-height: 1.2;
     text-shadow:
-        1px 1px 0px rgba(255, 0, 0, 0.7),
-        -1px -1px 0px rgba(0, 0, 255, 0.7),
-        2px 2px 0px rgba(255, 0, 0, 0.7),
-        -2px -2px 0px rgba(0, 0, 255, 0.7),
-        3px 3px 0px rgba(255, 0, 0, 0.7),
-        -3px -3px 0px rgba(0, 0, 255, 0.7);
+    1px 1px 0px rgba(112, 255, 184, 0.95),
+    -1px -1px 0px rgba(197, 255, 226, 0.95),
+    2px 2px 0px rgba(0, 225, 113, 0.95),
+    -2px -2px 0px rgba(155, 255, 205, 0.95),
+    3px 3px 0px rgba(0, 225, 113, 0.95),
+    -3px -3px 0px rgba(174, 255, 215, 0.95);
     mix-blend-mode: multipy;
     transition: transform 0.5s;
     /* Add transition for smooth transform */
@@ -326,4 +334,16 @@ ul li {
     }
 
 
+}
+
+@media (max-width: 600px) {
+    .sponsor2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sponsor2 img {
+        width:200px;
+        height:auto;
+    }
 }
