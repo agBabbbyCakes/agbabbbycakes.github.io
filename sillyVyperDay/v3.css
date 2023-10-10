@@ -8,7 +8,6 @@ html {
 
 body {
     position: relative;
-    color: #1f1f1f;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,7 +39,7 @@ p {
 }
 
 a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -64,9 +63,13 @@ a {
 
 .vyperLogo {
     mix-blend-mode:darken;
-    width:400px;
+    width:100%;
     height:auto;
     margin:0px;
+}
+
+.info {
+    background-color:rgba(255, 255, 255, 0.785)!important;
 }
 
 .info,
@@ -83,7 +86,7 @@ a {
 .cta {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #00000054;
+    background-color: #00e171!important;
     color: #04ffe6;
     border: none;
     border-radius: 5px;
