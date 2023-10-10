@@ -82,12 +82,19 @@ a {
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.487);
 }
+.scheduleHeader {
+    text-align: center;
+    font-size:64px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -2px; 
 
+}
 .cta {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #00e171!important;
-    color: #04ffe6;
+    color: #000000!important;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -98,6 +105,7 @@ a {
 .cta:hover {
     background-color: #000000;
     color: white;
+    cursor: pointer;
 }
 
 ul {
