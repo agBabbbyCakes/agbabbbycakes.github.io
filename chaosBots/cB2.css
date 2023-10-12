@@ -1,16 +1,7 @@
-.centered-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #f5f5f5; /* just for visibility */
-    padding: 20px;
-    border-radius: 8px;
-   
-}
+
 
 .mainContainer {
-    margin: 30px; /* Adjust value as needed */
+    margin: 20px; /* Adjust value as needed */
 }
 
 
@@ -30,27 +21,11 @@ img {
 }
 
 #botGridContainer {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 3fr));
+    min-width:500px;
 }
 
-/* Responsive Grid Breakpoints */
-@media (max-width: 600px) {
-    #botGridContainer {
-        grid-template-columns: 1fr;
-    }
-}
 
-@media (min-width: 601px) and (max-width: 900px) {
-    #botGridContainer {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (min-width: 901px) {
-    #botGridContainer {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
 
 /* Grid item styling */
 .gridItem {
