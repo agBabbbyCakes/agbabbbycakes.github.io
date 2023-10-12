@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Selection</title>
+    <link rel="stylesheet" href="./cB.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="botDetail">
+            <input type="text" placeholder="BOT NAME">
+
+                    <img src="./chaosBotimgs/bot1.png" alt="Bot Image">
+            <p>COULD CUSTOMIZE OUTFITS BASED OFF HOLIDAY</p>
+            <div class="identifier">
+                <button>ADD IDENTIFIER</button>
+                <div class="identifier-controls">
+                    <button>+</button>
+                    <button>-</button>
+                </div>
+            </div>
+            <button>ADD BOT</button>
+        </div>
+        <div class="botGrid">
+            <img src="path_to_owl_thumbnail" alt="Bot Thumbnail">
+            <div class="colorBlock blue"></div>
+            <div class="colorBlock red"></div>
+            <div class="colorBlock green"></div>
+        </div>
+        <div class="botArmy">
+            <div class="totalBots">
+                <h3>Total Bots</h3>
+                <div class="selectedBots">
+                    <div class="colorBlock green"></div>
+                    <div class="colorBlock red"></div>
+                    <div class="colorBlock blue"></div>
+                    <img src="path_to_owl_thumbnail" alt="Bot Thumbnail" class="selectedBotThumbnail">
+                </div>
+            </div>
+            <div class="botInfo">
+                <div class="slideshow">SLIDESHOW OF THE BOT SELECTED - IN VARIOUS POSES and fun folklore graphics - to give it a backstory and a name behind the bot</div>
+                <div class="deploy">
+                    <p>TOTAL COST = <span id="totalCost">0</span></p>
+                    <button>DEPLOY!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="botSelection">
+        <h2>Bot Selection</h2>
+    </div>
+    <table id="botTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+ 
+    <script src="cB.js"></script>
+    <script src="chaosBots.js"></script>
+</body>
+</html>

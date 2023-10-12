@@ -1,0 +1,20 @@
+[
+    {
+        "name": "@bot1.png",
+        "title": "Price Feed Bot",
+        "description": "This Bot Emulates The Chainlink PriceFeed Contract, Which Publishes Price Updates For ETH And Other Cryptocurrencies Using External Price Feeds At A Regular Interval. This Bot Produces A Heartbeat That Many Other Systems Rely On.",
+        "imgUrl": "chaosBots/chaosBotimgs/bot1.png"
+    },
+    {
+        "name": "@bot2.png",
+        "title": "Liquidator Bot",
+        "description": "This Bot Searches For Bad Loans On The Compound V2 Protocol And Liquidates Them, Ensuring That The Protocol Stays Well-Capitalized And Healthy. This Bot Will Keep An Even Inventory Of Funds By Swapping Through Uniswap.",
+        "imgUrl": "chaosBots/chaosBotimgs/bot2.png"
+    },
+    {
+        "name": "@bot3.png",
+        "title": "Steve",
+        "description": "Steve lives in a swamp.",
+        "imgUrl": "chaosBots/chaosBotimgs/bot3.png"
+    }
+]
