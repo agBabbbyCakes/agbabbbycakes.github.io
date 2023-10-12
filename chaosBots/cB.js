@@ -1,30 +1,15 @@
+window.onload = function() {
+    // Get all grid items
+    var gridItems = document.querySelectorAll('.gridItem');
 
-document.querySelectorAll('.gridItem').forEach(item => {
-    item.addEventListener('click', function() {
-        // Get the first column
-        const firstColumn = document.getElementById('leftBotContainer');
+    // Add click event listener to each grid item
+    gridItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            // Get the source of the clicked image
+            var imgSrc = this.querySelector('img').src;
 
-        // Create a new element with the same content as the clicked item
-        const newItem = document.createElement('div');
-        newItem.classList.add('gridItem');
-        newItem.style.backgroundColor = this.style.backgroundColor;
-
-        // Add the new item to the first column
-        firstColumn.appendChild(newItem);
+            // Set the source of the image with id "swap" to the clicked image source
+            document.getElementById('swap').src = imgSrc;
+        });
     });
-});
-
-
-document.querySelectorAll('.gridItem img').forEach(img => {
-    img.addEventListener('click', function() {
-        let selectedBotImg = document.getElementById('selectedBotImg');
-        let imgElement = selectedBotImg.querySelector('img');
-
-        if (!imgElement) {
-            imgElement = document.createElement('img');
-            selectedBotImg.appendChild(imgElement);
-        }
-
-        imgElement.src = this.src;
-    });
-});
+}

@@ -75,3 +75,26 @@ img {
     border: 1px solid #ddd;  /* Optional: Adds a border for visibility */
     padding: 10px;
 }
+
+@media (min-width: 768px) {
+    #botGridContainer {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 3fr));
+        min-width: 500px;
+    }
+
+    .mainContainer {
+        flex-direction: row;
+    }
+
+    .botDetail, .botGrid, .botArmy {
+        width: auto;
+    }
+
+    .botDetail {
+        width: 250px;
+    }
+
+    .botArmy {
+        width: 300px;
+    }
+}
