@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap');
+
+
+
 body {
     background-size: cover;
     padding: 10px;
+    font-family: 'Barlow', sans-serif;
   }
   
   .app-container, .sidebar, .app-content, .card-deployment, .card-box, .card-bot, .footer-detail {
@@ -80,7 +85,8 @@ body {
     outline: none;
     color: #fff;
     background-color: #ffffff;
-    border: none;
+    border-style:solid;
+    border-width:300;
     border-radius: 5px;
     box-shadow: 0 3px #999;
   }
