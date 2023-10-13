@@ -44,7 +44,7 @@ a {
 }
 
 .card {
-    background-color: #00e171!important;
+    background-color: #b7ffbf!important;
     width:500px;
     max-width: 500px;
     
@@ -70,6 +70,7 @@ a {
 
 .info {
     background-color:rgba(255, 255, 255, 0.785)!important;
+    background-color: #b7ffbf!important;
 }
 
 .info,
