@@ -1,0 +1,94 @@
+body {
+    background-size: cover;
+    padding: 10px;
+  }
+  
+  .app-container, .sidebar, .app-content, .card-deployment, .card-box, .card-bot, .footer-detail {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-style:solid;
+    border-color:black;
+  }
+  
+  /* Add other styles as needed */
+
+
+  .card-deployment-label {
+    font-size: 52px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+
+  .box-params {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .box-params td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .box-params tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .box-params tr:hover {
+    background-color: #ddd;
+  }
+  
+  .box-params th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .box-params td, .box-params th {
+      display: block;
+    }
+    
+    .cell-hidden {
+      display: none;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px #999;
+  }
+  
+  .button:hover {background-color: #ececec}
+  
+  .button:active {
+    background-color: #d5d5d5;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
