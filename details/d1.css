@@ -98,3 +98,15 @@ body {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
+
+
+  .bot-image {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  
+  .bot-name {
+    font-family: 'Arial', sans-serif; /* Change this to your preferred font */
+    font-size: 20px; /* Adjust size as needed */
+    color: #ff6347; /* This is tomato color, change it to your preferred color */
+  }
