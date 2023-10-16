@@ -1,6 +1,8 @@
 
 
 .mainContainer {
+    align-items: flex-start; /* Add this line */
+
     margin: 20px; /* Adjust value as needed */
 }
 
@@ -55,7 +57,9 @@ img {
     justify-content: center; /* Horizontally aligns the children in the center */
     align-items: center;     /* Vertically aligns the children in the center */
     height: 100vh;           /* Takes the full viewport height */
-    gap: 20px;               /* Adds space between the flex children */
+    gap: 20px;  
+    align-items: flex-start; /* Add this line */
+    /* Adds space between the flex children */
 }
 
 .botDetail {
