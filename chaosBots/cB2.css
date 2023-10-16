@@ -1,10 +1,6 @@
 
 
-.mainContainer {
-    align-items: flex-start; /* Add this line */
 
-    margin: 20px; /* Adjust value as needed */
-}
 
 
 img {
@@ -80,6 +76,15 @@ img {
     padding: 10px;
 }
 
+.deploy {
+    background-color:rgba(255, 255, 0, 0.267);
+    border: 1px solid #ddd;  /* Optional: Adds a border for visibility */
+    display:flex;
+
+}
+
+
+
 @media (min-width: 768px) {
     #botGridContainer {
         grid-template-columns: repeat(auto-fill, minmax(150px, 3fr));
@@ -108,11 +113,26 @@ img {
 .deployButton {
     border-style:solid;
     color: rgb(0, 0, 0);
-    padding: 10px 20px;
+    padding: 20px 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+.selectedBots {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
+    gap: 12px;
+}
+.selectedBotThumbnail {
+    max-width: 48px;
+    max-height: 48px;
+}
+
+.totalBots {
+    display: flex;
+    align-items: center;
 }
