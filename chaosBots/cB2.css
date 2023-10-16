@@ -1,6 +1,9 @@
 
 
-
+body {
+    background-color:rgba(155, 0, 226, 0.075);
+    
+}
 
 
 img {
@@ -71,13 +74,13 @@ img {
 }
 
 .botArmy {
-    width: 300px;            /* An example width, adjust as needed */
+    width: 250px;            /* An example width, adjust as needed */
     border: 1px solid #ddd;  /* Optional: Adds a border for visibility */
     padding: 10px;
 }
 
 .deploy {
-    background-color:rgba(255, 255, 0, 0.267);
+    background-color:rgba(235, 235, 235, 0.267);
     border: 1px solid #ddd;  /* Optional: Adds a border for visibility */
     display:flex;
 
@@ -128,11 +131,11 @@ img {
     gap: 12px;
 }
 .selectedBotThumbnail {
-    max-width: 48px;
-    max-height: 48px;
+    max-width: 42px;
+    max-height: 42px;
 }
 
-.totalBots {
-    display: flex;
-    align-items: center;
-}
+
+
+
+
