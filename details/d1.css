@@ -148,3 +148,9 @@ body {
       margin:0;
     }
   }
+
+  .flex-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
