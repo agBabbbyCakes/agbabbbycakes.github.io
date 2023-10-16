@@ -151,6 +151,7 @@ body {
 
   .flex-cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
   }
