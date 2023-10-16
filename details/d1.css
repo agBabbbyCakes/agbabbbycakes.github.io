@@ -110,3 +110,41 @@ body {
     font-size: 20px; /* Adjust size as needed */
     color: #ff6347; /* This is tomato color, change it to your preferred color */
   }
+
+  .chart-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    max-height: 300px;
+    margin: auto;
+  }
+  
+  #gasChart {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .card-deployment-label {
+      font-size: 32px; /* Adjust as needed */
+      text-align:center;
+      margin:0;
+    }
+  
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar a {
+      padding: 10px 0;
+      text-align: center;
+      margin:5px;
+    }
+
+    .sidebar h1 {
+      text-align:center;
+      margin:0;
+    }
+  }
