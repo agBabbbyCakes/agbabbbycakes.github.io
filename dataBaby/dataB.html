@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Retro Radar Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black;
+  color: #39ff14; /* Neon green */
+  font-family: 'Courier New', monospace;
+  filter: sepia(1); /* Sepia film tint */
+}
+
+.radar-container {
+  position: relative;
+}
+
+canvas {
+  border: 3px solid #39ff14; /* Neon green */
+}
+
+.info-panel {
+	width:200px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border: .51px solid #39ff14; /* Neon green */
+}
+</style>
+</head>
+<body>
+  <div class="radar-container">
+    <canvas id="radarCanvas" width="500" height="500"></canvas>
+    <div class="info-panel">
+      <p><strong>Time:</strong> <span id="time">0</span></p>
+      <p><strong>Blocks:</strong> <span id="blocks">0</span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+  <script>
+	// Get the canvas element and set up variables
+	const canvas = document.getElementById("radarCanvas");
+	const ctx = canvas.getContext("2d");
+	const timeElement = document.getElementById("time");
+	const blocksElement = document.getElementById("blocks");
+	
+	let time = 0;
+	let blocks = 0;
+	
+	// Generate some random block data (replace with real Ethereum data)
+	const generateData = () => {
+	  return Math.floor(Math.random() * 500);
+	};
+	
+	const drawRadar = () => {
+	  ctx.clearRect(0, 0, canvas.width, canvas.height);
+	  ctx.strokeStyle = 'green';
+	  ctx.lineWidth = 2;
+	
+	  // Draw radar circle
+	  ctx.beginPath();
+	  ctx.arc(250, 250, 200, 0, 2 * Math.PI);
+	  ctx.stroke();
+	
+	  // Draw radial dials
+	  const numDials = 8; // Change this to increase/decrease the number of dials
+	  const centerX = 250;
+	  const centerY = 250;
+	  const radius = 200;
+	
+	  for (let i = 0; i < numDials; i++) {
+		const angle = (i / numDials) * (2 * Math.PI);
+		const x = centerX + radius * Math.cos(angle);
+		const y = centerY + radius * Math.sin(angle);
+	
+		ctx.beginPath();
+		ctx.moveTo(centerX, centerY);
+		ctx.lineTo(x, y);
+		ctx.stroke();
+	  }
+	
+	  // Draw points
+	  ctx.fillStyle = 'red';
+	  points.forEach(point => {
+		ctx.beginPath();
+		ctx.arc(point.x, point.y, point.radius, 0, 2 * Math.PI);
+		ctx.fill();
+	  });
+	};
+	
+	// Generate random x, y coordinates within the radar circle
+	const generateRandomPoint = () => {
+	  const angle = Math.random() * 2 * Math.PI;
+	  const radius = Math.random() * 200;
+	  const x = 250 + radius * Math.cos(angle);
+	  const y = 250 + radius * Math.sin(angle);
+	  return { x, y, radius: 2 };
+	};
+	
+	// Store the points
+	let points = [];
+	
+	// Generate some points
+	const generatePoints = () => {
+	  points = [];
+	  for (let i = 0; i < 10; i++) {
+	    points.push(generateRandomPoint());
+	  }
+	};
+	
+	generatePoints();
+	
+	// Update the points every 3 seconds
+	setInterval(generatePoints, 3000);
+	
+	// Update the radar and metrics
+	const update = () => {
+	  drawRadar();
+	  blocks = generateData();
+	  time++;
+	
+	  timeElement.innerText = time;
+	  blocksElement.innerText = blocks;
+	  
+	  requestAnimationFrame(update);
+	};
+	
+	// Start the loop
+	update();
+	
+	// Add mousemove event to the canvas
+	canvas.addEventListener('mousemove', function(e) {
+	  const rect = canvas.getBoundingClientRect();
+	  const x = e.clientX - rect.left;
+	  const y = e.clientY - rect.top;
+	
+	  points.forEach(point => {
+	    const distance = Math.hypot(point.x - x, point.y - y);
+	    if (distance < 5) {
+	      // Grow the dot and show detailed information
+	      point.radius = 10;
+	      // Display detailed information
+	      // ...
+	    } else {
+	      point.radius = 2;
+	    }
+	  });
+	});
+	</script>
+</body>
+</html>
