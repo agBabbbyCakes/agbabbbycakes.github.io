@@ -52,8 +52,47 @@ function addToBotArmy(bot) {
     
     const selectedBots = document.querySelector('.selectedBots');
     const botItem = document.createElement('div');
-    botItem.innerHTML = `<p>${bot.name} - ${bot.cost}</p>`;
+    const botImage = document.createElement('img');
+    botImage.src = bot.imgUrl;
+    botImage.style.width = '50px'; // Set the width of the thumbnail
+    botImage.style.height = '50px'; // Set the height of the thumbnail
+    botItem.appendChild(botImage);
+    botItem.innerHTML += `<p>${bot.name} - ${bot.cost}</p>`;
     selectedBots.appendChild(botItem);
     
-    document.getElementById("totalCost").innerText = totalCost;
+    const removeBotButton = document.createElement('button');
+    removeBotButton.innerText = 'Remove';
+    botItem.appendChild(removeBotButton);
+    
+    removeBotButton.addEventListener('click', () => {
+        const botIndex = botArmy.indexOf(bot);
+        if (botIndex > -1) {
+            botArmy.splice(botIndex, 1);
+            totalCost -= bot.cost;
+            botItem.remove();
+            document.getElementById("totalCost").innerText = totalCost.toString().slice(0, 6);
+        }
+    });
+    
+    document.getElementById("totalCost").innerText = totalCost.toString().slice(0, 6);
+
+
+    // Create clear all bots button
+    const clearAllBotsButton = document.createElement('button');
+    clearAllBotsButton.innerText = 'Clear All Bots';
+    document.body.appendChild(clearAllBotsButton); // Append the button to the body or any other container
+
+    clearAllBotsButton.addEventListener('click', () => {
+        botArmy = []; // Clear the botArmy array
+        totalCost = 0; // Reset the total cost
+        document.getElementById("totalCost").innerText = totalCost.toString().slice(0, 6); // Update the total cost display
+
+        // Remove all bot items from the selectedBots div
+        const selectedBots = document.querySelector('.selectedBots');
+        while (selectedBots.firstChild) {
+            selectedBots.removeChild(selectedBots.firstChild);
+        }
+    });
+
+
 }
