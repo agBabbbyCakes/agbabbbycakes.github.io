@@ -77,22 +77,6 @@ function addToBotArmy(bot) {
     document.getElementById("totalCost").innerText = totalCost.toString().slice(0, 6);
 
 
-    // Create clear all bots button
-    const clearAllBotsButton = document.createElement('button');
-    clearAllBotsButton.innerText = 'Clear All Bots';
-    document.body.appendChild(clearAllBotsButton); // Append the button to the body or any other container
-
-    clearAllBotsButton.addEventListener('click', () => {
-        botArmy = []; // Clear the botArmy array
-        totalCost = 0; // Reset the total cost
-        document.getElementById("totalCost").innerText = totalCost.toString().slice(0, 6); // Update the total cost display
-
-        // Remove all bot items from the selectedBots div
-        const selectedBots = document.querySelector('.selectedBots');
-        while (selectedBots.firstChild) {
-            selectedBots.removeChild(selectedBots.firstChild);
-        }
-    });
 
 
 }

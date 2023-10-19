@@ -36,6 +36,21 @@
             <button id="rightArrow">Choose your stage →</button>
         </div>
     </section>
+    <script>
+       let currentStage = 1;
+const totalStages = 3; // total number of stages
+const stageImage = document.querySelector('img[src="./cbbg1.png"]'); // select the image
+
+document.getElementById('rightArrow').addEventListener('click', () => {
+    currentStage = currentStage % totalStages + 1;
+    stageImage.src = `./cbbg${currentStage}.png`;
+});
+
+document.getElementById('leftArrow').addEventListener('click', () => {
+    currentStage = (currentStage - 2 + totalStages) % totalStages + 1;
+    stageImage.src = `./cbbg${currentStage}.png`;
+});
+    </script>
 
         <div class="botArmy">
             <h2>Bot ARMY</h2>
