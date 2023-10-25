@@ -43,9 +43,7 @@
               <td><b>WAITING FOR FUNDING</b></td>
             </tr>
           </table>
-          <div class="chart-wrapper">
-            <canvas id="gasChart"></canvas>
-          </div>
+    
           <h1>Total number of Bots in Bot Army</h1>
           <div class="flex-cards">
             
@@ -54,6 +52,9 @@
               <div class="card-bot-1">
             
                 <table>
+                  <tr>
+                    
+                  </tr>
                   <tr>
                     <td><img class="bot-image" src="../chaosBots/chaosBotimgs/bot1.png"></td>
                     
@@ -71,7 +72,11 @@
                         This Bot Emulates The Chainlink PriceFeed Contract, Which Publishes Price Updates For ETH And Other Cryptocurrencies Using External Price Feeds At A Regular Interval. This Bot Produces A Heartbeat That Many Other Systems Rely On.
                     </td>
                   </tr>
+                
                 </table>
+                  <div class="chart-wrapper">
+                    <img src="temp1.png" style="width:100%; mix-blend-mode: screen;">
+                </div>
               </div>
               </div>
             
@@ -98,6 +103,9 @@
                     </td>
                   </tr>
                 </table>
+                <div class="chart-wrapper">
+                  <canvas id="gasChart"></canvas>
+                </div>
               </div>
             </div>
             <div class="card-bot">
@@ -121,15 +129,56 @@
                         This Bot Emulates The Chainlink PriceFeed Contract, Which Publishes Price Updates For ETH And Other Cryptocurrencies Using External Price Feeds At A Regular Interval. This Bot Produces A Heartbeat That Many Other Systems Rely On.
                     </td>
                   </tr>
+            
                 </table>
+                <div class="chart-wrapper">
+                  <img src="temp1.png" style="width:100%; mix-blend-mode: screen;">
               </div>
+              </div>
+  
             </div>
           </div>
-        <div class="flex-cards">
+
+          <style>
+            .bottomMenu {
+              text-align:center;
+              margin-top:10px;
+            }
+
+            .bottomMenu button {
+              background-color:transparent;
+              border-style:solid;
+              border-color:black;
+              border-width:1px;
+              padding:20px;
+              min-width:200px;
+            }
+
+            .bottomMenu button:hover {
+              background-color:black;
+              color:white;
+              cursor: pointer;
+            }
+
+            #killDeployment:hover {
+              background-color:rgba(255, 99, 132, 0.2);
+              color:black;
+            }
+
+            #printDeployment:hover {
+              background-color: rgba(54, 162, 235, 0.2);
+              color:black;
+            }
+
+       
             
-              <button>Kill Deployment</button>
-              <button>Print Deployment</button>
-              <button>Get Alerted about Deployment</button>
+
+          </style>
+        <div class="bottomMenu">
+            
+              <button id="killDeployment">Kill Deployment</button>
+              <button id="printDeployment">Print Deployment</button>
+              <button id="getAlert">Get Alerted about Deployment</button>
           <!-- Add more cards as needed -->
         </div>
       </div>
