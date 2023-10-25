@@ -3,84 +3,84 @@
         "id": 1,
         "name": "Price Feed Bot",
         "description": "This Bot Emulates The Chainlink PriceFeed Contract, Which Publishes Price Updates For ETH And Other Cryptocurrencies Using External Price Feeds At A Regular Interval. This Bot Produces A Heartbeat That Many Other Systems Rely On.",
-        "imgUrl": "/chaosBots/chaosBotimgs/bot1.png",
+        "imgUrl": "../chaosBots/chaosBotimgs/bot1.png",
         "cost": 7.5
     },
     {
         "id": 2,
         "name": "Liquidator Bot",
         "description": "This Bot Searches For Bad Loans On The Compound V2 Protocol And Liquidates Them, Ensuring That The Protocol Stays Well-Capitalized And Healthy. This Bot Will Keep An Even Inventory Of Funds By Swapping Through Uniswap.",
-        "imgUrl": "/chaosBots/chaosBotimgs/bot2.png",
+        "imgUrl": "../chaosBots/chaosBotimgs/bot2.png",
         "cost": 9.3
     },
     {
         "id": 3,
         "name": "Ninja Piano Pumpkin Patch",
         "description": "Steve lives in a swamp.",
-        "imgUrl": "/chaosBots/chaosBotimgs/bot5.png",
+        "imgUrl": "../chaosBots/chaosBotimgs/bot5.png",
         "cost": 3.8
     },
     {
         "id": 4,
         "name": "Steve",
         "description": "Steve lives in a swamp.",
-        "imgUrl": "/chaosBots/chaosBotimgs/bot12.png",
+        "imgUrl": "../chaosBots/chaosBotimgs/bot12.png",
         "cost": 3.8
     },
         {
         "id": 5,
         "name": "Matthew Berry",
         "description": "This Bot Searches For Bad Loans On The Compound V2 Protocol And Liquidates Them, Ensuring That The Protocol Stays Well-Capitalized And Healthy. This Bot Will Keep An Even Inventory Of Funds By Swapping Through Uniswap.",
-        "imgUrl": "/chaosBots/chaosBotimgs/bot5.png",
+        "imgUrl": "../chaosBots/chaosBotimgs/bot5.png",
         "cost": 19.3
     },
         {
         "id": 6,
         "name": "Lover of Mangos",
         "description": "This Bot Searches For Bad Loans On The Compound V2 Protocol And Liquidates Them, Ensuring That The Protocol Stays Well-Capitalized And Healthy. This Bot Will Keep An Even Inventory Of Funds By Swapping Through Uniswap.",
-        "imgUrl": "/chaosBots/chaosBotimgs/bot2.png",
+        "imgUrl": "../chaosBots/chaosBotimgs/bot9.png",
         "cost": 7.3
     },
         {
         "id": 7,
         "name": "Brass Knuckle Whisper",
         "description": "This Bot Searches For Bad Loans On The Compound V2 Protocol And Liquidates Them, Ensuring That The Protocol Stays Well-Capitalized And Healthy. This Bot Will Keep An Even Inventory Of Funds By Swapping Through Uniswap.",
-        "imgUrl": "/chaosBots/chaosBotimgs/bot7.png",
+        "imgUrl": "../chaosBots/chaosBotimgs/bot7.png",
         "cost": 29.3
     },
         {
         "id": 8,
         "name": "Super Baby Cakes",
         "description": "This Bot Searches For Bad Loans On The Compound V2 Protocol And Liquidates Them, Ensuring That The Protocol Stays Well-Capitalized And Healthy. This Bot Will Keep An Even Inventory Of Funds By Swapping Through Uniswap.",
-        "imgUrl": "/chaosBots/chaosBotimgs/bot8.png",
+        "imgUrl": "../chaosBots/chaosBotimgs/bot8.png",
         "cost": 529.3
     },
         {
         "id": 9,
         "name": "Hedge Fund Duplicater",
         "description": "This Bot Searches For Bad Loans On The Compound V2 Protocol And Liquidates Them, Ensuring That The Protocol Stays Well-Capitalized And Healthy. This Bot Will Keep An Even Inventory Of Funds By Swapping Through Uniswap.",
-        "imgUrl": "/chaosBots/chaosBotimgs/bot9.png",
+        "imgUrl": "../chaosBots/chaosBotimgs/bot9.png",
         "cost": 129.3
     },
         {
         "id": 10,
         "name": "Compund",
         "description": "This Bot Searches For Bad Loans On The Compound V2 Protocol And Liquidates Them, Ensuring That The Protocol Stays Well-Capitalized And Healthy. This Bot Will Keep An Even Inventory Of Funds By Swapping Through Uniswap.",
-        "imgUrl": "/chaosBots/chaosBotimgs/bot10.png",
+        "imgUrl": "../chaosBots/chaosBotimgs/bot10.png",
         "cost": 429.3
     },
         {
         "id": 11,
         "name": "Eth Explode",
         "description": "This Bot Searches For Bad Loans On The Compound V2 Protocol And Liquidates Them, Ensuring That The Protocol Stays Well-Capitalized And Healthy. This Bot Will Keep An Even Inventory Of Funds By Swapping Through Uniswap.",
-        "imgUrl": "/chaosBots/chaosBotimgs/bot11.png",
+        "imgUrl": "../chaosBots/chaosBotimgs/bot11.png",
         "cost": 239.3
     },
         {
         "id": 12,
         "name": "Destroy of World Bot",
         "description": "This Bot Searches For Bad Loans On The Compound V2 Protocol And Liquidates Them, Ensuring That The Protocol Stays Well-Capitalized And Healthy. This Bot Will Keep An Even Inventory Of Funds By Swapping Through Uniswap.",
-        "imgUrl": "/chaosBots/chaosBotimgs/bot12.png",
+        "imgUrl": "../chaosBots/chaosBotimgs/bot12.png",
         "cost": 119.3
     }
 ]
