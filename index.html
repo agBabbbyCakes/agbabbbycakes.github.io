@@ -7,7 +7,20 @@
             <a href="./chaosBots/cB.html">chaosbots</a>
             <a href="./details/details.html">Details Page</a>
             <a href="./bg/bg.html">Particle Background Updates Background </a>
-            <a href="./dataBaby/dataB.html">DATA SUPER BABYYYYYYY </a>
+            <a href="./dataBaby/dataB.html">DATA SUPER BABYYYYYYY </a><br>
+            <a href="./dataBaby/doppler/doppler.html">The DOPPLER</a>
+            
+            <p id="yoyo"></p>
+            <script>
+                function displayTime() {
+                    var date = new Date();
+                    var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+                    document.getElementById('yoyo').innerHTML = time;
+                }
+                displayTime();
+                setInterval(displayTime, 1000); // Update time every second
+            </script>
+            <!-- MAKE A FUNCTION HERE FOR LATER THAT WILL DISPLAY THE TIME -->
         </nav>
         <h1>GIT COMMITS </h1>
 
