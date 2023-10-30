@@ -100,7 +100,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 33vh;
+  height: auto;
 }
 
 /* footer */
@@ -286,6 +286,11 @@ button {
   padding: 0px;
   width: 100%;
   background-color: #333;
+  mix-blend-mode:multiply!important;
+}
+
+.card-image:hover {
+  mix-blend-mode:normal!important;
 }
 .asci-container-xl {
   max-width: 100%;
@@ -456,10 +461,11 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 50vh;
+  overflow-y: auto;
 }
 
 .about-plugins-section {
-  background-image: url("./frameGraphics/ae1.png")!important;
+  background-image: url("./frameGraphics/d2.png")!important;
   background-attachment: fixed!important;
   background-position: center!important;
   background-repeat: no-repeat!important;
@@ -468,9 +474,32 @@ h1 {
 
 .about-plugins-section h1 {
   margin-left:0;
+  font-size:100px;
+  line-height: 50%;
+  color:white;
+  font-stretch:expanded;
 }
 
 .about-plugins-section h2 {
+}
+
+.about-plugins-section {
+  position: relative;
+  background-image: url("./frameGraphics/d2.png")!important;
+  background-attachment: fixed!important;
+  background-position: center!important;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+}
+
+.about-plugins-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) to change the opacity of the black overlay */
 }
 
 .retro-link {
@@ -664,4 +693,60 @@ h1 {
   .responsive-paragraph {
     font-size: 14px;
   }
+}
+
+
+.section{
+  background-color: rgba(72, 255, 0, 0.112);
+}
+
+ .grid-item-header {
+  text-align:center;
+  padding: 10px;
+  width:100%;
+  height:65px;
+  padding:0px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-style: solid;
+  
+ }
+
+ .grid-item-header h2 {
+  font-size:17px;
+ }
+
+ .grid-item-desc {
+  border-style: solid;
+ height:100px;
+ overflow-y: scroll;
+ padding-left:8px;
+ padding-top:3px;
+ text-align:left;
+
+ 
+ }
+
+
+
+ .grid img {
+  mix-blend-mode: normal;
+ }
+
+ .section {
+  position: relative;
+  /* rest of your styles */
+}
+
+
+.button-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.splash-col-1 h1,h2 {
+  color:white;
 }

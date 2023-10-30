@@ -1,495 +1,416 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta
-      name="keywords"
-      content="ApeWorX, Ape Framework, Blockchain, Smart Contract, Yearn, Lido, Curve, Element"
-    />
-    <meta name="author" content="ApeWorX LTD" />
-    <meta property="og:title" content="Ape Framework | ApeWorX LTD" />
-    <meta
-      property="og:description"
-      content="ApeFramework: The most advanced smart contract on Earth. Trusted by leading platforms such as Yearn, Lido, Curve, Element, and more. Create next-level blockchain development today."
-    />
-    <title>ape framework | ApeWorX, LTD</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="ApeFramework: The most advanced smart contract on Earth. Trusted by leading platforms such as Yearn, Lido, Curve, Element, and more. Create next-level blockchain development today."
-    />
-    <link rel="stylesheet" href="../framework/framework.css" />
-  </head>
-  <body>
-    <!-- SPLASH -->
-    <div class="splash-main">
-      <div class="splash-screen">
-        <div class="splash-text">
-          <a href="https://github.com/ApeWorX/ape" target="_blank">
-            <img src="frame.png" alt="Logo" class="graphic-frame-top-logo" />
-          </a>
-          <p class="subheader">
-            The most advanced smart contract framework on earth Trusted by
-            Yearn, Lido, CURVE, Element and more
-          </p>
-        </div>
+
+<head>
+  <meta name="keywords" content="ApeWorX, Ape Framework, Blockchain, Smart Contract, Yearn, Lido, Curve, Element" />
+  <meta name="author" content="ApeWorX LTD" />
+  <meta property="og:title" content="Ape Framework | ApeWorX LTD" />
+  <meta property="og:description"
+    content="ApeFramework: The most advanced smart contract on Earth. Trusted by leading platforms such as Yearn, Lido, Curve, Element, and more. Create next-level blockchain development today." />
+  <title>ape framework | ApeWorX, LTD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="ApeFramework: The most advanced smart contract on Earth. Trusted by leading platforms such as Yearn, Lido, Curve, Element, and more. Create next-level blockchain development today." />
+  <link rel="stylesheet" href="../framework/framework.css" />
+</head>
+
+<body>
+  <!-- SPLASH -->
+  <div class="splash-main">
+    <div class="splash-screen">
+      <div class="splash-text">
+        <a href="https://github.com/ApeWorX/ape" target="_blank">
+          <img src="frame.png" alt="Logo" class="graphic-frame-top-logo" />
+        </a>
+        <p class="subheader">
+          The most advanced smart contract framework on earth Trusted by
+          Yearn, Lido, CURVE, Element and more
+        </p>
       </div>
     </div>
+  </div>
 
-    <style></style>
-    <!-- SPLASH INSTALL -->
+  <style></style>
+  <!-- SPLASH INSTALL -->
+  <div>
     <div>
       <div>
-        <div>
-          <h1 class="release-name">Latest Release</h1>
-          <h1 class="release-number">(fetching...)</h1>
-          <div style="display: flex; justify-content: center">
-            <a
-              href="https://github.com/ApeWorX/ape/releases"
-              target="_blank"
-              class="retro-link"
-              >RELEASE NOTES</a
-            >
-          </div>
+        <h1 class="release-name">Latest Release</h1>
+        <h1 class="release-number">(fetching...)</h1>
+        <div style="display: flex; justify-content: center">
+          <a href="https://github.com/ApeWorX/ape/releases" target="_blank" class="retro-link">RELEASE NOTES</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- DYNAMIC RELEASE FUNCTION -->
-    <script>
-      window.onload = function () {
-        fetch("https://api.github.com/repos/ApeWorX/ape/releases/latest")
-          .then((response) => response.json())
-          .then((data) => {
-            let releaseNumber = document.querySelector(".release-number");
-            // Remove the first 3 characters from the release number ('APE')
-            releaseNumber.innerHTML = data.name.substring(3);
-          });
-      };
-    </script>
-<style>
-
-.section{
-  background-color: rgba(72, 255, 0, 0.112);
-}
-
- .grid-item-header {
-  text-align:center;
-  padding: 10px;
-  width:100%;
-  height:65px;
-  padding:0px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-style: solid;
-  
- }
-
- .grid-item-header h2 {
-  font-size:17px;
- }
-
- .grid-item-desc {
-  border-style: solid;
- height:200px;
- padding:5px;
-
- 
- }
-
- .grid-item-desc p {
-  color:white!important;
-  font-size:12.5px!important;
- }
-
- .grid img {
-  mix-blend-mode: normal;
- }
-
- .section {
-  position: relative;
-  /* rest of your styles */
-}
+  <!-- DYNAMIC RELEASE FUNCTION -->
+  <script>
+    window.onload = function () {
+      fetch("https://api.github.com/repos/ApeWorX/ape/releases/latest")
+        .then((response) => response.json())
+        .then((data) => {
+          let releaseNumber = document.querySelector(".release-number");
+          // Remove the first 3 characters from the release number ('APE')
+          releaseNumber.innerHTML = data.name.substring(3);
+        });
+    };
+  </script>
+  <style>
 
 
-   
-</style>
-   <!-- FEATURES -->
-<div class="grid">
 
-  <!-- SECTION ONE -->
-  <div class="section" onclick="openModalOne()">
-    <div class="grid-item-header">
-    <h2>Access multiple chains at the same time:</h2></div>
+
+  </style>
+  <!-- FEATURES -->
+  <div class="grid">
+
+    <!-- SECTION ONE -->
+    <div class="section" onclick="openModalOne()">
+      <div class="grid-item-header">
+        <h2>Access multiple chains at the same time:</h2>
+      </div>
 
       <img src="./frameGraphics/ape4.png" class="card-image" />
-   
-    <div class="grid-item-desc">
-    <p>Access local (forked), testnet, and live networks while testing and scripting, all from the same command line session. Configuration is quick and easy, and ad hoc connections are supported.</p>
+
+      <div class="grid-item-desc">
+        <p>Access local, testnet, and live networks while testing and scripting, all from the same command line session.
+        </p>
+      </div>
+
+    </div>
+    <div class="modal one">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="codeWrap">
+          <div class="asci-container-xl">
+            <script async id="asciicast-q3HujMgOle2IllI6Fwe4efDSm"
+              src="https://asciinema.org/a/q3HujMgOle2IllI6Fwe4efDSm.js"></script>
+          </div>
+        </div>
+      </div>
     </div>
 
-  </div>
-  <div class="modal one">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div class="codeWrap">
-        <div class="asci-container-xl">
-          <script async id="asciicast-q3HujMgOle2IllI6Fwe4efDSm" src="https://asciinema.org/a/q3HujMgOle2IllI6Fwe4efDSm.js"></script>
+    <!-- SECTION TWO -->
+    <div class="section" onclick="openModalTwo()">
+      <div class="grid-item-header">
+        <h2>Customize your stack with Ape Plugins</h2>
+      </div>
+      <img src="./frameGraphics/ape3.png" class="card-image" />
+      <div class="grid-item-desc">
+        <p>Plugin creation and support from simple integrations to a more complex ecosystem. Non-EVM chains are already
+          being supported.</p>
+      </div>
+
+    </div>
+    <div class="two modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="codeWrap">
+          <div class="asci-container-xl">
+            <script async id="asciicast-tyJDbAZKpAM9Zf55VjfYbUZN6"
+              src="https://asciinema.org/a/tyJDbAZKpAM9Zf55VjfYbUZN6.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION THREE -->
+    <div class="section" onclick="openModalThree()">
+      <div class="grid-item-header">
+        <h2>Extensive contract lifecycle management features:</h2>
+      </div>
+      <img src="./frameGraphics/ape5.png" class="card-image" />
+      <div class="grid-item-desc">
+        <p> Using scripts and the Ape console, contracts can be compiled, tested, deployed, analyzed, verified, and
+          package manifests can be created. </p>
+      </div>
+
+    </div>
+    <div class="three modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="codeWrap">
+          <div class="asci-container-xl">
+            <script async id="asciicast-0OkBiIq3f9kMjt4AcGK3Rdhca"
+              src="https://asciinema.org/a/0OkBiIq3f9kMjt4AcGK3Rdhca.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION FOUR -->
+    <div class="section" onclick="openModalFour()">
+      <div class="grid-item-header">
+        <h2>Advanced account security:</h2>
+      </div>
+      <img src="./frameGraphics/ape7.png" class="card-image" />
+      <div class="grid-item-desc">
+        <p>Protected access to your accounts with encrypted keyfiles. Integration with hardware wallets for added
+          security.</p>
+      </div>
+
+    </div>
+    <div class="four modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="codeWrap">
+          <div class="asci-container-xl">
+            <script async id="asciicast-C9HPhgFneU1xejUEQyybAXevi"
+              src="https://asciinema.org/a/C9HPhgFneU1xejUEQyybAXevi.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION FIVE -->
+    <div class="section" onclick="openModalFive()">
+      <div class="grid-item-header">
+        <h2>Debugging for both development and production:</h2>
+      </div>
+      <img src="./frameGraphics/ape2.png" class="card-image" />
+      <div class="grid-item-desc">
+        <p>Development is aided by transaction tracing and gas reporting integrated into the command line.</p>
+      </div>
+
+    </div>
+    <div class="five modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="codeWrap">
+          <div class="asci-container-xl">
+            <script async id="asciicast-cJT4BmDZ6yzerbT0yTUhUab8T"
+              src="https://asciinema.org/a/cJT4BmDZ6yzerbT0yTUhUab8T.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION SIX -->
+    <div class="section" onclick="openModalSix()">
+      <div class="grid-item-header">
+        <h2>Use the power of Python's data science tooling:</h2>
+      </div>
+      <img src="./frameGraphics/ape6.png" class="card-image" />
+      <div class="grid-item-desc">
+        <p>Use Ape in Jupyter notebooks along with your favorite Python libraries like Pandas, Numpy, and others.</p>
+      </div>
+
+    </div>
+    <div class="six modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="codeWrap">
+          <div class="asci-container-xl">
+            <script async id="asciicast-6d97fULpDc6MfgTVg70FF57GQ"
+              src="https://asciinema.org/a/6d97fULpDc6MfgTVg70FF57GQ.js"></script>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- SECTION TWO -->
-  <div class="section" onclick="openModalTwo()">
-    <div class="grid-item-header">
-    <h2>Customize your stack with Ape Plugins</h2></div>
-    <img src="./frameGraphics/ape3.png" class="card-image" />
-    <div class="grid-item-desc">
-    <p>Plugin creation and support from simple integrations to a more complex ecosystem. Non-EVM chains are already being supported.</p>
-    </div>
-
   </div>
-  <div class="two modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div class="codeWrap">
-        <div class="asci-container-xl">
-          <script
-            async
-            id="asciicast-tyJDbAZKpAM9Zf55VjfYbUZN6"
-            src="https://asciinema.org/a/tyJDbAZKpAM9Zf55VjfYbUZN6.js"
-          ></script>
-        </div>
+  <style>
+
+  </style>
+  <!-- SPLASH ABOUT PLUGINS -->
+  <section class="about-plugins-section">
+    <div style="text-align: left">
+      <h1>
+        Customize your stack with ape-plugins
+      </h1>
+      <h2>
+        Plugin creation and support from simple integrations to a more complex
+        ecosystem.
+      </h2>
+    </div>
+  </section>
+
+  <!-- SPLASH COLLABORATION -->
+  <section class="section-splash-featured-plugin">
+    <div class="splash-collaboration">
+      <div class="splash-col-1">
+        <h1>Featured Plugin:</h1>
+        <h2>LlamaNodes</h2>
+        <p>
+          LlamaNodes provides public and premium RPCs with industry leading
+          features, crypto payments, and no contracts.
+        </p>
+        <button onclick="window.location.href='https://llamanodes.com/'" target="_blank">
+          Visit LlamaNodes
+        </button>
+      </div>
+
+      <div class="splash-col-2">
+        <img class="llama-graphic" src="ape-plugin-llamanodes.png" />
       </div>
     </div>
+  </section>
+
+  <div class="container-plugins">
+    <h1>ApeWorX Supported Plugins</h1>
+    <ul class="grid-plugins">
+      <li>
+        <a href="https://github.com/ApeWorX/ape-vyper" target="_blank">
+          Vyper</a>
+      </li>
+      <li>
+        <a href="https://github.com/ApeWorX/ape-solidity" target="_blank">
+          Solidity</a>
+      </li>
+      <li>
+        <a href="https://github.com/ApeWorX/ape-etherscan" target="_blank">
+          Etherscan</a>
+      </li>
+      <li>
+        <a href="https://github.com/ApeWorX/ape-hardhat" target="_blank">
+          Hardhat</a>
+      </li>
+      <li>
+        <a href="https://github.com/ApeWorX/ape-starknet" target="_blank">
+          Starknet</a>
+      </li>
+      <li>
+        <a href="https://github.com/ApeWorX/ape-tokens" target="_blank">
+          Tokens</a>
+      </li>
+      <li>
+        <a href="https://github.com/ApeWorX/ape-ledger" target="_blank">
+          Ledger</a>
+      </li>
+      <li>
+        <a href="https://github.com/ApeWorX/ape-foundry" target="_blank">
+          Foundry</a>
+      </li>
+      <li>
+        <a href="https://github.com/ApeWorX/ape-alchemy" target="_blank">
+          Alchemy</a>
+      </li>
+      <li>
+        <a href="https://github.com/ApeWorX/ape-polygon" target="_blank">
+          Polygon</a>
+      </li>
+      <li>
+        <a href="https://github.com/ApeWorX/ape-ens" target="_blank"> ENS</a>
+      </li>
+      <li>
+        <a href="https://github.com/ApeWorX/ape-arbitrum" target="_blank">
+          Arbitrum</a>
+      </li>
+      <li>
+        <a href="https://github.com/ApeWorX/ape-notebook" target="_blank">Juypter Notebook
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/ApeWorX/ape-safe" target="_blank">Safe Multisig</a>
+      </li>
+    </ul>
   </div>
 
-  <!-- SECTION THREE -->
-  <div class="section" onclick="openModalThree()">
-    <div class="grid-item-header">
-    <h2>Extensive contract lifecycle management features:</h2>
-    </div>
-    <img src="./frameGraphics/ape5.png" class="card-image" />
-    <div class="grid-item-desc">
-    <p>Contracts can be compiled, tested, deployed, and analyzed using scripts and the built-in Ape console. Verification is supported as well as package manifest creation.</p>
-    </div>
-   
-  </div>
-  <div class="three modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div class="codeWrap">
-        <div class="asci-container-xl">
-          <script
-            async
-            id="asciicast-0OkBiIq3f9kMjt4AcGK3Rdhca"
-            src="https://asciinema.org/a/0OkBiIq3f9kMjt4AcGK3Rdhca.js"
-          ></script>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SECTION FOUR -->
-  <div class="section" onclick="openModalFour()">
-    <div class="grid-item-header">
-    <h2>Advanced account security:</h2></div>
-    <img src="./frameGraphics/ape7.png" class="card-image" />
-    <div class="grid-item-desc">
-    <p>Protected access to your accounts with encrypted keyfiles. Integration with hardware wallets for added security.</p>
-    </div>
+  <!-- APE FRAMEWORK Final SECTION -->
+  <section class="final-splash-section">
+    <div class="final-splash">
+      <img src="frame.png" alt="Ape Framework Logo" class="final-splash-logo" />
   
-  </div>
-  <div class="four modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div class="codeWrap">
-        <div class="asci-container-xl">
-          <script
-            async
-            id="asciicast-C9HPhgFneU1xejUEQyybAXevi"
-            src="https://asciinema.org/a/C9HPhgFneU1xejUEQyybAXevi.js"
-          ></script>
-        </div>
-      </div>
-    </div>
-  </div>
+    <div class="responsive-paragraph">
+      <p>
+        Ape Framework is an easy-to-use Web3 development tool. Users can
+        compile, test, and interact with smart contracts all in one command
+        line session. With our modular plugin system, Ape supports multiple
+        contract languages and chains.
+      </p>
+    </div>  
+  </section>
+  <br>
+  <br>
+ 
+ 
 
-  <!-- SECTION FIVE -->
-  <div class="section" onclick="openModalFive()">
-    <div class="grid-item-header">
-    <h2>Debugging for both development and production:</h2></div>
-    <img src="./frameGraphics/ape2.png" class="card-image" />
-    <div class="grid-item-desc">
-    <p>Development is aided by transaction tracing and gas reporting integrated into the command line.</p>
-    </div>
 
-  </div>
-  <div class="five modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div class="codeWrap">
-        <div class="asci-container-xl">
-          <script
-            async
-            id="asciicast-cJT4BmDZ6yzerbT0yTUhUab8T"
-            src="https://asciinema.org/a/cJT4BmDZ6yzerbT0yTUhUab8T.js"
-          ></script>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SECTION SIX -->
-  <div class="section" onclick="openModalSix()">
-    <div class="grid-item-header">
-    <h2>Use the power of Python's data science tooling:</h2></div>
-    <img src="./frameGraphics/ape6.png" class="card-image" />
-    <div class="grid-item-desc">
-    <p>Use Ape in Jupyter notebooks along with your favorite Python libraries like Pandas, Numpy, and others.</p>
-    </div>
-   
-  </div>
-  <div class="six modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div class="codeWrap">
-        <div class="asci-container-xl">
-          <script
-            async
-            id="asciicast-6d97fULpDc6MfgTVg70FF57GQ"
-            src="https://asciinema.org/a/6d97fULpDc6MfgTVg70FF57GQ.js"
-          ></script>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
-</div>
-<style>
-
-</style>
-    <!-- SPLASH ABOUT PLUGINS -->
-    <section class="about-plugins-section">
-      <div style="text-align: left">
-        <h1>
-          Customize your stack with ape-plugins
-        </h1>
-        <h2>
-          Plugin creation and support from simple integrations to a more complex
-          ecosystem.
-        </h2>
-      </div>
-    </section>
-
-    <!-- SPLASH COLLABORATION -->
-    <section class="section-splash-featured-plugin">
-      <div class="splash-collaboration">
-        <div class="splash-col-1">
-          <h1 style="font-size: 50px; text-align: left">Featured Plugin:</h1>
-          <h2 style="font-size: 30px; text-align: left">LlamaNodes</h2>
-          <p>
-            LlamaNodes provides public and premium RPCs with industry leading
-            features, crypto payments, and no contracts.
-          </p>
-          <button
-            class="download-button"
-            onclick="window.location.href='https://llamanodes.com/'"
-            target="_blank"
-          >
-            Visit LlamaNodes
-          </button>
-        </div>
-
-        <div class="splash-col-2">
-          <img class="llama-graphic" src="ape-plugin-llamanodes.png" />
-        </div>
-      </div>
-    </section>
-
-    <div class="container-plugins">
-      <h1>ApeWorX Supported Plugins</h1>
-      <ul class="grid-plugins">
-        <li>
-          <a href="https://github.com/ApeWorX/ape-vyper" target="_blank">
-            Vyper</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/ApeWorX/ape-solidity" target="_blank">
-            Solidity</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/ApeWorX/ape-etherscan" target="_blank">
-            Etherscan</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/ApeWorX/ape-hardhat" target="_blank">
-            Hardhat</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/ApeWorX/ape-starknet" target="_blank">
-            Starknet</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/ApeWorX/ape-tokens" target="_blank">
-            Tokens</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/ApeWorX/ape-ledger" target="_blank">
-            Ledger</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/ApeWorX/ape-foundry" target="_blank">
-            Foundry</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/ApeWorX/ape-alchemy" target="_blank">
-            Alchemy</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/ApeWorX/ape-polygon" target="_blank">
-            Polygon</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/ApeWorX/ape-ens" target="_blank"> ENS</a>
-        </li>
-        <li>
-          <a href="https://github.com/ApeWorX/ape-arbitrum" target="_blank">
-            Arbitrum</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/ApeWorX/ape-notebook" target="_blank"
-            >Juypter Notebook
+  <div class="button-container button-section">
+    <!-- INSTALL -->
+    <section class="install-ape-section">
+      <div class="install-ape-fullwidth-wrap">
+        <div class="install section">
+          <a href="download.html">
+            <button class="install-button">Download Ape</button>
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/ApeWorX/ape-safe" target="_blank"
-            >Safe Multisig</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <!-- APE FRAMEWORK Final SECTION -->
-    <section class="final-splash-section">
-      <div class="final-splash">
-        <img
-          src="frame.png"
-          alt="Ape Framework Logo"
-          class="final-splash-logo"
-        />
-        </div>
-        <div class="endText responsive-paragraph">
-          <p>
-            Ape Framework is an easy-to-use Web3 development tool. Users can
-            compile, test, and interact with smart contracts all in one command
-            line session. With our modular plugin system, Ape supports multiple
-            contract languages and chains.
-          </p>
         </div>
       </div>
     </section>
-    <style>
-      .button-section {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-      }
-    </style>
-    
-    <div class="button-container button-section">
-      <!-- INSTALL -->
-      <section class="install-ape-section">
-        <div class="install-ape-fullwidth-wrap">
-          <div class="install section">
-            <a href="download.html">
-              <button class="install-button">Download Ape</button>
-            </a>
-          </div>
+
+    <!-- VIEW DOCS -->
+    <section class="view-docs-section">
+      <div class="view-docs-fullwidth-wrap">
+        <div class="view-docs section">
+          <a href="https://docs.apeworx.io">
+            <button class="view-docs-button">View Docs</button>
+          </a>
         </div>
-      </section>
-    
-      <!-- VIEW DOCS -->
-      <section class="view-docs-section">
-        <div class="view-docs-fullwidth-wrap">
-          <div class="view-docs section">
-            <a href="https://docs.apeworx.io">
-              <button class="view-docs-button">View Docs</button>
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
+  </div>
 
-    <div class="frame-footer">
-      <a href="../../../"><img src="./apeFull.png" class="footer-logo" /></a>
-    </div>
+  <div class="frame-footer">
+    <a href="../../../"><img src="./apeFull.png" class="footer-logo" /></a>
+  </div>
 
-    <script>
-      // Define Modals
-      var modals = document.querySelectorAll(".modal");
-      // Define blurry background
-      var overlay = document.createElement("div");
-      overlay.className = "modal-overlay";
+  <script>
+    // Define Modals
+    var modals = document.querySelectorAll(".modal");
+    // Define blurry background
+    var overlay = document.createElement("div");
+    overlay.className = "modal-overlay";
 
-      // Function to open any modal and add blurry background
-      function openModal(modal) {
-        modal.style.display = "block";
-        document.body.appendChild(overlay);
-      }
+    // Function to open any modal and add blurry background
+    function openModal(modal) {
+      modal.style.display = "block";
+      document.body.appendChild(overlay);
+    }
 
-      // Function to close any modal and remove blurry background
-      function closeModal() {
-        modals.forEach(function (modal) {
-          modal.style.display = "none";
-        });
-        document.body.removeChild(overlay);
-      }
-
-      // Event listeners to close on click on button
-      var closeButtons = document.querySelectorAll(".close");
-      closeButtons.forEach(function (button) {
-        button.addEventListener("click", closeModal);
-      });
-
-      // Event listeners to close on click on blurry background
+    // Function to close any modal and remove blurry background
+    function closeModal() {
       modals.forEach(function (modal) {
-        modal.addEventListener("click", closeModal);
+        modal.style.display = "none";
       });
+      document.body.removeChild(overlay);
+    }
 
-      // Open Modal Functions
-      function openModalOne() {
-        openModal(modals[0]);
-      }
-      function openModalTwo() {
-        openModal(modals[1]);
-      }
-      function openModalThree() {
-        openModal(modals[2]);
-      }
-      function openModalFour() {
-        openModal(modals[3]);
-      }
-      function openModalFive() {
-        openModal(modals[4]);
-      }
-      function openModalSix() {
-        openModal(modals[5]);
-      }
-    </script>
-  </body>
+    // Event listeners to close on click on button
+    var closeButtons = document.querySelectorAll(".close");
+    closeButtons.forEach(function (button) {
+      button.addEventListener("click", closeModal);
+    });
+
+    // Event listeners to close on click on blurry background
+    modals.forEach(function (modal) {
+      modal.addEventListener("click", closeModal);
+    });
+
+    // Open Modal Functions
+    function openModalOne() {
+      openModal(modals[0]);
+    }
+    function openModalTwo() {
+      openModal(modals[1]);
+    }
+    function openModalThree() {
+      openModal(modals[2]);
+    }
+    function openModalFour() {
+      openModal(modals[3]);
+    }
+    function openModalFive() {
+      openModal(modals[4]);
+    }
+    function openModalSix() {
+      openModal(modals[5]);
+    }
+  </script>
+
+
+
+</body>
+
 </html>
