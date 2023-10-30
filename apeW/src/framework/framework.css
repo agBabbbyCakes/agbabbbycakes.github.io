@@ -144,13 +144,12 @@ button {
   padding: 20px;
   background-color: #000;
   overflow: auto;
-  border-style: solid;
+
   border-color: var(--border-color);
-  border-width: 1px;
 }
 
 .container-plugins h1 {
-  color: #0f0;
+  color: var(--border-color);
   margin-bottom: 20px;
 }
 
@@ -464,6 +463,13 @@ h1 {
   overflow-y: auto;
 }
 
+.about-plugins-section h1,
+.about-plugins-section h2,
+.about-plugins-section p {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) to change the opacity of the black overlay */
+  padding: 10px; /* Add some padding so the background extends beyond the text */
+}
+
 .about-plugins-section {
   background-image: url("./frameGraphics/d2.png")!important;
   background-attachment: fixed!important;
@@ -480,16 +486,18 @@ h1 {
   font-stretch:expanded;
 }
 
-.about-plugins-section h2 {
-}
+
 
 .about-plugins-section {
   position: relative;
-  background-image: url("./frameGraphics/d2.png")!important;
+  background-image: url("./frameGraphics/ae1.png")!important;
   background-attachment: fixed!important;
   background-position: center!important;
   background-repeat: no-repeat!important;
   background-size: cover!important;
+  border-style:solid;
+  border-color:black;
+  border-width:35%;
 }
 
 .about-plugins-section::before {
@@ -499,6 +507,7 @@ h1 {
   right: 0;
   bottom: 0;
   left: 0;
+  mix-blend-mode: screen;
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) to change the opacity of the black overlay */
 }
 
@@ -553,12 +562,14 @@ h1 {
   }
 
   .final-splash {
-    margin-top: 200px;
+    margin-top: 50px;
   }
 
   .about-plugins-section {
-    margin-top: 150px;
-    max-height: 150px;
+    border-style:solid;
+    border-color:black;
+    border-width:35%;
+    margin-top: 50px;
   }
 
   .about-plugins-section h1 {
@@ -578,8 +589,8 @@ h1 {
   }
 
   .section-splash-featured-plugin {
-    margin-top: 300px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .splash-col-1 h1 {
