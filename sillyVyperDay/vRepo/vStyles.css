@@ -1,0 +1,320 @@
+html {
+    font-family: 'Space Mono', monospace;
+}
+
+* {
+    animation: borderAnimation 10s infinite;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 225, 113, 0.75), rgba(0, 225, 113, 0.95)), url(vyperBG.png);
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+h1,h2, h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.card {
+    background-color: #b7ffbf!important;
+    width:500px;
+    max-width: 500px;
+    
+}
+
+.highlight {
+    background-color: black;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.address {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.vyperLogo {
+    mix-blend-mode:darken;
+    width:100%;
+    height:auto;
+    margin:0px;
+}
+
+.info {
+    background-color:rgba(255, 255, 255, 0.785)!important;
+    background-color: #b7ffbf!important;
+}
+
+.info,
+.schedule {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.487);
+    
+}
+.scheduleHeader {
+    text-align: center;
+    font-size:64px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -2px; 
+
+}
+
+.header {
+    font-weight: bold;
+}
+.indent {
+    margin-left: 20px;
+}
+
+.cta {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000000!important;
+    color: #000000a9!important;
+    border: none;
+    border-radius: 5px;
+    mix-blend-mode: normal;
+    border-style: solid;
+    transition: background-color 0.3s;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.specialTitle {
+    color: #ffffff;
+    font-size: 5em;
+    overflow: hidden;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-shadow:
+    1px 1px 0px rgba(112, 255, 184, 0.95),
+    -1px -1px 0px rgba(197, 255, 226, 0.95),
+    2px 2px 0px rgba(0, 225, 113, 0.95),
+    -2px -2px 0px rgba(155, 255, 205, 0.95),
+    3px 3px 0px rgba(0, 225, 113, 0.95),
+    -3px -3px 0px rgba(174, 255, 215, 0.95);
+    mix-blend-mode: multipy;
+    transition: transform 0.5s;
+}
+
+
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #000;
+    }
+
+    50% {
+        border-color: rgb(255, 255, 255);
+    }
+
+    100% {
+        border-color: #000;
+    }
+}
+
+@keyframes rock {
+    0% {
+        transform: perspective(500px) rotateY(-20deg);
+    }
+
+    50% {
+        transform: perspective(500px) rotateY(20deg);
+    }
+
+    100% {
+        transform: perspective(500px) rotateY(-20deg);
+    }
+}
+
+
+/*SPONSOR GRAPHICS*/
+.sponsor-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width:700px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.sponsor img {
+    width:200px;
+    height: auto;
+    padding:20px;
+  
+
+}
+
+.sponsor img:hover {
+    opacity: .8;
+}
+
+/*.curveLogo {
+    mix-blend-mode:normal!important;
+}*/
+
+html {
+    font-family: 'Space Mono', monospace;
+}
+
+/* ... [other styles remain unchanged] ... */
+
+/* Media Queries for mobile with max-width: 768px */
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        padding: 10px;
+        margin: 0 auto;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .sponsor2 img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+   .schedule {
+    width:300px;
+   }
+
+   .info {
+    width:300px;
+   }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .info,
+    .schedule {
+        padding: 20px;
+       
+    }
+
+    .cta {
+        padding: 20px;
+        font-size: 1.5em;
+    }
+
+    .specialTitle {
+        font-size: 4em;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .sponsor-container {
+        flex-direction: column;
+    }
+
+    .sponsor img {
+        padding: 50px;
+        margin-top: 20px;
+    }
+
+    .vyperLogo {
+        width: 90%;
+    }
+
+ 
+
+    .info.card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 100%;
+        max-width: 300px;
+        border-radius: 5px;
+    }
+
+    .info.card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .info.card img {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .info.card .cta {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+
+    .info.card .cta:hover {
+        background-color: #555;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .scheduleHeader {
+        font-size: 32px;
+    }
+}

@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap');
 
+:root {
+    --card-background-color: rgb(0, 0, 0);
+    --text-color: #ffffff;
+    --body-background-color: darkmagenta;
+}
 
 
 body {
     background-size: cover;
     padding: 10px;
     font-family: 'Barlow', sans-serif;
+    background-color:var(--body-background-color);
   }
   
   .app-container, .sidebar, .app-content, .card-deployment, .card-box, .card-bot, .footer-detail {
@@ -20,11 +26,14 @@ body {
   
   /* Add other styles as needed */
 
+  .card-deployment {
+    background-color:var (--card-background-color);
+  }
 
   .card-deployment-label {
     font-size: 52px;
     font-weight: 600;
-    color: #000000;
+    color: var (--text-color);
     margin-bottom: 10px;
   }
 
