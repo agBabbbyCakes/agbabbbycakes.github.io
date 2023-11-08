@@ -4,67 +4,49 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Silverback</title>
-<style>
-  :root {
-    --animation-duration: 5s;
-  }
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<link rel="stylesheet" href="global.css">
+<link rel="stylesheet" href="structure.css">
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: 'Poppins', sans-serif;
-    overflow: hidden;
-  }
-
-  .animated-bg {
-    animation: gradientShift var(--animation-duration) infinite alternate;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-
-  .glass-panel {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
-  }
-
-  @media (max-width: 768px) {
-    .glass-panel {
-      margin: 10px;
-      padding: 15px;
-    }
-  }
-
-  @keyframes gradientShift {
-    0% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 100% 50%;
-    }
-  }
-</style>
 </head>
 <body>
 
 <div class="animated-bg"></div>
 
-<div class="glass-panel">
+<div class="glass-panel g1" id="1">
   <h1>Welcome to Silverback</h1>
-  <p>This is a glass effect panel with an animated background.</p>
+  <p>This is a glass panel </p>
 </div>
+<div class="glass-panel g2" id="2">
+    <p>This is Also A Glass Panel</p>
+    <main class="main-container">
+        <div class="dashboard">
+            <nav>
+                <ul>
+                    <button>Tab 1</button>
+                    <button>Tab 2</button>
+                    <button>Tab 3</button>
+                    <button>Tab 4</button>
+                    <button>Tab 5</button>
+                    <button>Tab 6</button>
+                    <button>Tab 7</button>
+                    <button>Tab 8</button>
+                    <button>Tab 9</button>
 
+                </ul>
+            </nav>
+          <!-- Dashboard content goes here -->
+        </div>
+        <div class="content">
+          <!-- Tabbed content goes here -->
+          <div id="graph"></div>
+        </div>
+      </main>
+</div>
+<div class="glass-panel g3" id="3">
+    Okay - Last Glass Panel
+    
+</div>
+<script src="../dataBaby/doppler/doppler.js"></script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+.main-container {
+  display: flex;
+}
+
+.dashboard {
+  width: 300px; /* Adjust as needed */
+  background-color: #f0f0f0; /* Just for visibility, adjust as needed */
+}
+
+.content {
+  flex-grow: 1; /* Takes up remaining space */
+  background-color: #e0e0e0; /* Just for visibility, adjust as needed */
+}
+
+
+.g1 {
+    height:10vh;
+}
+.g2 {
+    height:50vh;
+}
+.g3  {
+    height:30vh;
+}
