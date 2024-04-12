@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ethereum Session Visualizer</title>
+        <!-- Include external libraries' CSS -->
+        <link rel="stylesheet"
+            href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="app">
+            <!-- Placeholder for the Balance Chart -->
+            <canvas id="balanceChart"></canvas>
+
+            <!-- Placeholder for the Bot List -->
+            <table id="botList" class="display">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Deploying</th>
+                        <th>Running</th>
+                        <th>Emergency Off</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Bot data will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+
+            <!-- Placeholder for the Project Calendar -->
+            <div id="projectCalendar"></div>
+
+            <!-- Existing table for session data -->
+            <button onclick="startVisualization()">Start</button>
+            <button onclick="pauseVisualization()">Pause</button>
+
+            <!-- Example Dropdown Menu -->
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown Menu</button>
+                <div class="dropdown-menu">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+
+            <!-- Example of Highlighted Text -->
+            <p>This is a <span class="highlight">highlighted text</span>
+                example.</p>
+
+        </div>
+        <!-- Include external libraries' JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script
+            src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+        <script src="./basicScripts.js"></script>
+        <script src="./vizJson-proto1.js"></script>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+body {
+    font-family: 'Barlow', sans-serif;
+    /* Updated to Barlow font */
+    padding: 20px;
+    background-color: #000;
+    /* Black background */
+    color: #fff;
+    /* White text */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Barlow', sans-serif;
+    /* Using Barlow font for the table */
+    color: #fff;
+    /* White text for table */
+    background-color: #000;
+    /* Consistent black background */
+    border: 1px solid #fff;
+    /* Thin white border for the table */
+}
+
+th,
+td {
+    border: 1px solid #fff;
+    /* Thin white borders for table cells */
+    padding: 8px;
+    text-align: left;
+    background-color: #000;
+    /* Consistent black background for cells */
+    color: #fff;
+    /* Ensuring text is white */
+}
+
+th {
+    background-color: #000;
+    /* Consistent black background for table headers */
+    color: #fff;
+    /* White text for headers */
+    font-weight: normal;
+    /* For a more minimalistic look */
+}
+
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    background-color: #000;
+    /* Black background for dropdown */
+    color: #fff;
+    /* White text for dropdown items */
+    border: 1px solid #fff;
+    /* Thin white border for the dropdown */
+    font-family: 'Barlow', sans-serif;
+    /* Consistent font usage */
+}
+
+.dropdown-menu a {
+    color: #fff;
+    /* White text for links */
+    padding: 10px 20px;
+    /* Adequate padding for items */
+    text-decoration: none;
+    /* No underline for links */
+    display: block;
+    /* Make each link fill its container */
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
+    background-color: #fff;
+    /* White background for hovered/focused item */
+    color: #000;
+    /* Black text for contrast */
+}
+
+/* Highlight Color Styles */
+.highlight {
+    background-color: #000;
+    /* Black background for highlight */
+    color: #fff;
+    /* White text for highlighted text */
+    padding: 5px;
+    /* Padding around the highlighted text */
+    border-radius: 5px;
+    /* Optional: rounded corners for the highlight */
+}
