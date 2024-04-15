@@ -9,11 +9,12 @@
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
+    background-image: url(./sb-background.png);
   }
 
   .bg-image {
     /* The image used */
-    background-image: url('background.jpg');
+    background-image: url(./sb-background-overlay.png); /* Updated background image */
     
     /* Full height */
     height: 100%; 
@@ -30,9 +31,9 @@
   .overlay {
     /* Full height */
     height: 100%;
-
-    /* Create the overlay effect */
-    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    mix-blend-mode: overlay;
+    /* Create the overlay effect with mixed media visibility */
+    background-color: rgba(0, 0, 0, 0.44); /* Reduced opacity for mixed media effect */
     color: white;
 
     /* Align the content */
@@ -51,21 +52,19 @@
     margin-top: 20px;
   }
 
-  .email-form input[type='email'] {
+  .email-form input[type='email'], .email-form input[type='submit'] {
     width: 80%;
     padding: 10px;
     margin-top: 10px;
     border: none;
     border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5); /* Glass effect */
+    backdrop-filter: blur(5px); /* Blur for glass effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft white edges */
   }
 
   .email-form input[type='submit'] {
-    width: 80%;
-    padding: 10px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: green;
+    background-color: rgba(255, 255, 255, 0.5); /* Glass effect for button */
     color: white;
     cursor: pointer;
   }
@@ -76,7 +75,9 @@
         <div class="bg-image">
             <div class="overlay">
                 <div class="content">
-                    <h1>Get Updates on SILVERBACK Developments</h1>
+                    <img src="./sb-logo.png" alt="SILVERBACK Logo">
+                    <!-- Logo image -->
+                    <h1>Get Updates on Developments</h1> <!-- Updated text -->
                     <form class="email-form">
                         <input type="email"
                             placeholder="Enter your email address" required>
