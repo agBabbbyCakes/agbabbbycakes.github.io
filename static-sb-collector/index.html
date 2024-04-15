@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SILVERBACK Developments Updates</title>
+        <style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .bg-image {
+    /* The image used */
+    background-image: url('background.jpg');
+    
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+  }
+
+  .overlay {
+    /* Full height */
+    height: 100%;
+
+    /* Create the overlay effect */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    color: white;
+
+    /* Align the content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content {
+    max-width: 500px;
+  }
+
+  .email-form {
+    margin-top: 20px;
+  }
+
+  .email-form input[type='email'] {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .email-form input[type='submit'] {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+  }
+</style>
+    </head>
+    <body>
+
+        <div class="bg-image">
+            <div class="overlay">
+                <div class="content">
+                    <h1>Get Updates on SILVERBACK Developments</h1>
+                    <form class="email-form">
+                        <input type="email"
+                            placeholder="Enter your email address" required>
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script>
+  // You can add your JavaScript here if you have any interactive elements
+</script>
+
+    </body>
+</html>
