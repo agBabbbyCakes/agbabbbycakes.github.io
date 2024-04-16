@@ -153,8 +153,14 @@
         </div>
 
         <script>
-  // You can add your JavaScript here if you have any interactive elements
-</script>
+            window.addEventListener('scroll', function() {
+              const parallaxElement = document.querySelector('.about-section');
+              let scrollPosition = window.pageYOffset;
+          
+              // Adjust the '0.5' to control the speed of the parallax effect
+              parallaxElement.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
+            });
+          </script>
 
     </body>
 </html>
