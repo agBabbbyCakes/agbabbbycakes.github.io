@@ -58,15 +58,52 @@
     margin-top: 10px;
     border: none;
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.5); /* Glass effect */
+    background: rgba(255, 255, 255, 0.3); /* More translucent effect */
     backdrop-filter: blur(5px); /* Blur for glass effect */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft white edges */
   }
 
   .email-form input[type='submit'] {
-    background-color: rgba(255, 255, 255, 0.5); /* Glass effect for button */
+    background-color: rgba(255, 255, 255, 0.3); /* Glass effect for button */
     color: white;
     cursor: pointer;
+    font-size: 1em; /* Ensure consistent font sizing */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .footer-menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .footer-menu li {
+    margin: 0 10px;
+  }
+
+  .footer-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .about-section {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
   }
 </style>
     </head>
@@ -77,14 +114,48 @@
                 <div class="content">
                     <img src="./sb-logo.png" alt="SILVERBACK Logo">
                     <!-- Logo image -->
-                    <h1>Get Updates on Developments</h1> <!-- Updated text -->
-                    <form class="email-form">
-                        <input type="email"
-                            placeholder="Enter your email address" required>
-                        <input type="submit" value="Subscribe">
+
+                    <!-- modify this form HTML and place wherever you want your form -->
+                    <form
+                        action="https://formspree.io/f/mpzvkadk"
+                        method="POST">
+                        <label>
+                            Your email:
+                            <input type="email" name="email">
+                        </label>
+
+                        <!-- your other form fields go here -->
+                        <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
+        </div>
+
+        <div class="about-section">
+            <h2>About SILVERBACK</h2>
+            <!-- Centered logo with filter to make it fully white -->
+            <div style="text-align: center;">
+                <img src="https://apeworx.io/silverback/silverback-grey.png"
+                    style="width: 100px; filter: brightness(0) invert(1);" />
+            </div>
+            <p>Silverback lets you create and deploy your own Python bots that
+                respond to on-chain events. The Silverback library leverages the
+                Ape development framework as well as its ecosystem of plugins
+                and packages to enable you to develop simple-yet-sophisticated
+                automated applications that can listen and respond to live chain
+                data. Silverback applications are excellent for use cases that
+                involve continuously monitoring and responding to on-chain
+                events, such as newly confirmed blocks or contract event logs.
+
+            </p>
+        </div>
+
+        <div class="footer">
+            <a href="https://apeworx.io">
+                <img src="https://apeworx.io/assets/apeFull.png"
+                    alt="Apeworx Logo"
+                    style="width: 50px; height: auto;">
+            </a>
         </div>
 
         <script>

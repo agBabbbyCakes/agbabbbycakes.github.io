@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>sidebar</title>
+        <style>
+            .v2sidebar-sidebar {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 250px;
+                height: 100%;
+                background-color: #222; /* Dark background for futuristic look */
+                padding: 20px;
+                box-shadow: 2px 0 5px rgba(0,0,0,0.5); /* Stronger shadow for depth */
+                color: #fff; /* Light text color for contrast */
+                transition: all 0.5s ease-in-out;
+            }
+
+            .v2sidebar-sidebar:hover {
+                width: 300px;
+                background-color: rgba(255, 255, 255, 0.1); /* Light translucent background on hover */
+                backdrop-filter: blur(10px); /* Blur effect for glassy look */
+                transition-delay: 3s;
+            }
+
+            .v2sidebar-sidebar h2 {
+                color: #ccc; /* Light grey color for headings */
+                color: #333;
+                transition: color 0.5s ease-in-out;
+            }
+
+            .v2sidebar-sidebar:hover h2 {
+                color: #000;
+            }
+
+            .v2sidebar-sidebar ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .v2sidebar-sidebar ul li {
+                padding: 10px 0;
+                transition: transform 0.5s ease-in-out;
+            }
+
+            .v2sidebar-sidebar:hover ul li {
+                transform: translateX(20px);
+            }
+
+            .v2sidebar-sidebar ul li a {
+                color: #333;
+                text-decoration: none;
+                transition: color 0.5s ease-in-out;
+            }
+
+            .v2sidebar-sidebar:hover ul li a {
+                color: #007bff;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="sbv2" class="v2sidebar-sidebar">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">Project A</a></li>
+                <li><a href="#">Project B</a></li>
+                <li><a href="#">Project C</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
