@@ -7,110 +7,15 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap"
             rel="stylesheet">
-        <style>
-  body, html {
-    height: 100%;
-    margin: 0;
-    font-family: 'Barlow', Arial, sans-serif;
-    background-image: url(./sb-background.png);
-  }
-
-  .bg-image {
-    background-image: url(./sb-background-overlay.png);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
-  .overlay {
-    height: 100%;
-    mix-blend-mode: overlay;
-    background-color: rgba(0, 0, 0, 0.44);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .content {
-    max-width: 500px;
-  }
-
-  .email-form input[type='email'], .email-form input[type='submit'] {
-    width: 80%;
-    padding: 10px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(5px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .email-form input[type='submit'] {
-    background-color: rgba(255, 255, 255, 0.3);
-    color: white;
-    cursor: pointer;
-    font-size: 1em;
-    box-sizing: border-box;
-  }
-
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .about-section {
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .about-section p {
-    max-width: 60ch;
-  }
-
-  .about-section a {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-    backdrop-filter: blur(5px);
-    color: white;
-    text-decoration: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-  }
-
-  .about-section a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-
-</style>
+        <link rel="stylesheet" href="./basic_styles.css">
     </head>
     <body>
 
         <div class="bg-image">
             <div class="overlay">
                 <div class="content">
-                    <img src="./sb-logo.png" alt="SILVERBACK Logo">
+                    <img class="sbLogoText" src="./sb-logo.png"
+                        alt="SILVERBACK Logo">
                     <form action="https://formspree.io/f/mpzvkadk"
                         method="POST">
                         <label>
@@ -121,35 +26,44 @@
                     </form>
                 </div>
             </div>
-        </div>
 
-        <div class="about-section">
-            <h2>About SILVERBACK</h2>
-            <div style="text-align: center;">
-                <img src="https://apeworx.io/silverback/silverback-grey.png"
-                    style="width: 100px; filter: brightness(0) invert(1);" />
+            <div>
+                <div style="text-align: center;">
+                    <img src="https://apeworx.io/silverback/silverback-grey.png"
+                        style="width: 100px; filter: brightness(0) invert(1);" />
+                </div>
+
+                <p><span>About Silverback</span><br>Silverback lets you create
+                    and
+                    deploy your own Python bots
+                    that
+                    respond to on-chain events. The Silverback library leverages
+                    the
+                    Ape development framework as well as its ecosystem of
+                    plugins
+                    and packages to enable you to develop
+                    simple-yet-sophisticated
+                    automated applications that can listen and respond to live
+                    chain
+                    data. Silverback applications are excellent for use cases
+                    that
+                    involve continuously monitoring and responding to on-chain
+                    events, such as newly confirmed blocks or contract event
+                    logs.
+
+                </p>
+                <a href="https://github.com/ApeWorX/silverback">Install SDK</a>
+                <a href="https://docs.apeworx.io/silverback/stable/">Silverback
+                    Docs</a>
             </div>
-            <p>Silverback lets you create and deploy your own Python bots that
-                respond to on-chain events. The Silverback library leverages the
-                Ape development framework as well as its ecosystem of plugins
-                and packages to enable you to develop simple-yet-sophisticated
-                automated applications that can listen and respond to live chain
-                data. Silverback applications are excellent for use cases that
-                involve continuously monitoring and responding to on-chain
-                events, such as newly confirmed blocks or contract event logs.
 
-            </p>
-            <a href="https://github.com/ApeWorX/silverback">Install SDK</a>
-            <a href="https://docs.apeworx.io/silverback/stable/">Silverback
-                Docs</a>
-        </div>
-
-        <div class="footer">
-            <a href="https://apeworx.io">
-                <img src="https://apeworx.io/assets/apeFull.png"
-                    alt="Apeworx Logo"
-                    style="width: 50px; height: auto;">
-            </a>
+            <div class="footer">
+                <a href="https://apeworx.io">
+                    <img src="https://apeworx.io/assets/apeFull.png"
+                        alt="Apeworx Logo"
+                        style="width: 50px; height: auto;">
+                </a>
+            </div>
         </div>
 
         <script>

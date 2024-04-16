@@ -1,0 +1,99 @@
+  body,
+  html {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      font-family: 'Barlow', Arial, sans-serif;
+      background-image: url(./sb-background.png);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+  }
+
+
+
+  .bg-image {
+      background-image: url(./sb-background-overlay.png);
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .content,
+  .footer,
+  .about-section,
+  .about-section p,
+  .about-section a {
+      color: black;
+      text-align: center;
+      width: 100%;
+  }
+
+  /* Updated styles for inputs, links, and buttons */
+  .email-form input[type='email'],
+  .email-form button,
+  .about-section a,
+  .glass-link {
+
+      max-width: 80%;
+      padding: 10px;
+      margin: 10px auto;
+      /* Centering */
+      border: none;
+      /* Removing default border */
+      border-radius: 5px;
+      /* Rounded corners for glass effect */
+      background: rgba(255, 255, 255, 0.2);
+      /* Semi-transparent background */
+      color: white;
+      /* Text color */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      /* Soft shadow for depth */
+      backdrop-filter: blur(10px);
+      /* Glass effect */
+      -webkit-backdrop-filter: blur(10px);
+      /* For Safari */
+      transition: background-color 0.3s ease;
+      /* Smooth transition for hover effect */
+      display: inline-block;
+      /* For links to behave like buttons */
+      text-decoration: none;
+      /* Removing underline from links */
+      text-align: center;
+      /* Center text for buttons and links */
+      cursor: pointer;
+      /* Cursor pointer for all interactive elements */
+  }
+
+  /* Hover effect for inputs, links, and buttons */
+  .email-form input[type='email']:hover,
+  .email-form button:hover,
+  .about-section a:hover,
+  .glass-link:hover {
+      background: rgba(255, 255, 255, 0.3);
+      /* Slightly more opaque on hover */
+  }
+
+  .footer {
+      position: relative;
+      padding: 20px 0;
+  }
+
+
+  .sbLogoText {
+      width: 50%;
+      margin: 0 auto;
+  }
+
+  span {
+      font-weight: 900;
+      font-size: 22px;
+  }
