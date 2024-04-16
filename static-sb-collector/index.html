@@ -4,39 +4,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SILVERBACK Developments Updates</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap"
+            rel="stylesheet">
         <style>
   body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Barlow', Arial, sans-serif;
     background-image: url(./sb-background.png);
   }
 
   .bg-image {
-    /* The image used */
-    background-image: url(./sb-background-overlay.png); /* Updated background image */
-    
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
+    background-image: url(./sb-background-overlay.png);
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
   }
 
   .overlay {
-    /* Full height */
     height: 100%;
     mix-blend-mode: overlay;
-    /* Create the overlay effect with mixed media visibility */
-    background-color: rgba(0, 0, 0, 0.44); /* Reduced opacity for mixed media effect */
+    background-color: rgba(0, 0, 0, 0.44);
     color: white;
-
-    /* Align the content */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,27 +40,23 @@
     max-width: 500px;
   }
 
-  .email-form {
-    margin-top: 20px;
-  }
-
   .email-form input[type='email'], .email-form input[type='submit'] {
     width: 80%;
     padding: 10px;
     margin-top: 10px;
     border: none;
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.3); /* More translucent effect */
-    backdrop-filter: blur(5px); /* Blur for glass effect */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft white edges */
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .email-form input[type='submit'] {
-    background-color: rgba(255, 255, 255, 0.3); /* Glass effect for button */
+    background-color: rgba(255, 255, 255, 0.3);
     color: white;
     cursor: pointer;
-    font-size: 1em; /* Ensure consistent font sizing */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-size: 1em;
+    box-sizing: border-box;
   }
 
   .footer {
@@ -76,35 +64,45 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
     padding: 10px;
   }
 
-  .footer-menu {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-  }
-
-  .footer-menu li {
-    margin: 0 10px;
-  }
-
-  .footer-menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-  }
-
   .about-section {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 50px 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+  .about-section p {
+    max-width: 60ch;
+  }
+
+  .about-section a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  .about-section a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
 </style>
     </head>
     <body>
@@ -113,18 +111,12 @@
             <div class="overlay">
                 <div class="content">
                     <img src="./sb-logo.png" alt="SILVERBACK Logo">
-                    <!-- Logo image -->
-
-                    <!-- modify this form HTML and place wherever you want your form -->
-                    <form
-                        action="https://formspree.io/f/mpzvkadk"
+                    <form action="https://formspree.io/f/mpzvkadk"
                         method="POST">
                         <label>
                             Your email:
                             <input type="email" name="email">
                         </label>
-
-                        <!-- your other form fields go here -->
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>
@@ -133,7 +125,6 @@
 
         <div class="about-section">
             <h2>About SILVERBACK</h2>
-            <!-- Centered logo with filter to make it fully white -->
             <div style="text-align: center;">
                 <img src="https://apeworx.io/silverback/silverback-grey.png"
                     style="width: 100px; filter: brightness(0) invert(1);" />
@@ -148,6 +139,9 @@
                 events, such as newly confirmed blocks or contract event logs.
 
             </p>
+            <a href="https://github.com/ApeWorX/silverback">Install SDK</a>
+            <a href="https://docs.apeworx.io/silverback/stable/">Silverback
+                Docs</a>
         </div>
 
         <div class="footer">
