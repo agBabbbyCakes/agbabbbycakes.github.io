@@ -4,7 +4,7 @@
       height: 100%;
       margin: 0;
       font-family: 'Barlow', Arial, sans-serif;
-      background-image: url(./sb-background.png);
+      background-image: url(./sb-background.jpg);
 
       text-align: center;
       color: white;
@@ -146,4 +146,9 @@
           max-width: 45ch;
           padding: 10px;
       }
+  }
+
+
+  img {
+      mix-blend-mode: overlay !important;
   }
