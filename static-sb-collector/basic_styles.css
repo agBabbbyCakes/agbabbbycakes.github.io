@@ -10,6 +10,23 @@
       color: white;
   }
 
+  body:before {
+      content: "";
+      position: fixed;
+      /* Use fixed to cover the entire screen */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(./sb-background.png);
+      background-size: cover;
+      /* Cover the entire size of the before element */
+      animation: kenBurnsEffect 20s infinite alternate;
+      /* Use the Ken Burns effect */
+      z-index: -1;
+      /* Ensure the background is behind the content */
+  }
+
 
 
   #section-form {
