@@ -5,37 +5,20 @@
       margin: 0;
       font-family: 'Barlow', Arial, sans-serif;
       background-image: url(./sb-background.png);
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
       text-align: center;
       color: white;
   }
 
 
 
-  .bg-image {
-      background-image: url(./sb-background-overlay.png);
-      height: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      background-attachment: fixed;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      animation: kenBurnsEffect 30s ease-in-out infinite alternate;
+  #section-form {
+      padding-top: 100px;
+      background-color: transparent;
   }
 
-  .content,
-  .footer,
-  .about-section,
-  .about-section p,
-  .about-section a {
-      color: black;
-      text-align: center;
-      width: 100%;
+  #section-about {
+      margin-top: 50px;
   }
 
   .email-form input[type='email'],
@@ -65,7 +48,7 @@
   .email-form button:hover,
   .about-section a:hover,
   .glass-link:hover {
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.099);
       /* Slightly more opaque on hover */
   }
 
@@ -86,7 +69,7 @@
   }
 
   .glass-form {
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.104);
       /* Darker, more transparent background */
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -105,14 +88,15 @@
   }
 
   .sexy-input {
-      background: rgba(255, 255, 255, 0.3);
+      background: rgba(0, 0, 0, 0.3);
       /* More transparent */
       border: none;
-      border-radius: 20px;
+      border-radius: 10px;
       padding: 10px 15px;
       margin-bottom: 10px;
       width: calc(100% - 30px);
       box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 7.5px;
   }
 
   .sexy-input:focus {
