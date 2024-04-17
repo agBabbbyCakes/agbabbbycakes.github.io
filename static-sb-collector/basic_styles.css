@@ -25,7 +25,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      animation: kenBurnsEffect 20s ease-in-out infinite alternate;
+      animation: kenBurnsEffect 30s ease-in-out infinite alternate;
   }
 
   .content,
@@ -151,5 +151,12 @@
 
       100% {
           transform: scale(1.2);
+      }
+  }
+
+  @media (max-width: 600px) {
+      p {
+          max-width: 45ch;
+          padding: 10px;
       }
   }
