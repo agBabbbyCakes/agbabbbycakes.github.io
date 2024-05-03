@@ -11,16 +11,19 @@
   }
 
 
-
+  p {
+      max-width: 45ch;
+      padding: 10px;
+  }
 
 
   #section-form {
-      padding-top: 100px;
+      padding-top: 10px;
       background-color: transparent;
   }
 
   #section-about {
-      margin-top: 50px;
+      margin-top: 20px;
   }
 
   .email-form input[type='email'],
@@ -141,12 +144,7 @@
       }
   }
 
-  @media (max-width: 600px) {
-      p {
-          max-width: 45ch;
-          padding: 10px;
-      }
-  }
+
 
 
   img {
