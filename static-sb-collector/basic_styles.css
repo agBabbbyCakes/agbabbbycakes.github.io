@@ -10,9 +10,12 @@
       color: white;
   }
 
+  body {
+      padding: 30px;
+
+  }
 
   p {
-      max-width: 45ch;
       padding: 10px;
   }
 
