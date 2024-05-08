@@ -1,7 +1,7 @@
-$ cat '.silverback-sessions/bot/ethereum/mainnet/session-2024-04-06T04:50:34.393355+00:00.jsonl' 
-{"task_name":"app_startup","execution_time":0.0,"error":null,"completed":"2024-04-06T04:50:34.594024+00:00","block_number":null,"metrics":{"block_number":{"type":"scalar","data":0}}}
-{"task_name":"exec_event1","execution_time":0.0,"error":null,"completed":"2024-04-06T04:50:37.648587+00:00","block_number":19594412,"metrics":{"amount":{"type":"scalar","data":410694555}}}
-{"task_name":"exec_block","execution_time":0.36,"error":null,"completed":"2024-04-06T04:50:37.720697+00:00","block_number":19594412,"metrics":{"result":{"type":"scalar","data":149}}}
+
+{"task_name":"app_startup","execution_time":0.0,"error":null,"completed":"2024-04-06T04:50:34.594024+00:00","block_number":null,"metrics":{"block_number":{"type":"scalar","data":0}}},
+{"task_name":"exec_event1","execution_time":0.0,"error":null,"completed":"2024-04-06T04:50:37.648587+00:00","block_number":19594412,"metrics":{"amount":{"type":"scalar","data":410694555}}},
+{"task_name":"exec_block","execution_time":0.36,"error":null,"completed":"2024-04-06T04:50:37.720697+00:00","block_number":19594412,"metrics":{"result":{"type":"scalar","data":149}}},
 {"task_name":"exec_event1","execution_time":0.0,"error":null,"completed":"2024-04-06T04:50:37.852210+00:00","block_number":19594412,"metrics":{"amount":{"type":"scalar","data":5387740000}}}
 {"task_name":"exec_event1","execution_time":0.0,"error":"Oopsie!","completed":"2024-04-06T04:50:38.054161+00:00","block_number":19594412,"metrics":{}}
 {"task_name":"exec_event1","execution_time":0.0,"error":null,"completed":"2024-04-06T04:50:38.256236+00:00","block_number":19594412,"metrics":{"amount":{"type":"scalar","data":664730599}}}
