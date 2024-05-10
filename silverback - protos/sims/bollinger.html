@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizer Dashboard</title>
+    <link rel="stylesheet" href="./menu.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 20px;
+        }
+        .grid-item {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+        }
+        .chart {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Visualizer Dashboard</h1>
+    </header>
+    <div class="grid-container">
+        <!-- Other visualizer links -->
+        <div id="bollingerChart" class="grid-item chart"></div>
+    </div>
+    <footer>
+        <p>Work © 2024 by Alex Gonzalez of ApeWorX - Data Visualizer Dashboard</p>
+    </footer>
+
+    <script>
+        // Parse and prepare data
+        const rawData = [
+            {"date":"2024-04-06T04:50:37.648587+00:00", "value":410694555},
+            {"date":"2024-04-06T04:50:37.852210+00:00", "value":5387740000},
+            {"date":"2024-04-06T04:50:38.256236+00:00", "value":664730599},
+            {"date":"2024-04-06T04:50:38.659659+00:00", "value":57769685},
+            {"date":"2024-04-06T04:50:39.062285+00:00", "value":4000000000},
+            {"date":"2024-04-06T04:50:39.263646+00:00", "value":220364068},
+            {"date":"2024-04-06T04:50:39.464978+00:00", "value":1928185},
+            {"date":"2024-04-06T04:50:39.666152+00:00", "value":218435883},
+            {"date":"2024-04-06T04:50:39.867372+00:00", "value":400000},
+            {"date":"2024-04-06T04:50:40.069192+00:00", "value":218035883},
+            {"date":"2024-04-06T04:50:49.452025+00:00", "value":314585413},
+            {"date":"2024-04-06T04:50:49.653579+00:00", "value":191866464},
+            {"date":"2024-04-06T04:50:49.855016+00:00", "value":9000000000}
+        ];
+
+        const data = rawData.map(d => ({
+            date: new Date(d.date),
+            value: d.value
+        }));
+
+        // Set the dimensions of the canvas / graph
+        const margin = {top: 30, right: 30, bottom: 30, left: 50},
+            width = 960 - margin.left - margin.right,
+            height = 500 - margin.top - margin.bottom;
+
+        // Set the ranges
+        const x = d3.scaleTime().range([0, width]);
+        const y = d3.scaleLinear().range([height, 0]);
+
+        // Define the line
+        const valueline = d3.line()
+            .x(d => x(d.date))
+            .y(d => y(d.value));
+
+        // Adds the svg canvas
+        const svg = d3.select("#bollingerChart")
+            .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+                .attr("transform",
+                      "translate(" + margin.left + "," + margin.top + ")");
+
+        // Scale the range of the data
+        x.domain(d3.extent(data, d => d.date));
+        y.domain([0, d3.max(data, d => d.value)]);
+
+        // Add the valueline path.
+        svg.append("path")
+            .data([data])
+            .attr("class", "line")
+            .attr("d", valueline);
+
+        // Add the X Axis
+        svg.append("g")
+            .attr("transform", "translate(0," + height + ")")
+            .call(d3.axisBottom(x));
+
+        // Add the Y Axis
+        svg.append("g")
+            .call(d3.axisLeft(y));
+
+    </script>
+</body>
+</html>
