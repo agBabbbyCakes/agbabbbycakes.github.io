@@ -97,6 +97,7 @@ tried to make it cleaner - more logical - i began to think of things as themes -
 
 
 
+
 /* Panels */
 .panel-container {
     display: flex;
@@ -130,6 +131,10 @@ tried to make it cleaner - more logical - i began to think of things as themes -
 /* Typography */
 
 
+/*GLOBAL FONT FACE = BARLOW */
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: Barlow;
+}
 
 .headline {
     font-size: var(--font-size-headline);
