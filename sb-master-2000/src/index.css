@@ -1,5 +1,9 @@
 /* Silverback Design System 001 */
 /* As of 6.20.24 */
+/*update 6.21 
+tried to make it cleaner - more logical - i began to think of things as themes - and the code needed for this guides html (a ncessaeary evil) - into its own guide.css"
+*/
+
 
 /*Fonts used (web font ) BARLOW BABY */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
@@ -73,21 +77,25 @@
     --border-color: #B0BEC5;
 }
 
-/* NECESSARY HTML EVILS JUST FOR THE INFO PAGE */
-body {
-    width: 100%;
-    min-height: 100vh;
-    margin: 0;
-    font-family: var(--font-face-barlow), sans-serif;
-    background-color: #1c1c1c;
-    color: var(--secondary-color);
-    padding: 50px;
+
+/*THEMES AND STYLES Experiment */
+/*The following are themes - first one being "Glassy Candy" - second being "Green Mint Baby" - just to show how this might work
+*/
+
+:root {
+    /*theme 1 = Glass Candy */
+    --glass-candy_background: #ff0060;
+
+    /*theme 2 = Green Mint Baby */
+    --green-mint_background: #e9fbff;
+    --green-mint_button_bg: #000;
+    --green-mint_text-color: #000000;
+
 }
 
-section {
-    width: 100%;
-    min-height: 100vh;
-}
+/*END OF CSS VARIABLES - Hope you enjoyed */
+
+
 
 /* Panels */
 .panel-container {
@@ -341,10 +349,6 @@ section {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Default Button */
-.btn--default {
-    background-color: var(--background-light);
-}
 
 /* Outline Button */
 .btn--outline {
@@ -367,8 +371,9 @@ section {
 
 /* Default Button */
 .btn--default {
-    border-color: var(--border-color-light);
-    background-color: var(--background-light);
+    border-color: var(--green-mint_button_bg);
+    background-color: var(--green-mint_background);
+    color: var(--green-mint_text-color);
 }
 
 /* Outline Button */
@@ -543,9 +548,7 @@ section {
     position: absolute;
     content: "";
     height: 26px;
-    /* Diameter of the slider circle */
     width: 26px;
-    /* Diameter of the slider circle */
     left: 4px;
     bottom: 4px;
     background-color: var(--primary-color);
