@@ -10,6 +10,7 @@
         <section class="welcome">
             <h1 class="headline">Welcome to the Silverback Design System</h1>
             <p class="intro__text">A design system for the Silverback team</p>
+            <p>build 001</p>
         </section>
         <section class="intro">
             <h1 class="headline">Silverback Design System</h1>
@@ -65,17 +66,29 @@
             <h2>Color Grid</h2>
             <div class="color-grid">
                 <div class="color-swatch"
-                    style="background-color: var(--alert-color);"></div>
+                    style="background-color: var(--alert-color);">
+                    <span class="swatch-info">--alert-color: #E63946</span>
+                </div>
                 <div class="color-swatch"
-                    style="background-color: var(--pending-color);"></div>
+                    style="background-color: var(--pending-color);">
+                    <span class="swatch-info">--pending-color: #FFD93D</span>
+                </div>
                 <div class="color-swatch"
-                    style="background-color: var(--success-color);"></div>
+                    style="background-color: var(--success-color);">
+                    <span class="swatch-info">--success-color: #64eaff</span>
+                </div>
                 <div class="color-swatch"
-                    style="background-color: var(--info-color);"></div>
+                    style="background-color: var(--info-color);">
+                    <span class="swatch-info">--info-color: #007B83</span>
+                </div>
                 <div class="color-swatch"
-                    style="background-color: var(--error-color);"></div>
+                    style="background-color: var(--error-color);">
+                    <span class="swatch-info">--error-color: #FF6B6B</span>
+                </div>
                 <div class="color-swatch"
-                    style="background-color: var(--link-color);"></div>
+                    style="background-color: var(--link-color);">
+                    <span class="swatch-info">--link-color: #FF0060</span>
+                </div>
             </div>
         </section>
 
@@ -185,7 +198,30 @@
             <button class="btn btn--info">BUTTON</button>
             <button class="btn btn--warning">BUTTON</button>
         </section>
-
+        <section id="toggle-switch" class="toggle-switch-section">
+            <h2>Toggle Switch</h2>
+            <p>Active</p>
+            <div class="toggle-switch">
+                <input type="checkbox" id="toggle-switch">
+                <label for="toggle-switch" class="slider"></label>
+            </div>
+            <p>Deactive</p>
+            <div class="toggle-switch">
+                <input type="checkbox" id="toggle-switch">
+                <label for="toggle-switch" class="slider"></label>
+            </div>
+        </section>
+        <section class="dropdown-section">
+            <h1 class="headline">Dropdown Menu Examples</h1>
+            <div class="dropdown">
+                <button class="dropdown-button">Select Option</button>
+                <div class="dropdown-content">
+                    <a href="#">Option 1</a>
+                    <a href="#">Option 2</a>
+                    <a href="#">Option 3</a>
+                </div>
+            </div>
+        </section>
         <nav>
             <a href="./allTogether.html">Everything all together</a>
         </nav>

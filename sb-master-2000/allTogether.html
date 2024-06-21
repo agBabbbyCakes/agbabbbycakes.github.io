@@ -38,31 +38,56 @@
                                 <div class="bot-management-row">
                                     <span class="body-text body--medium">Arbitrage Bot</span>
                                     <span class="body-text body--medium">SINCE MAY 10, 2024 AT 5:32 GMT</span>
-                                    <button class="actions-button">ACTIONS</button>
+                                    <button class="dropdown-button">ACTIONS</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Edit Settings</a>
+                                        <a href="#">View Logs</a>
+                                        <a href="#">Deactivate</a>
+                                    </div>
                                 </div>
                                 <div class="bot-management-row">
                                     <span class="body-text body--medium">Chain Monitor Bot</span>
                                     <span class="body-text body--medium">ON MAY 9, 2024 AT 5:32 GMT</span>
-                                    <button class="actions-button">ACTIONS</button>
+                                    <button class="dropdown-button">ACTIONS</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Edit Settings</a>
+                                        <a href="#">View Logs</a>
+                                        <a href="#">Deactivate</a>
+                                    </div>
                                 </div>
                                 <div class="bot-management-row">
                                     <span class="body-text body--medium">Agressive Trader Bot</span>
                                     <span class="body-text body--medium">SINCE MAY 12, 2024 AT 10:48 GMT</span>
-                                    <button class="actions-button">ACTIONS</button>
+                                    <button class="dropdown-button">ACTIONS</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Edit Settings</a>
+                                        <a href="#">View Logs</a>
+                                        <a href="#">Deactivate</a>
+                                    </div>
                                 </div>
                                 <div class="bot-management-row">
                                     <span class="body-text body--medium">Imitator Bot</span>
                                     <span class="body-text body--medium">ON MAY 11, 2024 AT 16:41 GMT</span>
-                                    <button class="actions-button">ACTIONS</button>
+                                    <button class="dropdown-button">ACTIONS</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Edit Settings</a>
+                                        <a href="#">View Logs</a>
+                                        <a href="#">Deactivate</a>
+                                    </div>
                                 </div>
                                 <div class="bot-management-row">
                                     <span class="body-text body--medium">Lazy Arbitrage Bot</span>
                                     <span class="body-text body--medium">ON MAY 11, 2024 AT 18:11 GMT</span>
-                                    <button class="actions-button">ACTIONS</button>
+                                    <button class="dropdown-button">ACTIONS</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Edit Settings</a>
+                                        <a href="#">View Logs</a>
+                                        <a href="#">Deactivate</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="bot-management-footer">
-                                <p class="body-text body--medium">This cluster’s robot army can recruit an additional 5 bots. All bots must be developed using the Silverback SDK. For Silverback Alpha, you’ll need to provide a link to a built Docker image.</p>
+                                <p class="body-text body--medium">This cluster's robot army can recruit an additional 5 bots. All bots must be developed using the Silverback SDK. For Silverback Alpha, you'll need to provide a link to a built Docker image.</p>
                                 <button class="add-bot-button">ADD BOT...</button>
                             </div>
                         </div>
@@ -84,5 +109,20 @@
         <footer>
             <a href="./index.html">Back to Guide</a>
         </footer>
+        <script>
+            // Get all the dropdown buttons
+            var dropdowns = document.querySelectorAll('.dropdown-button');
+            dropdowns.forEach(function(btn) {
+                btn.onclick = function() {
+                    var content = this.nextElementSibling;
+                    // Toggle display
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                }
+            });
+        </script>
     </body>
 </html>
