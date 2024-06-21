@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./index.css">
+        <title>Silverback Design System</title>
+    </head>
+    <body>
+        <section class="welcome">
+            <h1 class="headline">Welcome to the Silverback Design System</h1>
+            <p class="intro__text">A design system for the Silverback team</p>
+        </section>
+        <section class="intro">
+            <h1 class="headline">Silverback Design System</h1>
+            <p class="intro__text">A design system for the Silverback team</p>
+            <p class="intro__text">The real magic of this is the CSS that lives
+                behind it. We wrote this guide to actually utilize the system
+                and progressively build upon itself. The hope is this is
+                organized in a logical way to make components, widgets, and
+                display information in a way that makes sense and does all that
+                magic that Bryant wants it to do with a master library.</p>
+            <br>
+            <span>A note on how the css is formatted</span>
+            <p>What's up css nerds - </p>
+        </section>
+
+        <section id="typography" class="typography-section">
+            <h1 class="headline">This is a global typography</h1>
+            <h1 class="heading-1">H1 TAG aka class="heading-1"</h1>
+            <h2 class="heading-2">H2 Tag aka class="heading-2"</h2>
+            <h3 class="heading-3">H3 Tag aka class="heading-3"</h3>
+            <h4 class="heading-4">H4 Tag aka class="heading-4"</h4>
+            <h5 class="heading-5">H5 Tag aka class="heading-5"</h5>
+            <h6 class="heading-6">H6 Tag aka class="heading-6"</h6>
+            <p class="body-text body--medium">p tag aka
+                class="body-text body--medium"</p>
+            <a href="#" class="link">a href basic</a>
+        </section>
+
+        <section id="info-about-panels" class="info-section">
+            <h2 class="heading-2">Info About Panels</h2>
+            <p class="body-text body--medium">Here are some info about the
+                Panels - the "windows of Silverback". One could think of these
+                panels as windows. At the moment, there are two to choose from.
+                On second thought, there are more. Panels belong...</p>
+        </section>
+
+        <section id="panels">
+            <div class="panel-container">
+                <div class="panel panel--a">
+                    <h2 class="heading-2">This is Panel A</h2>
+                    <p class="body-text body--medium">Basic typography
+                        System</p>
+                </div>
+                <div class="panel panel--b">
+                    <h2 class="heading-2">This is Panel B</h2>
+                    <p class="body-text body--medium">Basic typography
+                        System</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="color-grid-info">
+            <h2>Color Grid</h2>
+            <div class="color-grid">
+                <div class="color-swatch"
+                    style="background-color: var(--alert-color);"></div>
+                <div class="color-swatch"
+                    style="background-color: var(--pending-color);"></div>
+                <div class="color-swatch"
+                    style="background-color: var(--success-color);"></div>
+                <div class="color-swatch"
+                    style="background-color: var(--info-color);"></div>
+                <div class="color-swatch"
+                    style="background-color: var(--error-color);"></div>
+                <div class="color-swatch"
+                    style="background-color: var(--link-color);"></div>
+            </div>
+        </section>
+
+        <br>
+        <section id="surfaces-and-panels" class="surfaces-section">
+            <h1 class="headline">Surfaces and Panels</h1>
+            <p class="body-text body--medium">Styles for panels or other
+                surfaces. Panels may have a background color, a border color,
+                and a set of effects like blur and drop shadow.</p>
+            <p class="body-text body--medium">This may not cover every possible
+                panel in the app but should have a solid set of defaults for the
+                majority of panels.</p>
+            <p class="body-text body--medium">TODO: Talk more about what basic
+                panels should look like.</p>
+
+            <div class="panel-container">
+                <div class="panel panel--glass-dark">
+                    <p class="body-text body--medium">Background: Glass
+                        background dark 35</p>
+                    <p class="body-text body--medium">Border: Glass border light
+                        12</p>
+                    <p class="body-text body--medium">Effects: Glass panel</p>
+                </div>
+                <div class="panel panel--glass-overlay">
+                    <p class="body-text body--medium">Background: Glass
+                        Overlay</p>
+                    <p class="body-text body--medium">Border: Glass border light
+                        12</p>
+                    <p class="body-text body--medium">Effects: Glass panel
+                        overlay</p>
+                    <p class="body-text body--medium">Notes: This is Josh’s
+                        attempt at an overlay glass panel with a glow to help it
+                        stand out against a background</p>
+                </div>
+                <div class="panel panel--alpha">
+                    <p class="body-text body--medium">Background: sb_alpha</p>
+                    <p class="body-text body--medium">Border: Glass border
+                        white</p>
+                    <p class="body-text body--medium">Effects: none</p>
+                </div>
+                <div class="panel panel--glass-white">
+                    <p class="body-text body--medium">Background: Glass
+                        background white 3</p>
+                    <p class="body-text body--medium">Border: Glass border
+                        white</p>
+                    <p class="body-text body--medium">Effects: none</p>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section id="spacing" class="spacing-section">
+            <h1 class="headline">Spacing</h1>
+            <p class="body-text body--medium">Guidelines for numbers to use for
+                padding and spacing. Josh’s suggestion is 8px multipliers:</p>
+            <ul class="spacing-list">
+                <li class="body-text body--medium">xxxs: 2px</li>
+                <li class="body-text body--medium">xxs: 4px</li>
+                <li class="body-text body--medium">xs: 8px</li>
+                <li class="body-text body--medium">s: 12px</li>
+                <li class="body-text body--medium">md: 16px</li>
+                <li class="body-text body--medium">lg: 24px</li>
+                <li class="body-text body--medium">xl: 32px</li>
+                <li class="body-text body--medium">xxl: 40px</li>
+                <li class="body-text body--medium">xxxl: 48px</li>
+                <li class="body-text body--medium">xxxxl: 64px</li>
+            </ul>
+            <p class="body-text body--medium">This doesn’t mean literally
+                everything uses these values, but it gives a solid set of
+                spacers to use in the majority of cases.</p>
+        </section>
+
+        <section id="text-inputs" class="text-inputs-section">
+            <div class="input-container">
+                <label class="input-label" for="input-normal">LABEL</label>
+                <input type="text" id="input-normal"
+                    class="text-input text-input--normal" value="example text">
+            </div>
+            <div class="input-container">
+                <label class="input-label" for="input-error">LABEL</label>
+                <input type="text" id="input-error"
+                    class="text-input text-input--error" value="example text">
+                <span class="error-message">ⓘ Error text</span>
+            </div>
+            <div class="input-container">
+                <label class="input-label" for="textarea-normal">LABEL</label>
+                <textarea id="textarea-normal"
+                    class="textarea text-input--normal">example text</textarea>
+            </div>
+            <div class="input-container">
+                <label class="input-label" for="search-input">LABEL</label>
+                <div class="search-container">
+                    <input type="text" id="search-input" class="search-input"
+                        value="example text">
+                    <span class="search-icon">🔍</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="buttons" class="buttons-section">
+            <h2>Buttons</h2>
+            <button class="btn btn--default">BUTTON</button>
+            <button class="btn btn--outline">BUTTON</button>
+            <button class="btn btn--primary">BUTTON</button>
+            <button class="btn btn--secondary">BUTTON</button>
+            <button class="btn btn--success">BUTTON</button>
+            <button class="btn btn--error">BUTTON</button>
+            <button class="btn btn--info">BUTTON</button>
+            <button class="btn btn--warning">BUTTON</button>
+        </section>
+
+        <nav>
+            <a href="./allTogether.html">Everything all together</a>
+        </nav>
+    </body>
+</html>
