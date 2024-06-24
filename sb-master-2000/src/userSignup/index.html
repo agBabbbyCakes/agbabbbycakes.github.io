@@ -6,27 +6,125 @@
 			body {
 				background-color: black;
 			}
- </style>
+            /* Modal styles */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+            .modal-content {
+                margin: 15% auto; /* 15% from the top and centered */
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%; /* Could be more or less, depending on screen size */
+                display: flex; /* Use flexbox to layout children side by side */
+                justify-content: space-between; /* Distribute space between columns */
+                flex-wrap: wrap; /* Allow wrapping if needed */
+            }
+            .plan {
+                flex: 1 1 30%; /* Each plan can flexibly grow and shrink but start with 30% of the space */
+                margin: 10px; /* Add some margin around each plan */
+                box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            }
+        </style>
     </head>
     <body>
-        <!-- User Sign Up Section -->
-        <section class="signup-section">
-            <div class="panel--a">
-                <h1 class="headline">No bot clusters available </h1>
-				<p class="body-text">You’ll need a bot cluster before you can deploy your robot army. Create a cluster with the button below, or ask a colleague to invite you to an existing one.</p>
-                <form class="signup-form">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" required>
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-
-                    <button type="submit" class="btn btn--primary">Sign Up</button>
-                </form>
+        <div class="app-body">
+            <!-- User Sign Up Section -->
+            <div class="center-content" id="create-new-cluster">
+                <div class="layout-1000">
+                    <div class="panel--a">
+                        <h1 class="headline">No bot clusters available </h1>
+                        <p class="body-text">You'll need a bot cluster before
+                            you
+                            can deploy your robot army. Create a cluster with
+                            the
+                            button below, or ask a colleague to invite you to an
+                            existing one.</p>
+                        <button type="button" class="btn btn--primary"
+                            onclick="showModal()">Create
+                            Cluster</button>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Choose a Plan</h2>
+                <div class="plan" id="individual">
+                    <h3>Individual</h3>
+                    <p>0.3 USDC / day</p>
+                    <ul>
+                        <li>Up to 5 bots</li>
+                        <li>8 virtual cores</li>
+                        <li>Choose from other upgrades a la carte</li>
+                    </ul>
+                    <button class="btn btn--primary">Select This Plan</button>
+                </div>
+                <div class="plan" id="team">
+                    <h3>Team</h3>
+                    <p>3.3 USDC / day</p>
+                    <ul>
+                        <li>Up to 20 bots</li>
+                        <li>Up to 20 members</li>
+                        <li>64 virtual cores</li>
+                        <li>12-month error log history</li>
+                        <li>Access to ApeCloud Simulation Plugin</li>
+                    </ul>
+                    <button>Select This Plan</button>
+                </div>
+                <div class="plan" id="enterprise">
+                    <h3>Enterprise</h3>
+                    <p>Contact Sales</p>
+                    <ul>
+                        <li>20+ bots</li>
+                        <li>10+ members</li>
+                        <li>64 virtual cores</li>
+                        <li>Unlimited error log history</li>
+                        <li>Access to ApeCloud Simulation Plugin</li>
+                        <li>Further customized to suit your needs</li>
+                    </ul>
+                    <button class="btn btn--primary">Select This Plan</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+        
+            // Get the button that opens the modal
+            var btn = document.querySelector(".btn--primary");
+        
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+        
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+        
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+        
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
     </body>
 </html>
