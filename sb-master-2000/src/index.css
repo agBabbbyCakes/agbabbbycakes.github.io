@@ -135,8 +135,13 @@ h4,
 h5,
 h6,
 p,
+ul,
+li,
 a {
-    font-family: Barlow;
+    font-family: 'Barlow', sans-serif;
+    line-height: 95%;
+    margin: 0;
+    color: var(--color-white);
 }
 
 .headline {
@@ -689,45 +694,34 @@ input:checked+.slider {
 .panel--a {
     width: 380px;
     height: 255px;
-
-}
-
-.panel--a {
-    /*background-color: var(--primary-color);*/
     color: var(--secondary-color);
 }
 
 
 /*WORK IN PROGRESS */
 
-/* Modal styles */
-.modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
+.plan-card {
+    display: flex;
+    min-width: 210px;
+    height: 403px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--24, 24px);
+    border-radius: var(--16, 16px);
+
+    background: var(--background-dark, #263238);
+    color: var(--text-primary, #FFFFFF);
+    border: 1px solid var(--border-color, #B0BEC5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);/
 }
 
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    /* Could be more or less, depending on screen size */
+
+.widget-container-column {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
 }
