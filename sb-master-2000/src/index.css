@@ -9,6 +9,10 @@ tried to make it cleaner - more logical - i began to think of things as themes -
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
 
 
+body {
+    background-image: url(../assets/sb_proto_bg1.png);
+}
+
 /* VA VA VA VARIABLES */
 :root {
     /* COLOR FUNCTION LEGEND */
@@ -23,6 +27,10 @@ tried to make it cleaner - more logical - i began to think of things as themes -
     --text-primary: #FFFFFF;
     --text-secondary: #B0BEC5;
     --border-color: #B0BEC5;
+
+
+
+
 
 
     --primary-color: #000;
@@ -64,14 +72,6 @@ tried to make it cleaner - more logical - i began to think of things as themes -
     --color-pink-200: #FF8A5B;
     --color-pink-400: #E63946;
 
-    /* Text colors */
-    --text-primary: #FFFFFF;
-    --text-secondary: #B0BEC5;
-    --text-link: #FF8A5B;
-    --text-error: #E63946;
-    --background-dark: #263238;
-    --background-light: #CFD8DC;
-    --background-transparent: rgba(255, 255, 255, 0.1);
 
     /* Border colors */
     --border-color: #B0BEC5;
@@ -160,6 +160,7 @@ a {
 .heading-2 {
     font-size: var(--font-size-heading-2);
     font-weight: var(--font-weight-bold);
+
 }
 
 .heading-3 {
@@ -198,6 +199,10 @@ a {
 
 .body--small {
     font-size: var(--font-size-body-small);
+    font-weight: 300;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 150%;
 }
 
 .body--tiny {
@@ -275,11 +280,18 @@ a {
 /* Text Inputs Section */
 .text-inputs-section {
     padding: 20px;
+    min-width: 400px;
     max-width: 800px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    color: var(--color-white);
+    border-radius: var(--12, 12px);
+    border: 1px solid var(--Border-Input-Border, #e0e0e076);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .input-container {
@@ -739,15 +751,8 @@ input:checked+.slider {
     border-radius: 10px;
     border: 1px solid var(--Border-Glass-Border-Light-12, rgba(255, 255, 255, 0.12));
     background: var(--Surface-Glass-Background-Dark-35, rgba(0, 0, 0, 0.35));
-
-    /* Glass Panel */
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
-}
-
-#step4 {
-    width: 100%;
-
 }
 
 .row-2-items {
@@ -757,4 +762,25 @@ input:checked+.slider {
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+
+.text-button {
+    color: #FFF;
+    background-color: transparent;
+    border-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    position: fixed;
+    bottom: 0;
+}
+
+.text-button:hover {
+    color: rgba(255, 255, 255, 0.54);
+    cursor: pointer;
 }
