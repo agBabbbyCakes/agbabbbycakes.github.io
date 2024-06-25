@@ -11,6 +11,11 @@ tried to make it cleaner - more logical - i began to think of things as themes -
 
 body {
     background-image: url(../assets/sb_proto_bg1.png);
+    background-size: cover;
+    /* Ensures the image covers the entire body */
+    background-position: center;
+    /* Centers the image */
+
 }
 
 /* VA VA VA VARIABLES */
@@ -807,4 +812,10 @@ input:checked+.slider {
     width: 220px;
     height: 200px;
     padding: 0px;
+}
+
+.cluster-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
