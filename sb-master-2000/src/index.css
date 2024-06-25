@@ -192,6 +192,7 @@ a {
 }
 
 .body--medium {
+    font-weight: 500;
     font-size: var(--font-size-body-medium);
 }
 
@@ -402,11 +403,13 @@ a {
 .btn--primary {
     border-radius: 4px;
     border: 1px solid var(--Brand-White, #FFF);
-    background: rgba(222, 222, 222, 0.09);
+    background: rgba(0, 0, 0, 0.35);
     padding: 8px 16px;
-    width: 400px;
+    min-width: 200px;
+    max-width: 400px;
     margin: 5px;
-
+    font-weight: 400;
+    backdrop-filter: blur(10px);
 }
 
 /* Secondary Button */
@@ -703,19 +706,16 @@ input:checked+.slider {
 .plan-card {
     display: flex;
     min-width: 210px;
-    height: 403px;
+    min-height: 200px;
+    max-height: 403px;
     padding: 32px;
     flex-direction: column;
     align-items: center;
-    gap: var(--24, 24px);
-    border-radius: var(--16, 16px);
-
-    background: var(--background-dark, #263238);
-    color: var(--text-primary, #FFFFFF);
-    border: 1px solid var(--border-color, #B0BEC5);
-    border-radius: 10px;
+    background: var(--background-dark);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);/
+    backdrop-filter: blur(10px);
 }
 
 
@@ -724,4 +724,37 @@ input:checked+.slider {
     display: flex;
     flex-direction: row;
 
+}
+
+/*layoutStructure */
+.container-1 {
+    display: flex;
+    min-width: 250px;
+    max-width: 450px;
+    min-height: 400px;
+    max-height: 400px;
+    padding: 48px;
+    flex-direction: column;
+    gap: 48px;
+    border-radius: 10px;
+    border: 1px solid var(--Border-Glass-Border-Light-12, rgba(255, 255, 255, 0.12));
+    background: var(--Surface-Glass-Background-Dark-35, rgba(0, 0, 0, 0.35));
+
+    /* Glass Panel */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+#step4 {
+    width: 100%;
+
+}
+
+.row-2-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
