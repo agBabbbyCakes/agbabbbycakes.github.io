@@ -3,6 +3,7 @@
 /*update 6.21 
 tried to make it cleaner - more logical - i began to think of things as themes - and the code needed for this guides html (a ncessaeary evil) - into its own guide.css"
 */
+/*preJosh Review June 25 2024*/
 
 
 /*Fonts used (web font ) BARLOW BABY */
@@ -704,11 +705,7 @@ input:checked+.slider {
 
 }
 
-.center-content {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .panel--a {
@@ -776,6 +773,15 @@ input:checked+.slider {
     backdrop-filter: blur(10px);
 }
 
+/*ULTITY CLASSES */
+
+.center-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 .row-2-items {
     width: 100%;
     display: flex;
