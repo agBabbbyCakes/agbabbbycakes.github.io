@@ -43,11 +43,6 @@ body::before {
     --text-secondary: #B0BEC5;
     --border-color: #B0BEC5;
 
-
-
-
-
-
     --primary-color: #000;
     --secondary-color: #fff;
     --tertiary-color: #000000;
@@ -501,7 +496,6 @@ a {
     background-color: var(--background-dark);
     color: var(--color-white);
 }
-
 
 /*DO NOT USE GLOBALLY - JUST FOR THE INFO PAGE */
 
@@ -972,9 +966,10 @@ backdrop-filter: blur(10px);
 /*APP LAYOUT STRUCTURE */
 
 .app-window {
-    margin-left: 240px; /* Width of the sidebar */
+    margin-left: 240px; 
     padding: 20px;
-    width: calc(100% - 240px); /* Adjust width to fit next to the sidebar */
+    margin: 50px;
+    width: calc(100% - 240px); 
     box-sizing: border-box;
 	height: 100vh;
 	border-style: solid;
