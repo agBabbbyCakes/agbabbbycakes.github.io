@@ -825,3 +825,144 @@ input:checked+.slider {
     flex-direction: row;
     gap: 20px;
 }
+
+
+
+
+/* CORE LAYOUT */
+
+/* The idea is that this will be around a lot - can be used for silverback or any other stuff - it is where the windows live
+I think the best would be to start with the dock
+
+*/
+
+/*SIDEBAR*/ 
+/* THE SIDEBAR - is really the side dock in silverback - but can be used 
+as a traditional sidebar for websites */
+
+:root {
+    --sidebar-font-family-theme1: 'Barlow', sans-serif;
+}
+
+
+
+.sidebar {
+    width: 250px;
+    background-color: #263238;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    transition: width 0.3s;
+    font-family: var(--sidebar-font-family-theme1);
+    /* Glass Panel */
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(10px);
+}
+
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar .top-section,
+.sidebar .bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .top-section {
+    padding: 20px 10px;
+}
+
+.sidebar .bottom-section {
+    padding: 10px;
+}
+
+.sidebar.collapsed .top-section,
+.sidebar.collapsed .bottom-section {
+    align-items: center;
+}
+
+.sidebar .menu-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    transition: padding 0.3s;
+    cursor: pointer;
+}
+
+.sidebar.collapsed .menu-item {
+    justify-content: center;
+}
+
+.sidebar .menu-item:hover {
+    background-color: #37474F;
+}
+
+.sidebar .menu-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    transition: margin 0.3s;
+}
+
+.sidebar.collapsed .menu-item img {
+    margin-right: 0;
+}
+
+.sidebar .menu-item span {
+    transition: opacity 0.3s;
+}
+
+.sidebar.collapsed .menu-item span {
+    opacity: 0;
+}
+
+.sidebar .menu-item .tag {
+    background-color: #007B83;
+    color: white;
+    font-size: 0.75rem;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-left: auto;
+}
+
+.sidebar.collapsed .menu-item .tag {
+    display: none;
+}
+
+.sidebar .menu-item.bot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar .toggle-btn {
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar .menu-item .bot-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FF6B6B;
+    margin-right: 20px;
+}
+
+.sidebar.collapsed .menu-item .bot-icon {
+    margin-right: 0;
+}
+
+.sidebar .menu-item.bot .name {
+    flex-grow: 1;
+}
+
+.sidebar.collapsed .menu-item.bot .name {
+    display: none;
+}

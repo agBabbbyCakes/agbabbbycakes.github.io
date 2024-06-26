@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cluster ABC</title>
+    <link rel="stylesheet" href="../index.css">
+
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="top-section">
+            <div class="menu-item">
+                <span>Molly's Organization</span>
+                <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+            </div>
+            <div class="menu-item">
+                <img src="../../assets/expt-nav-item.png" alt="Overview">
+                <span>Overview</span>
+            </div>
+            <div class="menu-item">
+                <img src="../../assets/expt-nav-item-dash.png" alt="Dashboards">
+                <span>Dashboards</span>
+                <span class="tag">Coming Soon!</span>
+            </div>
+            <div class="menu-item">
+                <img src="../../assets/expt-nav-item-bot.png" alt="Bot Management">
+                <span>Bot Management</span>
+            </div>
+            <div class="menu-item">
+                <img src="../../assets/expt-nav-item-settings.png" alt="Settings">
+                <span>Settings</span>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <div class="menu-item bot">
+                <span class="bot-icon" style="background-color: #FF6B6B;"></span>
+                <span class="name">Imitator Bot</span>
+            </div>
+            <div class="menu-item bot">
+                <span class="bot-icon" style="background-color: #FF6B6B;"></span>
+                <span class="name">Lazy Arbitrage Bot</span>
+            </div>
+            <div class="menu-item bot">
+                <span class="bot-icon" style="background-color: #39e5ff;"></span>
+                <span class="name">Momentum Trader Bot</span>
+            </div>
+            <div class="menu-item bot">
+                <span class="bot-icon" style="background-color: #B0BEC5;"></span>
+                <span class="name">Aggressive Trader Bot</span>
+            </div>
+            <div class="menu-item bot">
+                <span class="bot-icon" style="background-color: #B0BEC5;"></span>
+                <span class="name">Chain Monitor Bot</span>
+            </div>
+            <div class="menu-item">
+                <img src="path/to/add-bot-icon.png" alt="Add Bot">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('collapsed');
+        }
+    </script>
+</body>
+
+</html>
