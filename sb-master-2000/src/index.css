@@ -11,12 +11,21 @@ tried to make it cleaner - more logical - i began to think of things as themes -
 
 
 body {
-    background-image: url(../assets/sb_proto_bg1.png);
-    background-size: cover;
-    /* Ensures the image covers the entire body */
-    background-position: center;
-    /* Centers the image */
 
+    margin: 0;
+    padding: 0;
+
+}
+
+body::before {
+    content: "";
+    background-image: url(../assets/sb_proto_bg1.png);    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 /* VA VA VA VARIABLES */
@@ -847,7 +856,7 @@ as a traditional sidebar for websites */
 
 
 .sidebar {
-    width: 250px;
+    width: 240px;
     background-color: #263238;
     color: white;
     height: 100vh;
@@ -855,7 +864,7 @@ as a traditional sidebar for websites */
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
-    transition: width 0.3s;
+    transition: width 0.29s;
     font-family: var(--sidebar-font-family-theme1);
     /* Glass Panel */
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -901,13 +910,6 @@ backdrop-filter: blur(10px);
 
 .sidebar .menu-item:hover {
     background-color: #37474F;
-}
-
-.sidebar .menu-item img {
-    width: 24px;
-    height: 24px;
-    margin-right: 20px;
-    transition: margin 0.3s;
 }
 
 .sidebar.collapsed .menu-item img {
@@ -965,4 +967,55 @@ backdrop-filter: blur(10px);
 
 .sidebar.collapsed .menu-item.bot .name {
     display: none;
+}
+
+/*APP LAYOUT STRUCTURE */
+
+.app-window {
+    margin-left: 240px; /* Width of the sidebar */
+    padding: 20px;
+    width: calc(100% - 240px); /* Adjust width to fit next to the sidebar */
+    box-sizing: border-box;
+	height: 100vh;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0.091);
+	
+}
+	 .app-top {
+            background-color: #1c1c1c;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            position: relative;
+        }
+
+        .app-top h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .app-top p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .app-top .bot-actions {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+/*ICONS AND SUCH */
+
+.menu-item-img {
+    width: 62px;
+    height: 62px;
 }

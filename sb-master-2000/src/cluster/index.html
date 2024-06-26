@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cluster ABC</title>
     <link rel="stylesheet" href="../index.css">
+<style>
 
+</style>
 </head>
 
 <body>
@@ -17,16 +19,16 @@
                 <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
             </div>
             <div class="menu-item">
-                <img src="../../assets/expt-nav-item.png" alt="Overview">
+                <img class="menu-item-img" src="../../assets/expt-nav-item.png" alt="Overview">
                 <span>Overview</span>
             </div>
             <div class="menu-item">
-                <img src="../../assets/expt-nav-item-dash.png" alt="Dashboards">
+                <img class="menu-item-img" src="../../assets/expt-nav-item-dash.png" alt="Dashboards">
                 <span>Dashboards</span>
                 <span class="tag">Coming Soon!</span>
             </div>
             <div class="menu-item">
-                <img src="../../assets/expt-nav-item-bot.png" alt="Bot Management">
+                <img class="menu-item-img" src="../../assets/expt-nav-item-bot.png" alt="Bot Management">
                 <span>Bot Management</span>
             </div>
             <div class="menu-item">
@@ -60,7 +62,14 @@
             </div>
         </div>
     </div>
-
+    <div class="app-window" id="momentum-trader-bot">
+        <div class="app-top">
+            <h1>Momentum Trader Bot</h1>
+            <p>Running since May 31, 2024 at 10:00 AM</p>
+            <p>Molly's bot to evaluate and execute momentum trades. Currently comparing MACD to MACD (EMA) to evaluate trade favorability, in combination with RSI to determine when to execute a trade.</p>
+            <button class="bot-actions">BOT ACTIONS</button>
+        </div>
+    </div>
     <script>
         function toggleSidebar() {
             document.getElementById('sidebar').classList.toggle('collapsed');
