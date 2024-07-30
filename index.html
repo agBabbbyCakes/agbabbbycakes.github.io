@@ -1,87 +1,169 @@
 <html>
     <head>
         <title>BabbbyCakesIndex</title>
+        <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #6e45e2, #88d3ce);
+            color: white;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+        .glass-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            max-width: 800px;
+            width: 90%;
+            margin: 20px;
+            animation: breathe 8s infinite ease-in-out;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+        }
+        #yoyo {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        #commitsTable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #commitsTable th, #commitsTable td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        @keyframes breathe {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes spiral {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .spiral-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+            animation: spiral 60s linear infinite;
+        }
+    </style>
     </head>
     <body>
-        <style>
-            nav {
-                background-color: #f8f9fa; /* Light grey background */
-                padding: 20px; /* Spacious padding around links */
-                text-align: center; /* Center-align the navigation links */
-            }
-            nav a {
-                font-size: 20px; /* Larger font size for readability */
-                color: #333; /* Dark grey color for the text */
-                text-decoration: none; /* No underline */
-                margin: 0 15px; /* Space between links */
-                padding: 10px; /* Padding inside links for better clickability */
-            }
-            nav a:hover {
-                background-color: #ddd; /* Light grey background on hover */
-            }
-            nav a b {
-                font-weight: bold; /* Ensure bold text for wrapped <b> tags */
-            }
-        </style>
-        <h1>agbabbbycakes</h1>
-        <h2>UPDATE as of July 30 2024</h2>
-        <h2><a href="https://github.com/agBabbbyCakes">apeWorX - Work and
-                Experiments and a little bit of fun</a></h2>
-        <nav>
-            <a href="./website/suite/master-suite.html">Master Suite</a>
-            <a href="./chaosBots/cB.html">chaosbots</a>
-            <a href="./details/details.html">Details Page</a>
-            <a href="./bg/bg.html">Particle Background Updates Background </a>
-            <a href="./dataBaby/dataB.html">DATA SUPER BABYYYYYYY </a><br>
-            <a href="./dataBaby/doppler/doppler.html">The DOPPLER</a>
-            <a href="./apeW/src/index.html">The Index of Apeworx - latest</a>
-            <a href="./silverBack-alpha/index.html"><b>The Index of SILVERBACK -
-                    latest</b></a>
-            <a href="./sb-master-2000/index.html">silverback - master - 2000</a>
-
+        <div class="spiral-bg"></div>
+        <div class="glass-container">
+            <h1>agbabbbycakes</h1>
+            <h2>UPDATE as of July 30 2024</h2>
+            <h2><a href="https://github.com/agBabbbyCakes">apeWorX - Work and
+                    Experiments and a little bit of fun</a></h2>
+            <nav>
+                <a href="./website/suite/master-suite.html">Master Suite</a>
+                <a href="./chaosBots/cB.html">chaosbots</a>
+                <a href="./details/details.html">Details Page</a>
+                <a href="./bg/bg.html">Particle Background Updates Background
+                </a>
+                <a href="./dataBaby/dataB.html">DATA SUPER BABYYYYYYY </a><br>
+                <a href="./dataBaby/doppler/doppler.html">The DOPPLER</a>
+                <a href="./apeW/src/index.html">The Index of Apeworx -
+                    latest</a>
+                <a href="./silverBack-alpha/index.html"><b>The Index of
+                        SILVERBACK - latest</b></a>
+                <a href="./sb-master-2000/index.html">silverback - master -
+                    2000</a>
+            </nav>
             <p id="yoyo"></p>
-            <script>
-                function displayTime() {
-                    var date = new Date();
-                    var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
-                    document.getElementById('yoyo').innerHTML = time;
-                }
-                displayTime();
-                setInterval(displayTime, 1000); // Update time every second
-            </script>
-            <!-- MAKE A FUNCTION HERE FOR LATER THAT WILL DISPLAY THE TIME -->
-        </nav>
-        <h1>GIT COMMITS </h1>
+            <h1>GIT COMMITS</h1>
+            <table id="commitsTable">
+                <thead>
+                    <tr>
+                        <th>Commit Message</th>
+                        <th>Author</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
 
-        <table id="commitsTable">
-            <thead>
-                <tr>
-                    <th>Commit Message</th>
-                    <th>Author</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
         <script>
-            
-    fetch('https://api.github.com/repos/agBabbbyCakes/agbabbbycakes.github.io/commits')
-        .then(response => response.json())
-        .then(data => {
-            let table = document.getElementById('commitsTable').getElementsByTagName('tbody')[0];
-            data.forEach(item => {
-                let newRow = table.insertRow();
-                let cell1 = newRow.insertCell(0);
-                let cell2 = newRow.insertCell(1);
-                let cell3 = newRow.insertCell(2);
-                cell1.textContent = item.commit.message;
-                cell2.textContent = item.commit.author.name;
-                cell3.textContent = item.commit.author.date;
-            });
-        })
-        .catch(error => console.error(error));
-</script>
+        function displayTime() {
+            var date = new Date();
+            var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+            document.getElementById('yoyo').innerHTML = time;
+        }
+        displayTime();
+        setInterval(displayTime, 1000); // Update time every second
 
+        fetch('https://api.github.com/repos/agBabbbyCakes/agbabbbycakes.github.io/commits')
+            .then(response => response.json())
+            .then(data => {
+                let table = document.getElementById('commitsTable').getElementsByTagName('tbody')[0];
+                data.forEach(item => {
+                    let newRow = table.insertRow();
+                    let cell1 = newRow.insertCell(0);
+                    let cell2 = newRow.insertCell(1);
+                    let cell3 = newRow.insertCell(2);
+                    cell1.textContent = item.commit.message;
+                    cell2.textContent = item.commit.author.name;
+                    cell3.textContent = item.commit.author.date;
+                });
+            })
+            .catch(error => console.error(error));
+
+        // Add spiral background
+        function createSpiral() {
+            const spiral = document.querySelector('.spiral-bg');
+            for (let i = 0; i < 200; i++) {
+                const dot = document.createElement('div');
+                dot.style.position = 'absolute';
+                dot.style.width = '2px';
+                dot.style.height = '2px';
+                dot.style.backgroundColor = 'white';
+                dot.style.borderRadius = '50%';
+                const angle = 0.1 * i;
+                const x = (1 + angle) * Math.cos(angle);
+                const y = (1 + angle) * Math.sin(angle);
+                dot.style.left = `${50 + x * 10}%`;
+                dot.style.top = `${50 + y * 10}%`;
+                spiral.appendChild(dot);
+            }
+        }
+        createSpiral();
+    </script>
     </body>
 </html>
